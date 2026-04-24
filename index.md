@@ -1,1 +1,1 @@
-slightly elaborate ideas of mine.
+all opinions are my own.
