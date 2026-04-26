@@ -47,7 +47,7 @@ The four hyperscalers: Microsoft, Google, Amazon, Meta(together with Oracle) are
 
 Amazon's free cash flow collapsed 66% year-over-year in 2025. Morgan Stanley projects Amazon will be at <b>negative $17 billion</b> in free cash flow in 2026. Bank of America projects negative $28 billion. Alphabet's free cash flow is projected to drop 90% year-over-year in 2026, to roughly $8 billion. Long-term debt at Alphabet <b>quadrupled in 2025</b>, to $46.5 billion. They held a $25 billion bond sale in November.
 
-The top five hyperscalers <a href="https://epoch.a/data-insights/hyperscaler-capex-trend/" target="_blank">issued $108 billion in debt in 2025</a>. That's 3x their nine-year average. 
+The top five hyperscalers <a href="https://epoch.ai/data-insights/hyperscaler-capex-trend/" target="_blank">issued $108 billion in debt in 2025</a>. That's 3x their nine-year average. 
 
 <b>The most cash-rich companies in the history of capitalism are now borrowing money to pay for infrastructure that doesn't yet generate the revenue to justify it.</b>
 
