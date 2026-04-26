@@ -1,1 +1,0 @@
-all opinions are my own.
