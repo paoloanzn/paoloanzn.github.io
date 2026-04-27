@@ -29,9 +29,7 @@ And again a few weeks earlier, in a BBC interview, Google CEO <a href="https://t
 
 Read that again. The CEO of the company spending $90 billion a year on AI told the BBC, on tape, that the boom contains irrationality, that no company is immune if it bursts, and that the current moment echoes the late-1990s. Then kept spending. This man is either a total psycho or there is something else here.
 
-Why every CEO in this industry uses the same vocabulary, with the same urgency, regardless of what the technology actually does or what they personally believe about it?
-
-They didn't go nuts overnight, they are just driving the hype up. But the hype is not the disease, it's the symptom.
+These CEOs didn't go nuts overnight, they are just driving the hype up. But the hype is not the disease, it's the symptom.
 
 And what in the world produces the symptom?
 
@@ -245,7 +243,7 @@ Elon Musk's lawyers, in his lawsuit against OpenAI, summarized this exact proble
 
 <b>2 - what AGI actually means</b>
 
-Here is the thing nobody is saying out loud. There is no agreed-upon definition of AGI. There never has been. Every lab, every researcher, every CEO uses the term differently.
+There is no agreed-upon definition of AGI. There never has been. Every lab, every researcher, every CEO uses the term differently.
 
 In February 2025, Sam Altman published a blog post called <a href="https://blog.samaltman.com/three-observations" target="_blank"><i>Three Observations</i></a>. In it, he wrote directly, in his own words: <i>"AGI is a weakly defined term."</i>
 
