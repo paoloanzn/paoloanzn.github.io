@@ -1,951 +1,5 @@
 [
   {
-    "title": "theForger's Win32 API Tutorial",
-    "url": "https://winprog.org/tutorial/",
-    "year": 2003,
-    "year_label": "1998–2003 era",
-    "language": [
-      "C"
-    ],
-    "category": "Windows / Win32",
-    "kind": "tutorial series",
-    "site": "winprog.org",
-    "score": 98,
-    "evidence": [
-      "Original winprog.org tutorial",
-      "Raw Win32 API",
-      "Borland/Visual C++ era",
-      "Spanish v2 translation dated 2003"
-    ],
-    "tags": [
-      "Win32",
-      "GUI",
-      "windows.h",
-      "VC6"
-    ],
-    "notes": "Builds a Win32 application incrementally: windows, resources, controls, dialogs, files, toolbars, MDI, bitmaps and timers."
-  },
-  {
-    "title": "NeHe — Creating an OpenGL Window",
-    "url": "https://nehe.gamedev.net/tutorial/creating_an_opengl_window_%28win32%29/13001/",
-    "year": 2000,
-    "year_label": "January 2000 rewrite",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Graphics / OpenGL",
-    "kind": "tutorial series",
-    "site": "nehe.gamedev.net",
-    "score": 99,
-    "evidence": [
-      "Page says completely rewritten January 2000",
-      "Visual C++ 6.0 downloadable code",
-      "Win32 + fixed-function OpenGL"
-    ],
-    "tags": [
-      "OpenGL",
-      "Win32",
-      "VC6",
-      "3D"
-    ],
-    "notes": "Canonical early-2000s OpenGL tutorial base used for the rest of the NeHe lessons."
-  },
-  {
-    "title": "Neatpad — Design and Implementation of a Win32 Text Editor",
-    "url": "https://www.catch22.net/tuts/neatpad/neatpad-overview/",
-    "year": 2005,
-    "year_label": "29 Jan 2005",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Windows / Win32",
-    "kind": "project tutorial series",
-    "site": "catch22.net",
-    "score": 100,
-    "evidence": [
-      "Explicit 2005 publication date",
-      "Step-by-step complete edit control",
-      "VS6-era Win32 architecture"
-    ],
-    "tags": [
-      "Win32",
-      "text editor",
-      "GUI",
-      "VC6"
-    ],
-    "notes": "A substantial multi-part project: file loading, painting, selection, Unicode, scrolling, mouse interaction and editing-control architecture."
-  },
-  {
-    "title": "CardLib — Windows card-game framework",
-    "url": "https://www.catch22.net/tuts/cards/cardlib/",
-    "year": 2001,
-    "year_label": "4 Dec 2001",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / 2D",
-    "kind": "project tutorial",
-    "site": "catch22.net",
-    "score": 96,
-    "evidence": [
-      "Explicit 2001 publication date",
-      "C++ without MFC/ATL",
-      "Windows cards.dll"
-    ],
-    "tags": [
-      "Win32",
-      "cards",
-      "game",
-      "library"
-    ],
-    "notes": "Builds a reusable card-game library with stacks, dragging and event callbacks."
-  },
-  {
-    "title": "Catch22 Win32 source-code mini projects",
-    "url": "https://www.catch22.net/tuts/source/",
-    "year": 2003,
-    "year_label": "2001–2005",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Windows / Win32",
-    "kind": "source project collection",
-    "site": "catch22.net",
-    "score": 94,
-    "evidence": [
-      "Site says projects were first published around 2001–2005",
-      "Compiles under Visual Studio 6.0"
-    ],
-    "tags": [
-      "Win32",
-      "VC6",
-      "utilities"
-    ],
-    "notes": "Full applications and utilities including global title-bar hooks, window capture and filesystem-tree tools."
-  },
-  {
-    "title": "Catch22 — Win32 Tips & Tricks",
-    "url": "https://www.catch22.net/tuts/tips/tips-and-tricks/",
-    "year": 2001,
-    "year_label": "15 May 2001",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Windows / Win32",
-    "kind": "technical tutorial",
-    "site": "catch22.net",
-    "score": 89,
-    "evidence": [
-      "Explicit May 2001 publication date",
-      "Raw Win32 examples"
-    ],
-    "tags": [
-      "Win32",
-      "GDI",
-      "optimization"
-    ],
-    "notes": "Period Win32 implementation techniques and code snippets."
-  },
-  {
-    "title": "Catch22 — Reducing Executable Size",
-    "url": "https://www.catch22.net/tuts/system/reducing-executable-size/",
-    "year": 2001,
-    "year_label": "1 Oct 2001",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Systems / Low-level",
-    "kind": "technical tutorial",
-    "site": "catch22.net",
-    "score": 91,
-    "evidence": [
-      "Explicit October 2001 publication date",
-      "C/C++ Win32 projects",
-      "Period linker/runtime assumptions"
-    ],
-    "tags": [
-      "Win32",
-      "linker",
-      "optimization",
-      "tiny exe"
-    ],
-    "notes": "Techniques for building tiny Win32 executables and reducing runtime/library overhead."
-  },
-  {
-    "title": "Flipcode — Elements of a Game Engine",
-    "url": "https://flipcode.com/archives/Elements_Of_A_Game_Engine.shtml",
-    "year": 2001,
-    "year_label": "5 Mar 2001",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / Engines",
-    "kind": "architecture tutorial",
-    "site": "flipcode.com",
-    "score": 95,
-    "evidence": [
-      "Original Flipcode archive",
-      "Explicit March 2001 date",
-      "3D game-engine architecture"
-    ],
-    "tags": [
-      "game engine",
-      "3D",
-      "architecture"
-    ],
-    "notes": "Period discussion of renderer, system layer, tools, game interface, particles, collision and engine architecture."
-  },
-  {
-    "title": "Flipcode Featured Articles archive",
-    "url": "https://flipcode.com/archives/articles.shtml",
-    "year": 2002,
-    "year_label": "2001–2003 archive",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Games / Engines",
-    "kind": "article archive",
-    "site": "flipcode.com",
-    "score": 93,
-    "evidence": [
-      "Original site archive",
-      "Individual articles dated 2001–2003",
-      "C/C++ game-development focus"
-    ],
-    "tags": [
-      "game engine",
-      "graphics",
-      "plugins",
-      "Win32"
-    ],
-    "notes": "Gateway to period articles such as plug-ins, portable 3D engines, window skinning and writing a simple game."
-  },
-  {
-    "title": "Cprogramming.com — Animated OpenGL Robot",
-    "url": "https://www.cprogramming.com/tutorial/opengl_first_opengl_program.html",
-    "year": 2003,
-    "year_label": "13 Jan 2003 / update May 2003",
-    "language": [
-      "C++"
-    ],
-    "category": "Graphics / OpenGL",
-    "kind": "project tutorial",
-    "site": "cprogramming.com",
-    "score": 94,
-    "evidence": [
-      "Source header dated January 2003",
-      "Win32 + OpenGL",
-      "Period project settings instructions"
-    ],
-    "tags": [
-      "OpenGL",
-      "animation",
-      "robot",
-      "Win32"
-    ],
-    "notes": "Builds an animated robot from cubes using Win32 and OpenGL."
-  },
-  {
-    "title": "Cprogramming.com tutorial archive",
-    "url": "https://www.cprogramming.com/tutorial.html",
-    "year": 2005,
-    "year_label": "long-running 2000s archive",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Mixed / Collections",
-    "kind": "tutorial archive",
-    "site": "cprogramming.com",
-    "score": 84,
-    "evidence": [
-      "Long-running C/C++ site",
-      "Contains Same Game, animation-engine, SDL and OpenGL projects"
-    ],
-    "tags": [
-      "game",
-      "SDL",
-      "OpenGL",
-      "algorithms"
-    ],
-    "notes": "Useful collection page; individual entries should be separately harvested and dated."
-  },
-  {
-    "title": "Allegro/STL action-game tutorial",
-    "url": "https://liballeg.org/docs/ovehk_stl_tutorial_en/index.html",
-    "year": 2002,
-    "year_label": "DJGPP/RHIDE era",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / 2D",
-    "kind": "project tutorial",
-    "site": "liballeg.org",
-    "score": 92,
-    "evidence": [
-      "DJGPP + RHIDE toolchain",
-      "Allegro game library",
-      "Old-style C++/STL tutorial"
-    ],
-    "tags": [
-      "Allegro",
-      "STL",
-      "DJGPP",
-      "game"
-    ],
-    "notes": "Teaches C++ and STL while composing an action game using Allegro."
-  },
-  {
-    "title": "Lazy Foo legacy SDL 1.2 tutorials",
-    "url": "https://lazyfoo.net/SDL_tutorials/index.php",
-    "year": 2009,
-    "year_label": "2004–2010-era series",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / SDL",
-    "kind": "tutorial series",
-    "site": "lazyfoo.net",
-    "score": 95,
-    "evidence": [
-      "Author preserves the old tutorial set",
-      "SDL 1.2",
-      "Legacy layout and period topics"
-    ],
-    "tags": [
-      "SDL 1.2",
-      "2D",
-      "game",
-      "tile map"
-    ],
-    "notes": "Large sequence covering sprites, collision, animation, scrolling, particle engines, tile maps, threading and OpenGL integration."
-  },
-  {
-    "title": "OpenGL C++ GUI tutorial files",
-    "url": "https://sourceforge.net/projects/openglgui/files/OpenGL%20GUI%20%28Tutorials%29/",
-    "year": 2004,
-    "year_label": "Jun–Sep 2004",
-    "language": [
-      "C++"
-    ],
-    "category": "Graphics / OpenGL",
-    "kind": "tutorial file series",
-    "site": "sourceforge.net",
-    "score": 90,
-    "evidence": [
-      "SourceForge file timestamps in 2004",
-      "14 tutorial packages",
-      "C++ OpenGL GUI project"
-    ],
-    "tags": [
-      "OpenGL",
-      "GUI",
-      "SourceForge"
-    ],
-    "notes": "Fourteen period tutorial releases preserved with original 2004 timestamps."
-  },
-  {
-    "title": "EuclideanSpace — OpenGL and C++ 3D programming",
-    "url": "https://www.euclideanspace.com/prog/games/setup/openglcpp/introduction/index.htm",
-    "year": 2004,
-    "year_label": "2004-era",
-    "language": [
-      "C++"
-    ],
-    "category": "Graphics / OpenGL",
-    "kind": "tutorial series",
-    "site": "euclideanspace.com",
-    "score": 91,
-    "evidence": [
-      "Period C++ fixed-function OpenGL",
-      "Long-running personal technical site"
-    ],
-    "tags": [
-      "OpenGL",
-      "camera",
-      "3D",
-      "game"
-    ],
-    "notes": "Builds from an OpenGL setup into shapes, transformations, textures, cameras and a navigable 3D world."
-  },
-  {
-    "title": "TetroGL — OpenGL game tutorial",
-    "url": "https://www.codeproject.com/articles/30775/tetrogl-an-opengl-game-tutorial-in-c-for-win32-pla",
-    "year": 2008,
-    "year_label": "2008",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / OpenGL",
-    "kind": "project tutorial series",
-    "site": "codeproject.com",
-    "score": 92,
-    "evidence": [
-      "Original CodeProject-era article",
-      "Win32/OpenGL game",
-      "Complete source/binaries"
-    ],
-    "tags": [
-      "OpenGL",
-      "Win32",
-      "Tetris",
-      "game"
-    ],
-    "notes": "Three-part tutorial ending with a complete Tetris-style game and application state architecture."
-  },
-  {
-    "title": "CodeProject — Writing Win32 Apps with C++ only classes",
-    "url": "https://www.codeproject.com/Articles/6030/Writing-Win32-Apps-with-Cplusplus-only-classes",
-    "year": 2004,
-    "year_label": "5 Feb 2004",
-    "language": [
-      "C++"
-    ],
-    "category": "Windows / Win32",
-    "kind": "tutorial + source",
-    "site": "codeproject.com",
-    "score": 91,
-    "evidence": [
-      "Explicit February 2004 article date",
-      "Raw Win32 without MFC/ATL/.NET",
-      "Downloadable source"
-    ],
-    "tags": [
-      "Win32",
-      "OOP",
-      "GUI"
-    ],
-    "notes": "Builds an object-oriented wrapper around ordinary Win32 applications."
-  },
-  {
-    "title": "CodeProject — C++ Win32 GUI library",
-    "url": "https://www.codeproject.com/Articles/2165/A-C-Win32-GUI-library-for-Java-AWT-like-source-cod",
-    "year": 2002,
-    "year_label": "23 Apr 2002",
-    "language": [
-      "C++"
-    ],
-    "category": "Windows / Win32",
-    "kind": "source project",
-    "site": "codeproject.com",
-    "score": 88,
-    "evidence": [
-      "Explicit April 2002 date",
-      "Win32-only GUI classes",
-      "VS workspace source"
-    ],
-    "tags": [
-      "Win32",
-      "GUI",
-      "library"
-    ],
-    "notes": "Early C++ wrapper library around Win32 common controls with downloadable workspace."
-  },
-  {
-    "title": "Tenouk — Visual C++ 6.0 / MFC Module 1",
-    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc1.html",
-    "year": 2005,
-    "year_label": "VC6 / Windows XP SP2 era",
-    "language": [
-      "C++"
-    ],
-    "category": "Windows / MFC",
-    "kind": "tutorial series",
-    "site": "tenouk.com",
-    "score": 93,
-    "evidence": [
-      "Visual C++ 6.0",
-      "Windows XP SP2",
-      "MFC 6.0",
-      "AppWizard/ClassWizard"
-    ],
-    "tags": [
-      "MFC",
-      "VC6",
-      "Win32",
-      "GUI"
-    ],
-    "notes": "Large period tutorial sequence around Visual C++ 6, MFC, resources and the application framework."
-  },
-  {
-    "title": "Tenouk — MFC without Document/View",
-    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc17.html",
-    "year": 2005,
-    "year_label": "VC6 / Windows XP SP2 era",
-    "language": [
-      "C++"
-    ],
-    "category": "Windows / MFC",
-    "kind": "project tutorial",
-    "site": "tenouk.com",
-    "score": 92,
-    "evidence": [
-      "Visual C++ 6.0",
-      "MFC 6.0",
-      "Dialog/SDI/MDI example applications"
-    ],
-    "tags": [
-      "MFC",
-      "SDI",
-      "MDI",
-      "dialog"
-    ],
-    "notes": "Builds dialog, SDI and MDI applications without the Document/View architecture."
-  },
-  {
-    "title": "Tenouk — Winsock/MFC simplified HTTP server and client",
-    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc32a.html",
-    "year": 2005,
-    "year_label": "VC6 / Windows 2000/XP era",
-    "language": [
-      "C++"
-    ],
-    "category": "Networking",
-    "kind": "project tutorial",
-    "site": "tenouk.com",
-    "score": 96,
-    "evidence": [
-      "Visual C++ 6.0",
-      "Windows 2000/XP screenshots",
-      "Simplified HTTP server/client projects"
-    ],
-    "tags": [
-      "Winsock",
-      "HTTP",
-      "MFC",
-      "server"
-    ],
-    "notes": "C++/MFC Winsock tutorial culminating in HTTP server and client programs."
-  },
-  {
-    "title": "Tenouk — Winsock 2 C examples",
-    "url": "https://www.tenouk.com/Winsock/Winsock2example.html",
-    "year": 2005,
-    "year_label": "VC6-era",
-    "language": [
-      "C"
-    ],
-    "category": "Networking",
-    "kind": "tutorial + examples",
-    "site": "tenouk.com",
-    "score": 91,
-    "evidence": [
-      "Visual C++ 6 project instructions",
-      "Winsock 2 C programs"
-    ],
-    "tags": [
-      "Winsock",
-      "sockets",
-      "Windows"
-    ],
-    "notes": "Practical Winsock 2 examples and period Visual C++ linking instructions."
-  },
-  {
-    "title": "Tenouk / Geocities C, C++ and STL hands-on tutorial",
-    "url": "https://www.geocities.ws/paylook/index-2.html",
-    "year": 2005,
-    "year_label": "last updated June 2005",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Language / General",
-    "kind": "tutorial archive",
-    "site": "geocities.ws",
-    "score": 88,
-    "evidence": [
-      "Page says last updated June 2005",
-      "Working-program-example orientation",
-      "Historical Geocities material"
-    ],
-    "tags": [
-      "C",
-      "C++",
-      "STL",
-      "examples"
-    ],
-    "notes": "Old hands-on C/C++/STL material associated with the Tenouk tutorial corpus."
-  },
-  {
-    "title": "VisualCPlusDotNet — Visual C++ .NET 2003/2005 tutorials",
-    "url": "https://www.visualcplusdotnet.com/about.html",
-    "year": 2005,
-    "year_label": "VS .NET 2003/2005 era",
-    "language": [
-      "C++"
-    ],
-    "category": "Windows / .NET",
-    "kind": "tutorial archive",
-    "site": "visualcplusdotnet.com",
-    "score": 85,
-    "evidence": [
-      "Visual C++ .NET 2003/2005",
-      "Windows XP SP2",
-      "Managed Extensions/Managed C++ era"
-    ],
-    "tags": [
-      "Visual C++ .NET",
-      "Windows Forms",
-      "Managed C++"
-    ],
-    "notes": "Period continuation of Tenouk focused on early Visual C++ .NET and Managed C++."
-  },
-  {
-    "title": "NCURSES Programming HOWTO — 2002 edition",
-    "url": "https://www.linuxdoc.org/HOWTO/NCURSES-Programming-HOWTO/",
-    "year": 2002,
-    "year_label": "v1.5, 5 Jan 2002",
-    "language": [
-      "C"
-    ],
-    "category": "Terminal / ncurses",
-    "kind": "tutorial series",
-    "site": "linuxdoc.org",
-    "score": 97,
-    "evidence": [
-      "Explicit 2002 version",
-      "Original Linux Documentation Project era",
-      "C/ncurses examples"
-    ],
-    "tags": [
-      "ncurses",
-      "terminal",
-      "Linux"
-    ],
-    "notes": "All-in-one ncurses guide progressing from Hello World through windows, input, colors, menus and forms."
-  },
-  {
-    "title": "AngoLinux — Tutorial su Curses",
-    "url": "https://twiki.di.uniroma1.it/pub/Users/MarcoValerioBarbera/TutorialsuCurses",
-    "year": 2001,
-    "year_label": "May 2001 / copyright 2002",
-    "language": [
-      "C"
-    ],
-    "category": "Terminal / ncurses",
-    "kind": "tutorial + projects",
-    "site": "twiki.di.uniroma1.it",
-    "score": 95,
-    "evidence": [
-      "Version 0.1 May 2001",
-      "University-hosted Twiki",
-      "C/ncurses examples and exercises"
-    ],
-    "tags": [
-      "ncurses",
-      "terminal",
-      "Italian"
-    ],
-    "notes": "Italian ncurses tutorial with progressively larger examples, colors, windows and exercises."
-  },
-  {
-    "title": "Princeton COS 426 — Computer Graphics assignments",
-    "url": "https://www.cs.princeton.edu/courses/archive/spr04/cos426/assignments.html",
-    "year": 2004,
-    "year_label": "Spring 2004",
-    "language": [
-      "C++"
-    ],
-    "category": "Graphics / Course Projects",
-    "kind": "project sequence",
-    "site": "cs.princeton.edu",
-    "score": 99,
-    "evidence": [
-      "Original 2004 course archive",
-      "Visual C++ requirement",
-      "Image processing, ray tracing, modeling, animation"
-    ],
-    "tags": [
-      "image processing",
-      "ray tracer",
-      "modeling",
-      "animation"
-    ],
-    "notes": "Four substantial graphics projects with skeleton code and period submission/build requirements."
-  },
-  {
-    "title": "Princeton COS 426 — Image Processing",
-    "url": "https://www.cs.princeton.edu/courses/archive/spr04/cos426/assn1/",
-    "year": 2004,
-    "year_label": "Spring 2004",
-    "language": [
-      "C++"
-    ],
-    "category": "Image Processing",
-    "kind": "project assignment",
-    "site": "cs.princeton.edu",
-    "score": 100,
-    "evidence": [
-      "Original Spring 2004 archive",
-      "image.cpp/pixel.cpp skeleton",
-      "Visual C++ .dsp for Windows 2000"
-    ],
-    "tags": [
-      "BMP",
-      "filters",
-      "image processing",
-      "VC6"
-    ],
-    "notes": "Build a command-line image-processing program implementing filters over BMP images."
-  },
-  {
-    "title": "RIT Computer Graphics I — 2D Drawing Algorithms",
-    "url": "https://www.cs.rit.edu/~jmg/courses/cgI/20052/assignment1.html",
-    "year": 2006,
-    "year_label": "12 Jan 2006",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Graphics / Algorithms",
-    "kind": "project assignment",
-    "site": "cs.rit.edu",
-    "score": 97,
-    "evidence": [
-      "Explicit January 2006 date",
-      "C or C++",
-      "Midpoint lines, scan conversion, polygon clipping"
-    ],
-    "tags": [
-      "rasterization",
-      "clipping",
-      "2D graphics"
-    ],
-    "notes": "Implements drawing primitives from scratch without OpenGL rendering routines."
-  },
-  {
-    "title": "UMBC — Computer Graphics for Games assignment",
-    "url": "https://userpages.cs.umbc.edu/olano/class/691-04-2/assn1.html",
-    "year": 2004,
-    "year_label": "5 Feb 2004 due date",
-    "language": [
-      "C++"
-    ],
-    "category": "Games / Graphics",
-    "kind": "project assignment",
-    "site": "umbc.edu",
-    "score": 95,
-    "evidence": [
-      "Original Spring 2004 course",
-      "C++",
-      "OpenGL or DirectX",
-      "Wild Magic 2.2"
-    ],
-    "tags": [
-      "Wild Magic",
-      "OpenGL",
-      "DirectX",
-      "game graphics"
-    ],
-    "notes": "Build and modify a period game-graphics framework with models, textures and lighting."
-  },
-  {
-    "title": "UChicago — Introduction to Computer Graphics",
-    "url": "https://www.classes.cs.uchicago.edu/archive/2008/winter/23700-1/",
-    "year": 2008,
-    "year_label": "Winter 2008",
-    "language": [
-      "C"
-    ],
-    "category": "Graphics / Course Projects",
-    "kind": "project sequence",
-    "site": "classes.cs.uchicago.edu",
-    "score": 99,
-    "evidence": [
-      "Original 2008 course archive",
-      "C99",
-      "Five project sequence",
-      "OpenGL/GLSL"
-    ],
-    "tags": [
-      "C99",
-      "OpenGL",
-      "GLSL",
-      "shadows"
-    ],
-    "notes": "Bouncing balls/collision, per-pixel shaders, shadow maps and terrain-shadow projects."
-  },
-  {
-    "title": "UChicago — Introduction to Computer Graphics 2004",
-    "url": "https://www.classes.cs.uchicago.edu/archive/2004/fall/23700-1/",
-    "year": 2004,
-    "year_label": "Fall 2004",
-    "language": [
-      "C"
-    ],
-    "category": "Graphics / Course Projects",
-    "kind": "course archive",
-    "site": "classes.cs.uchicago.edu",
-    "score": 94,
-    "evidence": [
-      "Original Fall 2004 archive",
-      "C99 programming assignments",
-      "Period OpenGL textbook/toolchain"
-    ],
-    "tags": [
-      "C99",
-      "OpenGL",
-      "graphics"
-    ],
-    "notes": "Early version of UChicago's C-based graphics project course."
-  },
-  {
-    "title": "MIT 6.837 — Intro to Computer Graphics",
-    "url": "https://groups.csail.mit.edu/graphics/classes/6.837/F04/index.html",
-    "year": 2004,
-    "year_label": "Fall 2004",
-    "language": [
-      "C++"
-    ],
-    "category": "Graphics / Course Projects",
-    "kind": "course archive",
-    "site": "csail.mit.edu",
-    "score": 96,
-    "evidence": [
-      "Original Fall 2004 archive",
-      "C++ help and OpenGL resources",
-      "CVS-era assignment workflow"
-    ],
-    "tags": [
-      "C++",
-      "OpenGL",
-      "ray tracing",
-      "graphics"
-    ],
-    "notes": "Complete MIT graphics course archive with assignments and period tooling resources."
-  },
-  {
-    "title": "UCSD CSE 167 — OpenGL project sequence",
-    "url": "https://mathweb.ucsd.edu/~sbuss/CourseWeb/CSE167_2003F/",
-    "year": 2003,
-    "year_label": "Fall 2003",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Graphics / Course Projects",
-    "kind": "project sequence",
-    "site": "mathweb.ucsd.edu",
-    "score": 99,
-    "evidence": [
-      "Year-coded original course URL",
-      "OpenGL/GLUT",
-      "Visual C++ project/workspace files"
-    ],
-    "tags": [
-      "OpenGL",
-      "GLUT",
-      "solar system",
-      "lighting"
-    ],
-    "notes": "Projects progress from animated solar system through geometry, scene construction and lighting."
-  },
-  {
-    "title": "Gordon College — Space Invaders-style OpenGL project",
-    "url": "https://www.cs.gordon.edu/courses/cs373/projects/p3/index.html",
-    "year": 2006,
-    "year_label": "23 Oct 2006 due date",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Games / OpenGL",
-    "kind": "project assignment",
-    "site": "cs.gordon.edu",
-    "score": 98,
-    "evidence": [
-      "Explicit October 2006 due date",
-      "C or C++",
-      "OpenGL + GLUT",
-      "Arcade game"
-    ],
-    "tags": [
-      "OpenGL",
-      "GLUT",
-      "Space Invaders",
-      "animation"
-    ],
-    "notes": "Build a simplified Space Invaders or another arcade-style game while learning GLUT animation."
-  },
-  {
-    "title": "University of Washington CSE557 — Ray tracer help session",
-    "url": "https://courses.cs.washington.edu/courses/cse557/02wi/projects/ray/helpsession.html",
-    "year": 2002,
-    "year_label": "Winter 2002",
-    "language": [
-      "C++"
-    ],
-    "category": "Ray Tracing",
-    "kind": "project guide",
-    "site": "courses.cs.washington.edu",
-    "score": 96,
-    "evidence": [
-      "Year-coded Winter 2002 course path",
-      "C++ ray tracer architecture",
-      "Large project structure"
-    ],
-    "tags": [
-      "ray tracer",
-      "C++",
-      "rendering"
-    ],
-    "notes": "Architecture and implementation guidance for a multi-thousand-line C++ ray tracer."
-  },
-  {
-    "title": "University of Utah — Ray Tracing Projects",
-    "url": "https://www.sci.utah.edu/~roni/website/classes/raytracing/",
-    "year": 2005,
-    "year_label": "Spring 2005 era",
-    "language": [
-      "C++"
-    ],
-    "category": "Ray Tracing",
-    "kind": "project sequence",
-    "site": "sci.utah.edu",
-    "score": 97,
-    "evidence": [
-      "University-hosted period course",
-      "C++ ray-tracing project sequence"
-    ],
-    "tags": [
-      "ray tracer",
-      "shading",
-      "geometry"
-    ],
-    "notes": "Progressively builds infrastructure, primitive intersections, cameras, lighting and more complex geometry."
-  },
-  {
-    "title": "Dalhousie — Write your own Unix shell",
-    "url": "https://web.cs.dal.ca/~hawkey/3120/Assign1.htm",
-    "year": 2003,
-    "year_label": "Summer 2003",
-    "language": [
-      "C"
-    ],
-    "category": "Systems / Unix",
-    "kind": "project assignment",
-    "site": "web.cs.dal.ca",
-    "score": 98,
-    "evidence": [
-      "Original Summer 2003 assignment",
-      "fork/execvp/wait",
-      "C shell project"
-    ],
-    "tags": [
-      "shell",
-      "fork",
-      "exec",
-      "Unix"
-    ],
-    "notes": "Build a simple command shell using classic Unix process APIs."
-  },
-  {
     "title": "UChicago — The Voyeur Shell",
     "url": "https://www.classes.cs.uchicago.edu/archive/2003/winter/33000-1/vsh.html",
     "year": 2003,
@@ -969,56 +23,6 @@
       "C"
     ],
     "notes": "Classic C shell project with a deeply period-authentic CVS-based build/submission process."
-  },
-  {
-    "title": "Georgetown — Shell: processes, redirection and pipes",
-    "url": "https://people.cs.georgetown.edu/~clay/classes/spring2003/os/shell-proj/shell-proj-2.html",
-    "year": 2003,
-    "year_label": "Spring 2003",
-    "language": [
-      "C++"
-    ],
-    "category": "Systems / Unix",
-    "kind": "project tutorial",
-    "site": "people.cs.georgetown.edu",
-    "score": 98,
-    "evidence": [
-      "Original Spring 2003 course tree",
-      "fork/execvp/waitpid",
-      "pipes/redirection/background jobs"
-    ],
-    "tags": [
-      "shell",
-      "pipes",
-      "redirection",
-      "Unix"
-    ],
-    "notes": "Second stage of a shell project implementing process creation, pipes, redirection and background execution."
-  },
-  {
-    "title": "Harvard CS235 — File System and Shell",
-    "url": "https://www.read.seas.harvard.edu/~kohler/class/05f-aos/lab5.html",
-    "year": 2005,
-    "year_label": "30 Nov 2005",
-    "language": [
-      "C"
-    ],
-    "category": "Operating Systems",
-    "kind": "lab project",
-    "site": "read.seas.harvard.edu",
-    "score": 98,
-    "evidence": [
-      "Explicit 2005 handout date",
-      "Filesystem server + Unix-like shell",
-      "CVS-era workflow"
-    ],
-    "tags": [
-      "filesystem",
-      "shell",
-      "JOS",
-      "IPC"
-    ],
-    "notes": "Implement a disk filesystem, file descriptors and a Unix-like command shell in a teaching OS."
   },
   {
     "title": "MIT 6.828 — Operating System Engineering",
@@ -1045,6 +49,31 @@
       "JOS"
     ],
     "notes": "Build a minimal operating system in a sequence of substantial C/x86 labs."
+  },
+  {
+    "title": "Princeton COS 426 — Image Processing",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr04/cos426/assn1/",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Image Processing",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 100,
+    "evidence": [
+      "Original Spring 2004 archive",
+      "image.cpp/pixel.cpp skeleton",
+      "Visual C++ .dsp for Windows 2000"
+    ],
+    "tags": [
+      "BMP",
+      "filters",
+      "image processing",
+      "VC6"
+    ],
+    "notes": "Build a command-line image-processing program implementing filters over BMP images."
   },
   {
     "title": "MIT 6.828 — JOS operating-system labs",
@@ -1074,56 +103,335 @@
     "notes": "Build JOS: booting, memory management, user environments, multitasking, filesystem/spawn and shell."
   },
   {
-    "title": "UChicago Operating Systems — Unix shell + RCX OS projects",
-    "url": "https://www.classes.cs.uchicago.edu/archive/2006/winter/23000-1/index.html",
-    "year": 2006,
-    "year_label": "Winter 2006",
-    "language": [
-      "C"
-    ],
-    "category": "Operating Systems",
-    "kind": "project sequence",
-    "site": "classes.cs.uchicago.edu",
-    "score": 97,
-    "evidence": [
-      "Original Winter 2006 archive",
-      "C99",
-      "Unix shell project",
-      "16-bit embedded OS project"
-    ],
-    "tags": [
-      "shell",
-      "embedded",
-      "memory management",
-      "C99"
-    ],
-    "notes": "Two major C projects: concurrent Unix shell work and an OS/memory-management project for an embedded processor."
-  },
-  {
-    "title": "Pitt CS1550 — Operating Systems assignments",
-    "url": "https://people.cs.pitt.edu/~mosse/cs2001/assignments.html",
-    "year": 2006,
-    "year_label": "2006 due dates",
+    "title": "Neatpad — Design and Implementation of a Win32 Text Editor",
+    "url": "https://www.catch22.net/tuts/neatpad/neatpad-overview/",
+    "year": 2005,
+    "year_label": "29 Jan 2005",
     "language": [
       "C",
       "C++"
     ],
-    "category": "Operating Systems",
-    "kind": "project sequence",
-    "site": "people.cs.pitt.edu",
-    "score": 94,
+    "category": "Windows / Win32",
+    "kind": "project tutorial series",
+    "site": "catch22.net",
+    "score": 100,
     "evidence": [
-      "Original 2006 assignments",
-      "Shell + Nachos projects",
-      "Period Unix environment setup"
+      "Explicit 2005 publication date",
+      "Step-by-step complete edit control",
+      "VS6-era Win32 architecture"
     ],
     "tags": [
-      "Nachos",
-      "shell",
-      "filesystem",
-      "OS"
+      "Win32",
+      "text editor",
+      "GUI",
+      "VC6"
     ],
-    "notes": "Sequence includes writing a shell, synchronization, multiprogramming and a Nachos filesystem."
+    "notes": "A substantial multi-part project: file loading, painting, selection, Unicode, scrolling, mouse interaction and editing-control architecture."
+  },
+  {
+    "title": "NeHe — Creating an OpenGL Window",
+    "url": "https://nehe.gamedev.net/tutorial/creating_an_opengl_window_%28win32%29/13001/",
+    "year": 2000,
+    "year_label": "January 2000 rewrite",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Graphics / OpenGL",
+    "kind": "tutorial series",
+    "site": "nehe.gamedev.net",
+    "score": 99,
+    "evidence": [
+      "Page says completely rewritten January 2000",
+      "Visual C++ 6.0 downloadable code",
+      "Win32 + fixed-function OpenGL"
+    ],
+    "tags": [
+      "OpenGL",
+      "Win32",
+      "VC6",
+      "3D"
+    ],
+    "notes": "Canonical early-2000s OpenGL tutorial base used for the rest of the NeHe lessons."
+  },
+  {
+    "title": "UCSD CSE 167 — OpenGL project sequence",
+    "url": "https://mathweb.ucsd.edu/~sbuss/CourseWeb/CSE167_2003F/",
+    "year": 2003,
+    "year_label": "Fall 2003",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Graphics / Course Projects",
+    "kind": "project sequence",
+    "site": "mathweb.ucsd.edu",
+    "score": 99,
+    "evidence": [
+      "Year-coded original course URL",
+      "OpenGL/GLUT",
+      "Visual C++ project/workspace files"
+    ],
+    "tags": [
+      "OpenGL",
+      "GLUT",
+      "solar system",
+      "lighting"
+    ],
+    "notes": "Projects progress from animated solar system through geometry, scene construction and lighting."
+  },
+  {
+    "title": "Princeton COS 426 — Computer Graphics assignments",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr04/cos426/assignments.html",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Graphics / Course Projects",
+    "kind": "project sequence",
+    "site": "cs.princeton.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2004 course archive",
+      "Visual C++ requirement",
+      "Image processing, ray tracing, modeling, animation"
+    ],
+    "tags": [
+      "image processing",
+      "ray tracer",
+      "modeling",
+      "animation"
+    ],
+    "notes": "Four substantial graphics projects with skeleton code and period submission/build requirements."
+  },
+  {
+    "title": "UMBC — TCP server/client + FTP client project",
+    "url": "https://courses.cs.umbc.edu/cmsc481/project2.pdf",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "project assignment",
+    "site": "courses.cs.umbc.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2005 project PDF",
+      "Berkeley sockets",
+      "Multiclient TCP + FTP client"
+    ],
+    "tags": [
+      "FTP",
+      "TCP",
+      "sockets",
+      "server"
+    ],
+    "notes": "Build a multi-client fortune server/client and a simple FTP client in C on Linux."
+  },
+  {
+    "title": "UChicago — Introduction to Computer Graphics",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2008/winter/23700-1/",
+    "year": 2008,
+    "year_label": "Winter 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Graphics / Course Projects",
+    "kind": "project sequence",
+    "site": "classes.cs.uchicago.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2008 course archive",
+      "C99",
+      "Five project sequence",
+      "OpenGL/GLSL"
+    ],
+    "tags": [
+      "C99",
+      "OpenGL",
+      "GLSL",
+      "shadows"
+    ],
+    "notes": "Bouncing balls/collision, per-pixel shaders, shadow maps and terrain-shadow projects."
+  },
+  {
+    "title": "Dalhousie — Write your own Unix shell",
+    "url": "https://web.cs.dal.ca/~hawkey/3120/Assign1.htm",
+    "year": 2003,
+    "year_label": "Summer 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Unix",
+    "kind": "project assignment",
+    "site": "web.cs.dal.ca",
+    "score": 98,
+    "evidence": [
+      "Original Summer 2003 assignment",
+      "fork/execvp/wait",
+      "C shell project"
+    ],
+    "tags": [
+      "shell",
+      "fork",
+      "exec",
+      "Unix"
+    ],
+    "notes": "Build a simple command shell using classic Unix process APIs."
+  },
+  {
+    "title": "Georgetown — Shell: processes, redirection and pipes",
+    "url": "https://people.cs.georgetown.edu/~clay/classes/spring2003/os/shell-proj/shell-proj-2.html",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C++"
+    ],
+    "category": "Systems / Unix",
+    "kind": "project tutorial",
+    "site": "people.cs.georgetown.edu",
+    "score": 98,
+    "evidence": [
+      "Original Spring 2003 course tree",
+      "fork/execvp/waitpid",
+      "pipes/redirection/background jobs"
+    ],
+    "tags": [
+      "shell",
+      "pipes",
+      "redirection",
+      "Unix"
+    ],
+    "notes": "Second stage of a shell project implementing process creation, pipes, redirection and background execution."
+  },
+  {
+    "title": "theForger's Win32 API Tutorial",
+    "url": "https://winprog.org/tutorial/",
+    "year": 2003,
+    "year_label": "1998–2003 era",
+    "language": [
+      "C"
+    ],
+    "category": "Windows / Win32",
+    "kind": "tutorial series",
+    "site": "winprog.org",
+    "score": 98,
+    "evidence": [
+      "Original winprog.org tutorial",
+      "Raw Win32 API",
+      "Borland/Visual C++ era",
+      "Spanish v2 translation dated 2003"
+    ],
+    "tags": [
+      "Win32",
+      "GUI",
+      "windows.h",
+      "VC6"
+    ],
+    "notes": "Builds a Win32 application incrementally: windows, resources, controls, dialogs, files, toolbars, MDI, bitmaps and timers."
+  },
+  {
+    "title": "Harvard CS235 — File System and Shell",
+    "url": "https://www.read.seas.harvard.edu/~kohler/class/05f-aos/lab5.html",
+    "year": 2005,
+    "year_label": "30 Nov 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "lab project",
+    "site": "read.seas.harvard.edu",
+    "score": 98,
+    "evidence": [
+      "Explicit 2005 handout date",
+      "Filesystem server + Unix-like shell",
+      "CVS-era workflow"
+    ],
+    "tags": [
+      "filesystem",
+      "shell",
+      "JOS",
+      "IPC"
+    ],
+    "notes": "Implement a disk filesystem, file descriptors and a Unix-like command shell in a teaching OS."
+  },
+  {
+    "title": "Gordon College — Space Invaders-style OpenGL project",
+    "url": "https://www.cs.gordon.edu/courses/cs373/projects/p3/index.html",
+    "year": 2006,
+    "year_label": "23 Oct 2006 due date",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Games / OpenGL",
+    "kind": "project assignment",
+    "site": "cs.gordon.edu",
+    "score": 98,
+    "evidence": [
+      "Explicit October 2006 due date",
+      "C or C++",
+      "OpenGL + GLUT",
+      "Arcade game"
+    ],
+    "tags": [
+      "OpenGL",
+      "GLUT",
+      "Space Invaders",
+      "animation"
+    ],
+    "notes": "Build a simplified Space Invaders or another arcade-style game while learning GLUT animation."
+  },
+  {
+    "title": "Waterloo CS856 — High-performance HTTP server",
+    "url": "https://cs.uwaterloo.ca/~brecht/courses/856-Internet-Server-Performance-2006/assign/index.html",
+    "year": 2006,
+    "year_label": "2006 course",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "project assignment",
+    "site": "cs.uwaterloo.ca",
+    "score": 98,
+    "evidence": [
+      "Year-coded 2006 course",
+      "parse.c provided",
+      "Linux static HTTP server benchmark project"
+    ],
+    "tags": [
+      "HTTP",
+      "server",
+      "performance",
+      "sockets"
+    ],
+    "notes": "Implement a correct, high-performance static HTTP server and compete on throughput."
+  },
+  {
+    "title": "NCURSES Programming HOWTO — 2002 edition",
+    "url": "https://www.linuxdoc.org/HOWTO/NCURSES-Programming-HOWTO/",
+    "year": 2002,
+    "year_label": "v1.5, 5 Jan 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Terminal / ncurses",
+    "kind": "tutorial series",
+    "site": "linuxdoc.org",
+    "score": 97,
+    "evidence": [
+      "Explicit 2002 version",
+      "Original Linux Documentation Project era",
+      "C/ncurses examples"
+    ],
+    "tags": [
+      "ncurses",
+      "terminal",
+      "Linux"
+    ],
+    "notes": "All-in-one ncurses guide progressing from Hello World through windows, input, colors, menus and forms."
   },
   {
     "title": "UCSD CSE120 — Nachos operating-system projects",
@@ -1151,29 +459,250 @@
     "notes": "Operating-systems course with three substantial C++ Nachos projects."
   },
   {
-    "title": "Nebraska CSCE351 — OS Kernel labs",
-    "url": "https://cse.unl.edu/~witty/class/csce351/assignment.html",
+    "title": "University of Utah — Ray Tracing Projects",
+    "url": "https://www.sci.utah.edu/~roni/website/classes/raytracing/",
+    "year": 2005,
+    "year_label": "Spring 2005 era",
+    "language": [
+      "C++"
+    ],
+    "category": "Ray Tracing",
+    "kind": "project sequence",
+    "site": "sci.utah.edu",
+    "score": 97,
+    "evidence": [
+      "University-hosted period course",
+      "C++ ray-tracing project sequence"
+    ],
+    "tags": [
+      "ray tracer",
+      "shading",
+      "geometry"
+    ],
+    "notes": "Progressively builds infrastructure, primitive intersections, cameras, lighting and more complex geometry."
+  },
+  {
+    "title": "RIT Computer Graphics I — 2D Drawing Algorithms",
+    "url": "https://www.cs.rit.edu/~jmg/courses/cgI/20052/assignment1.html",
     "year": 2006,
-    "year_label": "Fall 2006",
+    "year_label": "12 Jan 2006",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Graphics / Algorithms",
+    "kind": "project assignment",
+    "site": "cs.rit.edu",
+    "score": 97,
+    "evidence": [
+      "Explicit January 2006 date",
+      "C or C++",
+      "Midpoint lines, scan conversion, polygon clipping"
+    ],
+    "tags": [
+      "rasterization",
+      "clipping",
+      "2D graphics"
+    ],
+    "notes": "Implements drawing primitives from scratch without OpenGL rendering routines."
+  },
+  {
+    "title": "UChicago Operating Systems — Unix shell + RCX OS projects",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2006/winter/23000-1/index.html",
+    "year": 2006,
+    "year_label": "Winter 2006",
     "language": [
       "C"
     ],
     "category": "Operating Systems",
     "kind": "project sequence",
-    "site": "cse.unl.edu",
-    "score": 95,
+    "site": "classes.cs.uchicago.edu",
+    "score": 97,
     "evidence": [
-      "Explicit 2006 due dates",
-      "C/assembly labs",
-      "Thread management and Windows CE/Linux kernel work"
+      "Original Winter 2006 archive",
+      "C99",
+      "Unix shell project",
+      "16-bit embedded OS project"
     ],
     "tags": [
-      "kernel",
-      "threads",
-      "Windows CE",
-      "Linux"
+      "shell",
+      "embedded",
+      "memory management",
+      "C99"
     ],
-    "notes": "C and assembly labs leading into user-level threads and Linux/Windows CE kernel assignments."
+    "notes": "Two major C projects: concurrent Unix shell work and an OS/memory-management project for an embedded processor."
+  },
+  {
+    "title": "CardLib — Windows card-game framework",
+    "url": "https://www.catch22.net/tuts/cards/cardlib/",
+    "year": 2001,
+    "year_label": "4 Dec 2001",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / 2D",
+    "kind": "project tutorial",
+    "site": "catch22.net",
+    "score": 96,
+    "evidence": [
+      "Explicit 2001 publication date",
+      "C++ without MFC/ATL",
+      "Windows cards.dll"
+    ],
+    "tags": [
+      "Win32",
+      "cards",
+      "game",
+      "library"
+    ],
+    "notes": "Builds a reusable card-game library with stacks, dragging and event callbacks."
+  },
+  {
+    "title": "University of Washington CSE557 — Ray tracer help session",
+    "url": "https://courses.cs.washington.edu/courses/cse557/02wi/projects/ray/helpsession.html",
+    "year": 2002,
+    "year_label": "Winter 2002",
+    "language": [
+      "C++"
+    ],
+    "category": "Ray Tracing",
+    "kind": "project guide",
+    "site": "courses.cs.washington.edu",
+    "score": 96,
+    "evidence": [
+      "Year-coded Winter 2002 course path",
+      "C++ ray tracer architecture",
+      "Large project structure"
+    ],
+    "tags": [
+      "ray tracer",
+      "C++",
+      "rendering"
+    ],
+    "notes": "Architecture and implementation guidance for a multi-thousand-line C++ ray tracer."
+  },
+  {
+    "title": "Auckland — Introduction to Visual Studio 6.0 / OpenGL",
+    "url": "https://www.cs.auckland.ac.nz/compsci372s1c/burkhardLectures/IntroductionToVisualStudio6.pdf",
+    "year": 2003,
+    "year_label": "24 Feb 2003",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Graphics / OpenGL",
+    "kind": "tutorial PDF",
+    "site": "cs.auckland.ac.nz",
+    "score": 96,
+    "evidence": [
+      "Document date 24 Feb 2003",
+      "Visual C/C++ 6.0",
+      "OpenGL/GLU/GLUT"
+    ],
+    "tags": [
+      "VC6",
+      "OpenGL",
+      "GLUT"
+    ],
+    "notes": "Period university tutorial for creating C/C++ OpenGL projects in Microsoft Visual Studio 6.0."
+  },
+  {
+    "title": "MIT 6.837 — Intro to Computer Graphics",
+    "url": "https://groups.csail.mit.edu/graphics/classes/6.837/F04/index.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Graphics / Course Projects",
+    "kind": "course archive",
+    "site": "csail.mit.edu",
+    "score": 96,
+    "evidence": [
+      "Original Fall 2004 archive",
+      "C++ help and OpenGL resources",
+      "CVS-era assignment workflow"
+    ],
+    "tags": [
+      "C++",
+      "OpenGL",
+      "ray tracing",
+      "graphics"
+    ],
+    "notes": "Complete MIT graphics course archive with assignments and period tooling resources."
+  },
+  {
+    "title": "Tenouk — Winsock/MFC simplified HTTP server and client",
+    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc32a.html",
+    "year": 2005,
+    "year_label": "VC6 / Windows 2000/XP era",
+    "language": [
+      "C++"
+    ],
+    "category": "Networking",
+    "kind": "project tutorial",
+    "site": "tenouk.com",
+    "score": 96,
+    "evidence": [
+      "Visual C++ 6.0",
+      "Windows 2000/XP screenshots",
+      "Simplified HTTP server/client projects"
+    ],
+    "tags": [
+      "Winsock",
+      "HTTP",
+      "MFC",
+      "server"
+    ],
+    "notes": "C++/MFC Winsock tutorial culminating in HTTP server and client programs."
+  },
+  {
+    "title": "AngoLinux — Tutorial su Curses",
+    "url": "https://twiki.di.uniroma1.it/pub/Users/MarcoValerioBarbera/TutorialsuCurses",
+    "year": 2001,
+    "year_label": "May 2001 / copyright 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Terminal / ncurses",
+    "kind": "tutorial + projects",
+    "site": "twiki.di.uniroma1.it",
+    "score": 95,
+    "evidence": [
+      "Version 0.1 May 2001",
+      "University-hosted Twiki",
+      "C/ncurses examples and exercises"
+    ],
+    "tags": [
+      "ncurses",
+      "terminal",
+      "Italian"
+    ],
+    "notes": "Italian ncurses tutorial with progressively larger examples, colors, windows and exercises."
+  },
+  {
+    "title": "Flipcode — Elements of a Game Engine",
+    "url": "https://flipcode.com/archives/Elements_Of_A_Game_Engine.shtml",
+    "year": 2001,
+    "year_label": "5 Mar 2001",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / Engines",
+    "kind": "architecture tutorial",
+    "site": "flipcode.com",
+    "score": 95,
+    "evidence": [
+      "Original Flipcode archive",
+      "Explicit March 2001 date",
+      "3D game-engine architecture"
+    ],
+    "tags": [
+      "game engine",
+      "3D",
+      "architecture"
+    ],
+    "notes": "Period discussion of renderer, system layer, tools, game interface, particles, collision and engine architecture."
   },
   {
     "title": "UMass CS677 — Napster-style P2P system",
@@ -1202,154 +731,6 @@
     "notes": "Design and implement a simple Napster-style peer-to-peer file-sharing system."
   },
   {
-    "title": "Waterloo CS856 — High-performance HTTP server",
-    "url": "https://cs.uwaterloo.ca/~brecht/courses/856-Internet-Server-Performance-2006/assign/index.html",
-    "year": 2006,
-    "year_label": "2006 course",
-    "language": [
-      "C"
-    ],
-    "category": "Networking",
-    "kind": "project assignment",
-    "site": "cs.uwaterloo.ca",
-    "score": 98,
-    "evidence": [
-      "Year-coded 2006 course",
-      "parse.c provided",
-      "Linux static HTTP server benchmark project"
-    ],
-    "tags": [
-      "HTTP",
-      "server",
-      "performance",
-      "sockets"
-    ],
-    "notes": "Implement a correct, high-performance static HTTP server and compete on throughput."
-  },
-  {
-    "title": "UChicago Unix Systems Programming — Socket Programming Lab",
-    "url": "https://www.classes.cs.uchicago.edu/archive/2010/fall/51081-1/labs/lab6.original.html",
-    "year": 2003,
-    "year_label": "Due 12 Mar 2003 (preserved copy)",
-    "language": [
-      "C"
-    ],
-    "category": "Networking",
-    "kind": "lab tutorial",
-    "site": "classes.cs.uchicago.edu",
-    "score": 91,
-    "evidence": [
-      "Body explicitly says due March 2003",
-      "Socket programming lab",
-      "University-hosted preserved original"
-    ],
-    "tags": [
-      "sockets",
-      "Unix",
-      "client/server"
-    ],
-    "notes": "Hands-on Unix socket-programming lab preserved inside a later course archive."
-  },
-  {
-    "title": "UMBC — TCP server/client + FTP client project",
-    "url": "https://courses.cs.umbc.edu/cmsc481/project2.pdf",
-    "year": 2005,
-    "year_label": "Fall 2005",
-    "language": [
-      "C"
-    ],
-    "category": "Networking",
-    "kind": "project assignment",
-    "site": "courses.cs.umbc.edu",
-    "score": 99,
-    "evidence": [
-      "Original 2005 project PDF",
-      "Berkeley sockets",
-      "Multiclient TCP + FTP client"
-    ],
-    "tags": [
-      "FTP",
-      "TCP",
-      "sockets",
-      "server"
-    ],
-    "notes": "Build a multi-client fortune server/client and a simple FTP client in C on Linux."
-  },
-  {
-    "title": "EHS — Embedded HTTP Server",
-    "url": "https://ehs.fritz-elfert.de/",
-    "year": 2004,
-    "year_label": "2004 release log",
-    "language": [
-      "C++"
-    ],
-    "category": "Networking",
-    "kind": "source project",
-    "site": "ehs.fritz-elfert.de",
-    "score": 86,
-    "evidence": [
-      "Release notes dated 2004",
-      "Visual Studio 6 build instructions",
-      "C++ embedded HTTP server"
-    ],
-    "tags": [
-      "HTTP",
-      "embedded server",
-      "VC6"
-    ],
-    "notes": "Period C++ source project for embedding web-server functionality into applications; useful as a project to study rather than a step-by-step tutorial."
-  },
-  {
-    "title": "XWeb HTTP Server",
-    "url": "https://www.geocities.ws/shamit_bagchi/xweb.html",
-    "year": 2001,
-    "year_label": "initially Dec 2001; releases 2004",
-    "language": [
-      "C"
-    ],
-    "category": "Networking",
-    "kind": "source project",
-    "site": "geocities.ws",
-    "score": 88,
-    "evidence": [
-      "Page states initially written Dec 2001",
-      "2004 release history",
-      "Simple HTTP 1.0 server in C"
-    ],
-    "tags": [
-      "HTTP",
-      "CGI",
-      "Unix",
-      "server"
-    ],
-    "notes": "Small C HTTP server with CGI support and an authentic early-2000s release history."
-  },
-  {
-    "title": "Auckland — Introduction to Visual Studio 6.0 / OpenGL",
-    "url": "https://www.cs.auckland.ac.nz/compsci372s1c/burkhardLectures/IntroductionToVisualStudio6.pdf",
-    "year": 2003,
-    "year_label": "24 Feb 2003",
-    "language": [
-      "C",
-      "C++"
-    ],
-    "category": "Graphics / OpenGL",
-    "kind": "tutorial PDF",
-    "site": "cs.auckland.ac.nz",
-    "score": 96,
-    "evidence": [
-      "Document date 24 Feb 2003",
-      "Visual C/C++ 6.0",
-      "OpenGL/GLU/GLUT"
-    ],
-    "tags": [
-      "VC6",
-      "OpenGL",
-      "GLUT"
-    ],
-    "notes": "Period university tutorial for creating C/C++ OpenGL projects in Microsoft Visual Studio 6.0."
-  },
-  {
     "title": "PUCRS — OpenGL setup and tutorials",
     "url": "https://www.inf.pucrs.br/~manssour/OpenGL/Utilizacao.html",
     "year": 2003,
@@ -1374,6 +755,181 @@
       "Borland"
     ],
     "notes": "Portuguese period OpenGL setup/tutorial material across several contemporary C/C++ compilers."
+  },
+  {
+    "title": "UMBC — Computer Graphics for Games assignment",
+    "url": "https://userpages.cs.umbc.edu/olano/class/691-04-2/assn1.html",
+    "year": 2004,
+    "year_label": "5 Feb 2004 due date",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / Graphics",
+    "kind": "project assignment",
+    "site": "umbc.edu",
+    "score": 95,
+    "evidence": [
+      "Original Spring 2004 course",
+      "C++",
+      "OpenGL or DirectX",
+      "Wild Magic 2.2"
+    ],
+    "tags": [
+      "Wild Magic",
+      "OpenGL",
+      "DirectX",
+      "game graphics"
+    ],
+    "notes": "Build and modify a period game-graphics framework with models, textures and lighting."
+  },
+  {
+    "title": "Nebraska CSCE351 — OS Kernel labs",
+    "url": "https://cse.unl.edu/~witty/class/csce351/assignment.html",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cse.unl.edu",
+    "score": 95,
+    "evidence": [
+      "Explicit 2006 due dates",
+      "C/assembly labs",
+      "Thread management and Windows CE/Linux kernel work"
+    ],
+    "tags": [
+      "kernel",
+      "threads",
+      "Windows CE",
+      "Linux"
+    ],
+    "notes": "C and assembly labs leading into user-level threads and Linux/Windows CE kernel assignments."
+  },
+  {
+    "title": "Lazy Foo legacy SDL 1.2 tutorials",
+    "url": "https://lazyfoo.net/SDL_tutorials/index.php",
+    "year": 2009,
+    "year_label": "2004–2010-era series",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / SDL",
+    "kind": "tutorial series",
+    "site": "lazyfoo.net",
+    "score": 95,
+    "evidence": [
+      "Author preserves the old tutorial set",
+      "SDL 1.2",
+      "Legacy layout and period topics"
+    ],
+    "tags": [
+      "SDL 1.2",
+      "2D",
+      "game",
+      "tile map"
+    ],
+    "notes": "Large sequence covering sprites, collision, animation, scrolling, particle engines, tile maps, threading and OpenGL integration."
+  },
+  {
+    "title": "Catch22 Win32 source-code mini projects",
+    "url": "https://www.catch22.net/tuts/source/",
+    "year": 2003,
+    "year_label": "2001–2005",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Windows / Win32",
+    "kind": "source project collection",
+    "site": "catch22.net",
+    "score": 94,
+    "evidence": [
+      "Site says projects were first published around 2001–2005",
+      "Compiles under Visual Studio 6.0"
+    ],
+    "tags": [
+      "Win32",
+      "VC6",
+      "utilities"
+    ],
+    "notes": "Full applications and utilities including global title-bar hooks, window capture and filesystem-tree tools."
+  },
+  {
+    "title": "Cprogramming.com — Animated OpenGL Robot",
+    "url": "https://www.cprogramming.com/tutorial/opengl_first_opengl_program.html",
+    "year": 2003,
+    "year_label": "13 Jan 2003 / update May 2003",
+    "language": [
+      "C++"
+    ],
+    "category": "Graphics / OpenGL",
+    "kind": "project tutorial",
+    "site": "cprogramming.com",
+    "score": 94,
+    "evidence": [
+      "Source header dated January 2003",
+      "Win32 + OpenGL",
+      "Period project settings instructions"
+    ],
+    "tags": [
+      "OpenGL",
+      "animation",
+      "robot",
+      "Win32"
+    ],
+    "notes": "Builds an animated robot from cubes using Win32 and OpenGL."
+  },
+  {
+    "title": "UChicago — Introduction to Computer Graphics 2004",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2004/fall/23700-1/",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Graphics / Course Projects",
+    "kind": "course archive",
+    "site": "classes.cs.uchicago.edu",
+    "score": 94,
+    "evidence": [
+      "Original Fall 2004 archive",
+      "C99 programming assignments",
+      "Period OpenGL textbook/toolchain"
+    ],
+    "tags": [
+      "C99",
+      "OpenGL",
+      "graphics"
+    ],
+    "notes": "Early version of UChicago's C-based graphics project course."
+  },
+  {
+    "title": "Pitt CS1550 — Operating Systems assignments",
+    "url": "https://people.cs.pitt.edu/~mosse/cs2001/assignments.html",
+    "year": 2006,
+    "year_label": "2006 due dates",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "people.cs.pitt.edu",
+    "score": 94,
+    "evidence": [
+      "Original 2006 assignments",
+      "Shell + Nachos projects",
+      "Period Unix environment setup"
+    ],
+    "tags": [
+      "Nachos",
+      "shell",
+      "filesystem",
+      "OS"
+    ],
+    "notes": "Sequence includes writing a shell, synchronization, multiprogramming and a Nachos filesystem."
   },
   {
     "title": "Michigan Tech CS2141 — Software Development Using C/C++",
@@ -1401,5 +957,449 @@
       "pthreads"
     ],
     "notes": "Broad period software-development course with multiple assignments and a substantial term project."
+  },
+  {
+    "title": "Flipcode Featured Articles archive",
+    "url": "https://flipcode.com/archives/articles.shtml",
+    "year": 2002,
+    "year_label": "2001–2003 archive",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Games / Engines",
+    "kind": "article archive",
+    "site": "flipcode.com",
+    "score": 93,
+    "evidence": [
+      "Original site archive",
+      "Individual articles dated 2001–2003",
+      "C/C++ game-development focus"
+    ],
+    "tags": [
+      "game engine",
+      "graphics",
+      "plugins",
+      "Win32"
+    ],
+    "notes": "Gateway to period articles such as plug-ins, portable 3D engines, window skinning and writing a simple game."
+  },
+  {
+    "title": "Tenouk — Visual C++ 6.0 / MFC Module 1",
+    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc1.html",
+    "year": 2005,
+    "year_label": "VC6 / Windows XP SP2 era",
+    "language": [
+      "C++"
+    ],
+    "category": "Windows / MFC",
+    "kind": "tutorial series",
+    "site": "tenouk.com",
+    "score": 93,
+    "evidence": [
+      "Visual C++ 6.0",
+      "Windows XP SP2",
+      "MFC 6.0",
+      "AppWizard/ClassWizard"
+    ],
+    "tags": [
+      "MFC",
+      "VC6",
+      "Win32",
+      "GUI"
+    ],
+    "notes": "Large period tutorial sequence around Visual C++ 6, MFC, resources and the application framework."
+  },
+  {
+    "title": "Allegro/STL action-game tutorial",
+    "url": "https://liballeg.org/docs/ovehk_stl_tutorial_en/index.html",
+    "year": 2002,
+    "year_label": "DJGPP/RHIDE era",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / 2D",
+    "kind": "project tutorial",
+    "site": "liballeg.org",
+    "score": 92,
+    "evidence": [
+      "DJGPP + RHIDE toolchain",
+      "Allegro game library",
+      "Old-style C++/STL tutorial"
+    ],
+    "tags": [
+      "Allegro",
+      "STL",
+      "DJGPP",
+      "game"
+    ],
+    "notes": "Teaches C++ and STL while composing an action game using Allegro."
+  },
+  {
+    "title": "Tenouk — MFC without Document/View",
+    "url": "https://www.tenouk.com/visualcplusmfc/visualcplusmfc17.html",
+    "year": 2005,
+    "year_label": "VC6 / Windows XP SP2 era",
+    "language": [
+      "C++"
+    ],
+    "category": "Windows / MFC",
+    "kind": "project tutorial",
+    "site": "tenouk.com",
+    "score": 92,
+    "evidence": [
+      "Visual C++ 6.0",
+      "MFC 6.0",
+      "Dialog/SDI/MDI example applications"
+    ],
+    "tags": [
+      "MFC",
+      "SDI",
+      "MDI",
+      "dialog"
+    ],
+    "notes": "Builds dialog, SDI and MDI applications without the Document/View architecture."
+  },
+  {
+    "title": "TetroGL — OpenGL game tutorial",
+    "url": "https://www.codeproject.com/articles/30775/tetrogl-an-opengl-game-tutorial-in-c-for-win32-pla",
+    "year": 2008,
+    "year_label": "2008",
+    "language": [
+      "C++"
+    ],
+    "category": "Games / OpenGL",
+    "kind": "project tutorial series",
+    "site": "codeproject.com",
+    "score": 92,
+    "evidence": [
+      "Original CodeProject-era article",
+      "Win32/OpenGL game",
+      "Complete source/binaries"
+    ],
+    "tags": [
+      "OpenGL",
+      "Win32",
+      "Tetris",
+      "game"
+    ],
+    "notes": "Three-part tutorial ending with a complete Tetris-style game and application state architecture."
+  },
+  {
+    "title": "Catch22 — Reducing Executable Size",
+    "url": "https://www.catch22.net/tuts/system/reducing-executable-size/",
+    "year": 2001,
+    "year_label": "1 Oct 2001",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Systems / Low-level",
+    "kind": "technical tutorial",
+    "site": "catch22.net",
+    "score": 91,
+    "evidence": [
+      "Explicit October 2001 publication date",
+      "C/C++ Win32 projects",
+      "Period linker/runtime assumptions"
+    ],
+    "tags": [
+      "Win32",
+      "linker",
+      "optimization",
+      "tiny exe"
+    ],
+    "notes": "Techniques for building tiny Win32 executables and reducing runtime/library overhead."
+  },
+  {
+    "title": "UChicago Unix Systems Programming — Socket Programming Lab",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2010/fall/51081-1/labs/lab6.original.html",
+    "year": 2003,
+    "year_label": "Due 12 Mar 2003 (preserved copy)",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "lab tutorial",
+    "site": "classes.cs.uchicago.edu",
+    "score": 91,
+    "evidence": [
+      "Body explicitly says due March 2003",
+      "Socket programming lab",
+      "University-hosted preserved original"
+    ],
+    "tags": [
+      "sockets",
+      "Unix",
+      "client/server"
+    ],
+    "notes": "Hands-on Unix socket-programming lab preserved inside a later course archive."
+  },
+  {
+    "title": "CodeProject — Writing Win32 Apps with C++ only classes",
+    "url": "https://www.codeproject.com/Articles/6030/Writing-Win32-Apps-with-Cplusplus-only-classes",
+    "year": 2004,
+    "year_label": "5 Feb 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Windows / Win32",
+    "kind": "tutorial + source",
+    "site": "codeproject.com",
+    "score": 91,
+    "evidence": [
+      "Explicit February 2004 article date",
+      "Raw Win32 without MFC/ATL/.NET",
+      "Downloadable source"
+    ],
+    "tags": [
+      "Win32",
+      "OOP",
+      "GUI"
+    ],
+    "notes": "Builds an object-oriented wrapper around ordinary Win32 applications."
+  },
+  {
+    "title": "EuclideanSpace — OpenGL and C++ 3D programming",
+    "url": "https://www.euclideanspace.com/prog/games/setup/openglcpp/introduction/index.htm",
+    "year": 2004,
+    "year_label": "2004-era",
+    "language": [
+      "C++"
+    ],
+    "category": "Graphics / OpenGL",
+    "kind": "tutorial series",
+    "site": "euclideanspace.com",
+    "score": 91,
+    "evidence": [
+      "Period C++ fixed-function OpenGL",
+      "Long-running personal technical site"
+    ],
+    "tags": [
+      "OpenGL",
+      "camera",
+      "3D",
+      "game"
+    ],
+    "notes": "Builds from an OpenGL setup into shapes, transformations, textures, cameras and a navigable 3D world."
+  },
+  {
+    "title": "Tenouk — Winsock 2 C examples",
+    "url": "https://www.tenouk.com/Winsock/Winsock2example.html",
+    "year": 2005,
+    "year_label": "VC6-era",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "tutorial + examples",
+    "site": "tenouk.com",
+    "score": 91,
+    "evidence": [
+      "Visual C++ 6 project instructions",
+      "Winsock 2 C programs"
+    ],
+    "tags": [
+      "Winsock",
+      "sockets",
+      "Windows"
+    ],
+    "notes": "Practical Winsock 2 examples and period Visual C++ linking instructions."
+  },
+  {
+    "title": "OpenGL C++ GUI tutorial files",
+    "url": "https://sourceforge.net/projects/openglgui/files/OpenGL%20GUI%20%28Tutorials%29/",
+    "year": 2004,
+    "year_label": "Jun–Sep 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Graphics / OpenGL",
+    "kind": "tutorial file series",
+    "site": "sourceforge.net",
+    "score": 90,
+    "evidence": [
+      "SourceForge file timestamps in 2004",
+      "14 tutorial packages",
+      "C++ OpenGL GUI project"
+    ],
+    "tags": [
+      "OpenGL",
+      "GUI",
+      "SourceForge"
+    ],
+    "notes": "Fourteen period tutorial releases preserved with original 2004 timestamps."
+  },
+  {
+    "title": "Catch22 — Win32 Tips & Tricks",
+    "url": "https://www.catch22.net/tuts/tips/tips-and-tricks/",
+    "year": 2001,
+    "year_label": "15 May 2001",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Windows / Win32",
+    "kind": "technical tutorial",
+    "site": "catch22.net",
+    "score": 89,
+    "evidence": [
+      "Explicit May 2001 publication date",
+      "Raw Win32 examples"
+    ],
+    "tags": [
+      "Win32",
+      "GDI",
+      "optimization"
+    ],
+    "notes": "Period Win32 implementation techniques and code snippets."
+  },
+  {
+    "title": "XWeb HTTP Server",
+    "url": "https://www.geocities.ws/shamit_bagchi/xweb.html",
+    "year": 2001,
+    "year_label": "initially Dec 2001; releases 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "source project",
+    "site": "geocities.ws",
+    "score": 88,
+    "evidence": [
+      "Page states initially written Dec 2001",
+      "2004 release history",
+      "Simple HTTP 1.0 server in C"
+    ],
+    "tags": [
+      "HTTP",
+      "CGI",
+      "Unix",
+      "server"
+    ],
+    "notes": "Small C HTTP server with CGI support and an authentic early-2000s release history."
+  },
+  {
+    "title": "CodeProject — C++ Win32 GUI library",
+    "url": "https://www.codeproject.com/Articles/2165/A-C-Win32-GUI-library-for-Java-AWT-like-source-cod",
+    "year": 2002,
+    "year_label": "23 Apr 2002",
+    "language": [
+      "C++"
+    ],
+    "category": "Windows / Win32",
+    "kind": "source project",
+    "site": "codeproject.com",
+    "score": 88,
+    "evidence": [
+      "Explicit April 2002 date",
+      "Win32-only GUI classes",
+      "VS workspace source"
+    ],
+    "tags": [
+      "Win32",
+      "GUI",
+      "library"
+    ],
+    "notes": "Early C++ wrapper library around Win32 common controls with downloadable workspace."
+  },
+  {
+    "title": "Tenouk / Geocities C, C++ and STL hands-on tutorial",
+    "url": "https://www.geocities.ws/paylook/index-2.html",
+    "year": 2005,
+    "year_label": "last updated June 2005",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Language / General",
+    "kind": "tutorial archive",
+    "site": "geocities.ws",
+    "score": 88,
+    "evidence": [
+      "Page says last updated June 2005",
+      "Working-program-example orientation",
+      "Historical Geocities material"
+    ],
+    "tags": [
+      "C",
+      "C++",
+      "STL",
+      "examples"
+    ],
+    "notes": "Old hands-on C/C++/STL material associated with the Tenouk tutorial corpus."
+  },
+  {
+    "title": "EHS — Embedded HTTP Server",
+    "url": "https://ehs.fritz-elfert.de/",
+    "year": 2004,
+    "year_label": "2004 release log",
+    "language": [
+      "C++"
+    ],
+    "category": "Networking",
+    "kind": "source project",
+    "site": "ehs.fritz-elfert.de",
+    "score": 86,
+    "evidence": [
+      "Release notes dated 2004",
+      "Visual Studio 6 build instructions",
+      "C++ embedded HTTP server"
+    ],
+    "tags": [
+      "HTTP",
+      "embedded server",
+      "VC6"
+    ],
+    "notes": "Period C++ source project for embedding web-server functionality into applications; useful as a project to study rather than a step-by-step tutorial."
+  },
+  {
+    "title": "VisualCPlusDotNet — Visual C++ .NET 2003/2005 tutorials",
+    "url": "https://www.visualcplusdotnet.com/about.html",
+    "year": 2005,
+    "year_label": "VS .NET 2003/2005 era",
+    "language": [
+      "C++"
+    ],
+    "category": "Windows / .NET",
+    "kind": "tutorial archive",
+    "site": "visualcplusdotnet.com",
+    "score": 85,
+    "evidence": [
+      "Visual C++ .NET 2003/2005",
+      "Windows XP SP2",
+      "Managed Extensions/Managed C++ era"
+    ],
+    "tags": [
+      "Visual C++ .NET",
+      "Windows Forms",
+      "Managed C++"
+    ],
+    "notes": "Period continuation of Tenouk focused on early Visual C++ .NET and Managed C++."
+  },
+  {
+    "title": "Cprogramming.com tutorial archive",
+    "url": "https://www.cprogramming.com/tutorial.html",
+    "year": 2005,
+    "year_label": "long-running 2000s archive",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Mixed / Collections",
+    "kind": "tutorial archive",
+    "site": "cprogramming.com",
+    "score": 84,
+    "evidence": [
+      "Long-running C/C++ site",
+      "Contains Same Game, animation-engine, SDL and OpenGL projects"
+    ],
+    "tags": [
+      "game",
+      "SDL",
+      "OpenGL",
+      "algorithms"
+    ],
+    "notes": "Useful collection page; individual entries should be separately harvested and dated."
   }
 ]
