@@ -1,0 +1,68 @@
+name: C/C++ Web Archaeology harvest
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cpp-web-archaeology-harvest
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r tools/cpp-web-archaeology/requirements.txt
+
+      - name: Select provider
+        id: provider
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        shell: bash
+        run: |
+          if [[ -n "$BRAVE_SEARCH_API_KEY" ]]; then
+            echo "provider=brave" >> "$GITHUB_OUTPUT"
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          elif [[ -n "$SERPER_API_KEY" ]]; then
+            echo "provider=serper" >> "$GITHUB_OUTPUT"
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "Collector deployed but inactive: add BRAVE_API_KEY or SERPER_API_KEY in Actions secrets."
+          fi
+
+      - name: Compute rotating query offset
+        if: steps.provider.outputs.enabled == 'true'
+        id: batch
+        run: echo "offset=$(( ( $(date +%s) / 604800 * 750 ) % 5000 ))" >> "$GITHUB_OUTPUT"
+
+      - name: Harvest and promote
+        if: steps.provider.outputs.enabled == 'true'
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: |
+          python tools/cpp-web-archaeology/collector.py             --provider '${{ steps.provider.outputs.provider }}'             --queries 750             --offset '${{ steps.batch.outputs.offset }}'             --results 10             --seed cpp-web-archaeology/data/projects.json             --out cpp-web-archaeology/data/projects.json
+
+      - name: Commit dataset updates
+        if: steps.provider.outputs.enabled == 'true'
+        run: |
+          git config user.name 'cpp-web-archaeology-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add cpp-web-archaeology/data/projects.json
+          if git diff --cached --quiet; then
+            echo 'No new high-confidence pages.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh C/C++ web archaeology index'
+          git push
