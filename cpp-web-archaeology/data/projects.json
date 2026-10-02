@@ -2083,5 +2083,3691 @@
       "C++"
     ],
     "notes": "Build a Minibase buffer-management layer from a supplied C++ framework and disk-space-manager API."
+  },
+  {
+    "title": "Stanford CS140 — Pintos project sequence (Autumn 2007)",
+    "url": "https://www.scs.stanford.edu/07au-cs140/labs/project.html",
+    "year": 2007,
+    "year_label": "Autumn 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "scs.stanford.edu",
+    "score": 97,
+    "evidence": [
+      "Course home page says 'CS140 in Autumn 2007' (David Mazières)",
+      "Due dates Oct 11 – Dec 6 with per-project PDFs named project1aut07.pdf etc.",
+      "Pintos manual of that offering targets the Bochs and QEMU simulators",
+      "Design document templates threads.tmpl, userprog.tmpl, vm.tmpl, filesys.tmpl"
+    ],
+    "tags": [
+      "Pintos",
+      "threads",
+      "priority scheduling",
+      "system calls",
+      "virtual memory",
+      "file system",
+      "Bochs"
+    ],
+    "notes": "Four Pintos projects on x86: alarm clock and priority/MLFQ scheduling, user programs and system calls, demand-paged virtual memory, and an extensible file system."
+  },
+  {
+    "title": "Duke CPS 110 — Nachos lab sequence (Fall 2003)",
+    "url": "https://www2.cs.duke.edu/courses/fall03/cps110/assignments.html",
+    "year": 2003,
+    "year_label": "Fall 2003",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.duke.edu",
+    "score": 95,
+    "evidence": [
+      "Page header 'COMPSCI 110, Fall 2003', instructor Carla Ellis",
+      "Six Nachos labs: concurrency, threads/synchronization, multiprogrammed kernel, I/O, virtual memory",
+      "Links to Jeff Chase's Nachos Project Guide and LoadPage/VAtoPA helper code",
+      "Build notes unpack nachos-3.4.2.tar on Duke ACPUB with gmake and AFS ACLs"
+    ],
+    "tags": [
+      "Nachos",
+      "threads",
+      "synchronization",
+      "multiprogramming",
+      "virtual memory",
+      "Solaris"
+    ],
+    "notes": "Work through the Duke Nachos labs in C++: thread synchronization, a multiprogrammed kernel with Exec/Exit/Join system calls, console I/O and demand-paged virtual memory."
+  },
+  {
+    "title": "UCSB CS170 — Nachos Project 2: multiprogramming and system calls (Spring 2003)",
+    "url": "https://sites.cs.ucsb.edu/~tyang/class/170.spr03/projects/homework_2.html",
+    "year": 2003,
+    "year_label": "Spring 2003 (due May 12, 2003)",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cs.ucsb.edu",
+    "score": 96,
+    "evidence": [
+      "'Due May 12, 2003' in the handout header",
+      "Course URL 170.spr03; course page says Spring Quarter, 2003 (Tao Yang)",
+      "Modify progtest.cc, addrspace.cc and exception.cc in nachos/userprog",
+      "Implement Fork, Yield, Exit, Exec and Join system calls plus SynchConsole"
+    ],
+    "tags": [
+      "Nachos",
+      "system calls",
+      "multiprogramming",
+      "address spaces",
+      "fork",
+      "exec"
+    ],
+    "notes": "Turn the single-program Nachos into a multiprogramming kernel: physical memory allocation, per-process address spaces, and Fork/Yield/Exit/Exec/Join system calls in C++."
+  },
+  {
+    "title": "UCSB CS170 — Nachos Project 3: demand-paged virtual memory (Spring 2003)",
+    "url": "https://sites.cs.ucsb.edu/~tyang/class/170.spr03/projects/homework_3.html",
+    "year": 2003,
+    "year_label": "Spring 2003 (due June 4, 2003)",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cs.ucsb.edu",
+    "score": 93,
+    "evidence": [
+      "'Due June 4, 2003' in header",
+      "Edit vm/Makefile, remove -DUSE_TLB, run 'gmake depend' and commit to the repository",
+      "Backing store is a SWAP file accessed through the Nachos OpenFile class",
+      "No starter code: write page fault handler and replacement policy yourself"
+    ],
+    "tags": [
+      "Nachos",
+      "virtual memory",
+      "paging",
+      "page replacement",
+      "swap"
+    ],
+    "notes": "Implement demand paging for Nachos from scratch, with a SWAP backing file, a page-fault handler and a page replacement policy tested under memory overcommit."
+  },
+  {
+    "title": "UCSD CSE 120 — Nachos Project 3: virtual memory (Fall 2005)",
+    "url": "https://cseweb.ucsd.edu/classes/fa05/cse120/projects/project3.html",
+    "year": 2005,
+    "year_label": "Fall 2005 (due December 4)",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cseweb.ucsd.edu",
+    "score": 90,
+    "evidence": [
+      "Page title 'CSE 120 Fall 2005', URL /classes/fa05/",
+      "Due Sunday, December 4th, at midnight",
+      "Projects page recommends the Solaris machines in EBU3B B230",
+      "Two-step plan: demand paging, then page replacement and eviction"
+    ],
+    "tags": [
+      "Nachos",
+      "virtual memory",
+      "demand paging",
+      "page replacement",
+      "Solaris"
+    ],
+    "notes": "Extend the Nachos kernel to load pages on demand from page faults and then evict pages to support processes whose total size exceeds physical memory."
+  },
+  {
+    "title": "Waterloo CS 350 — OS/161 assignments (Fall 2007)",
+    "url": "https://student.cs.uwaterloo.ca/~cs350/F07/assignments.html",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "student.cs.uwaterloo.ca",
+    "score": 95,
+    "evidence": [
+      "Course URL /~cs350/F07/; home page 'What's New (Sept. 10, 2007)' and 'We will NOT be using Nachos this term'",
+      "Assignment 0 page last modified Mon Sep 10 2007 and introduces OS/161, System/161, CVS and GDB",
+      "a2.pdf header 'CS350 Fall 2007 Assignment Two (OS/161) Version 1.0: Oct. 10' (server date Oct 2007)",
+      "Assignment 3 (Nov 12, 2007) covers the MIPS software-managed TLB and demand paging"
+    ],
+    "tags": [
+      "OS/161",
+      "System/161",
+      "system calls",
+      "TLB",
+      "virtual memory",
+      "CVS"
+    ],
+    "notes": "Using OS/161 on the System/161 MIPS simulator, implement synchronization, process system calls (fork, exit, waitpid, read, write) and TLB/demand-paging virtual memory."
+  },
+  {
+    "title": "Waterloo CS 350 — Nachos Assignment 2: TLB and virtual memory (Fall 2005)",
+    "url": "https://student.cs.uwaterloo.ca/~cs350/F05/assignments/a2.pdf",
+    "year": 2005,
+    "year_label": "Fall 2005 (due Nov. 11, 2005)",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment (PDF)",
+    "site": "student.cs.uwaterloo.ca",
+    "score": 91,
+    "evidence": [
+      "PDF header 'CS350 Operating Systems Fall 2005 Assignment Two'",
+      "Assignments page lists due date Friday, Nov. 11, 2005",
+      "Enable TLB by adding -DUSE_TLB to the NachOS Makefile",
+      "Manipulate kernel->machine->tlb[i] and handle PageFaultException as TLB faults"
+    ],
+    "tags": [
+      "Nachos",
+      "TLB",
+      "virtual memory",
+      "page faults"
+    ],
+    "notes": "Add TLB management and virtual memory to NachOS, distinguishing TLB misses from true page faults and loading translations in the exception handler."
+  },
+  {
+    "title": "UMD CMSC 412 — GeekOS project sequence (Spring 2004, Hollingsworth)",
+    "url": "https://www.cs.umd.edu/~hollings/cs412/s04/",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.umd.edu",
+    "score": 95,
+    "evidence": [
+      "Page says 'offered during the Spring 2004 semester'; midterm 3/9/04, final 5/14",
+      "Projects 0–6 linked, with Project 6 due 5/11",
+      "Project 0 uses GeekOS on Bochs 1.2.1 on the linuxlab cluster with gmake",
+      "Sequence covers ELF loading, user mode, scheduling, paging, file system, ACLs"
+    ],
+    "tags": [
+      "GeekOS",
+      "Bochs",
+      "x86",
+      "ELF loader",
+      "paging",
+      "file system"
+    ],
+    "notes": "Seven-step GeekOS sequence on Bochs: ELF loading, user mode, multilevel feedback scheduling and semaphores, paging, the GOSFS file system, and ACLs with message passing."
+  },
+  {
+    "title": "UMD CMSC 412 — GeekOS Project 3: multilevel feedback scheduling and semaphores (Spring 2004)",
+    "url": "https://www.cs.umd.edu/~hollings/cs412/s04/proj3/index.html",
+    "year": 2004,
+    "year_label": "Spring 2004 (due March 12, 2004)",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cs.umd.edu",
+    "score": 94,
+    "evidence": [
+      "'Due Friday, March 12th, 2004 (5:00 PM)'",
+      "Starter files syscall.h.add, libuser.c.add, setsched.c, semtest.c, ping.c, pong.c",
+      "Replace GeekOS priority round robin with multilevel feedback scheduling",
+      "Expose semaphores to user programs via new system calls"
+    ],
+    "tags": [
+      "GeekOS",
+      "scheduler",
+      "MLFQ",
+      "semaphores",
+      "system calls"
+    ],
+    "notes": "Replace GeekOS's round-robin scheduler with a multilevel feedback queue and add user-level semaphore system calls, tested with workload and ping/pong programs."
+  },
+  {
+    "title": "Princeton COS 318 — build-your-own x86 kernel projects (Fall 2004)",
+    "url": "https://www.cs.princeton.edu/courses/archive/fall04/cos318/",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.princeton.edu",
+    "score": 95,
+    "evidence": [
+      "Page header 'Fall 2004, Princeton University' (Kai Li)",
+      "Six projects leading to a small real OS: bootup, scheduling, IPC, VM, file system",
+      "Note that OIT terminated the news group server (9/15)",
+      "Text: Modern Operating Systems, 2nd Edition (2001)"
+    ],
+    "tags": [
+      "x86",
+      "bootloader",
+      "kernel",
+      "scheduler",
+      "IPC",
+      "virtual memory"
+    ],
+    "notes": "Build a small x86 operating system over six projects, from a boot block and createimage tool through scheduling, mailboxes, virtual memory and a file system."
+  },
+  {
+    "title": "Princeton COS 318 — Project 2: non-preemptive scheduling kernel (Fall 2004)",
+    "url": "https://www.cs.princeton.edu/courses/archive/fall04/cos318/projects/2.html",
+    "year": 2004,
+    "year_label": "Fall 2004 (due October 11, 2004)",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 94,
+    "evidence": [
+      "'Due: 11:59 PM Monday, October 11, 2004'",
+      "Template files kernel.c, scheduler.c, entry.S, lock.c, th1.c, th2.c",
+      "Submit with /u/cos318/bin/318submit; refs gas-2.9.1 manual and GCC Extended Asm",
+      "Kernel threads and processes in x86 protected mode"
+    ],
+    "tags": [
+      "kernel",
+      "context switch",
+      "scheduler",
+      "locks",
+      "x86"
+    ],
+    "notes": "Write a multiprogramming kernel with a non-preemptive scheduler, context switching in entry.S, and mutex locks for kernel threads and processes."
+  },
+  {
+    "title": "CMU 15-410 — Pebbles kernel projects (Spring 2004)",
+    "url": "https://www.cs.cmu.edu/~410-s04/projects.html",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.cmu.edu",
+    "score": 97,
+    "evidence": [
+      "Course URL ~410-s04; home page 'Last modified Tuesday January 27, 2004'",
+      "kernel.pdf served with Last-Modified Feb 21, 2004",
+      "Simics simulator, PRCS 1.3.2-cmu version control, AFS volumes",
+      "P0 traceback links GCC 3.2.3 Extended Asm docs; P1 writes console, timer and keyboard drivers"
+    ],
+    "tags": [
+      "Pebbles",
+      "kernel",
+      "device drivers",
+      "thread library",
+      "Simics",
+      "x86"
+    ],
+    "notes": "Write x86 device drivers, a user-level thread library, and then a complete preemptive multitasking Pebbles kernel with virtual memory, run under Simics."
+  },
+  {
+    "title": "CMU 15-412 — Project 3: the Yalnix kernel (Spring 2000)",
+    "url": "https://www.andrew.cmu.edu/course/15-412/projects/proj3/proj3.html",
+    "year": 2000,
+    "year_label": "Spring 2000 (handed out February 21, 2000)",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "andrew.cmu.edu",
+    "score": 93,
+    "evidence": [
+      "'Handed Out: Monday, February 21st, 2000'; due Friday, March 24th, 2000",
+      "Word-exported HTML with 2000-02-21 document metadata",
+      "Hardware emulator available only on the Andrew machines",
+      "Implement Yalnix process management, VM, IPC and synchronization"
+    ],
+    "tags": [
+      "Yalnix",
+      "kernel",
+      "MMU",
+      "system calls",
+      "trap handlers"
+    ],
+    "notes": "Implement a Yalnix kernel on an emulated machine: MMU and page tables, trap handlers, terminal drivers, UNIX-style process system calls, IPC and synchronization."
+  },
+  {
+    "title": "UChicago CS230/330 — Yalnix kernel project (Winter 2002)",
+    "url": "https://classes.cs.uchicago.edu/archive/2002/winter/33000-1/",
+    "year": 2002,
+    "year_label": "Winter 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "classes.cs.uchicago.edu",
+    "score": 90,
+    "evidence": [
+      "Archive URL /2002/winter/; page 'CS230 Operating Systems Winter, 2002' (David Beazley)",
+      "Due dates January 11 – March 1, 2002",
+      "Yash shell, then Yalnix Projects 1–4 as PostScript handouts",
+      "Yalnix handout refers to C on Solaris and page tables per region"
+    ],
+    "tags": [
+      "Yalnix",
+      "shell",
+      "kernel",
+      "virtual memory",
+      "PostScript"
+    ],
+    "notes": "Write the Yash shell and then build the Yalnix kernel across four phased projects covering processes, virtual memory, terminals and synchronization."
+  },
+  {
+    "title": "UT Austin CS372H — JOS exokernel labs (Spring 2007)",
+    "url": "https://www.cs.utexas.edu/~lorenzo/corsi/cs372h/07S/project.html",
+    "year": 2007,
+    "year_label": "Spring 2007",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.utexas.edu",
+    "score": 94,
+    "evidence": [
+      "Page header 'CS372H 2007 Project Information'; URL /07S/",
+      "Lab 2 'Due date: Feb 16, 2007'; Lab 4 due April 20, 2007, with dated updates",
+      "Labs download lab tarballs and debug with the Bochs internal debugger",
+      "Exokernel with libos; boot loader, pmap.c, environments, fork, IPC, file system"
+    ],
+    "tags": [
+      "JOS",
+      "exokernel",
+      "x86",
+      "paging",
+      "Bochs",
+      "fork"
+    ],
+    "notes": "Build the JOS exokernel in labs: PC boot, physical and virtual memory in pmap.c, user environments, preemptive multitasking with copy-on-write fork and IPC, and a file system."
+  },
+  {
+    "title": "UCLA CS 235 — JOS labs, Advanced Operating Systems (Winter 2008)",
+    "url": "https://read.seas.harvard.edu/~kohler/class/08w-aos/",
+    "year": 2008,
+    "year_label": "Winter 2008",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "read.seas.harvard.edu",
+    "score": 92,
+    "evidence": [
+      "Page title 'CS 235 Advanced Operating Systems, Winter 2008' (Eddie Kohler, Boelter Hall)",
+      "Lab tarballs stamped Jan 8 – Mar 5, 2008",
+      "CVS hints page for merging each lab",
+      "Lab 4 adds preemptive multitasking, fork, IPC and exokernel exec"
+    ],
+    "tags": [
+      "JOS",
+      "x86",
+      "CVS",
+      "fork",
+      "IPC"
+    ],
+    "notes": "Five JOS labs from booting a PC through memory management, user environments, preemptive multitasking with fork/IPC/exec, and a file system with shell."
+  },
+  {
+    "title": "Rochester CSC 256 — Nachos Assignment 4: supporting multiple user programs (Spring 2007)",
+    "url": "https://www.cs.rochester.edu/~kshen/csc256-spring2007/assignments/nachos-programming4.html",
+    "year": 2007,
+    "year_label": "Spring 2007 (due March 22)",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cs.rochester.edu",
+    "score": 89,
+    "evidence": [
+      "Course URL csc256-spring2007 (Kai Shen)",
+      "'Due by 11:59pm, Thursday, March 22'",
+      "Advises CVS for group source management",
+      "Course offered parallel Nachos and Xen/Linux tracks"
+    ],
+    "tags": [
+      "Nachos",
+      "multiprogramming",
+      "system calls",
+      "CVS"
+    ],
+    "notes": "Extend the Nachos kernel to run multiple user programs at once, with address spaces and process system calls, as part of a four-assignment Nachos track."
+  },
+  {
+    "title": "CSB/SJU CSCI 350 — Minix adaptive scheduler assignment (Fall 2001)",
+    "url": "https://cburch.com/csbsju/cs/350/assn/assn3.html",
+    "year": 2001,
+    "year_label": "Fall 2001 (due Friday, October 12)",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project assignment",
+    "site": "cburch.com",
+    "score": 88,
+    "evidence": [
+      "Course syllabus titled 'CSCI 350, Fall 2001' and built around Minix",
+      "Due Friday, October 12 (a Friday in 2001), matching the syllabus schedule",
+      "Based on Tanenbaum and Woodhull problem 2.39",
+      "Modify the Minix clock handler and scheduler"
+    ],
+    "tags": [
+      "Minix",
+      "scheduler",
+      "clock interrupt",
+      "kernel"
+    ],
+    "notes": "Change the Minix kernel to use an adaptive scheduler that favors user processes that block often, tracking CPU use in five-second intervals in the clock handler."
+  },
+  {
+    "title": "Princeton COS318 Fall 2004 — Project 6: UNIX-like file system",
+    "url": "https://www.cs.princeton.edu/courses/archive/fall04/cos318/projects/6.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 97,
+    "evidence": [
+      "Page header: 'Fall 2004, Princeton University'",
+      "Design review Tuesday, December 7, 2004; due Monday, January 10, 2005",
+      "Starter code in /u/cos318/6_pre/ with block.c, blockFake.c, fs.c, shell.c, kernel.c",
+      "Runs on Linux via a fake block device or on the course OS booted from floppy/USB"
+    ],
+    "tags": [
+      "inodes",
+      "superblock",
+      "directories",
+      "fsck",
+      "COS318",
+      "teaching kernel"
+    ],
+    "notes": "Implement an i-node based hierarchical file system (fs_mkfs, fs_open, fs_read, fs_write, fs_link, fs_unlink, fs_mkdir, fs_rmdir, fs_lseek, fs_stat) on top of a block device, inside the course's own kernel."
+  },
+  {
+    "title": "CMU 15-410 Spring 2004 — Project 2: user-level thread library for Pebbles",
+    "url": "https://www.cs.cmu.edu/~410-s04/p2/thr_lib.pdf",
+    "year": 2004,
+    "year_label": "February 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment (PDF)",
+    "site": "cs.cmu.edu",
+    "score": 97,
+    "evidence": [
+      "Handout dated February 4, 2004; directory listing shows files from 2004-02",
+      "Builds on the Pebbles kernel's thread_fork system call",
+      "Mutexes and condition variables built from the x86 XCHG instruction; also semaphores and rwlocks",
+      "Debugging under the Simics simulator; PRCS 1.3.2-cmu source control"
+    ],
+    "tags": [
+      "threads",
+      "mutex",
+      "condition variables",
+      "rwlock",
+      "XCHG",
+      "Pebbles",
+      "Simics"
+    ],
+    "notes": "Write a thread library (thr_create, thr_join, thr_exit) plus mutexes, condition variables, semaphores and reader/writer locks for the Pebbles teaching kernel, with atomicity from XCHG."
+  },
+  {
+    "title": "Wisconsin CS537 Fall 2008 — Project 3: Malloc and Free",
+    "url": "https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2008/Projects/p3.html",
+    "year": 2008,
+    "year_label": "Fall 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Memory",
+    "kind": "project assignment",
+    "site": "pages.cs.wisc.edu",
+    "score": 96,
+    "evidence": [
+      "Fall2008 in URL; final deadline Friday, October 17th; dated clarifications 10/8 through 10/16",
+      "Mem_Init must call mmap exactly once; Mem_Alloc/Mem_Free API",
+      "Output built as a shared library; 4-byte alignment checked with printf(\"%08x\")",
+      "Performance graded against workloads in ~cs537-1/public/MemoryAllocator/"
+    ],
+    "tags": [
+      "malloc",
+      "free list",
+      "mmap",
+      "shared library",
+      "allocator performance"
+    ],
+    "notes": "Build a user-level heap allocator (Mem_Init, Mem_Alloc, Mem_Free) over one mmap'd region, choose a free-list policy, tune it for performance and package it as a shared library."
+  },
+  {
+    "title": "Wisconsin CS537 Fall 2005 — Programming Assignment 3: Your Own Thread Library",
+    "url": "https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2005/Projects/P3/p3.html",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment",
+    "site": "pages.cs.wisc.edu",
+    "score": 96,
+    "evidence": [
+      "Header: 'CS 537: Fall 2005'; due Tuesday, November 22nd at 10pm",
+      "'This project must be implemented in C'; pthreads explicitly forbidden",
+      "Dated notes 11/7 to 11/19 listing grading tests (FIFO yield, locks, condition variables)",
+      "Page says it was autogenerated from ZML; links basic context-switching code"
+    ],
+    "tags": [
+      "user-level threads",
+      "context switch",
+      "locks",
+      "condition variables",
+      "FIFO scheduler"
+    ],
+    "notes": "Implement a non-preemptive user-level thread library with thread_create, thread_yield and thread_waitall, plus FIFO locks and condition variables, all inside one Linux process."
+  },
+  {
+    "title": "Wisconsin CS537 Spring 2009 — Project 5: File System Internals (ext2 forensics)",
+    "url": "https://pages.cs.wisc.edu/~remzi/Classes/537/Spring2009/Projects/p5.html",
+    "year": 2009,
+    "year_label": "Spring 2009",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "pages.cs.wisc.edu",
+    "score": 95,
+    "evidence": [
+      "Spring2009 in URL; due Friday, May 1st around 9pm",
+      "Provided C source code parses an ext2 disk image (inode tables, cylinder groups)",
+      "Students scan inodes for JPEG magic numbers and rebuild files from data blocks",
+      "Uses mkfs and debugfs on ext2 image files"
+    ],
+    "tags": [
+      "ext2",
+      "inodes",
+      "disk image",
+      "forensics",
+      "debugfs"
+    ],
+    "notes": "Walk a raw ext2 disk image by hand: find inodes whose data begins with JPEG magic, recover their contents, then resolve file names by parsing directory blocks."
+  },
+  {
+    "title": "UNH CS520 Fall 2005 — memory allocator with a conservative garbage collector",
+    "url": "https://cs.unh.edu/~pjh/courses/cs520/05fall/prog3.html",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C",
+      "x86 assembly"
+    ],
+    "category": "Language Runtimes / GC",
+    "kind": "project sequence",
+    "site": "cs.unh.edu",
+    "score": 95,
+    "evidence": [
+      "Header 'Fall 2005', due Sunday October 23; 'Last modified on October 21, 2005'",
+      "memInitialize/memAllocate API with finalizers for the Intel IA-32 architecture",
+      "Programs 3 to 6 build the test app, the allocator, memDump, then mark-sweep collection of globals, stack and registers",
+      "Graded with gcc on UNH CIS Linux machines (turing.unh.edu); submits memAlloc.c, memCollect.c, memAllocAsm.s"
+    ],
+    "tags": [
+      "garbage collection",
+      "mark-sweep",
+      "conservative GC",
+      "IA-32",
+      "allocator",
+      "CS:APP"
+    ],
+    "notes": "Over four assignments, build a word-based allocator for IA-32 Linux and a conservative mark-and-sweep collector that scans global data, stack frames and callee-saved registers (with a little assembly)."
+  },
+  {
+    "title": "Pitt CS1550 Summer 2007 — Project 3: File Systems with FUSE",
+    "url": "https://people.cs.pitt.edu/~jmisurda/teaching/cs1550/2077/cs1550-2077-project3.htm",
+    "year": 2007,
+    "year_label": "Summer 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "people.cs.pitt.edu",
+    "score": 95,
+    "evidence": [
+      "Due Sunday, July 29, 2007, 11:59pm (term code 2077 in URL)",
+      "Students build fuse-2.7.0 from /u/OSLab/original/fuse-2.7.0.tar",
+      "Runs on the course machine thot.cs.pitt.edu",
+      "Skeleton cs1550.c; two-level directories and linked block allocation on a disk file"
+    ],
+    "tags": [
+      "FUSE",
+      "linked allocation",
+      "directories",
+      "fuse-2.7.0"
+    ],
+    "notes": "Implement a two-level-directory file system in userspace through FUSE 2.7, storing directories and file data in a disk-image file with linked block allocation."
+  },
+  {
+    "title": "UCSD CSE121 Winter 2005 — Project 1: user-level threads package",
+    "url": "https://cseweb.ucsd.edu/classes/wi05/cse121/project1.html",
+    "year": 2005,
+    "year_label": "Winter 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment",
+    "site": "cseweb.ucsd.edu",
+    "score": 94,
+    "evidence": [
+      "wi05 in URL; page header 'CSE 121 Winter 2005'; due Thursday, January 27th 11:59pm",
+      "Provided headers thread.h and standard.h define the API (t_start, t_fork, t_wait, t_sig)",
+      "Context switches use setjmp/longjmp; stacks are carved out by recursing through a large local array",
+      "Sibling Project 2 (due February 24th) is an application-level file system over dread/dwrite"
+    ],
+    "tags": [
+      "user-level threads",
+      "setjmp",
+      "longjmp",
+      "conditions",
+      "deadlock detection"
+    ],
+    "notes": "Build a user-level threads package with a ready queue, condition-style signalling with queued values and deadlock detection, using setjmp/longjmp for context switches."
+  },
+  {
+    "title": "Columbia W4118 Fall 2007 — Homework 6: UserFS pseudo file system in Linux 2.6",
+    "url": "https://www.cs.columbia.edu/~nieh/teaching/w4118_f07/homeworks/hmwk6.html",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "kernel project assignment",
+    "site": "cs.columbia.edu",
+    "score": 94,
+    "evidence": [
+      "Header 'W4118 Fall 2007', due 12/10/2007",
+      "Kernel work on Linux 2.6.18.8 inside per-group VMware VMs, graded on vmlinuz.hmwk6",
+      "Points to Linux Kernel Development ch. 11 (VFS) and procfs/ramfs/sysfs as models",
+      "Sibling Homework 5 tracks a process's modified set in the page fault handler"
+    ],
+    "tags": [
+      "Linux 2.6",
+      "VFS",
+      "pseudo file system",
+      "procfs",
+      "kernel programming",
+      "VMware"
+    ],
+    "notes": "Write an in-memory pseudo file system for the Linux 2.6.18 kernel that exposes per-UID process lists and a 'signal' file that atomically signals all of a user's processes."
+  },
+  {
+    "title": "Waterloo CS350 Fall 2004 — Assignment 3: Nachos file system",
+    "url": "https://student.cs.uwaterloo.ca/~cs350/F04/assignments/a3.pdf",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment (PDF)",
+    "site": "student.cs.uwaterloo.ca",
+    "score": 94,
+    "evidence": [
+      "Handout header 'CS350 Operating Systems Fall 2004 Assignment Three'",
+      "Switches Nachos from the FILESYS_STUB file system to the real one on the simulated disk",
+      "Works in filesys.cc, directory.cc, filehdr.cc, openfile.cc, synchdisk.cc",
+      "Sibling handouts survive for F03, W04 and W05"
+    ],
+    "tags": [
+      "Nachos",
+      "file headers",
+      "hierarchical directories",
+      "synchronization",
+      "C++"
+    ],
+    "notes": "Extend the basic Nachos file system: make reads and writes atomic, let files grow past the 4 KB limit, and add hierarchical directories with CreateDir/RemoveDir system calls."
+  },
+  {
+    "title": "Stanford CS140 Autumn 2007 — Pintos Project 4: File Systems",
+    "url": "https://www.scs.stanford.edu/07au-cs140/pintos/pintos_5.html",
+    "year": 2007,
+    "year_label": "Autumn 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "scs.stanford.edu",
+    "score": 93,
+    "evidence": [
+      "07au-cs140 in URL; course home page says 'This is the home page for CS140 in Autumn 2007'",
+      "Pintos manual for that term: Bochs/QEMU simulators and the i386-elf-gcc cross toolchain",
+      "Code lives in filesys/ (filesys.c, inode.c, directory.c, fsutil.c)",
+      "Requires a buffer cache, extensible files and subdirectories"
+    ],
+    "tags": [
+      "Pintos",
+      "buffer cache",
+      "indexed inodes",
+      "subdirectories",
+      "Bochs"
+    ],
+    "notes": "Rework the Pintos file system to add a buffer cache, extensible indexed files and hierarchical subdirectories, building on the user-program or VM project."
+  },
+  {
+    "title": "SDU DM510 Spring 2010 — Log-structured file system with FUSE",
+    "url": "https://imada.sdu.dk/u/daniel/DM510-2010/assignment3/assign-2010-3.html",
+    "year": 2010,
+    "year_label": "Spring 2010",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "imada.sdu.dk",
+    "score": 91,
+    "evidence": [
+      "Header 'DM510, Spring 2010' and 2010 in the URL",
+      "Starter lfs.c and Makefile built against FUSE, mounted and unmounted with fusermount -u",
+      "Follows Tanenbaum and Woodhull's LFS description (OSDI 1997, sec. 5.3.6)",
+      "Sibling Assignment 2 is a Linux 2.6 character-device kernel module based on LDD3 scull"
+    ],
+    "tags": [
+      "LFS",
+      "log-structured",
+      "FUSE",
+      "segments",
+      "cleaner"
+    ],
+    "notes": "Implement a log-structured file system with inodes, one level of indirection and segment cleaning, storing everything in one large backing file and mounting it through FUSE."
+  },
+  {
+    "title": "Wisconsin CS537 Fall 2005 — Programming Assignment 4: protecting data with an interposition library",
+    "url": "https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2005/Projects/P4/p4.html",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "pages.cs.wisc.edu",
+    "score": 91,
+    "evidence": [
+      "Header 'CS 537: Fall 2005'; due Thursday, December 15th, at 10pm",
+      "'This project must be implemented in C'",
+      "Grading tests corrupt blocks of 'foo' and check recovery through lseek, truncate and unlink",
+      "Sibling Spring 2009 version builds libfsprotect.so with gcc -shared -fpic and LD_PRELOAD"
+    ],
+    "tags": [
+      "LD_PRELOAD",
+      "interposition",
+      "checksums",
+      "parity",
+      "file I/O"
+    ],
+    "notes": "Interpose on open/read/write/lseek/close to keep checksums and a parity block for every file, so a single corrupted 4 KB block can be detected and rebuilt."
+  },
+  {
+    "title": "Toronto ECE344 Spring 2001 — Assignment 4: Pumbaa user-level threads and context switching",
+    "url": "https://www.cs.uoi.gr/~stergios/teaching/ece344/as4/as4.html",
+    "year": 2001,
+    "year_label": "Spring 2001",
+    "language": [
+      "C",
+      "SPARC assembly"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment",
+    "site": "cs.uoi.gr",
+    "score": 91,
+    "evidence": [
+      "Due Sunday, March 11, 2001; course index says 'ECE344 Operating Systems Spring 2001'",
+      "Inline gcc asm saves and restores SPARC registers (st %i7, ld %i7) with a STACK_ADJUST macro",
+      "Links a 'Context Switches on the Sparc Processor' tutorial and a provided list.o",
+      "Followed by Assignment 5 (Pumbaa kernel) and Assignment 6 (message passing)"
+    ],
+    "tags": [
+      "user-level threads",
+      "context switch",
+      "SPARC",
+      "inline assembly",
+      "Pumbaa"
+    ],
+    "notes": "Write the Pumbaa user-level threads package for SPARC/Solaris, including thread descriptors, a ready queue and hand-written context-switch macros. This is the instructor's personal copy of the 2001 University of Toronto course."
+  },
+  {
+    "title": "Northwestern CS213 Spring 2005 — Malloc Lab: dynamic storage allocator",
+    "url": "https://users.cs.northwestern.edu/~pdinda/ics-s05/malloclab.pdf",
+    "year": 2005,
+    "year_label": "Spring 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Memory",
+    "kind": "lab assignment (PDF)",
+    "site": "users.cs.northwestern.edu",
+    "score": 89,
+    "evidence": [
+      "Course page 'CS 213: Introduction to Computer Systems, Spring 2005' lists Malloc Lab (out 5/19, in 6/2)",
+      "ics-s05 in URL",
+      "malloclab-handout.tar in /home/pdinda/HANDOUT on the TLAB machines",
+      "Students hand in mm.c and test with the mdriver trace driver"
+    ],
+    "tags": [
+      "malloc lab",
+      "CS:APP",
+      "mm.c",
+      "mdriver",
+      "free list"
+    ],
+    "notes": "Adaptation of the CS:APP malloc lab: implement mm_init, mm_malloc, mm_free and mm_realloc in mm.c, then tune utilization and throughput against the trace-driven mdriver."
+  },
+  {
+    "title": "UNH CS712 — ANSI C compiler written in C for IA-32 (pcc3)",
+    "url": "https://www.cs.unh.edu/~pjh/courses/cs712/2003/",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers",
+    "kind": "course project sequence",
+    "site": "cs.unh.edu",
+    "score": 98,
+    "evidence": [
+      "Course page titled 'Compiler Design, Spring 2003'",
+      "'The class will be building a C compiler written in C that generates code for the Intel IA-32 architecture'",
+      "Six dated phases: type representation (Feb 9), declarations, expressions, statements, pointers/structs, compile the compiler (May 11)",
+      "Links to GNU flex/bison/gas manuals and Intel IA-32 PDFs"
+    ],
+    "tags": [
+      "C compiler",
+      "IA-32",
+      "flex",
+      "bison",
+      "self-hosting",
+      "pcc3"
+    ],
+    "notes": "Over one semester, students extend the pcc3 compiler for ANSI C 1989: a type ADT, declarations, expressions, statements, pointers/arrays/structs. The last phase is making the compiler compile itself."
+  },
+  {
+    "title": "UNH CS712 — C compiler in C targeting the Compaq Alpha",
+    "url": "https://www.cs.unh.edu/~pjh/courses/cs712/2002/",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "course project sequence",
+    "site": "cs.unh.edu",
+    "score": 95,
+    "evidence": [
+      "Course overview for Spring 2002",
+      "'a C compiler written in C that generates code for the Compaq Alpha'",
+      "Phase due dates Feb 24 to May 12 (declarations, expressions, statements, pointers/structs, compile the compiler)",
+      "Phase pages name pcc3 source files analyzeStmt.c / encodeStmt.c in ~cs712/public"
+    ],
+    "tags": [
+      "C compiler",
+      "Alpha",
+      "semantic analysis",
+      "code generation",
+      "pcc3"
+    ],
+    "notes": "This is the earlier, Alpha-targeted version of the UNH pcc3 project. Students add semantic analysis and Alpha code generation for C declarations, expressions and statements, then bootstrap the compiler."
+  },
+  {
+    "title": "UNH CS980 — Graph-coloring register allocator for a C compiler back-end",
+    "url": "https://www.cs.unh.edu/~pjh/courses/cs980/2007/",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "course project sequence",
+    "site": "cs.unh.edu",
+    "score": 97,
+    "evidence": [
+      "Course page 'Advanced Compiler Design, Fall 2007'",
+      "Six dated phases: 64-bit port (Sep 24), pseudo registers, CFGs, live ranges, interference graphs, coloring (Dec 17)",
+      "Builds on the pcc3 C compiler 'completed by the Spring 2003 CS712 class'",
+      "Follows Chaitin's 1982 graph-coloring paper; links binutils 2.17 and x86-64 ABI docs"
+    ],
+    "tags": [
+      "register allocation",
+      "Chaitin",
+      "liveness",
+      "interference graph",
+      "x86-64",
+      "EM64T"
+    ],
+    "notes": "Students port the pcc3 ANSI C compiler to Intel EM64T, switch it to virtual registers, then build CFGs, live ranges and interference graphs. The final phase colors the graphs to assign registers, following Chaitin."
+  },
+  {
+    "title": "UNH CS980 Project 6 — Coloring interference graphs for EM64T",
+    "url": "https://www.cs.unh.edu/~pjh/courses/cs980/2007/proj6.html",
+    "year": 2007,
+    "year_label": "Due December 17, 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "cs.unh.edu",
+    "score": 93,
+    "evidence": [
+      "'Project Assignment 6, Fall 2007, Due Monday December 17'",
+      "Colors the interference graph from assignment 5 to map virtual registers to real ones",
+      "Cites Cooper and Torczon 13.5.5",
+      "Target is correctly executing code for the Intel EM64T"
+    ],
+    "tags": [
+      "register allocation",
+      "graph coloring",
+      "spilling",
+      "pcc3"
+    ],
+    "notes": "This is the last step of the UNH back-end sequence: color each function's interference graph and produce working EM64T code from the pcc3 C compiler."
+  },
+  {
+    "title": "UNH CS712 — Compiler for the object-oriented T language (flex/bison, IA-32)",
+    "url": "https://www.cs.unh.edu/~pjh/courses/cs712/2008/phase1.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Compilers",
+    "kind": "project assignment",
+    "site": "cs.unh.edu",
+    "score": 90,
+    "evidence": [
+      "'Project Phase 1, Spring 2008, Due Sunday February 24'",
+      "Course page: 'You will use the Unix compiler-writing tools lex and yacc and consequently you must program in either C or C++'",
+      "Scanner must be built with flex",
+      "Five phases: integer expressions, control statements, classes, methods, arrays (IA-32 target)"
+    ],
+    "tags": [
+      "flex",
+      "bison",
+      "IA-32",
+      "object-oriented",
+      "T language"
+    ],
+    "notes": "Phase 1 of a compiler for T, a Java-like teaching language. Students write a flex scanner and a parser and generate IA-32 code for integer expressions; later phases add control flow, classes and arrays."
+  },
+  {
+    "title": "CMU 15-745 — Introduction to LLVM: liveness histogram pass (LLVM 2.1)",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15745-s08/www/assignments/1/assign1.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 96,
+    "evidence": [
+      "Title 'Assignment 1, 15-745 Spring 2008', due Thursday January 31",
+      "'download, install, and build the LLVM 2.1 source code'; prebuilt llvm-gcc front end",
+      "Starter file LivenessHistogram.cpp",
+      "Notes the --enable-debug-runtime --disable-optimized configure flags and an old PassManager link error"
+    ],
+    "tags": [
+      "LLVM 2.1",
+      "liveness",
+      "dataflow",
+      "pass",
+      "llvm-gcc"
+    ],
+    "notes": "Write an LLVM 2.1 pass in C++ that runs liveness dataflow analysis and prints a histogram of how many values are live at once."
+  },
+  {
+    "title": "CMU 15-745 — Loop dependence analysis pass in LLVM",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15745-s09/www/assignments/2/assign2.html",
+    "year": 2009,
+    "year_label": "Spring 2009",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 91,
+    "evidence": [
+      "Page header 'CMU 15-745 Spring 2009, Assignment 2'",
+      "Due noon, Thursday February 5",
+      "Starter LoopDependenceAnalysis.cpp and bench2.tgz",
+      "Sibling assignments use llvm-gcc -emit-llvm and LLVM 2.x releases"
+    ],
+    "tags": [
+      "LLVM",
+      "dependence analysis",
+      "direction vectors",
+      "loops"
+    ],
+    "notes": "Write an LLVM analysis pass that finds memory dependences in perfectly nested loops and builds each loop's direction and distance matrix. The next assignment uses it for loop interchange and blocking."
+  },
+  {
+    "title": "CMU 15-745 — Register allocation and scheduling in the CASH compiler",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15745-s07/www/assignments/3/assign3.html",
+    "year": 2007,
+    "year_label": "Spring 2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 94,
+    "evidence": [
+      "'CMU 15-745 Spring 2007, Assignment 3', released Mar 1, due March 20",
+      "Fill in missing parts of interference-incomplete.cc and hreg.cc (George and Appel algorithm)",
+      "Code is fetched with 'cvs update'; Assignment 0 says CASH runs on RH 9.0 machines",
+      "Graded leaderboard by schedule length and compile time"
+    ],
+    "tags": [
+      "register allocation",
+      "iterated coalescing",
+      "instruction scheduling",
+      "CASH",
+      "Pegasus",
+      "CVS"
+    ],
+    "notes": "Students complete a graph-coloring register allocator in the CASH/Pegasus C compiler, then tune how it interacts with the instruction scheduler and compete on a class leaderboard."
+  },
+  {
+    "title": "Stony Brook CSE 304 — Decaf compiler in C++ (flex, bison, AST, code generation)",
+    "url": "https://www3.cs.stonybrook.edu/~cse304/Fall09/Homeworks/",
+    "year": 2009,
+    "year_label": "Fall 2009",
+    "language": [
+      "C++",
+      "C"
+    ],
+    "category": "Compilers",
+    "kind": "course project sequence",
+    "site": "cs.stonybrook.edu",
+    "score": 95,
+    "evidence": [
+      "Homeworks page 'Fall 2009', last updated Thu Dec 3 2009",
+      "HW1 flex stack-machine interpreter in C/C++; HW2 Bison parser due Oct 2, 2009; HW3 AST due Nov 9; HW4 code generation due Dec 11",
+      "Starter tarballs parse.tgz, ast.tgz, code.tgz plus a patched lex.yy.c/decaf.l for Windows carriage returns",
+      "Course page: 'you will gain significant experience in OO-programming with C++'"
+    ],
+    "tags": [
+      "Decaf",
+      "flex",
+      "bison",
+      "AST",
+      "CREAM abstract machine",
+      "code generation"
+    ],
+    "notes": "A four-part Decaf compiler in C++: a flex warm-up interpreter, a Bison parser, AST construction, then code generation for the CREAM abstract machine."
+  },
+  {
+    "title": "SFU CMPT-379 — Decaf compiler to MIPS/SPIM with flex and bison",
+    "url": "https://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2007/",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "course project sequence",
+    "site": "cs.sfu.ca",
+    "score": 94,
+    "evidence": [
+      "Page 'CMPT-379 - Fall 2007'; RCS stamp $Date: 2007-11-27 21:13:06 $",
+      "hw1.pdf to hw5.pdf: flex (gcc lex.yy.c -lfl), bison, MIPS with spim, final Decaf compiler due Dec 4",
+      "Links to the Decaf spec, Larus's SPIM page and Cygwin",
+      "Makefile with 'make test' required in every submission"
+    ],
+    "tags": [
+      "Decaf",
+      "flex",
+      "bison",
+      "MIPS",
+      "SPIM",
+      "C++ STL"
+    ],
+    "notes": "Five homeworks build up a Decaf compiler: flex scanners, bison parsers, MIPS code generation for globals and methods, and finally a full compiler whose output runs under spim."
+  },
+  {
+    "title": "SFU CMPT-379 — Compiler homeworks: LR parser, table construction, MIPS codegen",
+    "url": "https://www.cs.sfu.ca/~anoop/courses/CMPT-379-Fall-2005/",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C++",
+      "C"
+    ],
+    "category": "Compilers",
+    "kind": "course project sequence",
+    "site": "cs.sfu.ca",
+    "score": 92,
+    "evidence": [
+      "Page 'CMPT 379 - Fall 2005'; Decaf spec posted Wed Sep 28, 2005",
+      "Warns that 'the C++ compiler for gcc version 2.96 and gcc version 3.3.2 are seriously broken'",
+      "spim installed in ~anoop/cmpt379/spim.linux",
+      "hw4 LR parser (Oct 11-25), hw5 LR(0) table construction, hw6 MIPS assembly (Nov 8-15)"
+    ],
+    "tags": [
+      "LR parsing",
+      "Decaf",
+      "MIPS",
+      "SPIM",
+      "gcc 3.x"
+    ],
+    "notes": "Homeworks where students write an LR parsing driver, build LR(0) action/goto tables, and generate MIPS code for Decaf programs run under spim."
+  },
+  {
+    "title": "SDSU CS 524 — Extending the SIMPLE lex/yacc compiler to SPIM",
+    "url": "https://stewart.sdsu.edu/cs524/spr08/Project/project.html",
+    "year": 2008,
+    "year_label": "Spring 2008 (updated 26 March 2008)",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "project assignment",
+    "site": "stewart.sdsu.edu",
+    "score": 93,
+    "evidence": [
+      "'Spring 2008 - San Diego State University'; 'Upd: 26March08'",
+      "Starter compiler copied from the instructor's account on Rohan; files simple.lex, simple.c, sem.c",
+      "Uses lex, yacc, gcc and SPIM ('spim -file s.out'), with xspim man pages",
+      "Seven phases: comments, strings, integers, booleans, control structures, subroutines with parameters"
+    ],
+    "tags": [
+      "lex",
+      "yacc",
+      "SPIM",
+      "MIPS R2000",
+      "Ada/CS",
+      "Fischer LeBlanc"
+    ],
+    "notes": "Students get a working compiler for a small Ada subset and extend it phase by phase (strings, declarations, booleans, control flow, procedures), producing MIPS code for SPIM."
+  },
+  {
+    "title": "Stanford CS143 — Cool code generator, C++ version (Fall 2003)",
+    "url": "https://web.stanford.edu/class/archive/cs/cs143/cs143.1042/materials/handouts/asn5.pdf",
+    "year": 2003,
+    "year_label": "Fall 2003 (due November 25)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "project assignment",
+    "site": "web.stanford.edu",
+    "score": 94,
+    "evidence": [
+      "Archive cs143.1042 = Fall 2003-04 (announcements page)",
+      "Handout 7, Programming Assignment IV, due Tuesday November 25; PDF created Nov 10 2003",
+      "C++ skeleton: cgen.cc, cgen.h, emit.h",
+      "Generates MIPS assembly for the SPIM simulator"
+    ],
+    "tags": [
+      "Cool",
+      "MIPS",
+      "SPIM",
+      "code generation",
+      "cgen"
+    ],
+    "notes": "Write the Cool code generator in C++ so it emits MIPS assembly for SPIM. This is the last stage of the CS143 Cool compiler."
+  },
+  {
+    "title": "Stanford CS143 — Cool optimizer extra-credit assignment (Fall 2005)",
+    "url": "https://web.stanford.edu/class/archive/cs/cs143/cs143.1062/materials/handouts/opt.pdf",
+    "year": 2005,
+    "year_label": "Fall 2005 (due Dec 8, 2005)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "web.stanford.edu",
+    "score": 91,
+    "evidence": [
+      "Handout 20, 'Due Thursday, Dec 8, 2005 at 11:59pm'",
+      "C++ files to modify: cool-tree.h, cgen.h, cgen.cc, cgen_supp.cc, emit.h",
+      "Graded on instructions executed, measured with 'spim -keepstats'",
+      "-O flag sets the cgen_optimize global"
+    ],
+    "tags": [
+      "Cool",
+      "optimization",
+      "SPIM",
+      "peephole",
+      "register allocation"
+    ],
+    "notes": "An optional assignment: add optimizations to your Cool compiler's MIPS back end. Entries are ranked by instruction counts on SPIM benchmarks."
+  },
+  {
+    "title": "CSU Stanislaus CS 4300 — Front end for a C++ subset compiler (flex/bison, quadruples)",
+    "url": "https://www.cs.csustan.edu/~mmartin/teaching/CS4300F06/projoverview-1.pdf",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers",
+    "kind": "project assignment",
+    "site": "cs.csustan.edu",
+    "score": 92,
+    "evidence": [
+      "Linked from the 'CS 4300 Fall 2006' course page",
+      "'Your compiler must be written in the C++ language' and 'must run on our Sun workstations in the CS lab'",
+      "LALR(1) grammar processed by bison; says to use the <cstdio> FILE* I/O that flex needs",
+      "Weekly milestones: hashed symbol table, error handler, skeletal parser, quadruple generation"
+    ],
+    "tags": [
+      "C++ subset",
+      "flex",
+      "bison",
+      "symbol table",
+      "quadruples",
+      "Sun"
+    ],
+    "notes": "A term project to build the front end of a compiler for a small C++ subset. It translates source to quadruples run by a supplied interpreter, starting from the symbol table, error handling and a bison parser."
+  },
+  {
+    "title": "Carleton CS395 — Hand-written lexical analyzer for a Java subset in C/C++",
+    "url": "https://cs.carleton.edu/faculty/jondich/courses/cs395_w04/assignments/lexan.html",
+    "year": 2004,
+    "year_label": "Winter 2004 (due January 16)",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Compilers / Lexing",
+    "kind": "project assignment",
+    "site": "cs.carleton.edu",
+    "score": 88,
+    "evidence": [
+      "Assignments index: 'Assigned 1/9/04, due 1:10PM Friday, 1/16/04'",
+      "'write a lexical analyzer for a subset of Java, using C or C++'",
+      "No lex/flex or regex library allowed; read input with getchar() or istream::get",
+      "Followed by a table-driven parser assignment (Algorithm 4.7, Dragon book)"
+    ],
+    "tags": [
+      "lexer",
+      "scanner",
+      "Java subset",
+      "Dragon book",
+      "HSP submission"
+    ],
+    "notes": "Write a scanner by hand, character by character, in C or C++ for a Java subset. A later assignment adds a predictive/LR parser that uses its tokens."
+  },
+  {
+    "title": "AUC CSCI 447 — Compiler Design lex/yacc assignments (M language to 3-address code)",
+    "url": "https://faculty.kfupm.edu.sa/COE/mudawar/csci447/index-S02.htm",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers",
+    "kind": "course page",
+    "site": "faculty.kfupm.edu.sa",
+    "score": 87,
+    "evidence": [
+      "Course page 'CSCI 447 - Spring 2002', final exam Thursday May 30",
+      "Lex-S02.pdf: flex scanner assignment; Yacc-S02.pdf: 'Due Date: Monday, May 20, 2002'",
+      "Yacc assignment turns the M language into 3-address code (TEMP/VAR/CONST tuples)",
+      "Downloadable flex.zip and bison.zip; Louden's TINY language used in lectures"
+    ],
+    "tags": [
+      "lex",
+      "yacc",
+      "flex",
+      "bison",
+      "three-address code",
+      "recursive descent"
+    ],
+    "notes": "Mini-projects: a flex scanner, a recursive-descent parser and a yacc translator that turns the M language into three-address intermediate code."
+  },
+  {
+    "title": "LLVM 2.2 — Kaleidoscope: Implementing a Language with LLVM",
+    "url": "https://llvm.org/releases/2.2/docs/tutorial/index.html",
+    "year": 2008,
+    "year_label": "February 2008 (LLVM 2.2 release docs)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "tutorial",
+    "site": "llvm.org",
+    "score": 92,
+    "evidence": [
+      "Frozen LLVM 2.2 release docs under /releases/2.2/",
+      "Chapter pages: 'Last modified: $Date: 2008/02/12 06:05:32 $', written by Chris Lattner",
+      "Chapters: lexer, parser/AST, LLVM IR codegen, JIT and optimizer, control flow, user operators, SSA",
+      "Also JIT tutorials by Owen Anderson in the same release"
+    ],
+    "tags": [
+      "LLVM 2.2",
+      "Kaleidoscope",
+      "JIT",
+      "SSA",
+      "recursive descent"
+    ],
+    "notes": "The original 2008 Kaleidoscope tutorial: write a lexer, recursive-descent parser and LLVM IR generator in C++ for a toy language, then add the JIT, optimization and control flow."
+  },
+  {
+    "title": "LLVM 1.5 — Writing an LLVM Pass",
+    "url": "https://llvm.org/releases/1.5/docs/WritingAnLLVMPass.html",
+    "year": 2005,
+    "year_label": "May 2005 (LLVM 1.5 release docs)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "tutorial",
+    "site": "llvm.org",
+    "score": 90,
+    "evidence": [
+      "Frozen LLVM 1.5 release docs under /releases/1.5/",
+      "'Last modified: $Date: 2005/05/18 16:04:43 $', written by Chris Lattner",
+      "Hello World pass quick-start and pass class hierarchy",
+      "This is the doc that 2005-2010 course assignments told students to read"
+    ],
+    "tags": [
+      "LLVM 1.5",
+      "pass manager",
+      "FunctionPass",
+      "opt"
+    ],
+    "notes": "The early LLVM 1.x guide to writing analysis and transformation passes in C++, from a Hello World pass through the pass manager."
+  },
+  {
+    "title": "Fabrice Bellard — OTCC: Obfuscated Tiny C Compiler",
+    "url": "https://bellard.org/otcc/",
+    "year": 2002,
+    "year_label": "2002 (IOCCC entry)",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "source-code project",
+    "site": "bellard.org",
+    "score": 88,
+    "evidence": [
+      "Page says it was written 'to win the International Obfuscated C Code Contest (IOCCC) in 2002'",
+      "Self-hosting C-subset compiler generating i386 code in memory, resolving symbols with dlsym()",
+      "OTCCELF variant writes dynamically linked i386 ELF executables directly, tested on Linux and Sparc Solaris",
+      "Plain otcc.c / otccelf.c downloads; non-obfuscated versions added later"
+    ],
+    "tags": [
+      "tiny C compiler",
+      "i386",
+      "ELF",
+      "IOCCC",
+      "self-hosting",
+      "TinyCC"
+    ],
+    "notes": "A self-compiling C-subset compiler in about 2 KB of C that generates i386 code or ELF executables. TinyCC later grew out of it."
+  },
+  {
+    "title": "UT Austin EE 360N (Fall 2005) — LC-3b assembler, simulators, virtual memory and pipeline lab sequence",
+    "url": "https://users.ece.utexas.edu/~patt/05f.360N/labs.html",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "lab sequence",
+    "site": "users.ece.utexas.edu",
+    "score": 99,
+    "evidence": [
+      "Page headed 'EE 360N Lab Assignments Fall 2005'; Lab 6 due December 9, clarifications updated 12/8/05",
+      "Starter C shells lc3bsim2.c through lc3bsim6.c linked for each lab",
+      "'Getting Started with gcc' and 'How to port code from Windows to sunfire' guides, PuTTY/WinSCP links",
+      "Six labs: assembler, ISA simulator, microcoded simulator, interrupts, virtual memory, pipelined simulator"
+    ],
+    "tags": [
+      "LC-3b",
+      "assembler",
+      "microcode",
+      "pipeline",
+      "virtual memory",
+      "Yale Patt",
+      "gcc -ansi"
+    ],
+    "notes": "Yale Patt's full computer-architecture lab sequence: write an LC-3b assembler in C, then grow an instruction-level simulator into a microcoded, interrupt-capable, virtual-memory and finally pipelined LC-3b simulator."
+  },
+  {
+    "title": "UT Austin EE 360N Lab 1 — LC-3b two-pass assembler in C",
+    "url": "https://users.ece.utexas.edu/~patt/05f.360N/labs/lab1/lab1.html",
+    "year": 2005,
+    "year_label": "Due September 18, 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Assemblers / Linkers",
+    "kind": "project assignment",
+    "site": "users.ece.utexas.edu",
+    "score": 97,
+    "evidence": [
+      "'EE 360N, Fall 2005 Lab Assignment 1 Due: Sunday, September 18'",
+      "Submission page requires assembler.c compiled with 'gcc -ansi assembler.c' on LRC Linux/Unix machines",
+      "Specifies label/opcode/operand syntax, .ORIG/.FILL/.END pseudo-ops and 0x-prefixed hex object output",
+      "Output feeds the C simulators written in Labs 2 and 3"
+    ],
+    "tags": [
+      "assembler",
+      "symbol table",
+      "LC-3b",
+      "two-pass",
+      "ANSI C"
+    ],
+    "notes": "Write an assembler in ANSI C that translates LC-3b assembly (labels, opcodes, pseudo-ops) into a hex object file, plus a small LC-3b program to test it."
+  },
+  {
+    "title": "UT Austin EE 360N Lab 6 — Pipelined LC-3b simulator",
+    "url": "https://users.ece.utexas.edu/~patt/05f.360N/labs/lab6/lab6.html",
+    "year": 2005,
+    "year_label": "Due December 9, 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "users.ece.utexas.edu",
+    "score": 96,
+    "evidence": [
+      "'EE 360N, Fall 2005 Lab Assignment 6 Due: December 9, 2005, 5:00 pm'",
+      "Provided shell lc3bsim6.c; students fill in the pipeline stage functions",
+      "Control store file of 64 rows x 23 columns lives in the DE stage",
+      "Course page supplies example .asm/.hex/.dump/.timeline traces for debugging"
+    ],
+    "tags": [
+      "pipeline",
+      "LC-3b",
+      "microcode",
+      "dependency checking",
+      "cycle-accurate"
+    ],
+    "notes": "Complete a cycle-level C simulator of a pipelined LC-3b, including stage logic, dependency checks and stalls, driven by a microcode control store."
+  },
+  {
+    "title": "UT Austin EE 360N (Spring 2001) Lab 2 — Microcoded LC-2 simulator",
+    "url": "https://users.ece.utexas.edu/~patt/01s.360N/labs/lab2.html",
+    "year": 2001,
+    "year_label": "Due February 18, 2001",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "users.ece.utexas.edu",
+    "score": 95,
+    "evidence": [
+      "'EE 360N, Spring 2001 ... Lab Assignment 2; Due February 18'",
+      "TAs listed include Onur Mutlu; course index 'Last Updated: Jan 23, 2001'",
+      "Simulator reads a 64x31 microcode file and an assembled LC-2 program",
+      "Shell provides go/run/mdump/rdump commands; students write the microsequencer and datapath routines"
+    ],
+    "tags": [
+      "LC-2",
+      "microcode",
+      "microsequencer",
+      "datapath",
+      "Yale Patt"
+    ],
+    "notes": "Write the simulation routines of a microcoded LC-2 processor simulator in C, modelling the microsequencer, bus, datapath and memory cycle by cycle."
+  },
+  {
+    "title": "Portland State CS 577 (Winter 2004) — Extending a JVM-subset bytecode interpreter in C",
+    "url": "https://web.cecs.pdx.edu/~apt/cs577_2004/hw1.pdf",
+    "year": 2004,
+    "year_label": "Due February 4, 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Interpreters / Virtual Machines",
+    "kind": "project assignment",
+    "site": "web.cecs.pdx.edu",
+    "score": 97,
+    "evidence": [
+      "'CS 577 Homework 1 – Extending a bytecode interpreter – due 2pm, Wednesday, Feb 4, 2004'",
+      "Provided C sources interp.c, class.[ch], basics.[ch], bytecode.h and a makefile",
+      "Course page notes 'BUG FIX 1/31/04 1:10am' on interp.c",
+      "Task: add about twelve JVM instructions (ACONST_NULL, array loads and stores) for integer arrays"
+    ],
+    "tags": [
+      "JVM",
+      "bytecode",
+      "interpreter",
+      "class file",
+      "switch dispatch"
+    ],
+    "notes": "Extend a small C interpreter that loads Java .class files and runs a JVM-instruction subset, adding the bytecodes needed for integer arrays."
+  },
+  {
+    "title": "Portland State CS 577 (Spring 2005) — Improving a JVM-subset JIT compiler targeting SPARC",
+    "url": "https://web.cecs.pdx.edu/~apt/cs577_2005/hw2.pdf",
+    "year": 2005,
+    "year_label": "Due May 23, 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Interpreters / Virtual Machines",
+    "kind": "project assignment",
+    "site": "web.cecs.pdx.edu",
+    "score": 96,
+    "evidence": [
+      "'CS 577 Homework 2 – Improving a Just-in-time compiler – due 4pm, Monday, May 23, 2005'",
+      "Provided C files jit.c, class.[ch], basics.[ch], sparc.[ch], bytecode.h and makefile",
+      "JIT emits SPARC code, mapping locals to %i0-%i5 and stack slots to %l0-%l7",
+      "Course page also links the 2005 interpreter homework and interp_x2.c/interp_x3.c dispatch variants"
+    ],
+    "tags": [
+      "JIT",
+      "JVM",
+      "SPARC",
+      "register allocation",
+      "bytecode"
+    ],
+    "notes": "Improve a C JIT that translates JVM bytecode to SPARC machine code so that it no longer emits code for local loads, stores, dup and swap."
+  },
+  {
+    "title": "Princeton COS 217 (Spring 2003) — SPARC assembler producing ELF object files",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs217/asgts/assembler/assembler.html",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Assemblers / Linkers",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 97,
+    "evidence": [
+      "Archived under /courses/archive/spr03/cs217/ (Funkhouser, Spring 2003)",
+      "Output compared against Solaris /usr/ccs/bin/as",
+      "Students write pass1.c, pass2.c and symtable.c in C and submit with /u/cs217/bin/submit 5",
+      "Produces an ELF .o with data, bss and text sections"
+    ],
+    "tags": [
+      "assembler",
+      "SPARC",
+      "ELF",
+      "two-pass",
+      "symbol table",
+      "Solaris"
+    ],
+    "notes": "Implement both passes and the symbol table of an assembler for a SPARC assembly subset, building the data, bss and text sections of a UNIX ELF object file."
+  },
+  {
+    "title": "UPenn CSE 240 (Autumn 2006) Homework 9 — LC-3 assembler in C",
+    "url": "https://acg.cis.upenn.edu/milom/cse240-Fall06/handouts/hw9",
+    "year": 2006,
+    "year_label": "Due December 6, 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Assemblers / Linkers",
+    "kind": "project assignment",
+    "site": "acg.cis.upenn.edu",
+    "score": 95,
+    "evidence": [
+      "'CSE240 - Introduction to Computer Architecture Autumn 2006 Due: Wednesday, Dec 6 at 11:59PM'",
+      "Provided parser.c/parser.h build a linked list of insn_t structs",
+      "Students write pass_one/pass_two and a symbol table (sym_table_insert/lookup)",
+      "Follows Homework 8, an LC-3 disassembler (lc3dis) written in C"
+    ],
+    "tags": [
+      "assembler",
+      "LC-3",
+      "symbol table",
+      "linked list",
+      "PennSim"
+    ],
+    "notes": "Build mylc3as, a multi-pass LC-3 assembler in C: insert labels into a symbol table, resolve PC-relative offsets and encode instructions."
+  },
+  {
+    "title": "Cornell ECE/CS 314 (Fall 2004) Project 2 — MIPS functional simulator",
+    "url": "https://www.cs.cornell.edu/courses/cs314/2004fa/project2.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 96,
+    "evidence": [
+      "'ECE/CS 314: Computer Organization Fall 2004 Project 2: Simulating A MIPS Processor'",
+      "Template files from /usr/class/ececs314/proj2.tar.gz on the BSDCluster",
+      "Students implement int OneStep(unsigned long ins, unsigned long Regs[], ...) in exec.c",
+      "gmipc reference simulator; sibling Project 4 pages dated December 2004"
+    ],
+    "tags": [
+      "MIPS",
+      "simulator",
+      "instruction decode",
+      "opcodes.h",
+      "testing"
+    ],
+    "notes": "Write the C instruction-execution core of a MIPS simulator, decoding op/SPECIAL/REGIMM forms, handling branches and memory, and write functional tests for it."
+  },
+  {
+    "title": "Cornell COMP 303 (Fall 2007) Project 5 — MIPS simulator (disassembler, cache and multicore sequel)",
+    "url": "https://www.cs.cornell.edu/people/egs/comp303/project5.php",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 93,
+    "evidence": [
+      "Page header 'COMP 303 - Computer Architecture Fall 2007'",
+      "Students fill in void run() in run.c using provided mem_read_word/mem_write_word helpers",
+      "Models branch delay slots, the R[] register file and the entry_point of a MIPS executable",
+      "Sibling projects: MIPS disassembler (P4), 4-way set-associative cache (P6), multicore simulator (P7)"
+    ],
+    "tags": [
+      "MIPS",
+      "simulator",
+      "delay slot",
+      "cache",
+      "multicore"
+    ],
+    "notes": "Execute real MIPS executables by writing the fetch-decode-execute loop of a C simulator; later projects add a cache and multiple cores."
+  },
+  {
+    "title": "Georgia Tech CS 4803DGC (Spring 2009) Assignment 2 — Microcoded LC-3b simulator",
+    "url": "https://sites.cc.gatech.edu/fac/hyesoon/spr09/hw2.html",
+    "year": 2009,
+    "year_label": "Spring 2009 (due Feb 15, 2009)",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "sites.cc.gatech.edu",
+    "score": 91,
+    "evidence": [
+      "'CS4803DGC, Spring 2009 Assignment #2 ... New Due: Sunday, Feb. 15'",
+      "Shell lc3bsim3.c provided; students write eval_micro_sequencer, cycle_memory, eval_bus_drivers, drive_bus, latch_datapath_values",
+      "Must compile with gcc -ansi on helsinki.cc.gatech.edu",
+      "Assignment 1 on the same site is an instruction-level LC-3b simulator"
+    ],
+    "tags": [
+      "LC-3b",
+      "microcode",
+      "datapath",
+      "ANSI C",
+      "game consoles course"
+    ],
+    "notes": "Complete a cycle-level LC-3b simulator in ANSI C that interprets a 64x35 microcode control store, plus write the microcode itself."
+  },
+  {
+    "title": "Georgia Tech CS 6290 (Fall 2009) Programming Assignment 2 — Superscalar, g-share and Tomasulo simulator",
+    "url": "https://sites.cc.gatech.edu/fac/hyesoon/fall09/prog2.html",
+    "year": 2009,
+    "year_label": "Fall 2009",
+    "language": [
+      "C++"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "sites.cc.gatech.edu",
+    "score": 91,
+    "evidence": [
+      "'CS6290HPCA Fall 2009 Programming assignment #2'",
+      "'Your code must run on killerbee[1-5].cc.gatech.edu with g++4.1'",
+      "Extends the Lab 1 Pin-trace-driven 5-stage pipeline simulator (sim.cpp)",
+      "Adds g-share predictor, KNOB_ISSUE_WIDTH superscalar, scheduler and ROB"
+    ],
+    "tags": [
+      "Tomasulo",
+      "out-of-order",
+      "branch prediction",
+      "ROB",
+      "Pin",
+      "trace-driven"
+    ],
+    "notes": "Extend a trace-driven C++ pipeline simulator with a g-share branch predictor, superscalar issue and Tomasulo-style out-of-order scheduling with a reorder buffer."
+  },
+  {
+    "title": "Toronto ECE Advanced Computer Architecture (Fall 2005) HW1 — Modifying the SimpleScalar functional simulator",
+    "url": "https://www.eecg.utoronto.ca/~moshovos/ACA05/hw/hw1.htm",
+    "year": 2005,
+    "year_label": "Fall 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Architecture Simulators",
+    "kind": "project assignment",
+    "site": "eecg.utoronto.ca",
+    "score": 90,
+    "evidence": [
+      "Course folder ACA05; Word-export metadata dated 2005-09-17; index 'Advanced Computer Architecture, Fall 2005'",
+      "Course page ships simplesim-aca.tar.bz and an ss-gcc cross compiler that installs under /usr/local in Cygwin",
+      "Explains sim-safe's 'loop with a huge switch statement' and two-level page-array memory",
+      "Follow-up HW2 (due October 21, 2005) modifies sim-safe for ILP limit studies and uses sim-outorder"
+    ],
+    "tags": [
+      "SimpleScalar",
+      "sim-safe",
+      "sim-outorder",
+      "PISA",
+      "Cygwin"
+    ],
+    "notes": "Instrument the SimpleScalar sim-safe functional simulator's C source to collect program-execution statistics, as a lead-in to ILP and out-of-order studies."
+  },
+  {
+    "title": "Colorado State CS 270 (Fall 2008) PA4 — LC-3 assembler with symbol table and regression tests",
+    "url": "https://www.cs.colostate.edu/~cs270/.Fall08/Programs/PA4.html",
+    "year": 2008,
+    "year_label": "Due October 28, 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Assemblers / Linkers",
+    "kind": "project assignment",
+    "site": "cs.colostate.edu",
+    "score": 89,
+    "evidence": [
+      "Semester directory .Fall08 in URL; 'Due Tuesday October 28th'",
+      "Builds LC3assem, whose output feeds the LC3sim simulator from PA3",
+      "Goals list C strings, singly-linked lists, malloc() and strcmp()",
+      "Requires unit and regression testing of assembler passes"
+    ],
+    "tags": [
+      "assembler",
+      "LC-3",
+      "symbol table",
+      "regression testing"
+    ],
+    "notes": "Implement the symbol-table lookup and the passes of a multi-pass LC-3 assembler in C, paired with the LC-3 simulator from the previous assignment."
+  },
+  {
+    "title": "Marat Fayzullin — How To Write a Computer Emulator",
+    "url": "https://fms.komkon.org/EMUL8/HOWTO.html",
+    "year": 2000,
+    "year_label": "1997–2000",
+    "language": [
+      "C"
+    ],
+    "category": "Emulators",
+    "kind": "tutorial",
+    "site": "fms.komkon.org",
+    "score": 90,
+    "evidence": [
+      "Footer '©1997-2000 Copyright by Marat Fayzullin'",
+      "Written by the author of fMSX, VGB, iNES and ColEm emulators",
+      "C code for an interpreting CPU loop: OpCode=Memory[PC++]; Counter-=Cycles[OpCode]; switch(OpCode)",
+      "Sections on Z80/6502 cores, memory emulation, cyclic tasks, optimizing C code and endianness"
+    ],
+    "tags": [
+      "emulator",
+      "Z80",
+      "6502",
+      "interpreter loop",
+      "fMSX"
+    ],
+    "notes": "A classic hobbyist guide to writing an interpreting emulator in C, covering the CPU dispatch loop, memory mapping, interrupts and timing."
+  },
+  {
+    "title": "George Carrette — SIOD: Scheme in One Defun (C interpreter documentation)",
+    "url": "http://people.delphiforums.com/gjc/siod.html",
+    "year": 2007,
+    "year_label": "1996–2007 (release 3.6, April 2007)",
+    "language": [
+      "C"
+    ],
+    "category": "Interpreters / Virtual Machines",
+    "kind": "source-code project",
+    "site": "people.delphiforums.com",
+    "score": 86,
+    "evidence": [
+      "'This document is © 1996-2007 by George J. Carrette'",
+      "Release notes end with '3.6 5-APR-2007 ... port to Visual C++ 2005 Express Edition' and point to CodePlex",
+      "Mentions a siod.mak for Microsoft Visual C++ 4.0 and Windows NT/95 setup",
+      "Documents mark-and-sweep and stop-and-copy GC, writing C extensions and the EVAL implementation"
+    ],
+    "tags": [
+      "Scheme",
+      "garbage collection",
+      "embedding",
+      "Visual C++",
+      "extension language"
+    ],
+    "notes": "Home page and manual for a small embeddable Scheme interpreter in C, explaining its two garbage collectors, EVAL and environment design, and the C extension API."
+  },
+  {
+    "title": "MIT 6.824 Spring 2004 — Lab 1: A simple web proxy",
+    "url": "https://pdos.csail.mit.edu/6.824-2004/labs/webproxy1.html",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "lab assignment",
+    "site": "pdos.csail.mit.edu",
+    "score": 97,
+    "evidence": [
+      "Page header '6.824 - Spring 2004', due Tuesday, February 10th",
+      "Starter tarball with http.C, http.h, webproxy1.C, webproxy1-test.C built with gmake",
+      "HTTP/1.0 subset per RFC 1945; fork() forbidden, max 32 file descriptors",
+      "Handin via 'gmake dist' tarball; contact address on pdos.lcs.mit.edu"
+    ],
+    "tags": [
+      "HTTP",
+      "proxy",
+      "sockets",
+      "C++",
+      "6.824",
+      "MIT"
+    ],
+    "notes": "Write a single-connection HTTP/1.0 web proxy in C++ from a provided parser skeleton. It is the first lab in a sequence that goes on to a concurrent proxy, a libasync TCP proxy and a network file server."
+  },
+  {
+    "title": "MIT 6.824 Fall 2002 — Lab 5: Distributed ticker tape (ordered RPC broadcast)",
+    "url": "https://pdos.csail.mit.edu/6.824-2002/labs/ticker.html",
+    "year": 2002,
+    "year_label": "Fall 2002",
+    "language": [
+      "C++"
+    ],
+    "category": "Distributed Systems",
+    "kind": "lab assignment",
+    "site": "pdos.csail.mit.edu",
+    "score": 95,
+    "evidence": [
+      "Page header '6.824 - Fall 2002', due Friday, October 18",
+      "Provided ticker.x RPC interface, ticker-client.C and a skeleton server (RPC over UDP)",
+      "Built from /home/6824/labs/ticker.tgz with gmake",
+      "All servers must print trades in the same total order (logical clocks)"
+    ],
+    "tags": [
+      "RPC",
+      "total order",
+      "logical clocks",
+      "replication",
+      "6.824"
+    ],
+    "notes": "Extend an RPC skeleton server so that a set of ticker servers exchange stock trades and all print them in the same order. This is an early lab on ordering and agreement in distributed systems."
+  },
+  {
+    "title": "MIT 6.824 Spring 2006 — Lab 1: Lock server for a Frangipani-style file system",
+    "url": "https://pdos.csail.mit.edu/6.824-2006/labs/lab-1.html",
+    "year": 2006,
+    "year_label": "Spring 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Distributed Systems",
+    "kind": "lab assignment",
+    "site": "pdos.csail.mit.edu",
+    "score": 95,
+    "evidence": [
+      "'Last change: $Date: 2006/02/07 06:17:37 $' RCS keyword, due Tuesday Feb 14th",
+      "Skeleton RPC-based lock server built with the loop-back NFS toolkit (SFS era)",
+      "First of a lab sequence building a multi-server file system over a shared block server",
+      "ASCII architecture diagram: FS, block server, lock server, kernel NFS client"
+    ],
+    "tags": [
+      "lock server",
+      "RPC",
+      "Frangipani",
+      "NFS loopback",
+      "distributed file system"
+    ],
+    "notes": "Implement the core logic of an RPC lock server that later labs use to keep several file servers consistent. The file servers share one network block server and present themselves to the kernel as NFS v3 servers."
+  },
+  {
+    "title": "MIT 6.824 Fall 2007 — Lab 8: Paxos for the YFS replicated state machine",
+    "url": "https://pdos.csail.mit.edu/6.824-2007/labs/lab-8.html",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Distributed Systems",
+    "kind": "lab assignment",
+    "site": "pdos.csail.mit.edu",
+    "score": 98,
+    "evidence": [
+      "'Last change: $Date: 2007/11/16 16:15:59 $', due Wednesday, November 21st",
+      "Edit paxos.cc, paxos_protocol.h and log.cc in the C++ YFS code base",
+      "Uses pthread_cond_wait / pthread_cond_signal in the manager thread",
+      "Builds on Lab 7's replicated state machine (RSM) for the lock server"
+    ],
+    "tags": [
+      "Paxos",
+      "consensus",
+      "view change",
+      "RSM",
+      "pthreads",
+      "YFS"
+    ],
+    "notes": "Implement Paxos to agree on view membership so the replicated lock service survives nodes failing and rejoining. It is one lab in the Fall 2007 YFS sequence, which runs from a lock server through a FUSE file system to replication."
+  },
+  {
+    "title": "CMU 15-441 Spring 2003 — Project 1: Simplified IRC server",
+    "url": "https://www.cs.cmu.edu/~mukesh/15-441/proj1/online/index.html",
+    "year": 2003,
+    "year_label": "January 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 96,
+    "evidence": [
+      "'Assigned: Tue, 28 Jan 2003 Due: Tue, 14 Feb 2003'",
+      "LaTeX2HTML 2K.1beta output, 'Last Revised: January 28, 2003'",
+      "Executable must be named sircd and built with GNU make on Andrew x86 Linux (unix44-49)",
+      "Uses the Berkeley sockets API with a select() tutorial reference"
+    ],
+    "tags": [
+      "IRC",
+      "chat server",
+      "select",
+      "BSD sockets",
+      "sircd"
+    ],
+    "notes": "Write a concurrent chat server for a subset of IRC, with nicks, channels and private messages, using select() and Berkeley sockets."
+  },
+  {
+    "title": "CMU 15-441 Spring 2008 — Assignments: IRC server, IRC routing, BitTorrent-like transfer",
+    "url": "https://www.cs.cmu.edu/~dga/15-441/S08/assignments.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Networking",
+    "kind": "course project sequence",
+    "site": "cs.cmu.edu",
+    "score": 96,
+    "evidence": [
+      "Dated table: Project 1 01/19–02/12, Project 2 02/14–03/25, Project 3 03/27–05/01",
+      "Starter tarballs project1.tar.gz, project2.tar.gz, project3.tar.gz plus checkpoint test scripts",
+      "Sample sircd binary and IRC RFC handout",
+      "Handouts require gcc on Andrew Linux machines"
+    ],
+    "tags": [
+      "IRC",
+      "link state",
+      "BitTorrent",
+      "congestion control",
+      "UDP",
+      "course sequence"
+    ],
+    "notes": "Three linked projects: an IRC server, a link-state routing daemon connecting IRC servers, and a BitTorrent-like peer with its own TCP-like congestion control over UDP."
+  },
+  {
+    "title": "CMU 15-441 Spring 2008 — Project 3: BitTorrent-like file transfer with congestion control over UDP",
+    "url": "https://www.cs.cmu.edu/~dga/15-441/S08/project3/project3.pdf",
+    "year": 2008,
+    "year_label": "March–May 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 98,
+    "evidence": [
+      "'Assigned: Thursday, March 27, 2008. Due Date: Thursday, May 1, 2008'",
+      "'Your peer must be written in the C programming language, no C++ or STL is allowed'",
+      "All control and data over UDP; must build on Andrew Linux machines",
+      "Starter code spiffy.c (lossy network emulator) and subversion/makefile recitation references"
+    ],
+    "tags": [
+      "BitTorrent",
+      "P2P",
+      "congestion control",
+      "reliability",
+      "UDP",
+      "chunks"
+    ],
+    "notes": "Build a peer that downloads file chunks from several peers at once over UDP. You implement your own reliability and TCP-like congestion control and plot the window behaviour with gnuplot."
+  },
+  {
+    "title": "CMU 15-441 Spring 2008 — Project 2: IRC routing with a link-state protocol",
+    "url": "https://www.cs.cmu.edu/~dga/15-441/S08/project2/project2.pdf",
+    "year": 2008,
+    "year_label": "February–March 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "project assignment",
+    "site": "cs.cmu.edu",
+    "score": 96,
+    "evidence": [
+      "'Assigned: February 14, 2008 … Final Due: March 25, 2008 (11:59 PM EST)'",
+      "Tarball http://www.cs.cmu.edu/~dga/15-441/S08/project2/project2.tar.gz",
+      "gcc and gmake-compatible Makefile on linux.andrew.cmu.edu",
+      "Shortest-path link state routing between chat server nodes (unix1.andrew.cmu.edu config)"
+    ],
+    "tags": [
+      "link state",
+      "Dijkstra",
+      "routing daemon",
+      "IRC",
+      "sockets"
+    ],
+    "notes": "Connect a network of IRC servers with a routing daemon that runs a shortest-path link-state protocol, so that user and channel messages are forwarded across the server mesh."
+  },
+  {
+    "title": "UMD CMSC 417 Fall 2001 — IPv6 router network and reliable transport project sequence",
+    "url": "https://www.cs.umd.edu/~hollings/cs417/f01/",
+    "year": 2001,
+    "year_label": "Fall 2001",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "course project sequence",
+    "site": "cs.umd.edu",
+    "score": 96,
+    "evidence": [
+      "Programs dated: #1 due September 10, 2001 … #5 due December 10, 2001",
+      "Garbler object files shipped for alpha, SPARC/Solaris and x86/Linux",
+      "C support files config-net.c/.h, ipv6socket.h; ftpApp built with gmake on the AITS cluster",
+      "Pthreads queue (#2), link-state routing (#3), forwarding/ICMP/traceroute (#4), reliable transport (#5)"
+    ],
+    "tags": [
+      "IPv6",
+      "link state",
+      "pthreads",
+      "ICMP",
+      "traceroute",
+      "reliable transport"
+    ],
+    "notes": "A five-part project that simulates a network of IPv6 routers in C. Students build a pthreads queue, link-state routing with hello packets, forwarding with ICMP and traceroute, and a reliable transport protocol that runs an FTP application."
+  },
+  {
+    "title": "UMD CMSC 417 Fall 2001 — Programming Assignment 3: Link-state routing",
+    "url": "https://www.cs.umd.edu/~hollings/cs417/f01/prog3/prog3.html",
+    "year": 2001,
+    "year_label": "October 2001",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "project assignment",
+    "site": "cs.umd.edu",
+    "score": 95,
+    "evidence": [
+      "'CMSC 417 Programming Assignment #3 Due October 24, 2001'",
+      "Supporting C files config-net.h, config-net.c, testConfig-net.c and network.config",
+      "Timer thread built on the pthreads queue abstraction from project 2",
+      "Hello packets and bounded flooding to build the topology"
+    ],
+    "tags": [
+      "link state",
+      "flooding",
+      "routing table",
+      "timer thread",
+      "pthreads"
+    ],
+    "notes": "Implement link-state routing among simulated nodes, using hello packets, bounded flooding and a timer thread to build hop-minimising routing tables."
+  },
+  {
+    "title": "Cornell CS519 Spring 2002 — PA2: UTCP, a reliable transport over UDP",
+    "url": "https://www.cs.cornell.edu/courses/cs519/2002sp/pa2.html",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 96,
+    "evidence": [
+      "'Due: Sunday, 04/14/02 11:59 p.m.'; dated update notes '04/11/02 4:40 p.m.'",
+      "'done in C language on Unix Operating System using the socket API'",
+      "Provided utcp.c, utcp.h, headers.h, cksum.c, evil.c (loss/corruption injector), eventTimer.c",
+      "Word-exported HTML with 2002-03-15 document metadata"
+    ],
+    "tags": [
+      "reliable transport",
+      "sliding window",
+      "UDP",
+      "flow control",
+      "TCP-like"
+    ],
+    "notes": "Build UTCP, a connection-oriented user-level TCP over UDP with reliable, in-order, duplicate-free delivery and flow control. A provided 'evil' sendto wrapper drops and corrupts packets."
+  },
+  {
+    "title": "Princeton CS461 Spring 2003 — Build a user-level TCP/IP stack on Linux",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs461/assignments.html",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "course project sequence",
+    "site": "cs.princeton.edu",
+    "score": 96,
+    "evidence": [
+      "Assignments due February 19, March 24, April 18 and May 13, 2003",
+      "Raw ethernet helper interface.c / interface.h header 'Spring 2002, Revision 1'",
+      "Submit via /u/cs461/bin/submit on CIT Sparc machines; root on Friend 010 Linux PCs",
+      "IP + ICMP (RFC 791/792), TCP handshake, sliding window, then congestion control"
+    ],
+    "tags": [
+      "TCP/IP stack",
+      "IP",
+      "ICMP",
+      "TCP",
+      "sliding window",
+      "congestion control"
+    ],
+    "notes": "Over four assignments, implement IP, a subset of ICMP and TCP as a user-level library on Linux that must interoperate with real TCP/IP stacks, with congestion control as extra credit."
+  },
+  {
+    "title": "Princeton COS461 Spring 2006 — Assignment 3: MYSOCK/STCP reliable transport",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr06/cos461/hw3/",
+    "year": 2006,
+    "year_label": "Spring 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 94,
+    "evidence": [
+      "'Due : May 19th, 11:59pm submit by email' under COS 461 Spring 2006 header",
+      "Only transport.c is edited; stub files stcp_api.h, mysock.c, mysock_api.c, transport.h",
+      "Provided Makefile, tcp.tgz skeleton unpacked with tar zxvf",
+      "Spec covers STCP packet format, sequence numbers, sliding windows and termination"
+    ],
+    "tags": [
+      "STCP",
+      "socket layer",
+      "sliding window",
+      "reliable transport"
+    ],
+    "notes": "Implement the STCP transport layer underneath a MYSOCK socket API, covering connection setup, sliding-window data transfer and teardown over an unreliable network layer."
+  },
+  {
+    "title": "Princeton COS461 Spring 2006 — Assignment 2: Building your own Internet router (VNS)",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr06/cos461/hw2/",
+    "year": 2006,
+    "year_label": "Spring 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 94,
+    "evidence": [
+      "'Due : April 14th, 9pm submit by email' under COS 461 Spring 2006 header",
+      "Uses Stanford's Virtual Network System (VNS) designed for CS244a",
+      "sr stub code: sr_router.c, sr_rt.c, sr_if.c, sr_vns_comm.c, sr_protocols.h",
+      "Router must handle real ping, traceroute and file downloads"
+    ],
+    "tags": [
+      "simple router",
+      "VNS",
+      "ARP",
+      "ICMP",
+      "IP forwarding"
+    ],
+    "notes": "Complete the Stanford 'sr' simple-router skeleton so that it forwards real Internet traffic through VNS, handling ARP, IP forwarding and ICMP."
+  },
+  {
+    "title": "Stanford CS144 Spring 2008 — Lab 3: Reliable transport over UDP",
+    "url": "https://www.scs.stanford.edu/08sp-cs144/labs/reliable.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "lab assignment",
+    "site": "scs.stanford.edu",
+    "score": 94,
+    "evidence": [
+      "'Due date: Wednesday, April 30', course home page 'CS144 in Spring 2008'",
+      "Starter C files clntd.c, srvd.c, reliable_socket.c, packet_list.c, timer.c, reliable_utils.h",
+      "Copy from /usr/class/cs144/src/reliable on 32-bit myth/pod Linux machines",
+      "Window of four outstanding packets; handle drops, corruption and reordering"
+    ],
+    "tags": [
+      "reliable transport",
+      "sliding window",
+      "UDP",
+      "myth"
+    ],
+    "notes": "Implement a TCP-like stream transport in user space over UDP, with four outstanding packets, corruption detection and reordering. Sibling labs in the course build fingerd, a simple router and RIP."
+  },
+  {
+    "title": "Stanford CS144 Fall 2009 — Lab 4: Dynamic routing with RIP",
+    "url": "https://www.scs.stanford.edu/09au-cs144/lab/dynamic.html",
+    "year": 2009,
+    "year_label": "Fall 2009",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "lab assignment",
+    "site": "scs.stanford.edu",
+    "score": 91,
+    "evidence": [
+      "'Due date: Thursday, Nov. 12th @ 4:15 PM'; course page 'CS144 in Fall 2009'",
+      "RIPv2 subset (RFC 2453), Bellman-Ford distance vector",
+      "Starter directory run against an lvns server on myth1 with sample .topo files",
+      "Course sequence also includes sr_router.c-based simple router and NAT labs"
+    ],
+    "tags": [
+      "RIP",
+      "distance vector",
+      "Bellman-Ford",
+      "lvns"
+    ],
+    "notes": "Implement a subset of RIPv2 distance-vector routing for routers running on a local VNS emulator, with split horizon, poisoned reverse and triggered updates."
+  },
+  {
+    "title": "Wisconsin CS640 Fall 2007 — PA2: Distance vector routing protocol",
+    "url": "https://pages.cs.wisc.edu/~akella/CS640/F07/assign/PA2/PA2.pdf",
+    "year": 2007,
+    "year_label": "October 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "project assignment",
+    "site": "pages.cs.wisc.edu",
+    "score": 93,
+    "evidence": [
+      "'Assigned: October 16, 2007 Due: November 1, 2007, 11:59pm'",
+      "Servers acting as routers over UDP, topology files, count-to-infinity",
+      "FAQ page (PA2.htm) gives C select()/FD_SET, setitimer() and sigaction() code",
+      "Submit p2.tar.gz with Makefile via handin -c cs640-1"
+    ],
+    "tags": [
+      "distance vector",
+      "Bellman-Ford",
+      "UDP",
+      "select",
+      "setitimer"
+    ],
+    "notes": "Write a UDP server that acts as a router running a simplified distance-vector protocol from a topology file, with interactive update, step, disable and crash commands."
+  },
+  {
+    "title": "Carleton CS347 (Fall 2003) — Minibase DBMS project sequence",
+    "url": "https://www.cs.carleton.edu/faculty/dmusicant/cs347f03/",
+    "year": 2003,
+    "year_label": "Fall 2003",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals",
+    "kind": "course project sequence",
+    "site": "cs.carleton.edu",
+    "score": 95,
+    "evidence": [
+      "Course page titled 'CS 347: Database Systems, Fall, 2003'; /cs347f03/ in URL",
+      "Lists Project 0 C++ Warmup, Buffer Manager, Heap File Page, Index Nested Loops Join, External Sorting",
+      "References GDB and Insure debugging lab and Thinking in C++",
+      "Assignments copy skeletons from /Accounts/courses/cs347/projN/ with Makefile and .C files"
+    ],
+    "tags": [
+      "Minibase",
+      "buffer manager",
+      "heap file",
+      "join",
+      "external sort"
+    ],
+    "notes": "Full Minibase-based sequence in which students build a clock buffer manager, a slotted heap-file page, an index nested loops join and external sorting in C++."
+  },
+  {
+    "title": "Carleton CS347 — Minibase external sorting",
+    "url": "https://www.cs.carleton.edu/faculty/dmusicant/cs347f03/proj4/",
+    "year": 2003,
+    "year_label": "November 2003",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "project assignment",
+    "site": "cs.carleton.edu",
+    "score": 93,
+    "evidence": [
+      "Assigned Wednesday 11/5, due Monday 11/17 (Fall 2003 course)",
+      "Implement class Sort constructor in sort.C against sort.h spec",
+      "Skeleton includes Makefile and qsort_example.C",
+      "Sorts Minibase heap files on a given field with AttrType/TupleOrder"
+    ],
+    "tags": [
+      "external sort",
+      "Minibase",
+      "heap file"
+    ],
+    "notes": "Implement multi-pass external merge sort over Minibase heap files, producing a sorted output heap file."
+  },
+  {
+    "title": "Carleton CS395 (Spring 2002) — Minibase sort-merge join",
+    "url": "https://www.cs.carleton.edu/faculty/dmusicant/cs395s02/proj4.html",
+    "year": 2002,
+    "year_label": "May–June 2002",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "project assignment",
+    "site": "cs.carleton.edu",
+    "score": 94,
+    "evidence": [
+      "Assigned Wednesday May 22, due Monday June 3; course page reads 'Spring, 2002'",
+      "Copy Makefile from /usr/local/mini_hwk/assign/SM_Join/src and run 'make setup'",
+      "Implement class sortMerge in sortMerge.C",
+      "Course page lists buffer manager, HeapFile page and index nested loops join projects"
+    ],
+    "tags": [
+      "sort-merge join",
+      "Minibase",
+      "relational operators"
+    ],
+    "notes": "Implement the sort-merge equijoin operator on top of Minibase heap files and its sort utility."
+  },
+  {
+    "title": "Swarthmore CS44 (Fall 2007) — Minibase buffer manager with Love/Hate replacement",
+    "url": "https://www.cs.swarthmore.edu/~newhall/cs44/f07/Homework/proj3.html",
+    "year": 2007,
+    "year_label": "October 2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Buffer Manager",
+    "kind": "project assignment",
+    "site": "cs.swarthmore.edu",
+    "score": 94,
+    "evidence": [
+      "Header 'CS44 Fall 2007 Project 3: Buffer Manager', due Friday Oct. 26",
+      "Course page states 'The course project will be in C++'",
+      "class BufMgr spec with MINIBASE_FIRST_ERROR / MINIBASE_CHAIN_ERROR error protocol",
+      "Love/Hate page replacement policy instead of plain clock/LRU"
+    ],
+    "tags": [
+      "buffer pool",
+      "page replacement",
+      "Minibase",
+      "pin/unpin"
+    ],
+    "notes": "Build the Minibase buffer manager layer (pin, unpin, allocate, free, flush) using a Love/Hate replacement policy."
+  },
+  {
+    "title": "Swarthmore CS44 (Fall 2007) — Minibase B+ tree index",
+    "url": "https://www.cs.swarthmore.edu/~newhall/cs44/f07/Homework/proj4.html",
+    "year": 2007,
+    "year_label": "November 2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Indexing",
+    "kind": "project assignment",
+    "site": "cs.swarthmore.edu",
+    "score": 93,
+    "evidence": [
+      "'CS44 Fall 2007 Project 4: B+ Tree Index', due Wednesday Nov. 21",
+      "Builds on students' own Page classes and Buffer Manager",
+      "btreefilescan::get_next / delete_current interface and FAQ",
+      "Part of a 5-project sequence ending in sort-merge join (proj5)"
+    ],
+    "tags": [
+      "B+ tree",
+      "index",
+      "Minibase",
+      "scan"
+    ],
+    "notes": "Implement a disk-based B+ tree file with insert, delete, and range scans over Minibase pages pinned through the buffer manager."
+  },
+  {
+    "title": "Wisconsin CS564 — Minirel project (buffer manager, heap files, catalog, operators)",
+    "url": "https://pages.cs.wisc.edu/~anhai/courses/564/minirel-project/",
+    "year": 2007,
+    "year_label": "2006–2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals",
+    "kind": "course project sequence",
+    "site": "pages.cs.wisc.edu",
+    "score": 91,
+    "evidence": [
+      "Stage documents authored by David DeWitt with embedded Word timestamps 2006-10 to 2007-04",
+      "Stage 3 buffer manager uses C++ classes BufMgr, BufDesc, BufHashTbl with buf.C, testbuf.C, Makefile",
+      "Stages 3–6: buffer manager, HeapFile manager, catalog/utilities, query and update operators",
+      "Disk layer is the UNIX file system; parser supplied by staff"
+    ],
+    "tags": [
+      "Minirel",
+      "buffer manager",
+      "heap file",
+      "catalog",
+      "SQL"
+    ],
+    "notes": "Wisconsin's classic Minirel sequence: build a single-user DBMS from a buffer pool up through heap files, catalogs and select/project/insert/delete operators."
+  },
+  {
+    "title": "UMN Duluth CS4611 (Fall 2004) — DBMS assignments: buffer manager, B+ tree files, query evaluation",
+    "url": "https://www.d.umn.edu/~rmaclin/cs4611/programs/dbms-assignment-overview.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals",
+    "kind": "course project sequence",
+    "site": "d.umn.edu",
+    "score": 90,
+    "evidence": [
+      "Page header 'CS 4611 (Fall 2004) Assignments 3-5 Overview'",
+      "Program 3 buffer manager due November 11, 2004; Program 5 due December 17, 2004",
+      "C++ skeletons buf.h/buf.C, code distributed as fc.tar.Z (uncompress + tar)",
+      "Layers: disk space manager, buffer manager, B+ tree files and system catalog, query processor"
+    ],
+    "tags": [
+      "buffer manager",
+      "B+ tree",
+      "system catalog",
+      "query evaluation"
+    ],
+    "notes": "Three-part team project building a buffer manager, B+ tree primary files with a relational system catalog, and a small query evaluator."
+  },
+  {
+    "title": "Northwestern CS339 (Fall 2004) — Project C: disk-based BTree in C++",
+    "url": "https://users.cs.northwestern.edu/~pdinda/db-f04/projectc.pdf",
+    "year": 2004,
+    "year_label": "November 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Indexing",
+    "kind": "project assignment",
+    "site": "users.cs.northwestern.edu",
+    "score": 92,
+    "evidence": [
+      "PDF creation date 10 Nov 2004; linked from 'CS 339: Introduction to Databases, Fall 2004' page",
+      "Implement a BTree index class in C++ (btree.cc / btree.h)",
+      "Framework unpacked with tar xvfz ~pdinda/HANDOUT/btree_lab.tgz",
+      "Virtual disks with a buffer cache; Perl test harness compares against reference implementation"
+    ],
+    "tags": [
+      "B-tree",
+      "index",
+      "buffer cache",
+      "I/O model"
+    ],
+    "notes": "Implement a persistent BTree over a simulated disk and buffer cache, graded by a random request stream checked against a reference implementation."
+  },
+  {
+    "title": "Cornell CS432 (Fall 2001) — ARIES crash recovery manager",
+    "url": "https://www.cs.cornell.edu/courses/cs432/2001fa/a6/a6.htm",
+    "year": 2001,
+    "year_label": "December 2001",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Recovery",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 96,
+    "evidence": [
+      "'CS 432-Fall 2001 Assignment 6', due December 4; Word metadata 2001-12-03",
+      "Visual C++ workspace: open project by double-clicking Mars.dsw",
+      "Fill in logfunc.cpp and restart.cpp; modules include log.cpp, logrec.cpp, xaction_table.cpp",
+      "Implements WAL logging, CLRs, and ARIES analysis/redo/undo restart"
+    ],
+    "tags": [
+      "ARIES",
+      "write-ahead logging",
+      "recovery",
+      "transactions",
+      "VC6"
+    ],
+    "notes": "Complete the logging and restart code of a transaction simulator so that it recovers from induced crashes using the ARIES algorithm."
+  },
+  {
+    "title": "Cornell CS432 (Fall 2001) — Minibase B+-tree with Visual C++ workspace",
+    "url": "https://www.cs.cornell.edu/courses/cs432/2001fa/a3/index.html",
+    "year": 2001,
+    "year_label": "October 2001",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Indexing",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 92,
+    "evidence": [
+      "'CS432 - Fall 2001 Assignment 3 - B+-Tree', deadline October 23",
+      "Skeleton btfile.cpp, btleaf.cpp, btindex.cpp, btfilescan.cpp, sortedpage.cpp",
+      "Open btree.dsw to build the project (Visual C++ 6 workspace)",
+      "Code copied from a cs432-fall01\\A3\\code share"
+    ],
+    "tags": [
+      "B+ tree",
+      "Minibase",
+      "VC6",
+      ".dsw"
+    ],
+    "notes": "Implement BTreeFile insert/delete and BTreeFileScan over Minibase sorted pages, built from a Visual C++ 6 workspace."
+  },
+  {
+    "title": "Cornell CS433 (Fall 2006) — MiniSearch query processor on Minibase",
+    "url": "https://www.cs.cornell.edu/courses/cs433/2006fa/Assignments/Assignment4.htm",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 90,
+    "evidence": [
+      "'CS 433 Fall 2006 Project 4: Search Engine Query Processor', due December 1, 2006",
+      "Builds on earlier HeapPage, Buffer Manager and B+ tree (string keys) assignments",
+      "Inverted lists stored as Minibase heap files; DocRecord.cpp binary loader",
+      "Performance contest on average query time"
+    ],
+    "tags": [
+      "query processing",
+      "inverted index",
+      "Minibase",
+      "search engine"
+    ],
+    "notes": "Implement page loading and keyword query processing for a small search engine stored in Minibase heap files and B+ tree catalogs."
+  },
+  {
+    "title": "UC Berkeley CS186 (Spring 2003) — PostgreSQL buffer manager replacement policies",
+    "url": "https://dsf.berkeley.edu/dbcourse/hwk1/assign1.pdf",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Database Internals / Buffer Manager",
+    "kind": "project assignment",
+    "site": "dsf.berkeley.edu",
+    "score": 95,
+    "evidence": [
+      "'Buffer Manager: Project 1 Assignment, Due: Feb 11, 2003', CS186 Spring 2003",
+      "Directory listing timestamps 2003-01-30",
+      "Must run on x86 Solaris EECS machines (rhombus, pentagon, torus)",
+      "Modify PostgreSQL backend buffer code; compare LRU, MRU and CLOCK"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "buffer pool",
+      "LRU",
+      "MRU",
+      "CLOCK",
+      "Solaris"
+    ],
+    "notes": "Change the page replacement policy inside a slimmed PostgreSQL source tree and measure LRU, MRU and CLOCK behaviour."
+  },
+  {
+    "title": "UC Berkeley CS186 (Spring 2003) — PostgreSQL hybrid hashing for grouped aggregates",
+    "url": "https://dsf.berkeley.edu/dbcourse/hwk2/proj2.pdf",
+    "year": 2003,
+    "year_label": "February–March 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "project assignment",
+    "site": "dsf.berkeley.edu",
+    "score": 94,
+    "evidence": [
+      "Dated February 14, 2003, due March 7, 2003",
+      "Directory listing timestamp 2003-02-15",
+      "Extend the PostgreSQL query executor; grading on rhombus/pentagon instructional machines",
+      "Projects page: 'PostgreSQL is written in C ... debugging via gdb'"
+    ],
+    "tags": [
+      "PostgreSQL",
+      "hash aggregation",
+      "query executor",
+      "spilling to disk"
+    ],
+    "notes": "Extend PostgreSQL's in-memory hash aggregation so grouped aggregates spill partitions to disk when memory runs out (hybrid hashing)."
+  },
+  {
+    "title": "UC Davis ECS165B (Spring 2010) — DavisDB relational DBMS project",
+    "url": "https://www.cs.ucdavis.edu/~green/courses/ecs165b-s10/project.html",
+    "year": 2010,
+    "year_label": "Spring 2010",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals",
+    "kind": "course project sequence",
+    "site": "cs.ucdavis.edu",
+    "score": 89,
+    "evidence": [
+      "'ECS 165B Spring 2010 - DavisDB Project'; part 1 due 4/18, part 4 due 6/4",
+      "'single-user relational database management system written in C++'",
+      "Build platform: 32-bit Linux CSIF workstations; per-team Subversion repositories",
+      "Parts: record manager, B+ tree indexing, system catalog, select-project-join query engine"
+    ],
+    "tags": [
+      "record manager",
+      "B+ tree",
+      "catalog",
+      "query engine",
+      "Subversion"
+    ],
+    "notes": "RedBase-style project: build record management, B+ tree indexes, catalog utilities and a SQL query engine on a provided paged-file layer."
+  },
+  {
+    "title": "Georgia Tech CS4420 (Spring 2005) — storage manager and query engine project",
+    "url": "https://sites.cc.gatech.edu/projects/disl/courses/4420/05Spring/project/project1/index.html",
+    "year": 2005,
+    "year_label": "Spring 2005",
+    "language": [
+      "C"
+    ],
+    "category": "Database Internals",
+    "kind": "project assignment",
+    "site": "sites.cc.gatech.edu",
+    "score": 86,
+    "evidence": [
+      "'CS 4420 DATABASE PROJECT (Option 1) Spring Semester 2005'; Phase I report due March 3, 2005",
+      "Storage manager uses Unix lseek/read/write with a 25-block buffer pool",
+      "Course page provides B+ tree code in C (Bplustree.c) and C/C++ tutorials",
+      "Phase II: parser, rule-based optimizer, access plan generator and runtime processor"
+    ],
+    "tags": [
+      "storage manager",
+      "B+ tree",
+      "query optimizer",
+      "catalog"
+    ],
+    "notes": "Build a single-user DBMS in two phases: a page-based storage manager with B+ tree indexes and catalog, then a SQL query engine with simple optimization."
+  },
+  {
+    "title": "USF CS635 — Advanced Systems Programming (Linux 2.4 kernel module projects)",
+    "url": "https://www.cs.usfca.edu/~cruse/cs635s03/",
+    "year": 2003,
+    "year_label": "Spring 2003",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "course project sequence",
+    "site": "cs.usfca.edu",
+    "score": 96,
+    "evidence": [
+      "Page titled 'CS 635: Advanced Systems Programming (Spring 2003)'",
+      "States the course targets Linux 'kernel version 2.4'",
+      "Textbook: Rubini & Corbet, Linux Device Drivers (Second Edition)",
+      "Links five dated projects (project1.s03 to project5.s03) plus many demo modules (.c) and tools (.cpp)"
+    ],
+    "tags": [
+      "Linux 2.4",
+      "LKM",
+      "character device",
+      "/proc",
+      "insmod",
+      "Allan Cruse"
+    ],
+    "notes": "Allan Cruse's Spring 2003 course where students write Linux 2.4 loadable kernel modules: a driver-skeleton generator, a /dev/physmem driver, a high-memory RAM driver, a system-call counter that hooks int 0x80, and a VMA inspector."
+  },
+  {
+    "title": "USF CS635 Project 2 — /dev/physmem character driver (Linux 2.4)",
+    "url": "https://www.cs.usfca.edu/~cruse/cs635s03/project2.s03",
+    "year": 2003,
+    "year_label": "Due 02/28/2003",
+    "language": [
+      "C"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "cs.usfca.edu",
+    "score": 95,
+    "evidence": [
+      "'Due Date: Noon Friday 02/28/2003'",
+      "Module 'physmem.c' implements a read-only character device '/dev/physmem'",
+      "Covers the 896MB direct-mapping limit of the 32-bit Linux kernel",
+      "Part of the Spring 2003 Linux 2.4 course (modules built with 'make mymod.o' and insmod)"
+    ],
+    "tags": [
+      "character device",
+      "physical memory",
+      "Linux 2.4",
+      "high memory",
+      "kernel module"
+    ],
+    "notes": "Write a Linux kernel module that exposes the machine's physical memory as a read-only character device. Applications can then read it like one big file."
+  },
+  {
+    "title": "USF CS635 Project 1 — Hard-disk character driver for Linux 2.6.10",
+    "url": "https://www.cs.usfca.edu/~cruse/cs635s05/proj1s05.635",
+    "year": 2005,
+    "year_label": "Due March 18, 2005",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "cs.usfca.edu",
+    "score": 96,
+    "evidence": [
+      "'Due Date: 9pm Friday, March 18, 2005'",
+      "Targets Linux kernel 2.6.10",
+      "Driver 'hd.c' uses the ATA IDENTIFY_DEVICE command, reads the MBR partition table and implements lseek",
+      "Demo program 'hddemo.cpp'; submit hd.ko plus paper printouts"
+    ],
+    "tags": [
+      "block I/O",
+      "ATA",
+      "IDE",
+      "MBR",
+      "Linux 2.6",
+      "lseek",
+      "LKM"
+    ],
+    "notes": "Write an LKM character driver that reads and writes raw sectors of the lab machine's disk but allows writes only inside the minix partition. It finds the disk size with ATA IDENTIFY and parses the MBR."
+  },
+  {
+    "title": "USF CS635 Project 2 — NS16550 UART null-modem driver (Fall 2007)",
+    "url": "https://www.cs.usfca.edu/~cruse/cs635f07/proj2f07.635",
+    "year": 2007,
+    "year_label": "Due 10/23/2007",
+    "language": [
+      "C"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "cs.usfca.edu",
+    "score": 94,
+    "evidence": [
+      "'Due: 7:30pm Tuesday, 10/23/2007'",
+      "Course page states Linux kernel version 2.6.22",
+      "Gives the UART register map at I/O ports 0x03F8 to 0x03FF and IRQ4",
+      "Sibling Project 1 ports 'cmosram.c' to the LDD3 cdev interface"
+    ],
+    "tags": [
+      "UART",
+      "serial",
+      "interrupts",
+      "I/O ports",
+      "cdev",
+      "LDD3"
+    ],
+    "notes": "Write a character driver for the PC's 16550A UART so two lab PCs can talk over a null-modem cable. The driver uses port I/O and IRQ4 interrupts."
+  },
+  {
+    "title": "UMass CMPSCI 596/696 — Linux 2.4 kernel labs on User-Mode-Linux",
+    "url": "https://lass.cs.umass.edu/~shenoy/courses/spring04/577/",
+    "year": 2004,
+    "year_label": "Spring 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Linux Kernel",
+    "kind": "course project sequence",
+    "site": "lass.cs.umass.edu",
+    "score": 93,
+    "evidence": [
+      "'Operating Systems Implementation (Spring 2004)'",
+      "'The project will be adapted to kernel 2.4 and User-Mode-Linux (UML)'",
+      "Labs have 2004 due dates: /proc observation, kernel module, system call, VM, fair-share scheduler, file system",
+      "Links LDD 2nd edition and the TLDP Linux Kernel Module Programming Guide"
+    ],
+    "tags": [
+      "User-Mode-Linux",
+      "Linux 2.4",
+      "kernel modules",
+      "system calls",
+      "scheduler"
+    ],
+    "notes": "An independent-study sequence of Linux 2.4 kernel labs run under User-Mode-Linux: kernel modules, a new system call, VM instrumentation, a fair-share scheduler and a simple file system."
+  },
+  {
+    "title": "UMass Lab 3 — /proc clock kernel module (Linux 2.4)",
+    "url": "https://lass.cs.umass.edu/~shenoy/courses/spring04/577/lab3.html",
+    "year": 2004,
+    "year_label": "Due February 18, 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "lass.cs.umass.edu",
+    "score": 92,
+    "evidence": [
+      "'Lab3 Kernel Modules (Due date : February 18, 2004)'",
+      "Gives the 2.4 module interface with create_proc_read_entry/remove_proc_entry",
+      "Reads the kernel 'xtime' variable",
+      "Requires a user-space C test program comparing against gettimeofday"
+    ],
+    "tags": [
+      "/proc",
+      "LKM",
+      "Linux 2.4",
+      "xtime",
+      "UML"
+    ],
+    "notes": "Write a Linux 2.4 kernel module that creates a /proc clock file returning the kernel's xtime. Then write a C test program that compares it with gettimeofday."
+  },
+  {
+    "title": "Harvey Mudd CS134 — Linux kernel modules homework (Nutt projects, 2.4)",
+    "url": "https://www.cs.hmc.edu/~geoff/classes/hmc.cs134.200309/homework2",
+    "year": 2003,
+    "year_label": "Fall 2003 (due Dec. 2, 2003)",
+    "language": [
+      "C"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "cs.hmc.edu",
+    "score": 88,
+    "evidence": [
+      "'CS134, Fall 2003 ... Due 10:00 P.M. Tuesday, Dec. 2, 2003'; URL contains 200309",
+      "Based on Gary Nutt's 'Linux Kernel Projects' Modules chapter",
+      "Notes the 2.4 kernel and the Emulab testbed",
+      "Submit Makefile, module source, clock test program and output of 'cat /proc/clock'"
+    ],
+    "tags": [
+      "/proc",
+      "kernel module",
+      "Linux 2.4",
+      "Emulab",
+      "Nutt"
+    ],
+    "notes": "Write a kernel module that publishes the time through /proc/clock, plus a user-space test program. It follows the Modules project in Nutt's Linux Kernel Projects."
+  },
+  {
+    "title": "SDU DM510 — Kernel module: two-device bounded-buffer driver (LDD3)",
+    "url": "https://imada.sdu.dk/~daniel/DM510-2010/assignment2/assign-2010-2.html",
+    "year": 2010,
+    "year_label": "Spring 2010",
+    "language": [
+      "C"
+    ],
+    "category": "Device Drivers / Linux Kernel",
+    "kind": "project assignment",
+    "site": "imada.sdu.dk",
+    "score": 90,
+    "evidence": [
+      "'DM510, Spring 2010' in the page header",
+      "Uses Linux Device Drivers 3rd edition chapters 2, 3, 5 and 6",
+      "Notes LDD examples written for 2.6.10 and updated scull code for 2.6.32.3",
+      "Builds /dev/dm510-0 and /dev/dm510-1 with blocking I/O and ioctl, based on scull/pipe.c"
+    ],
+    "tags": [
+      "scull",
+      "LDD3",
+      "Linux 2.6",
+      "blocking I/O",
+      "ioctl",
+      "producer-consumer"
+    ],
+    "notes": "Write a Linux 2.6 kernel module with two character devices joined by a pair of bounded buffers. It covers blocking and non-blocking I/O, semaphores and ioctl."
+  },
+  {
+    "title": "Cornell ECE476 — Atmel AVR lab archive, 1999–2008 (CodeVision C)",
+    "url": "https://people.ece.cornell.edu/land/courses/ece4760/labs/oldlabs.html",
+    "year": 2006,
+    "year_label": "Spring 1999–Spring 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Embedded Systems",
+    "kind": "course project sequence",
+    "site": "people.ece.cornell.edu",
+    "score": 94,
+    "evidence": [
+      "Lists lab sets by semester, Spring 1999 through Spring 2008, with week-of dates",
+      "Year directories s1999/ to s2012/ still hold lab pages and C sources (e.g. debounce32.c, KEYSCAN.C, dds2.c)",
+      "Spring 2006 Lab 0 uses the STK500, Mega32 and the CodeVision C compiler",
+      "Labs include stopwatch, DTMF dialer, keypad security system, TV video game and thermometer"
+    ],
+    "tags": [
+      "AVR",
+      "Mega32",
+      "STK500",
+      "CodeVisionAVR",
+      "microcontroller",
+      "Bruce Land"
+    ],
+    "notes": "An index of Bruce Land's Cornell microcontroller labs by year. Students write C on Atmel AVR boards to build stopwatches, DTMF dialers, keypad security systems and NTSC video games."
+  },
+  {
+    "title": "Cornell ECE476 Lab 3 (Spring 2006) — Keypad security system with PC serial link",
+    "url": "https://people.ece.cornell.edu/land/courses/ece4760/labs/s2006/lab3.html",
+    "year": 2006,
+    "year_label": "Spring 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Embedded Systems",
+    "kind": "lab assignment",
+    "site": "people.ece.cornell.edu",
+    "score": 91,
+    "evidence": [
+      "Path /labs/s2006/; the oldlabs index lists 'Security system (week of Feb 27)' for Spring 2006",
+      "STK500 board serial port connected to a PC COM port through a USB dongle",
+      "Requires a debounced keypad and fully concurrent PC and keypad interfaces",
+      "Sibling directory holds period C sources (KEYSCAN.C, debounce32.c)"
+    ],
+    "tags": [
+      "AVR",
+      "UART",
+      "keypad",
+      "debouncing",
+      "state machine",
+      "STK500"
+    ],
+    "notes": "Program an AVR microcontroller in C as a keypad security system that a PC administers over RS-232. The keypad and serial interfaces must run concurrently."
+  },
+  {
+    "title": "Cornell ECE476 aOS — Preemptive multitasking kernel for the Mega32",
+    "url": "https://people.ece.cornell.edu/land/courses/ece4760/RTOS/",
+    "year": 2005,
+    "year_label": "c. 2004–2006 (CodeVision 1.24/1.25 era)",
+    "language": [
+      "C"
+    ],
+    "category": "Embedded Systems / RTOS",
+    "kind": "tutorial / source",
+    "site": "people.ece.cornell.edu",
+    "score": 87,
+    "evidence": [
+      "Titled 'ECE476 aOS' (the course's pre-2009 number)",
+      "'This code tested in codevision 1.24.6 and 1.25.2'",
+      "Written for the Mega103 and ported to the Mega32",
+      "Documents task priorities, sleep, mailboxes and semaphores (aos_sem_create)"
+    ],
+    "tags": [
+      "RTOS",
+      "AVR",
+      "preemptive scheduling",
+      "semaphores",
+      "mailboxes",
+      "CodeVision"
+    ],
+    "notes": "Documents and ships a small preemptive real-time kernel in CodeVision C for the Atmel Mega32. It has prioritized tasks, sleep, semaphores and mailbox messaging."
+  },
+  {
+    "title": "Penn CSE480/CIS700 — Real-Time and Embedded Systems (PIC18 / C18 / PICOS18)",
+    "url": "https://www.cis.upenn.edu/~lee/06cse480/homeworks.html",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Embedded Systems / RTOS",
+    "kind": "course assignment sequence",
+    "site": "cis.upenn.edu",
+    "score": 91,
+    "evidence": [
+      "Assignment PDFs are headed 'Real-Time and Embedded Systems, Fall 2006'",
+      "PIC18F2680 on the PICDEM2 board with the Microchip C18 compiler and MPLAB IDE",
+      "News items dated Sept–Dec 2006 (ICD2 driver path, #pragma config OSC = HS)",
+      "Assignments cover timer-interrupt counting, button interrupts and a PICOS18 RTOS application with RS232 and an EEPROM high-score table"
+    ],
+    "tags": [
+      "PIC18",
+      "MPLAB C18",
+      "PICOS18",
+      "interrupts",
+      "RTOS",
+      "ICD2"
+    ],
+    "notes": "A sequence of C assignments on a PIC18 board. It moves from timer- and button-interrupt programs to a reaction-time game rebuilt on the PICOS18 RTOS with serial remote control and an EEPROM high-score table."
+  },
+  {
+    "title": "Montana State EE475 Lab 2 — C on the HC12 with Metrowerks CodeWarrior",
+    "url": "https://www.montana.edu/rmaher/ee475_fl04/EE475_Lab_02_FL2004.pdf",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Embedded Systems",
+    "kind": "lab handout",
+    "site": "montana.edu",
+    "score": 86,
+    "evidence": [
+      "Header 'EE475 Lab #2, Fall 2004'; URL folder ee475_fl04",
+      "Metrowerks CodeWarrior 'CW12 V3.1' for MC68HC912BC32",
+      "Axiom CME-12BC32 single-board computers and Windows XP lab logins",
+      "Step-by-step HC(S)12 project wizard and Full Chip Simulator settings"
+    ],
+    "tags": [
+      "68HC12",
+      "CodeWarrior",
+      "Axiom",
+      "microcontroller",
+      "Freescale"
+    ],
+    "notes": "Create, build and run C programs for the Motorola 68HC12 in CodeWarrior. It covers the project wizard, memory model and simulator up to running on the Axiom board."
+  },
+  {
+    "title": "UMBC CMSC341 Project 4 — Huffman file compression in C++",
+    "url": "https://courses.cs.umbc.edu/undergraduate/341/fall05/projects/proj4/341-fall05-p4.shtml",
+    "year": 2005,
+    "year_label": "Fall 2005 (due Nov 27, 2005)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compression",
+    "kind": "project assignment",
+    "site": "courses.cs.umbc.edu",
+    "score": 92,
+    "evidence": [
+      "'Assigned Wednesday, Nov 9, 2005 / Due 11:59pm, Sunday Nov 27, 2005'",
+      "Supplied BitIO.cpp/BitIO.h bit I/O and the textbook's BinaryHeap.C/.H",
+      "Instructor's AFS public directory /afs/umbc.edu/users/d/e/dennis/pub/CMSC341/Proj4",
+      "Makefile references shared files; check output with Unix od and diff"
+    ],
+    "tags": [
+      "Huffman",
+      "priority queue",
+      "bit I/O",
+      "binary heap",
+      "Makefile"
+    ],
+    "notes": "Build a Huffman compressor and decompressor in C++. It counts frequencies, builds the tree with a binary-heap priority queue, and writes a packed bit stream through supplied BitIO routines."
+  },
+  {
+    "title": "Duke CPS 100 — huff/unhuff Huffman compression (Fall 2003)",
+    "url": "https://courses.cs.duke.edu/fall03/cps100/assign/huff/",
+    "year": 2003,
+    "year_label": "Fall 2003 (due November 17, 2003)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compression",
+    "kind": "project assignment",
+    "site": "courses.cs.duke.edu",
+    "score": 92,
+    "evidence": [
+      "'CPS 100, Fall 2003, Huffman Coding — Due: Monday, November 17, 2003'",
+      "Starter files: Makefile (acpub), globals.h, bitread.cpp, tpqtest.cpp, usemap.cpp",
+      "Uses bitops.h ibstream/obstream classes and Tapestry tpq.h priority queue",
+      "Sibling semesters fall01, spring02, fall02, spring03, spring04, fall04 and spring05 survive at the same path"
+    ],
+    "tags": [
+      "Huffman",
+      "bit streams",
+      "Tapestry",
+      "acpub",
+      "C++"
+    ],
+    "notes": "Write two C++ programs, huff and unhuff, that compress and restore arbitrary files with Huffman coding. They use the course's bit-stream classes and the Tapestry priority queue."
+  },
+  {
+    "title": "Princeton COS 226 — Burrows-Wheeler compression in C (Spring 2003)",
+    "url": "https://www.cs.princeton.edu/courses/archive/spr03/cos226/assignments/burrows.html",
+    "year": 2003,
+    "year_label": "Spring 2003 (due 3/27)",
+    "language": [
+      "C"
+    ],
+    "category": "Compression",
+    "kind": "project assignment",
+    "site": "cs.princeton.edu",
+    "score": 93,
+    "evidence": [
+      "URL archive/spr03; the Spring 2003 assignments index lists 'Burrows-Wheeler 3/27'",
+      "Programs named mtfe.c, mtfd.c, bwte.c, bwtd.c",
+      "Inverse-BWT example given as C code with next[] arrays",
+      "The Spring 2005 version of the same assignment was rewritten in Java, so the C version dates this page"
+    ],
+    "tags": [
+      "Burrows-Wheeler",
+      "move-to-front",
+      "Huffman",
+      "bzip2",
+      "suffix sorting"
+    ],
+    "notes": "Implement the bzip2-style pipeline in C: a Burrows-Wheeler transform and its inverse, move-to-front encoding and decoding, chained with supplied Huffman code."
+  },
+  {
+    "title": "Pitt CS 1501 — LZW variable-width codeword project (gcc, 2004)",
+    "url": "https://people.cs.pitt.edu/~kirk/cs1501/assignments/lzw/lzw-04-2.html",
+    "year": 2004,
+    "year_label": "Spring 2004 (file dated 2004-03-11)",
+    "language": [
+      "C"
+    ],
+    "category": "Compression",
+    "kind": "project assignment",
+    "site": "people.cs.pitt.edu",
+    "score": 88,
+    "evidence": [
+      "Directory listing dates lzw-04-2.html to 2004-03-11; siblings lzw-01-3 to lzw-05-3 run from 2001 to 2005",
+      "'You MUST USE your UNIXS accounts and the gcc compiler'",
+      "Modify the old-style lzw.c (Mark Nelson's Dr. Dobb's code) into lzwmod.c",
+      "Codewords grow from 9 to 16 bits as the dictionary fills"
+    ],
+    "tags": [
+      "LZW",
+      "variable-width codes",
+      "Mark Nelson",
+      "gcc",
+      "dictionary"
+    ],
+    "notes": "Modify a classic C LZW implementation so its codewords grow from 9 to 16 bits. Then measure compression ratios on test files."
+  },
+  {
+    "title": "UChicago CSPP 51081 Lab 3 — my_stat, cp clone, static/shared libraries",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2007/fall/51081-1/labs/LAB3/lab3.html",
+    "year": 2007,
+    "year_label": "Fall 2007 (due October 22/26)",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Unix",
+    "kind": "lab assignment",
+    "site": "classes.cs.uchicago.edu",
+    "score": 90,
+    "evidence": [
+      "URL archive/2007/fall; lab due 'Monday, October 22' with a signal-handling part due 'Friday, October 26'",
+      "Build static mylib.a and shared libmylib.so.5.1.10 with hand-written Makefiles",
+      "Implement 'my_stat' to match the default output of stat(1)",
+      "Implement 'filecopy.c' (a cp clone) with creat/open/read/write; refers to Molay and BLP texts"
+    ],
+    "tags": [
+      "stat",
+      "cp",
+      "shared libraries",
+      "Makefile",
+      "Unix utilities",
+      "signals"
+    ],
+    "notes": "Reimplement the Unix stat and cp utilities in C with low-level system calls, and build static and shared libraries with hand-written Makefiles."
+  },
+  {
+    "title": "Carleton CS 127 — Final project: an ed-style line text editor in C++",
+    "url": "https://cs.carleton.edu/faculty/dmusican/cs127w02/projectfinal.html",
+    "year": 2002,
+    "year_label": "Winter 2002 (due 3/16/02)",
+    "language": [
+      "C++"
+    ],
+    "category": "Text Editors",
+    "kind": "project assignment",
+    "site": "cs.carleton.edu",
+    "score": 91,
+    "evidence": [
+      "'Assigned on Wednesday, 3/6/02. Due on Saturday, 3/16/02'",
+      "Course home page 'CS 127, Data Structures, Winter, 2002'",
+      "Sample session on the 'knuth>' Unix host, modelled on Unix ed",
+      "Required commands M,Np / a / i / d / /search / w / q; must handle arbitrarily large files"
+    ],
+    "tags": [
+      "text editor",
+      "ed",
+      "linked list",
+      "C++",
+      "data structures"
+    ],
+    "notes": "Build an ed-like line editor in C++ with print ranges, append, insert, delete, search, save and quit. Students choose and justify the data structure that holds the file."
+  },
+  {
+    "title": "Bran's Kernel Development Tutorial — GRUB-loaded x86 kernel in C",
+    "url": "http://www.osdever.net/bkerndev/Docs/title.htm",
+    "year": 2005,
+    "year_label": "February 2005 (v1.0)",
+    "language": [
+      "C",
+      "x86 Assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "tutorial series",
+    "site": "osdever.net",
+    "score": 96,
+    "evidence": [
+      "Title page: 'Version 1.0 (Feb 6th, 2005) By: Brandon Friesen'",
+      "Toolset lists GCC and DJGPP compilers, with Bochs and Microsoft VirtualPC (Windows NT/2000/XP) as testbeds",
+      "Chapters on GDT, IDT, ISRs, IRQs, PIT and keyboard are all live (gdt.htm, idt.htm, isrs.htm, irqs.htm, pit.htm, keyboard.htm)",
+      "Still hosted on Bona Fide OS Developer, listed there as posted May 8, 2005"
+    ],
+    "tags": [
+      "kernel",
+      "GRUB",
+      "GDT",
+      "IDT",
+      "interrupts",
+      "PIT",
+      "keyboard driver",
+      "Bochs",
+      "DJGPP"
+    ],
+    "notes": "Build a small 32-bit protected-mode x86 kernel in C and NASM, loaded by GRUB. It covers the GDT, IDT, exception handlers, PIC/IRQ remapping, a timer driver and a keyboard driver."
+  },
+  {
+    "title": "Bona Fide OS Developer — Memory Management 1 (physical page allocator)",
+    "url": "http://www.osdever.net/tutorials/view/memory-management-1",
+    "year": 2003,
+    "year_label": "posted July 18, 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Memory",
+    "kind": "tutorial article",
+    "site": "osdever.net",
+    "score": 90,
+    "evidence": [
+      "Bona Fide tutorial index lists 'Memory Management 1 by Tim Robinson on Jul 18, 2003'",
+      "Author contact is an ic.ac.uk email and the long-dead themoebius.org.uk Möbius OS site",
+      "Gives examples in C for a kernel running at PL0 in x86 protected mode",
+      "Sits next to period siblings: Memory Management 2, Implementing Basic Paging, Spinlocks I–III"
+    ],
+    "tags": [
+      "physical memory manager",
+      "page allocator",
+      "hobby OS",
+      "x86",
+      "protected mode"
+    ],
+    "notes": "Design and write the lowest-level physical memory manager for a hobby OS kernel, which allocates and frees 4 KB pages, using C examples taken from the author's Möbius kernel."
+  },
+  {
+    "title": "flipcode — Programming a Virtual File System (3-part series)",
+    "url": "https://flipcode.com/archives/Programming_a_Virtual_File_System-Part_I.shtml",
+    "year": 2001,
+    "year_label": "July–October 2001",
+    "language": [
+      "C++"
+    ],
+    "category": "Filesystems",
+    "kind": "article series with source",
+    "site": "flipcode.com",
+    "score": 93,
+    "evidence": [
+      "Part I is dated 05 July 2001 and Part III is dated 29 October 2001",
+      "Part III ships article_vfs03.zip with 'Workspaces for both Microsoft Visual C++ 6 and 7'",
+      "Sample implementation is about 4000 lines of C++ (VFS_Archives.cpp, std::vector)",
+      "Design goals include archive files, compression, encryption and access speed close to the native Win32 API"
+    ],
+    "tags": [
+      "virtual file system",
+      "archive format",
+      "compression",
+      "game engine",
+      "Visual C++ 6"
+    ],
+    "notes": "Design and implement a game-engine virtual file system in C++ that packs many files into archives, with compression and encryption. Part III comes with the complete source as VC6/VC7 workspaces."
+  },
+  {
+    "title": "flipcode — Multithreading, Part 1 (Win32 threads and synchronization)",
+    "url": "https://flipcode.com/archives/Multithreading-Part_1.shtml",
+    "year": 2000,
+    "year_label": "21 February 2000",
+    "language": [
+      "C++"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "tutorial article",
+    "site": "flipcode.com",
+    "score": 90,
+    "evidence": [
+      "Dated 21 February 2000 on the flipcode archive",
+      "'All subsequent code was written for Win32 in C++ using Microsoft Developer Studio 6.0'",
+      "Covers worker threads beside the GetMessage/DispatchMessage loop, plus safe shared-data access",
+      "Part 2 (28 Feb 2000) continues the series"
+    ],
+    "tags": [
+      "threads",
+      "Win32",
+      "critical sections",
+      "synchronization",
+      "Developer Studio 6"
+    ],
+    "notes": "Create Win32 threads in C++ and protect shared data between them. The example is a long computation running behind a responsive window with a cancel button."
+  },
+  {
+    "title": "flipcode — How To Find Memory Leaks (drop-in C++ allocation tracer)",
+    "url": "https://flipcode.com/archives/How_To_Find_Memory_Leaks.shtml",
+    "year": 2000,
+    "year_label": "23 May 2000",
+    "language": [
+      "C++"
+    ],
+    "category": "Systems / Memory",
+    "kind": "tutorial article",
+    "site": "flipcode.com",
+    "score": 88,
+    "evidence": [
+      "Dated 23 May 2000 on the flipcode archive",
+      "Written as a free in-house alternative to NuMega BoundsChecker",
+      "A drop-in tracer for an all-C++ code base that lists un-freed blocks when the program exits"
+    ],
+    "tags": [
+      "memory leaks",
+      "allocation tracking",
+      "operator new",
+      "debugging"
+    ],
+    "notes": "Build a reusable memory tracer that hooks allocation and deallocation in a C++ project and reports blocks that were never freed when the program exits."
+  },
+  {
+    "title": "Fabrice Bellard — TCC: Tiny C Compiler project page",
+    "url": "https://bellard.org/tcc/",
+    "year": 2004,
+    "year_label": "2001–2005 era (TinyCC 0.9.22 benchmarks)",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers",
+    "kind": "source-code project",
+    "site": "bellard.org",
+    "score": 88,
+    "evidence": [
+      "Speed table compares 'TinyCC 0.9.22' with 'GCC 3.2 -O0' on a 2.4 GHz Pentium 4",
+      "One ~100KB binary holds the C preprocessor, compiler, assembler and linker",
+      "Lists libtcc for dynamic code generation and an optional bounds checker",
+      "Copyright line says 2001-2018, and the page states the author no longer works on TCC"
+    ],
+    "tags": [
+      "C compiler",
+      "linker",
+      "assembler",
+      "libtcc",
+      "x86"
+    ],
+    "notes": "This is the original home page of TinyCC, a small, fast C compiler with its own preprocessor, assembler and linker. Reading it alongside OTCC shows how the earlier compiler grew into a full ISO C99 compiler."
+  },
+  {
+    "title": "Russ Cox — Regular Expression Matching Can Be Simple And Fast",
+    "url": "https://swtch.com/~rsc/regexp/regexp1.html",
+    "year": 2007,
+    "year_label": "January 2007",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Lexing",
+    "kind": "technical article with source",
+    "site": "swtch.com",
+    "score": 95,
+    "evidence": [
+      "Byline: 'Russ Cox rsc@swtch.com January 2007'",
+      "Thompson NFA implementation in 'less than 400 lines' of portable ANSI C",
+      "Shows code such as State* post2nfa(char *postfix) with a Frag stack",
+      "Benchmarks it against the backtracking matchers in Perl, PCRE, Python and Ruby"
+    ],
+    "tags": [
+      "regular expressions",
+      "NFA",
+      "Thompson construction",
+      "DFA caching",
+      "automata"
+    ],
+    "notes": "Implement a Thompson-NFA regular-expression matcher in C: convert postfix regexps to NFA fragments, then simulate them in linear time, optionally caching DFA states."
+  },
+  {
+    "title": "Simon Tatham — Coroutines in C",
+    "url": "https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html",
+    "year": 2000,
+    "year_label": "2000 (updated 2005)",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "technical article",
+    "site": "chiark.greenend.org.uk",
+    "score": 90,
+    "evidence": [
+      "Footer: 'Copyright © 2000 Simon Tatham'",
+      "In-text note: 'Update, 2005-03-07: Tom Duff confirms this in a blog comment'",
+      "Defines the crBegin / crReturn / crFinish macros with a switch-based Duff's-device trick",
+      "Examples are a run-length decompressor and a parser written as cooperating coroutines"
+    ],
+    "tags": [
+      "coroutines",
+      "Duff's device",
+      "preprocessor",
+      "stackless",
+      "PuTTY"
+    ],
+    "notes": "Build stackless coroutines in plain C using switch/case and preprocessor macros, then use them to restructure a producer and consumer pair (a decompressor and a parser)."
+  },
+  {
+    "title": "Peter Michaux — Scheme from Scratch: Bootstrap v0.1 (C interpreter)",
+    "url": "http://peter.michaux.ca/articles/scheme-from-scratch-bootstrap-v0_1-integers",
+    "year": 2010,
+    "year_label": "January 5, 2010",
+    "language": [
+      "C"
+    ],
+    "category": "Interpreters / Virtual Machines",
+    "kind": "tutorial series",
+    "site": "peter.michaux.ca",
+    "score": 91,
+    "evidence": [
+      "'Published January 5, 2010 in Scheme', following the series introduction of January 1, 2010",
+      "'Our first objective is a Bootstrap Scheme interpreter implemented in C'",
+      "A C port of the SICP 4.1 metacircular evaluator, built step by step after Ghuloum's incremental approach",
+      "Starts with heap-allocated fixnums and a read/eval/print REPL"
+    ],
+    "tags": [
+      "Scheme",
+      "Lisp",
+      "interpreter",
+      "REPL",
+      "SICP"
+    ],
+    "notes": "Build a Scheme REPL interpreter in C one feature at a time. This first step adds heap-allocated integers and the read, eval and print layers, and later posts add more of the language."
+  },
+  {
+    "title": "Loren Segal — Writing Your Own Toy Compiler Using Flex, Bison and LLVM",
+    "url": "https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/",
+    "year": 2009,
+    "year_label": "September 2009 (updated March 2010)",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers",
+    "kind": "tutorial article with source",
+    "site": "gnuu.org",
+    "score": 92,
+    "evidence": [
+      "Year-coded URL /2009/09/18/ and byline 'September 09, 2009'",
+      "'Update (March 19 2010): this article was updated for LLVM 2.6'",
+      "The toy language is implemented in C++ with STL; the lexer is Flex and the parser is Bison, which builds an AST",
+      "Generates code through the LLVM 2.x C++ API"
+    ],
+    "tags": [
+      "compiler",
+      "flex",
+      "bison",
+      "LLVM",
+      "AST",
+      "code generation"
+    ],
+    "notes": "Build a toy language compiler in C++: tokenize with Flex, parse into an AST with Bison, then generate and JIT-run LLVM IR."
+  },
+  {
+    "title": "The Linux Kernel Module Programming Guide (2.6 edition)",
+    "url": "https://tldp.org/LDP/lkmpg/2.6/html/",
+    "year": 2007,
+    "year_label": "2007-05-18, ver 2.6.4",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "tutorial book",
+    "site": "tldp.org",
+    "score": 94,
+    "evidence": [
+      "Header: 'Copyright © 2001 Peter Jay Salzman ... 2007-05-18 ver 2.6.4'",
+      "Example build output runs make -C /lib/modules/2.6.11/build (kernel 2.6.11)",
+      "Chapters cover character device drivers, /proc and seq_file, ioctls, system calls and blocking processes",
+      "Contains an unfinished 'TODO: Write a chapter about sysfs' section"
+    ],
+    "tags": [
+      "Linux kernel",
+      "kernel modules",
+      "device drivers",
+      "procfs",
+      "ioctl",
+      "kbuild"
+    ],
+    "notes": "Write loadable Linux 2.6 kernel modules in C, working up from hello-world to character device drivers, /proc entries, ioctl handlers, system-call interception and blocking processes."
+  },
+  {
+    "title": "David A. Wheeler — Program Library HOWTO (static, shared and dlopen libraries)",
+    "url": "https://tldp.org/HOWTO/Program-Library-HOWTO/",
+    "year": 2003,
+    "year_label": "version 1.20, 11 April 2003",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Assemblers / Linkers",
+    "kind": "HOWTO",
+    "site": "tldp.org",
+    "score": 88,
+    "evidence": [
+      "Header: 'David A. Wheeler version 1.20, 11 April 2003'",
+      "Covers creating shared libraries with sonames and ldconfig, plus dlopen/dlsym/dlclose with a worked example",
+      "Has sections on symbol versioning, version scripts, GNU libtool and C++ vs. C linkage"
+    ],
+    "tags": [
+      "shared libraries",
+      "ELF",
+      "dlopen",
+      "soname",
+      "linking",
+      "Linux"
+    ],
+    "notes": "Build static and shared libraries on Linux and load plugins at runtime with dlopen/dlsym, including the rules for library naming, versioning and C++ linkage."
+  },
+  {
+    "title": "Matt Mahoney — The PAQ Data Compression Programs",
+    "url": "https://mattmahoney.net/dc/paq.html",
+    "year": 2005,
+    "year_label": "2002–2007 development history",
+    "language": [
+      "C++"
+    ],
+    "category": "Compression",
+    "kind": "source-code project",
+    "site": "mattmahoney.net",
+    "score": 90,
+    "evidence": [
+      "Benchmark notes are dated, e.g. 'WRT20 was released Dec. 29, 2003' and 'PAQAR 2.0 results reported June 27, 2004'",
+      "Cites 'Florida Tech. Technical Report CS-2005-16, 2005' for PAQ6",
+      "Sources are C++ (paq8f.cpp, paqc.cpp), with timings from g++ builds",
+      "Tracks the PAQ1–PAQ8 lineage of context-mixing archivers with GPL source"
+    ],
+    "tags": [
+      "context mixing",
+      "arithmetic coding",
+      "PAQ",
+      "Calgary corpus",
+      "compression"
+    ],
+    "notes": "Follow the development history of the PAQ context-mixing compressors and read their C++ source. Many models predict each bit, the predictions are mixed and then arithmetic-coded."
+  },
+  {
+    "title": "SQLite — The Virtual Database Engine (VDBE) tutorial for SQLite 2.8",
+    "url": "https://www.sqlite.org/vdbe.html",
+    "year": 2003,
+    "year_label": "SQLite 2.8.0 era (2003)",
+    "language": [
+      "C"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "technical article",
+    "site": "sqlite.org",
+    "score": 89,
+    "evidence": [
+      "Banner: 'This document describes the virtual machine used in SQLite version 2.8.0'",
+      "Kept as a historical reference to the stack-based VDBE that came before the SQLite 3 register machine",
+      "Uses the sqlite_exec() API of the 2.x era and points readers to the vdbe.c source",
+      "Each opcode has P1/P2/P3 operands"
+    ],
+    "tags": [
+      "SQLite",
+      "bytecode",
+      "virtual machine",
+      "query execution",
+      "stack machine"
+    ],
+    "notes": "Walk through how SQLite 2.8 compiles SQL statements into stack-based VDBE bytecode and runs it in its C virtual machine, from simple inserts up to joins."
+  },
+  {
+    "title": "The Implementation of Lua 5.0 (Ierusalimschy, de Figueiredo, Celes)",
+    "url": "https://www.lua.org/doc/jucs05.pdf",
+    "year": 2005,
+    "year_label": "2005 (J.UCS)",
+    "language": [
+      "C"
+    ],
+    "category": "Interpreters / Virtual Machines",
+    "kind": "paper (PDF)",
+    "site": "lua.org",
+    "score": 90,
+    "evidence": [
+      "Original PDF hosted on lua.org under the jucs05 filename",
+      "Abstract covers Lua 5.0's register-based virtual machine, the table-as-array optimization, closures (upvalues) and coroutines",
+      "Describes the internals of an embeddable interpreter written in ANSI C"
+    ],
+    "tags": [
+      "Lua",
+      "register VM",
+      "bytecode",
+      "closures",
+      "coroutines",
+      "hash tables"
+    ],
+    "notes": "Read the design of the Lua 5.0 interpreter: its register-based bytecode VM, its hybrid array/hash tables, and how closures and coroutines are implemented in C."
   }
 ]
