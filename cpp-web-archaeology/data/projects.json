@@ -1401,5 +1401,687 @@
       "algorithms"
     ],
     "notes": "Useful collection page; individual entries should be separately harvested and dated."
+  },
+  {
+    "title": "Cornell CS414 — Minithreads OS project sequence",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2003su/projects.html",
+    "year": 2003,
+    "year_label": "Summer 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.cornell.edu",
+    "score": 100,
+    "evidence": [
+      "Original Summer 2003 course archive",
+      "C-based Minithreads",
+      "Threads, synchronization, scheduling and filesystem projects",
+      "Windows NT/2000 hardware emulation environment"
+    ],
+    "tags": [
+      "Minithreads",
+      "threads",
+      "scheduler",
+      "filesystem",
+      "C"
+    ],
+    "notes": "Three substantial systems projects: user-level threads and synchronization, preemption/scheduling, and a Unix-like filesystem."
+  },
+  {
+    "title": "Cornell CS414 — User-level threads and semaphores",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2003su/projects/project1/project1.html",
+    "year": 2003,
+    "year_label": "June 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / Concurrency",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2003 assignment",
+      "C source skeleton",
+      "Windows NT Minithreads environment",
+      "Implements TCBs, scheduler, queues and semaphores"
+    ],
+    "tags": [
+      "threads",
+      "semaphores",
+      "scheduler",
+      "Minithreads"
+    ],
+    "notes": "Build a non-preemptive user-level thread package, including O(1) queues, thread control blocks, a scheduler and synchronization primitives."
+  },
+  {
+    "title": "Cornell CS414 — Unix-like filesystem for Minithreads",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2003su/projects/project3/project3.html",
+    "year": 2003,
+    "year_label": "June 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2003 assignment",
+      "C disk simulator interface",
+      "Windows NT backing-file disk",
+      "Unix-like inodes, directories and mkfs"
+    ],
+    "tags": [
+      "filesystem",
+      "inodes",
+      "disk",
+      "Minithreads"
+    ],
+    "notes": "Implement a hierarchical Unix-like filesystem over a simulated block device, including inodes, indirect blocks, directories, paths and a C mkfs utility."
+  },
+  {
+    "title": "Cornell CS414/415 — Unreliable datagram networking",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2002sp/project3.html",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Systems",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 98,
+    "evidence": [
+      "Original Spring 2002 course archive",
+      "Minithreads C networking layer",
+      "Network interrupts and miniports",
+      "Builds on preemptive thread package"
+    ],
+    "tags": [
+      "networking",
+      "datagrams",
+      "interrupts",
+      "Minithreads"
+    ],
+    "notes": "Add a UDP-like unreliable datagram layer to the Minithreads system, including ports, packet delivery and interrupt-driven receive handling."
+  },
+  {
+    "title": "Cornell PortOS — Reliable networking / minisockets",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2002sp/project4.html",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Protocols",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 99,
+    "evidence": [
+      "Original 2002 PortOS assignment",
+      "C Minithreads stack",
+      "Reliable connection-oriented transport",
+      "Timeouts, ACKs and retransmission"
+    ],
+    "tags": [
+      "reliable transport",
+      "sockets",
+      "ACK",
+      "retransmission"
+    ],
+    "notes": "Extend the earlier datagram layer into a reliable stream abstraction with connections, retransmissions, exponential timeouts and large-message support."
+  },
+  {
+    "title": "Cornell PortOS — Ad-hoc routing protocol",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2002sp/project5.html",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Networking / Routing",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 98,
+    "evidence": [
+      "Original 2002 assignment",
+      "Simplified Dynamic Source Routing",
+      "C routing layer over Minithreads",
+      "Contemporary Windows CE/Jornada deployment"
+    ],
+    "tags": [
+      "DSR",
+      "routing",
+      "wireless",
+      "Minithreads"
+    ],
+    "notes": "Implement a simplified Dynamic Source Routing protocol, route discovery/cache logic and packet forwarding, with optional deployment to Jornada handhelds."
+  },
+  {
+    "title": "Cornell PortOS — Concurrent Unix-like filesystem",
+    "url": "https://www.cs.cornell.edu/courses/cs414/2002sp/project6.html",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 100,
+    "evidence": [
+      "Original Spring 2002 assignment",
+      "C block-device simulator",
+      "Unix-like inode filesystem",
+      "Concurrency and crash-consistency requirements"
+    ],
+    "tags": [
+      "filesystem",
+      "inodes",
+      "concurrency",
+      "disk"
+    ],
+    "notes": "Build a variable-sized, hierarchical inode filesystem with directories, indirect blocks, free-space reuse, concurrent access and a mkfs utility."
+  },
+  {
+    "title": "UMD CMSC 412 — GeekOS project sequence",
+    "url": "https://www.cs.umd.edu/~hollings/cs412/s02/",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "C",
+      "Assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "cs.umd.edu",
+    "score": 100,
+    "evidence": [
+      "Original Spring 2002 course archive",
+      "GeekOS kernel under Bochs",
+      "Six dated programming projects",
+      "C/assembly x86 teaching-kernel environment"
+    ],
+    "tags": [
+      "GeekOS",
+      "Bochs",
+      "x86",
+      "kernel"
+    ],
+    "notes": "A full period OS sequence built on GeekOS: boot/kernel setup, user processes, scheduling/synchronization, memory, filesystems and IPC/security."
+  },
+  {
+    "title": "UMD GeekOS — User mode processes and system calls",
+    "url": "https://www.cs.umd.edu/~hollings/cs412/s02/proj1/handout.shtml",
+    "year": 2002,
+    "year_label": "Due 26 Feb 2002",
+    "language": [
+      "C",
+      "Assembly"
+    ],
+    "category": "Operating Systems",
+    "kind": "kernel project",
+    "site": "cs.umd.edu",
+    "score": 100,
+    "evidence": [
+      "Explicit February 2002 due date",
+      "GeekOS + Bochs",
+      "ELF program loading",
+      "User mode, protection and system calls"
+    ],
+    "tags": [
+      "GeekOS",
+      "ELF",
+      "syscalls",
+      "x86"
+    ],
+    "notes": "Extend GeekOS with protected user processes and system calls, including ELF loading, process memory setup and kernel/user transitions."
+  },
+  {
+    "title": "UMD GeekOS — GOSFS filesystem",
+    "url": "https://www.cs.umd.edu/users/hollings/cs412/s02/proj4/handout.html",
+    "year": 2002,
+    "year_label": "Due 2 May 2002",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "kernel project",
+    "site": "cs.umd.edu",
+    "score": 100,
+    "evidence": [
+      "Explicit May 2002 due date",
+      "GeekOS filesystem project",
+      "Bochs second IDE disk",
+      "VFS, directories and long filenames"
+    ],
+    "tags": [
+      "GeekOS",
+      "GOSFS",
+      "VFS",
+      "filesystem"
+    ],
+    "notes": "Add a new filesystem to GeekOS, including a VFS interface, per-process open-file tables, directories and a disk-backed GOSFS implementation."
+  },
+  {
+    "title": "UMD GeekOS — IPC message queues and ACLs",
+    "url": "https://www.cs.umd.edu/~hollings/cs412/s03/prog5/handout.html",
+    "year": 2003,
+    "year_label": "Due 14 May 2003",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems / IPC",
+    "kind": "kernel project",
+    "site": "cs.umd.edu",
+    "score": 99,
+    "evidence": [
+      "Explicit May 2003 due date",
+      "GeekOS kernel extension",
+      "Kernel message queues",
+      "Users and access-control lists"
+    ],
+    "tags": [
+      "GeekOS",
+      "IPC",
+      "message queues",
+      "ACL"
+    ],
+    "notes": "Add kernel message-buffer IPC plus user identities and filesystem access-control lists to GeekOS."
+  },
+  {
+    "title": "Virginia Tech CS3204 — Pintos operating-system projects",
+    "url": "https://courses.cs.vt.edu/~cs3204/spring2008/pintos/projects.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "C"
+    ],
+    "category": "Operating Systems",
+    "kind": "project sequence",
+    "site": "courses.cs.vt.edu",
+    "score": 100,
+    "evidence": [
+      "Original Spring 2008 course page",
+      "CVS $Id dated Jan 11 2008",
+      "Pintos C kernel",
+      "Threads, user programs, virtual memory and filesystems"
+    ],
+    "tags": [
+      "Pintos",
+      "threads",
+      "virtual memory",
+      "filesystem"
+    ],
+    "notes": "The classic four-part Pintos sequence: kernel threads, multiprogramming/user processes, virtual memory and filesystem extensions."
+  },
+  {
+    "title": "UChicago OS 2004 — Build a filesystem in ANSI C",
+    "url": "https://www.classes.cs.uchicago.edu/archive/2004/winter/33000-1/assign2.html",
+    "year": 2004,
+    "year_label": "Winter 2004",
+    "language": [
+      "C"
+    ],
+    "category": "Filesystems",
+    "kind": "project assignment",
+    "site": "classes.cs.uchicago.edu",
+    "score": 100,
+    "evidence": [
+      "Original Winter 2004 archive",
+      "Course mandates strict ANSI C",
+      "Filesystem is 25% of course grade",
+      "CVS + Makefile period workflow"
+    ],
+    "tags": [
+      "filesystem",
+      "ANSI C",
+      "CVS",
+      "disk"
+    ],
+    "notes": "Implement generic file/device interfaces and a simple filesystem from scratch, producing yfile.c, yfs.c and minifs.c."
+  },
+  {
+    "title": "Stanford CS143 — Cool compiler project in C++",
+    "url": "https://web.stanford.edu/class/archive/cs/cs143/cs143.1112/",
+    "year": 2010,
+    "year_label": "Fall 2010",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers",
+    "kind": "project sequence",
+    "site": "web.stanford.edu",
+    "score": 100,
+    "evidence": [
+      "Original Stanford Fall 2010 archive",
+      "Cool compiler project",
+      "C++ assignment path alongside Java version",
+      "Lexer, parser, semantic analysis and code generation phases"
+    ],
+    "tags": [
+      "compiler",
+      "Cool",
+      "flex",
+      "bison",
+      "MIPS"
+    ],
+    "notes": "Build a full Cool compiler in staged assignments: lexical analysis, parsing, semantic/type analysis and MIPS code generation."
+  },
+  {
+    "title": "Stanford CS143 — C++ semantic analyzer for Cool",
+    "url": "https://web.stanford.edu/class/archive/cs/cs143/cs143.1112/materials/handouts/PA3.pdf",
+    "year": 2010,
+    "year_label": "Due 4 Nov 2010",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Semantic Analysis",
+    "kind": "project assignment",
+    "site": "web.stanford.edu",
+    "score": 100,
+    "evidence": [
+      "Fall 2010 handout",
+      "C++ version modifies semant.cc/semant.h/cool-tree.h",
+      "Inheritance graph, symbol tables and type checking",
+      "Reference solution described as about 1300 lines of C++"
+    ],
+    "tags": [
+      "compiler",
+      "semantic analysis",
+      "type checking",
+      "AST"
+    ],
+    "notes": "Implement the static semantics of Cool: inheritance validation, scoped symbol tables, type checking, error recovery and typed AST annotation."
+  },
+  {
+    "title": "University of Delaware CISC 672 — Cool lexer in C++",
+    "url": "https://www.eecis.udel.edu/~pollock/672/f06/pa2.pdf",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Lexing",
+    "kind": "project assignment",
+    "site": "eecis.udel.edu",
+    "score": 100,
+    "evidence": [
+      "Fall 2006 assignment handout",
+      "Explicit C++ project option",
+      "flex-based scanner",
+      "Period Solaris/Linux project environment"
+    ],
+    "tags": [
+      "compiler",
+      "lexer",
+      "flex",
+      "Cool"
+    ],
+    "notes": "Implement a robust Cool lexical analyzer in C++ using flex, including strings, comments, error tokens and a string table."
+  },
+  {
+    "title": "University of Delaware CISC 672 — Cool code generator in C++",
+    "url": "https://www.eecis.udel.edu/~pollock/672/f06/pa5.pdf",
+    "year": 2006,
+    "year_label": "Due 5 Dec 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers / Code Generation",
+    "kind": "project assignment",
+    "site": "eecis.udel.edu",
+    "score": 100,
+    "evidence": [
+      "Explicit December 2006 due date",
+      "C++ code generator in cgen.cc",
+      "Generates MIPS assembly for Cool",
+      "Integrates AST, static analysis and garbage-collector runtime"
+    ],
+    "tags": [
+      "compiler",
+      "code generation",
+      "MIPS",
+      "Cool"
+    ],
+    "notes": "Finish the Cool compiler by writing its C++ backend: object layout, dispatch tables, expression code generation, register strategy and MIPS emission."
+  },
+  {
+    "title": "Michigan EECS 483 — Build a compiler for a C subset",
+    "url": "https://web.eecs.umich.edu/~mahlke/courses/483f06/483syllabus.html",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "C++"
+    ],
+    "category": "Compilers",
+    "kind": "project sequence",
+    "site": "web.eecs.umich.edu",
+    "score": 99,
+    "evidence": [
+      "Original Fall 2006 syllabus",
+      "Students build a working compiler for a subset of C",
+      "Strong C++ prerequisite",
+      "Four compiler projects using Unix GCC/GDB tools"
+    ],
+    "tags": [
+      "compiler",
+      "C subset",
+      "C++",
+      "flex",
+      "bison"
+    ],
+    "notes": "A four-project compiler-construction course covering scanning/parsing, semantic analysis, IR/dataflow and code generation."
+  },
+  {
+    "title": "Michigan EECS 483 — OpenImpact optimization project",
+    "url": "https://web.eecs.umich.edu/~mahlke/courses/483f06/projects/p3/p3.html",
+    "year": 2006,
+    "year_label": "Assigned 20 Nov 2006",
+    "language": [
+      "C"
+    ],
+    "category": "Compilers / Optimization",
+    "kind": "project assignment",
+    "site": "web.eecs.umich.edu",
+    "score": 99,
+    "evidence": [
+      "Original Fall 2006 project page",
+      "OpenImpact compiler written completely in C",
+      "Fedora Core 4 / GCC 3.x or 4.x toolchain",
+      "Implement control-flow/data-flow optimizations"
+    ],
+    "tags": [
+      "compiler",
+      "optimization",
+      "dataflow",
+      "OpenImpact"
+    ],
+    "notes": "Modify the OpenImpact compiler backend in C to implement backedge coalescing plus two optimizations such as LICM, CSE, loop unrolling or strength reduction."
+  },
+  {
+    "title": "CMU CS 213 — Systems programming labs",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15213-f01/www/labs.html",
+    "year": 2001,
+    "year_label": "Fall 2001",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Labs",
+    "kind": "lab sequence",
+    "site": "cs.cmu.edu",
+    "score": 100,
+    "evidence": [
+      "Original Fall 2001 AFS course site",
+      "Period lab index last modified in 2002",
+      "Shell, malloc and Web proxy projects",
+      "C systems-programming curriculum"
+    ],
+    "tags": [
+      "shell",
+      "malloc",
+      "proxy",
+      "systems"
+    ],
+    "notes": "A period-original CS:APP-style sequence including writing a Unix shell, a dynamic allocator and a Web proxy in C."
+  },
+  {
+    "title": "CMU CS 213 — Write your own malloc package",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15213-f01/www/L6.html",
+    "year": 2001,
+    "year_label": "November 2001",
+    "language": [
+      "C"
+    ],
+    "category": "Systems / Memory",
+    "kind": "lab project",
+    "site": "cs.cmu.edu",
+    "score": 100,
+    "evidence": [
+      "Original 2001 CS213 lab page",
+      "mm.c allocator implementation",
+      "malloc/free/realloc performance driver",
+      "Period AFS-hosted course material"
+    ],
+    "tags": [
+      "malloc",
+      "allocator",
+      "heap",
+      "memory"
+    ],
+    "notes": "Implement a correct, space-efficient and fast dynamic storage allocator in C, with trace-driven performance evaluation."
+  },
+  {
+    "title": "Cornell CS433 — MINIBASE buffer manager",
+    "url": "https://www.cs.cornell.edu/courses/cs433/2004fa/assignments/BufferManager/description.htm",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Buffer Manager",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 100,
+    "evidence": [
+      "Original Fall 2004 assignment",
+      "C++ MINIBASE skeleton",
+      "Visual Studio .NET reference platform",
+      "Page pin/unpin, replacement and disk I/O"
+    ],
+    "tags": [
+      "database",
+      "buffer manager",
+      "Minibase",
+      "C++"
+    ],
+    "notes": "Implement the MINIBASE buffer pool manager in C++, including page pinning, eviction/replacement, flushing, allocation and performance experiments."
+  },
+  {
+    "title": "Cornell CS433 — MINIBASE B+ tree index",
+    "url": "https://www.cs.cornell.edu/courses/cs433/2004fa/assignments/Btree/description.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Indexing",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 100,
+    "evidence": [
+      "Original Fall 2004 assignment",
+      "C++ BTreeFile/BTFileScan skeletons",
+      "MINIBASE page and buffer abstractions",
+      "Node splitting, scans and persistent index files"
+    ],
+    "tags": [
+      "database",
+      "B+ tree",
+      "index",
+      "Minibase"
+    ],
+    "notes": "Build a persistent B+ tree on top of MINIBASE, implementing insertion/splitting, scans, deletion support and page management."
+  },
+  {
+    "title": "Cornell CS433 — Database join algorithms",
+    "url": "https://www.cs.cornell.edu/courses/cs433/2004fa/assignments/Joins/",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Query Processing",
+    "kind": "project assignment",
+    "site": "cs.cornell.edu",
+    "score": 98,
+    "evidence": [
+      "Original 2004 course archive",
+      "C++ join skeleton files",
+      "Builds on space manager, B+ tree and buffer manager",
+      "Implements database join methods"
+    ],
+    "tags": [
+      "database",
+      "joins",
+      "query processing",
+      "C++"
+    ],
+    "notes": "Implement relational join algorithms in C++ over the MINIBASE storage, buffer and B+ tree components built in previous assignments."
+  },
+  {
+    "title": "IIT CS525 — Buffer manager project",
+    "url": "https://www.cs.iit.edu/~yee/classes/cs525aut04/proj1.html",
+    "year": 2004,
+    "year_label": "Last updated 1 Mar 2004",
+    "language": [
+      "C",
+      "C++"
+    ],
+    "category": "Database Internals / Buffer Manager",
+    "kind": "project assignment",
+    "site": "cs.iit.edu",
+    "score": 96,
+    "evidence": [
+      "Page explicitly last updated March 2004",
+      "Requires C or C++",
+      "Interactive command-line buffer manager",
+      "Windows executable submission"
+    ],
+    "tags": [
+      "database",
+      "buffer manager",
+      "replacement policy",
+      "C++"
+    ],
+    "notes": "Implement a command-line database buffer manager and page-replacement algorithms, then test them against supplied fix/unfix reference patterns."
+  },
+  {
+    "title": "Carleton CS334 — Minibase buffer manager",
+    "url": "https://cs.carleton.edu/faculty/dmusican/cs334f07/proj1.html",
+    "year": 2007,
+    "year_label": "Fall 2007",
+    "language": [
+      "C++"
+    ],
+    "category": "Database Internals / Buffer Manager",
+    "kind": "project assignment",
+    "site": "cs.carleton.edu",
+    "score": 96,
+    "evidence": [
+      "Original Fall 2007 course path",
+      "C++ starter ZIP offered alongside Java",
+      "Minibase disk-space manager API",
+      "Students implement BufferManager"
+    ],
+    "tags": [
+      "database",
+      "Minibase",
+      "buffer manager",
+      "C++"
+    ],
+    "notes": "Build a Minibase buffer-management layer from a supplied C++ framework and disk-space-manager API."
   }
 ]
