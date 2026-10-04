@@ -1,105 +1,99 @@
 # Leads for future batches
 
-Pages found in earlier batches that were not added yet. Check them first when your domain matches.
+Pages found in earlier batches (last updated after batch 2, October 2026) that were not added yet. Check them first when your domain matches.
 Remove a lead from this file when it is added to the catalog or confirmed dead. Add new leads from each batch
 (merge_batch.py prints them; its report JSON lists them under `leads`).
 
 Status words: **candidate** = likely acceptable; **sibling** = another semester of a course already in the catalog (add only if clearly stronger or different); **check** = needs a date or language check.
 
-## Operating system kernels
+## Carried over from batch 1 (re-checked October 2026)
 
-- https://users.cs.duke.edu/~chase/nachos-guide/guide/nachos.htm — Jeff Chase's Duke Nachos Project Guide (C++, Solaris SPARC, nachos-3.4); widely linked c. 2001-2005 but no explicit date on page
-- https://courses.cs.vt.edu/~cs3204/fall2009/pintos-vt-local/projects.html — VT CS3204 Fall 2009 Pintos with dated deadlines; skipped as near-duplicate of covered spring2008
-- https://www.cs.princeton.edu/courses/archive/fall06/cos318/projects/5.html — Princeton COS318 Fall 2006 Project 5 demand-paged VM on a USB disk; strong, could be added
-- https://www.cs.cmu.edu/~410-s07/projects.html — CMU 15-410 Spring 2007 sibling semester; also ~410-f05, ~410-f08 load
-- https://www.khoury.northeastern.edu/~amislove/teaching/cs5600/fall10 — Northeastern CS5600 Fall 2010 Pintos; at the end of the period
-- https://www.cs.rochester.edu/~kshen/csc256-spring2007/assignments/xen-programming5.html — Rochester 2007 Xen/Linux kernel CPU scheduling track (Linux kernel C)
-- https://classes.cs.uchicago.edu/archive/2001/winter/CS230/ — UChicago Yalnix Winter 2001 sibling offering
-- https://student.cs.uwaterloo.ca/~cs350/common/nachos.html — Waterloo Nachos install/debug guides, undated
+- https://courses.cs.umbc.edu/undergraduate/421/spring02/burt/projects/project1.html — UMBC CMSC421, assigned 6 March 2002: add a system call to a Linux 2.4 kernel (ksyms.c, EXPORT_SYMBOL). Authentic but small; around score 88.
+- https://courses.grainger.illinois.edu/ece511/Fa2003/homework/hw2.html — UIUC ECE412 Fall 2003 HW2: register renaming in a pipelined simulator (rename_stage.h). Tarballs are 404, so the language can't be confirmed.
+- https://www.classes.cs.uchicago.edu/archive/2007/fall/51081-1/labs/LAB5/lab5.html — UChicago 51081 Fall 2007 System V IPC lab (message queues, shared memory, semaphores) in C. A sibling of the accepted LAB4.
+- http://www.osdever.net/tutorials/view/multitasking-howto — Bona Fide Multitasking Howto (indexed Jul 2003): stack-based task switching with a C process struct and NASM ISR. Also Spinlocks I-III by Rieker.
+- https://www.cs.princeton.edu/courses/archive/fall04/cos318/projects/5.html — Fall 2004 version of the COS318 VM project (Last-Modified 18 Nov 2004). The fall06 version was accepted instead.
 
-## Filesystems, concurrency, memory
+## Language runtimes, GC, interpreters
 
-- https://www.cs.cmu.edu/~410-f03/p2/ — 15-410 has live dirs for every term f03 to f10 (thr_lib.pdf, proj2.tar.gz, kernel specs, P3 kernel handouts). Other agents could catalog the P3 Pebbles kernel and P1 handouts.
-- https://cseweb.ucsd.edu/classes/wi05/cse121/project2.html — UCSD Winter 2005 application-level file system over dread/dwrite with disk.h/disk.c/driver.c skeleton; strong sibling of the accepted P1
-- https://people.cs.pitt.edu/~jmisurda/teaching/cs1550/2081/cs1550-2081-project2.htm — Pitt Fall 2007 pthreads flagperson/one-lane traffic synchronization project; the 2077-2111 dirs are all live (syscall semaphore and VM simulator projects too)
-- https://www.cs.columbia.edu/~nieh/teaching/w4118_f07/homeworks/hmwk5.html — Fall 2007 Linux 2.6.18.8 modified-set tracking through page-table write protection; strong kernel memory project
-- https://www.cs.columbia.edu/~nieh/teaching/w4118_f08/homeworks/hmwk3.html — Fall 2008 Linux 2.6.11 SThreads locking primitives with test_and_set
-- https://www.cs.umd.edu/~hollings/cs412/s04/proj5/index.html — GeekOS GOSFS file system (Spring 2004, Bochs, due April 27 2004). Live, but the catalog already has hollings s02/s03 so it may be a near-duplicate
-- https://pages.cs.wisc.edu/~remzi/Classes/537/Spring2010/Projects/p4.html — Spring 2010 spin locks with x86 xchg vs pthread locks, with concurrent counter/list/hash
-- https://pages.cs.wisc.edu/~remzi/Classes/537/Fall2008/Projects/p5.html — Fall 2008 user-level thread library (userthread.h, locks/CVs). Near-duplicate of the accepted Fall 2005 P3
-- https://courses.umbc.edu/undergraduate/421/spring06/Project3.pdf — UMBC CMSC421 Spring 2006 simulated file system in a Diskfile (C/C++, gcc/g++ -ansi on GL Linux)
-- https://courses.cs.vt.edu/~cs3204/fall2006/gback/project0.html — VT CS3204 Fall 2006 Pintos Project 0 first-fit user-level allocator built on Pintos lists
-- https://www.cse.unr.edu/~sushil/class/os/assignments/s04/as3/ — UNR Spring 2004 producer/consumer and readers/writers with pthreads/semaphores (Sun and Linux samples, last modified Feb 23 2004); small scope
-- https://www.cs.montana.edu/courses/fall2005/418/assign2.pdf — Montana Fall 2005 pthreads producer/consumer on a protected doubly linked list; small scope
-- https://imada.sdu.dk/u/daniel/DM510-2010/assignment2/assign-2010-2.html — SDU Spring 2010 Linux 2.6 char-device kernel module (scull-based, kernel 2.6.28/2.6.32)
-- https://homes.cs.washington.edu/~arvind/cs422/assignments/as4.html — Yale CS422 Nachos FS assignment (due April 26, Monday); no year on page, but the weekday fits 2004
-- https://www.cs.usfca.edu/~cruse/cs635/ — USF CS635 Fall 2007 advanced systems programming (Linux 2.6.22 modules, ext2, device drivers) with many .c/.cpp demos; course page rather than projects
+- https://cs.unm.edu/~williams/cs491s06.html — UNM CS491/591 Spring 2006 (also cs491s04.html, cs491s02.html): every student writes a Scheme interpreter or compiler 'in a non-garbage-collected language (e.g., C)' with projects for reader, symbol table, evaluator and GC plus a best-GC contest. The project specs are not linked, so C is only suggested. Around 86.
+- https://www.complang.tuwien.ac.at/anton/vmgen/ — Anton Ertl's Vmgen interpreter generator (makes C VM interpreters with threaded code and superinstructions); dir files dated March 2003, mentions Unladen Swallow 2009Q1. A tool page rather than a project. Around 87.
+- https://www.complang.tuwien.ac.at/forth/threaded-code.html — Ertl's classic threaded-code explainer with GNU C 'goto **ip++' examples; latest reference 2003 but no page date.
+- https://archive.gamedev.net/archive/reference/articles/article1633.html — GameDev 'Creating a Scripting System in C++' Parts I-IV (articles 1633/1686/1788/1803, c. 2002); Cloudflare challenge blocked curl, so it could not be verified.
+- https://sfkaplan.people.amherst.edu/courses/2003/fall/cs12/labs/lab-9/index.html — Amherst CS12 Fall 2003 lab (Scott Kaplan, a GC researcher) on reference counting; the https cert has expired and http times out, so it could not be read.
+- https://www.piumarta.com/software/cola/ — Piumarta COLA/idst snapshot idst-20070918 (late-bound object/lambda architecture in C). Large research system, but period-dated.
+- https://zeus.cs.pacificu.edu/ryand/cs480/2007/interpreter.html — Pacific U CS480 Spring 2007 quad interpreter spec (fetch/decode/execute, activation records); language not stated. Better fit for the compilers agent.
+- https://swtch.com/~rsc/regexp/regexp3.html — Russ Cox 'Regular Expression Matching in the Wild' (March 2010, RE2 in C++); third sibling of the series, so it was left out.
 
-## Compilers
+## Emulators, simulators, assemblers, linkers
 
-- https://www.cs.utexas.edu/users/mckinley/380C/labs/lab4.html — UT CS380C Fall 2009 (McKinley): 3-addr-to-C translator, dataflow, SSA and PowerPC register allocation, with a C-subset compiler (csc, C source, 2007-2009 tarball). Students may use any language, so it was left out; strong otherwise.
-- https://www.cs.cmu.edu/afs/cs/academic/class/15745-s07/www/assignments/0/assign0.html — CMU 15-745 Spring 2007 CASH compiler setup (RH 9 machines, CVS). Assignments 1-2 (CCP/ADCE on Pegasus, cluster scheduling) could be added as more entries.
-- https://www.cs.cmu.edu/afs/cs/academic/class/15745-s02/www/suif.htm — CMU 15-745 Spring 2002 Machine SUIF environment page; assignment pages from that semester not checked yet.
-- https://web.stanford.edu/class/archive/cs/cs143/cs143.1102/materials/handouts/PA4.pdf — Stanford CS143 Fall 2009 Cool code generator (C++, /usr/class/cs143). Not added to avoid too many Stanford entries; also cs143.1052 and cs143.1072 have full handout sets.
-- https://www.cs.unh.edu/~pjh/courses/cs712/2005/ — UNH CS712 2004-2006 offerings: students design their own OO language and compile it to IA-32 with lex/yacc. Phase pages not checked yet.
-- https://www.cs.csustan.edu/~mmartin/teaching/CS4300F07/CS4300_F07_Project.pdf — Same C++-subset project for Fall 2007; near-duplicate of the F06 entry.
-- https://compilers.iecc.com/comparch/article/05-01-082 — Jan 2005 comp.compilers post announcing TinC, a C port of Crenshaw's Tiny (DJGPP/Red Hat 9). The home.comcast.net download link is dead.
+- https://www.cs.unc.edu/~gb/Comp120Fall2004/Assignment10.html — UNC COMP 120 Fall 2004 cache simulator (assigned 2 Nov 2004) in C/C++/Java; small scope, about 85
+- https://acg.cis.upenn.edu/milom/cis501-Fall05/homework/hwk2.pdf — UPenn CIS501 Fall 2005 cache-inference program and 2-way LRU cache module (my-cache.c) for SimpleScalar; sibling of accepted hwk4
+- https://www.cs.virginia.edu/~skadron/cs654/assignments/pipe2.pdf — UVA CS654 pipeline exercise #2 (Oct 2003): adds bimodal predictor, caches and forwarding to sim-pipe.c; sibling of accepted pipe1
+- https://courses.grainger.illinois.edu/ece511/Fa2006/homework/hw2.html — UIUC ECE 511 Fall 2006: gshare in ifetch.h of the same C++ simulator lineage (RedHat 9/Cygwin); hw1–hw5 listed
+- https://pages.cs.wisc.edu/~david/courses/cs752/Fall2008/handouts/hw3.html — Wisconsin CS752 Fall 2008 hw3: modify SimpleScalar sim-fast.c to count load/store address conflicts; modest coding
+- https://gavare.se/gxemul/gxemul-stable/doc/technical.html — GXemul C full-system emulator, 'mostly written in 2003-2005'; technical doc has 2004 dates, but the page is the current 0.7.0 release
+- https://www.muppetlabs.com/~breadbox/software/elfkickers.html — ELF Kickers C object-file tools (elfls, elftoc, rebind, sstrip), changelog 1999-2001, but the current tarball is 2021
+- https://piumarta.com/software/lib6502/ — lib6502/run6502 C 6502 emulator library; earliest dated changelog entry on the page is 2010-07-23 (v1.1)
+- https://www.joachim-bauch.de/tutorials/loading-a-dll-from-memory/ — C PE loader tutorial (relocations, imports) for MemoryModule, originally c. 2004, but the page has no date beyond a '2003-2026' footer
+- https://www.csd.uoc.gr/~hy425/2008s/projects/machine_assignment_1.pdf — Crete HY425 2008 (m,n) branch predictor model from a C template; sibling of accepted MA3
 
-## Interpreters, VMs, assemblers, simulators, emulators
+## Parallel and distributed systems
 
-- https://www.piumarta.com/software/lysp/ — Ian Piumarta's LYSP tiny Lisp interpreter + GC in C (Lisp's 50th anniversary, ~2008); server reset connections, so I could not confirm the date
-- http://www.codeslinger.co.uk/pages/projects/chip8.html — C++ CHIP-8/Game Boy emulator tutorials, footer 'Copyright 2008', but the site was restored in 2014; https cert is broken
-- https://courses.grainger.illinois.edu/ece511/Fa2003/homework/ece412-sim.html — UIUC ECE 412 Fall 2003 simulator tarball quickstart; need to confirm it is a C simulator students modify
-- https://users.ece.utexas.edu/~patt/03s.360N/labs/lab4.html — UT EE360N Spring 2003 pipelined LC-3b lab (due 2 May 2003); 03f, 04f, 07s and 09s offerings are also live and could be added as sibling semesters
-- https://www.iecc.com/linker/ — John Levine's Linkers and Loaders manuscript chapters (~1999-2000); reference text with no build project
-- https://www.airs.com/blog/archives/38 — Ian Lance Taylor's 'Linkers' blog series, August 2007 (gold linker); essays, not a C project
-- https://www.usenix.org/legacy/event/usenix05/tech/freenix/full_papers/bellard/bellard_html/index.html — QEMU dynamic translator paper, USENIX 2005; emulator internals, but a paper
-- https://tinyscheme.sourceforge.net/home.html — TinyScheme SourceForge home page; no dates visible on the page
-- https://www.cs.colostate.edu/~cs270/.Fall08/Programs/PA3.html — CSU CS270 Fall 2008 LC-3 simulator in C (PA3), sibling of the accepted PA4
-- https://acg.cis.upenn.edu/milom/cse240-Fall06/handouts/hw8 — UPenn CSE240 Fall 2006 LC-3 disassembler in C (sibling of hw9)
-- https://www.cs.cmu.edu/afs/cs/academic/class/15213-f02/www/labs.html — CMU 15-213 Fall 2002 lab index; not my domain, but the f02/s03/f03/s04 offerings are live for other agents
+- https://classes.cs.uchicago.edu/archive/2000/fall/CS103-01/ — Fall 2000 Beowulf/MPI course (Tufo): Alpha Huxley cluster at Argonne HOWTO, mpihello.c, MPICH/LAM links. Very authentic, but assignment specs are not linked, only 'Assignment 1 - Solution 1'.
+- https://userpages.cs.umbc.edu/motteler/teaching/parpro/06a/proj2/index.html — Spring 2006 version of the UMBC MPI N-body project (binary column-order format); sibling of the accepted 2001 page.
+- https://cseweb.ucsd.edu/classes/wi08/cse260/ — UCSD CSE260 Winter 2008 (Baden) graduate parallel computation with HW A1-A4 and projects; not checked in detail.
+- https://cseweb.ucsd.edu/classes/sp06/cse223b/labs.html — Spring 2006 CSE223B labs on a virtual cluster; may differ from the 2004 set (lab4.html linked).
+- https://pages.cs.wisc.edu/~david/courses/cs758/Fall2009/includes/homeworks.html — Fall 2009 CS758 homework set; sibling of the accepted Fall 2007 page.
+- https://sites.cc.gatech.edu/fac/hyesoon/spr10/lab4.html — Spring 2010 CUDA ray-tracer improvement lab (AntTweakBar, GLEW); lab3 is CUDA 2D convolution.
+- https://sites.cc.gatech.edu/classes/AY2009/cs4210_fall/ — GT CS4210 Fall 2008 with projects/Project1-3.pdf (pthreads server, shared-memory proxy, RPC); sibling of the accepted Fall 2009 project.
+- https://users.cs.utah.edu/~mhall/cs4961f09/CS4961-proj1.pdf — Utah CS4961 Fall 2009 project 1: rewrite t1.c..t5.c to vectorize with ICC on VS2008 (/Qvec-report:3). Small scope.
+- https://bluehawk.monmouth.edu/~rclayton/web-pages/s04-537/proj2.html — Monmouth CS537 Spring 2004: write an sRPC stub generator (srpc-gen emits C++); host language is the student's choice of C++ or Java.
+- https://webpages.charlotte.edu/abw/parallel/par_prog/index.htm — Wilkinson/Allen textbook site (2nd ed. 2004) with step-by-step MPI, PVM, pthreads and DSM tutorials in C; undated pages.
 
-## Networking and distributed systems
+## Embedded systems and drivers
 
-- https://pdos.csail.mit.edu/6.824-2004/labs/tcpproxy.html — 2004 libasync TCP proxy in C++ (tcpproxy.C); header oddly says 'Fall 2004' but due Feb 26. Sibling labs webproxy2.html and fs-lab-1/2 are also live.
-- https://pdos.csail.mit.edu/6.824-2007/labs/lab-7.html — Fall 2007 replicated state machine lab (C++, dated RCS header); strong if more 6.824 entries are wanted. 2005/2006/2007 lab indexes are all live.
-- https://www.scs.stanford.edu/07wi-cs244b/lab1.html — Stanford CS244B Winter 2007 Sun RPC lab (rpcgen + g++ output shown, lab1.tar.gz); lab2 is an event-driven replicated file store. Dates only via URL and sibling pages.
-- https://www.cl.cam.ac.uk/teaching/0910/P33/sw/dynamic-routing-pwospf/ — Cambridge P33 2009-10 PWOSPF on VNS/NetFPGA, last modified 2009-10-24; C files (sr_integration.c) named on the basic-router sibling page.
-- https://sites.cc.gatech.edu/classes/AY2010/cs4210_fall/Project3.pdf — Georgia Tech CS4210 Fall 2009 distributed proxy server using Sun RPC (due 11/30/2009); Project1 is a pthreads web server and Project2 a shared-memory proxy.
-- https://sites.cc.gatech.edu/fac/Russell.Clark/Classes/06/3251-spring/sockets2.html — Georgia Tech CS3251 Spring 2006 selective-repeat ARQ file transfer in C or C++ on Solaris/Linux (-lsocket -lnsl). Good candidate, around score 92.
-- https://math.hws.edu/eck/cs441/f02/lab4.html — HWS CPSC441 Fall 2002 web server labs in C++ with an instructor Socket class (threaded_chat.cc in an open directory listing).
-- https://www.cs.cornell.edu/courses/cs414/2005sp/cs415/project4.html — Cornell 2005sp minithreads reliable networking and ad-hoc routing (project5); not yet in catalog but close to existing cs414 entries.
-- https://pages.cs.wisc.edu/~akella/CS640/F06/work.html — Wisconsin CS640 Fall 2006: mock name server, distance vector and e-CHIMP chat protocol (echimp-rfc.txt); directory listing dated 2006.
-- https://www.cs.princeton.edu/courses/archive/spr08/cos461/simple_tcp.html — COS461 Spring 2008 STCP plus web_proxy (ANSI C) and router pages; spr07 and spr09 variants are also live.
+- https://course.ece.cmu.edu/~ee349/f-2008/ece349-fall08-html-files/projects.html — CMU 18-349 Fall 2008: Gumstix/XScale labs with U-Boot 1.1.4 standalone apps, the Gravel kernel, IRQs/timers and RMS/priority inheritance (Gravelv2). The page is live but every handout PDF and support tarball returns 404. The host is very slow.
+- https://www.rose-hulman.edu/class/ee/hoover/ece331/old%20stuff/ECE331%20Spring%202008%20Labs/ — Rose-Hulman ECE331 Spring 2008: Apache index of 9S12C32 labs (.doc handouts plus .c files such as cointoss.c, an interrupt-driven combination lock and a tuner). Authentic but raw; score about 88.
+- https://my.mech.utah.edu/~me3200/labs/F02Labs/F02_Handyboard_L5.pdf — Utah ME3200 Fall 2002 Handy Board / Interactive C intro lab; the directory has F01-F05 lab sets with 2000-2005 timestamps. Introductory level.
+- https://www.linuxjournal.com/article/7136 — Greg KH 'I2C Drivers, Part I' (Dec 2003), C listings; Part II and other 'Driving Me Nuts' columns such as 8110 (2005) are also live. Held back to limit records from one site.
+- https://users.ece.utexas.edu/~valvano/robot/Robot2006.htm — UT EE345M 2006 robot competition (6812 drivers, PWM, input capture); the page itself never mentions C.
+- https://www.eecg.utoronto.ca/~pc/courses/edk/modules/ — Toronto Xilinx EDK tutorial modules for versions 6.1-8.2 (2004-2007), MicroBlaze. Mostly tool walkthroughs.
+- https://www.ethernut.de/en/documents/ — Nut/OS (AVR/ARM RTOS) tutorial index; mixed dates (SuSE 9.3, RHEL4, July 2009 manual).
+- https://www.cs.usfca.edu/~cruse/cs686f05/ — Cruse CS686 Fall 2005: Linux 2.6 VESA/vram drivers and four projects (project1-4.f05). Cruse quota used.
 
-## Database internals
+## Unix tools, compression, crypto
 
-- https://www.cs.cornell.edu/courses/cs432/2002fa/assignments/a6/description.htm — Fall 2002 rerun of the ARIES recovery assignment (deadline Dec 9); duplicate of the accepted 2001 page, so left out
-- https://www.cs.cornell.edu/courses/cs432/2002fa/assignments/a1/description.htm — Fall 2002 Minibase buffer manager shipped as a Visual Studio .NET project; a3/a4 (B+ tree, joins) are at description.html
-- https://www.dbai.tuwien.ac.at/staff/wei/teaching/ads0708/projects/project1/index.html — TU Wien WS 2007/08 PostgreSQL 8.0.3 CLOCK buffer manager in C, adapted from Berkeley CS186; good but derivative
-- https://www.cs.iusb.edu/minidb/2_assignments/ — IU South Bend MiniDB C++ engine assignments (PDFs dated Aug 2010, tech report 2007); a Windows C++ teaching DB engine
-- https://users.cs.northwestern.edu/~pdinda/db-f06/projectc.pdf — Fall 2006 and 2007 versions of the Northwestern BTree project also live (db-f07/projectc.pdf); host sometimes resets connections
-- https://www.cs.ucdavis.edu/~green/courses/ecs165b-s10/indexManager.html — Individual DavisDB B+ tree part (due 5/2/2010) if separate component entries are wanted
-- https://www.cs.cornell.edu/courses/cs432/2001fa/a1/index.htm — Fall 2001 Minibase buffer manager (bufmgr.cpp, Visual C++); buffer manager is already well covered
+- https://www.cct.lsu.edu/~kosar/csc4304/projects/Project-1.pdf — LSU CSC4304 Fall 2010 (Kosar): implement ls with -a -C -d -l -L -p -r -R -S in C; Project-2 is the myhttpd web server. Fall 2010 is on the course page, not in the PDF. About 87.
+- https://research.cs.umbc.edu/cisa/courses/cmsc/443/fall06/PROJECTS/project1sp2005.html — UMBC CMSC443 Spring 2005 crypto projects (mini DES, A5 key stream, hash, RSA text-to-integer); C/C++/Java allowed
+- https://zlib.net/zlib_how.html — Mark Adler's annotated zpipe.c deflate/inflate example; version history from 30 Oct 2004, but the page was touched again in Feb 2026
+- https://www.cs.princeton.edu/courses/archive/spr03/cs126/assignments/prefix.html — Same COS126 Spring 2003: decode prefix-code (Huffman tree) messages in C. Small sibling of the RSA entry.
+- https://www.cs.princeton.edu/courses/archive/spr04/cos217/assignments.html — COS217 Spring 2004 to Spring 2009 assignments (decomment, symtable, heapmgr, buffer overrun, ish shell) are all live; better for a systems agent
+- https://staff.um.edu.mt/csta1/courses/lectures/csa2060/ — Malta CSM210 C course index: assessed C projects for 1997, 2000, 2001 (x2), Jan 2002 and Jan 2004 (process scheduling simulator)
+- https://users.csc.calpoly.edu/~pnico/class/ — Cal Poly CPE357 (Nico): mytar, Huffman hencode/hdecode, mush shell. The https chain is incomplete here (curl error 60), so it could not be verified.
+- https://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/labs/Lab-4-Fakemake/index.html — UTK CS360 Fakemake lab (make clone in C); TLS chain failed here, and Plank's pages are often undated
+- https://web.cs.wpi.edu/~cs4513/b05/proj0.html — WPI CS4513 B-term 2005: install the WPI File System (Minix fs clone) into a Linux kernel; for the filesystems agent
+- https://www.cs.columbia.edu/~smb/classes/f07/assignments.html — Bellovin W4187 Fall 2007 security architecture programming assignments (four, dated); not checked in detail
 
-## Unix tools, compression, drivers, embedded
+## Under-represented years (2000, 2008–2010)
 
-- https://www.cs.usfca.edu/~cruse/ — Allan Cruse's home page links dated course archives (cs210f03–s09, cs630s04/f06/f08, cs635s03/s05/f07, cs686f03/f05/s05/s07/s08). These hold bootloaders, a mini OS (os630.s), SVGA/Radeon programming, RTL8139 NIC drivers and VMX kernel modules. Most are x86 assembly or graphics, but more C driver projects could be catalogued.
-- https://www.cs.usfca.edu/~cruse/cs635s05/proj2s05.635 — May 2005 'nicchat.cpp' over a custom RealTek 8139 character driver. Good for a networking/driver agent.
-- https://people.ece.cornell.edu/land/courses/ece4760/labs/s2004/lab1.html — Every year from s1999 to s2012 holds an intact AVR lab set. Individual labs (DTMF/DDS synthesis, TV video game) could be added.
-- https://forum.cone.informatik.uni-freiburg.de/teaching/labcourse/Adhocnetworks-w07/manet-assignment.html — Winter 2007/08 Gumstix ad-hoc networking lab with dated tasks (cross-compiling, U-Boot reflashing). Mostly written questions rather than a C build, but authentic Gumstix-era material.
-- https://courses.cs.umbc.edu/undergraduate/421/spring02/burt/projects/project1.html — March 2002 UMBC CMSC421 project: add a system call to a Red Hat-era kernel (ksyms.c, EXPORT_SYMBOL). Better fit for the OS agent.
-- https://courses.cs.duke.edu/fall01/cps100/assign/huff/ — Earlier Fall 2001 version of the Duke Huffman assignment. Only one semester accepted to avoid near-duplicates.
-- https://www.classes.cs.uchicago.edu/archive/2007/fall/51081-1/labs/LAB2/lab2.html — Same Fall 2007 course: regex/grep/awk lab. LAB4 (fork/exec/pipes) and LAB5 (SysV IPC) are also intact.
+- https://cseweb.ucsd.edu/classes/fa00/cse131a/parser.htm — UCSD CSE131A Fall 2000 Oberon compiler (lexer due Oct 15, 2000; parser 11/12/00; semantic analysis Dec 3, 2000) with yacc for C++ users or CUP for Java users. Left out because Java is also allowed and UCSD already has a fa00 entry. wi00 cse131a_A has the same course.
+- https://www.cs.columbia.edu/~nieh/teaching/w4118_f10/homeworks/hmwk6.html — Columbia Fall 2010 W4118 (due 12/13/2010): ext2 work on the Android emulator/goldfish kernel 2.6.32; f10 HW4 is a SCHED_DBMC scheduler. Siblings of the accepted f09 pages.
+- https://www.cs.columbia.edu/~nieh/teaching/w4118_f00/homeworks/hmwk5.html — Columbia Fall 2000 HW5: new Linux 2.2 page-replacement policy (kern4). Could stand alone if the sequence entry is not enough.
+- https://www.cs.columbia.edu/~junfeng/10sp-w4118/hw/hw2.html — Columbia Spring 2010 W4118 (Junfeng Yang), Linux kernel homeworks on VMware; another Columbia offering, so skipped.
+- https://www.cs.rochester.edu/~kshen/csc257-fall2009/assignments/assignment2.html — Same Fall 2009 course: distance-vector routing over UDP (any language). assignment1 is a threaded web proxy (C/C++ or Java).
+- https://www.cs.utah.edu/~mflatt/past-courses/cs5460/hw7.html — Utah Fall 2009 HW7: distributed version of the threaded game simulation (dist-field.zip, rpc.zip, dsm.zip). hw3.html is a pthreads game simulation.
+- https://www2.cs.uh.edu/~jsteach/cosc4377/ — UH COSC4377 archive with 2000fall, 2001spring/fall, 2002-2007 and 2009spring offerings; later semesters may have stronger socket projects.
+- https://www.cs.hmc.edu/~geoff/classes/ — Kuenning's index of HMC class archives: cs105 spring09/spring10 (CS:APP labs), cs134 OS 2002/2003, cs70 C++ fall00/spring00.
+- https://courses.engr.illinois.edu/cs241/sp2010/ — UIUC CS241 Spring 2010 sibling of the accepted Fall 2009 page; not checked in depth.
 
-## Hobbyist and community sites
+## Graphics, games, audio internals
 
-- http://www.kegel.com/c10k.html — C10K survey; strong 1999–2003 content (select/poll/epoll/kqueue, sendfile) but continuously updated to 2018 and not a project
-- http://www.codeslinger.co.uk/pages/projects/gameboy.html — C++ Game Boy emulator tutorial with source (Visual Studio/Code::Blocks); no date visible on page, likely ~2008–2010
-- https://dunkels.com/adam/pt/ — Protothreads (C, 2005–2006) — subpages blocked by WAF (466), date not visible on main page
-- http://www.osdever.net/tutorials/ — Bona Fide index, all dated Jul 2003: Spinlocks I–III (Rieker), Implementing Basic Paging, Multitasking Howto, Software Task Switching, Writing a Kernel in C (Robinson)
-- https://www.hboehm.info/gc/gcdescr.html — Boehm conservative GC algorithm overview (C); strong topic but no explicit in-window date on page
-- https://flipcode.com/archives/Network_Game_Programming-Issue_01_Things_that_make_you_go_hmm.shtml — Winsock C++ network game series, June–Aug 1999 — just before window
+- https://people.ece.cornell.edu/land/courses/ece4760/labs/s2005/lab2.html — ECE476 Spring 2005 cricket-call generator: amplitude-modulated DDS sine synthesis in C on a Mega32 (lab2.html dated 2005-02-21, ddsC.c 2004-11). Good audio/embedded lab, but the host already has 3 catalog entries.
+- https://users.ece.utexas.edu/~bevans/courses/realtime/lectures/laboratory/c6713/lab3/index.html — UT EE345S TMS320C6713 FIR/IIR circular-buffer filters in C; only a 2008 book reference dates it
+- https://graphics.stanford.edu/courses/cs248-04/proj3/index.html — CS248 2004 video game project resources; also cs248-02/03/05/06/07 offerings are live with the same paint/rasterizer/game sequence
+- https://flipcode.com/archives/Advanced_Lightmapping.shtml — March 2001 lightmap generation article on flipcode; not checked in depth
+- https://fabiensanglard.net/quakeSource/index.php — Fabien Sanglard's 2009 Quake engine code review; in-window article but a retrospective on 1996 code. Not loaded.
 
 ## Known dead ends (as of October 2026)
 
@@ -118,3 +112,11 @@ Do not spend searches here unless something has changed:
 - flipcode "Implementing A Scripting Engine" and "Network Game Programming" (1999): just before the window.
 - KFUPM SIC/XE assembler and linking loader: dated 1998, out of range.
 - epaperpress.com Lex & Yacc tutorial: PDF rebuilt in 2020.
+- gamedev.net / archive.gamedev.net articles: Cloudflare 403 from the sandbox. drdobbs.com unreachable through the proxy.
+- USC CS530/531, WPI CS4513 (Claypool), UW CSE490G/CSE303/CSE466, Calgary CPSC599.49: 401/403 or login.
+- Berkeley CS267, UIUC ECE498AL / CS420, Cornell CS5220: no surviving 2000s assignment pages found.
+- UIUC ECE391 old terms show a placeholder; CMU 18-348 and Georgia Tech ECE4180 only have modern versions.
+- Cal Poly CPE357 and UTK CS360: TLS certificate errors through the proxy (unverified, not dead).
+- Dipperstein compression pages gone; arturocampos.com is now spam; Charles Bloom source pages stop in 1999.
+- Wisconsin CS640 Fall 2006 assignment PDFs: 404.
+- University GC/VM courses in C are scarce: Rose-Hulman (Java), Brown (Scheme), Princeton/HMC (SML); Tufts, Arizona, KAIST gone.

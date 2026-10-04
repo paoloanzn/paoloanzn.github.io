@@ -322,8 +322,10 @@ var INTENTS=[
   {id:"vm",label:"A VM or emulator",tok:"fetch();",re:/interpret|virtual machine|bytecode|emulat|simulat|assembler|\bjvm\b|scheme|lc-3|lc-2|\bmips\b|microcode|pipeline/},
   {id:"mem",label:"Threads & memory",tok:"malloc()",re:/thread|concurren|malloc|allocat|garbage|semaphore|memory|mutex|coroutine|pthread/},
   {id:"hw",label:"Drivers & embedded",tok:"/dev/",re:/driver|kernel module|embedded|\bavr\b|pic18|microcontroller|hc12|uart|rtos|linux 2\.[46]/},
-  {id:"gfx",label:"Graphics & games",tok:"glBegin",re:/graphic|opengl|\bgame|ray ?trac|\bsdl\b|directx|render|image|allegro|glut/},
+  {id:"par",label:"Parallel & GPU",tok:"#pragma omp",re:/parallel|\bmpi\b|openmp|\bcuda\b|cilk|multicore|cluster|\bgpu\b|\bcell\b/},
+  {id:"gfx",label:"Graphics, games & audio",tok:"glBegin",re:/graphic|opengl|\bgame|ray ?trac|\bsdl\b|directx|render|image|allegro|glut|audio|sound|\bdsp\b|mpeg|jpeg|synth/},
   {id:"unix",label:"Unix tools & shells",tok:"$ ./a.out",re:/\bshell\b|systems \/ unix|utilit|editor|compression|huffman|lzw|ncurses|terminal|burrows|regex/},
+  {id:"crypto",label:"Crypto & security",tok:"RSA_",re:/crypto|\brsa\b|\baes\b|\bdes\b|rijndael|\bssl\b|openssl|cipher|encrypt/},
   {id:"win",label:"Windows apps",tok:"WinMain",re:/win32|\bmfc\b|windows \/|\.net|vc6|visual c\+\+/}
 ];
 

@@ -175,7 +175,12 @@ Score: 98–100 museum grade · 95–97 prime · 90–94 solid · 85–89 border
 
 - Following directories beats searching. CMU, Princeton, Cornell, Wisconsin, UChicago, UT Austin, MIT PDOS,
   Stanford SCS and USF (Cruse) keep whole year-coded trees live.
-- Web search budgets run out around 150–200 calls per agent; tell agents to switch to directory crawling.
+- The web-search budget (about 200 calls) is shared by the WHOLE session, not per agent. In batch 2 the
+  first agents used it up and later agents could not search. Give each agent a search allowance
+  (about 200 ÷ number of agents) in its prompt, and give the leads agent none (it only needs curl).
+- One agent dedicated to `leads.md` is high-yield: in batch 2 it resolved all 71 leads and added 20 records.
+- When filling the brief, drop the template's header (everything above the first `---`) and write the
+  file from Python or a quoted heredoc (`<<'EOF'`): an unquoted heredoc runs the backticks in the brief.
 - WebFetch may need permission and time out in subagents; `curl` from Bash works for most hosts.
 - Some old servers reset connections or return 503 on http but 200 on https (`check_urls.py --fix` handles it).
 - Hosts often blocked: UMD `/class/`, UNSW, UW and Berkeley inst (logins). See `leads.md`.

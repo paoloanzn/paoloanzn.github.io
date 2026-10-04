@@ -27,7 +27,7 @@ Colors are CSS variables on `:root`, redefined for dark mode under `prefers-colo
 |---|---|
 | Color tokens, light + dark | `:root{` and `@media (prefers-color-scheme:dark)` |
 | Year layer colors | `var LAYERS={2010:[...` — `[background, text color]` per year |
-| Intent tiles | `var INTENTS=[` — `{id, label, tok, re}` |
+| Intent tiles | `var INTENTS=[` — `{id, label, tok, re}` (13 tiles since batch 2: kernel, compiler, database, network, fs, vm, mem, hw, par, gfx, unix, crypto, win) |
 | Search fields | `x._all=` in the load block |
 | Intent match fields | `x._hay=` (title + category + notes + tags) |
 | Card markup | `function card(x,i)` |
