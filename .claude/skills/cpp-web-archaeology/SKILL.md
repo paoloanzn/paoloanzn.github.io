@@ -183,5 +183,10 @@ Score: 98–100 museum grade · 95–97 prime · 90–94 solid · 85–89 border
   file from Python or a quoted heredoc (`<<'EOF'`): an unquoted heredoc runs the backticks in the brief.
 - WebFetch may need permission and time out in subagents; `curl` from Bash works for most hosts.
 - Some old servers reset connections or return 503 on http but 200 on https (`check_urls.py --fix` handles it).
+- Some hosts (e.g. web.eecs.umich.edu) omit an intermediate TLS certificate, so curl reports 0 while
+  browsers load the page. Do not disable verification: fetch the issuer from the certificate's
+  "CA Issuers" (AIA) URL, add it to a CA bundle and retry with `curl --cacert`. Keep such records.
+- A topic-focused batch (batch 3: compilers only) yields fewer records per agent (~5) than a broad one,
+  because many 2000s compiler courses are behind logins or used Java/ML. Plan 8 agents for ~40 records.
 - Hosts often blocked: UMD `/class/`, UNSW, UW and Berkeley inst (logins). See `leads.md`.
 - Agents tend to over-deliver near-duplicates (many sibling semesters). Cap at two per course unless content differs.

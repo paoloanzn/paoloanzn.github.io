@@ -95,6 +95,56 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - https://flipcode.com/archives/Advanced_Lightmapping.shtml — March 2001 lightmap generation article on flipcode; not checked in depth
 - https://fabiensanglard.net/quakeSource/index.php — Fabien Sanglard's 2009 Quake engine code review; in-window article but a retrospective on 1996 code. Not loaded.
 
+## Compilers (batch 3, October 2026)
+
+- Not yet added on purpose (catalog review drops, could return if a slot opens): UDel CISC672 Spring 2005 Cool semantic analyzer (~90); Wisconsin CS701 Fall 2005 project 3; IIT Bombay CS715 2009-10; McGill COMP520 Fall 2004 (C or Java); Pacific CS480 2007 part 4bu.
+- https://www.eecis.udel.edu/~pollock/672/s05/pa4.pdf — UDel CISC672 Spring 2005 Cool semantic analyzer (semant.cc, cool-tree.h, C++ default, due 18 Apr 2005), score ~90. UDel f06 is already in the catalog, so this is out of scope for this batch. It would be a valid 2nd semester covering the semantic-analysis phase, which the f06 records lack. Course schedule: https://www.eecis.udel.edu/~pollock/672/s05/sched.html
+- https://theory.stanford.edu/~aiken/software/cool/cool.html — Aiken's Cool distribution page (Stanford host, not CS143 proper); cooldist/handouts are CS143 Fall 2009 copies, so skipped under the Stanford rule
+- https://web.eecs.umich.edu/~weimerw/2009-4610/pa.html — Weimer UVA Cool PAs 2007-2010. Re-check if a fetcher can pass the host's TLS; probably multi-language, which would rule it out
+- https://www.cs.utexas.edu/~novak/cs375.html — UT Austin CS375: students write a Pascal-subset compiler in C. Not Cool/Decaf; a lead for the general compilers agent
+- https://www.cs.rutgers.edu/courses/415/ — Rutgers CS415 (ILOC, C) has older semesters under classes/. Not Cool/Decaf; a lead for the general compilers agent
+- https://www.lrde.epita.fr/~tiger/tigdes_20010430_v11.pdf — EPITA Tiger project design doc in French, dated 30/04/2001, v1.1 (H. Delorme, W. De Denterghem): abstract syntax, visitors and frame modeling for the C++ Tiger compiler. Genuine period document, but it is design notes rather than an assignment. About 86.
+- https://www.lrde.epita.fr/~tiger/sujet-libre-2003-tigerVM.pdf — EPITA 2003 optional student project spec: a VM that runs the textual Tiger IR, covering canonicalization, basic blocks and traces (the ancestor of HAVM). Implementation language not stated.
+- https://www.lrde.epita.fr/~tiger/exams/ — EPITA Tiger/ccmp exams 2002-2007 with corrections (PDFs). Period material, but exams, not projects.
+- https://homepage.iis.sinica.edu.tw/~tshsu/compiler2005/hwks/hwk5.txt — Sibling 2005 version (due June 16, 2005) of the accepted NTU lex/yacc Pascal-like-to-C-- assignment. The host often resets connections.
+- https://st.ewi.tudelft.nl/koen/compilerbouw/resources.html — TU Delft master's compiler construction 2002 (Langendoen): LLgen/lex/yacc slides plus a link to 'assignments and reference compiler'. Not yet followed; the host resets curl, but WebFetch works.
+- https://zeus.cs.pacificu.edu/ryand/cs480/2005/cs480.html — Spring 2005 offering of the accepted Pacific CS480 pcc compiler course. Use it only if the 2007 page ever goes down.
+- https://pages.cs.wisc.edu/~fischer/cs701.f00/proj2.html — Wisconsin CS701 Fall 2000/2001/2003 directories hold the same Simple-SUIF register-allocation and optimization projects; only usable if the F05 records are dropped (sibling limit).
+- https://pages.cs.wisc.edu/~fischer/cs701.f05/proj4.html — CS701 F05 Project 4: open research project (Appel/George coalescing, live-range splitting, rematerialization, scheduling) on the same C++ code generator; small sibling.
+- https://web.eecs.umich.edu/~mahlke/courses/583f07/homeworks/583hw2.htm — EECS 583 Fall 2007 HW2: Trimaran hyperblocks over loops and SESE regions with a performance contest; a strong alternative to W06 if the semester mix changes. umich needs the InCommon RSA OV SSL CA 3 intermediate for curl.
+- https://moss.csc.ncsu.edu/~mueller/codeopt/codeopt05/projects.html — NCSU CSC 791A Spring 2005 student project pages (VPO for Power, gprof via binary instrumentation, SUIF MPI); reports, not assignments.
+- https://www.cs.unh.edu/~pjh/courses/cs912/ — UNH CS912 Advanced Compiler Design Fall 2000 (Hatcher): code selector from Hyperion IC to Alpha and a semester project. Language not stated (the java2c system is C).
+- https://bellard.org/tcc/tccboot.html — TCCBOOT (Oct 2004): TinyCC boot loader that compiles and boots a Linux kernel from source. Strong period page, but Bellard TCC is already covered, so left out to avoid near-duplicates.
+- http://www.fpgacpu.org/xsoc/cc.html — Jan Gray XSOC/xr16 (Circuit Cellar 2000), including an lcc 4.1 port to the xr16 RISC. Mostly FPGA hardware; the lcc retarget is one part.
+- https://web.eecs.umich.edu/~mahlke/courses/583f07/homeworks.html — EECS 583 Fall 2007 homeworks on the Trimaran (C++) research compiler; dated Sep-Oct 2007. Out of LLVM/GCC scope but may suit a research-compiler batch.
+- https://pages.cs.wisc.edu/~fischer/cs701.f07/ — Wisconsin CS701 F05-F07 directories hold SUIF/Mulhern-era back-end projects (proj2-4, asg2.mulhern.html); worth checking for C++ SUIF/MachSUIF assignments.
+- https://www.cse.iitb.ac.in/grc/gcc-workshop-09/ — GCC Resource Center 2009 workshop with lab exercises and solutions pages (index.php?page=solution); may contain hands-on GCC 4.x pass and machine-description labs.
+- https://www.antlr2.org/doc/cpp-runtime.html — ANTLR 2.7.x C++ target notes ('New as of ANTLR 2.7.2'); the doc index says ANTLR 2.7.5, January 28, 2005, but this page has no date of its own. About 87.
+- https://cs.ecu.edu/abrahamsonk/4627/spr05/index.html — ECU CSCI 4627 Spring 2005 course index: five-part C- compiler in C (flex lexer, RD parser, table manager, type checker, abstract-machine codegen with C sources). Could be a sequence entry. The ECU WAF sometimes blocks repeated requests.
+- https://www.ndsl.kaist.edu/~kyoungsoo/ee209_2010/assignment/regexp/ — KAIST EE209 2010 regexp assignment in C; host would not resolve from the sandbox
+- https://www.boost.org/doc/libs/1_33_1/libs/wave/index.html — Boost.Wave 1.33.1 (2005): C++ preprocessor with re2c/Spirit lexers. Library docs; fits a lexing tile.
+- https://www.usna.edu/Users/cs/wcbrown/courses/F09SI413/labs/L08/Lab.html — USNA SI413 Fall 2009 Lab 8: AST interpreter for SPL with flex/bison in C++; labs 3, 6 and 7 cover flex and LR conflicts
+- https://www.gnu.org/s/dotgnu/libjit-doc/libjit_3.html — Original DotGNU libjit texinfo manual with tutorials (mul_add, gcd, Fibonacci) in C. gnu.org kept resetting through the proxy, so it was not verified. Check for texi2html dates (c. 2004–2008).
+- https://pages.lip6.fr/vvm/projects_realizations/ccg/ccg-1.php — Ian Piumarta's ccg runtime-assembler docs (C preprocessor plus runtime assemblers), early 2000s; connection reset, so it could not be read.
+- https://www.st.cs.uni-saarland.de/edu/interpreters08/ivm08.html — Saarland 'Interpreters and Virtual Machines' 2008 course; host blocked by the proxy. It may have C VM or JIT projects.
+- https://bluishcoder.co.nz/2007/02/18/dynamic-code-generation-and-image/ — Chris Double, 18 Feb 2007: a C loader that mmaps and relocates generated x86/ARM machine-code images (cegcc, Windows Mobile 5). The assembler half is in JavaScript (Rhino), so around 86.
+- https://psyco.sourceforge.net/ — Psyco specializing JIT for Python, written in C; SourceForge-era site with news from 2006–2012 and PEPM'04/ACCU 2004 docs. The reader writes Python, so around 85–86.
+- https://harmony.apache.org/subcomponents/drlvm/gc-howto.html — 'How to Write DRL GC': a hands-on C++ tutorial for writing a garbage collector for DRLVM (c. 2006–2007). Belongs to the GC/runtime domain.
+- https://harmony.apache.org/subcomponents/drlvm/encoder_library.html — DRLVM IA-32/Intel64 encoder library doc dated January 30, 2007 (C++). Sibling of the accepted Jitrino page.
+- https://www.cs.utexas.edu/users/mckinley/380C/labs/labs.html — UT CS 380C Fall 2009 (McKinley): 3-address-to-C translator, dataflow, SSA and register allocation labs. Optimization domain; check the implementation language.
+- https://www.cs.mcgill.ca/~nnaeem/520/ — McGill COMP 520 Fall 2005: 'Sept 27, 2005' note that all JOOS deliverables must use the C (A-) implementation; CVS/svn, Sun and FreeBSD machines. Good, but a third semester after c2's 2004 and this batch's 2008.
+- https://st.ewi.tudelft.nl/~koen/compilerbouw/2003/practicum.html — TU Delft 2003 Asterix practicum (deadlines 14 April and 26 May 2003, flex/bison/LLgen). Only reachable with WebFetch; curl gets connection resets.
+- https://dudka.cz/vyp08 — Kamil Dudka's 2008 VUT Brno VYP course project: a flex/bison compiler and interpreter in C++ with Boost, with source and docs online. Student source project; README says 2008 but it uses CMake. About 86.
+- https://dudka.cz/ifj05 — VUT Brno IFJ 2005 team project: a compiler/interpreter for IFJ05 in C, with source browser and docs (Czech). Thin page.
+- https://www.complang.tuwien.ac.at/ubvl/skriptum/ — Index of TU Wien Übersetzerbau skripta for every year 2000–2026 (skriptum00..skriptum10 are period). Other agents should not add more years.
+- https://www.inf.ufrgs.br/~johann/comp/ — UFRGS Compiladores (Marcelo Johann) staged lex/yacc C compiler. The host resets connections; try again later.
+- https://people.cs.nctu.edu.tw/~ypyou/courses/Compiler-s09/ — NCTU Compiler Design Spring 2009 lex/yacc project. The host returned 502; not verified.
+- https://www.embecosm.com/appnotes/ean3/embecosm-howto-gdb-porting-ean3-issue-2.html — Embecosm EAN3 'Howto: Porting the GNU Debugger' (Issue 2, Nov 2008), OpenRISC GDB port in C; sibling of accepted EAN4. EAN2 (toolchain install, Nov 2008), EAN6 Verilator SystemC (Feb 2009), EAN1 TLM 2.0 (May 2010) and EAN8 DejaGnu (Apr 2010) are also live under /appnotes/eanN/html/index.html.
+- https://dmitrybrant.com/?p=43 — Aug 2003 post: grammar-driven recursive-descent parser in C++ that emits assembly, with source download; small college assignment, about 86.
+- http://moxielogic.org/blog/archives.html — Anthony Green's moxie dev blog: dated 2009-2010 posts on a new ISA with GCC/binutils/GDB/QEMU ports ('Moxie GCC port is upstream!', 9 June 2009). Re-rendered with Pelican, and https cert mismatch; short posts.
+- https://www.cc65.org/doc/ — Frozen cc65 doc set (index 2005-8-6): internal.txt describes cc65's Small-C-derived code generation (undated), coding.html efficiency hints.
+- https://www.boost.org/doc/libs/1_34_0/libs/spirit/index.html — Boost 1.34 (2007) Spirit 1.8 docs with calculator and parser examples in C++; library docs rather than a project.
+
 ## Known dead ends (as of October 2026)
 
 Do not spend searches here unless something has changed:
@@ -120,3 +170,7 @@ Do not spend searches here unless something has changed:
 - Dipperstein compression pages gone; arturocampos.com is now spam; Charles Bloom source pages stop in 1999.
 - Wisconsin CS640 Fall 2006 assignment PDFs: 404.
 - University GC/VM courses in C are scarce: Rose-Hulman (Java), Brown (Scheme), Princeton/HMC (SML); Tufts, Arizona, KAIST gone.
+- Compilers: UC Davis ECS142 2003/2005 folders 403; Berkeley CS164 2000–2006 CalNet; UIUC CS426 old terms redirect to current; UW CSE401 PL/0 login; Arizona CSc453, Dartmouth CS57, Calgary CPSC411 403; Alberta CMPUT415 404.
+- Compilers: Rutgers 415, Rice COMP412/512, FSU, Alberta Pro64, Edinburgh 2000s archives dead; lcc site redirects to a Google login; pcc site 503; CodeProject articles now redirect to a placeholder.
+- gnu.org / ftp.gnu.org (flex, bison, lightning, libjit manuals) and lip6.fr did not respond through the proxy in batch 3. Retry later.
+- Appel "Modern Compiler Implementation in C" site is dated 1997 (out of range).
