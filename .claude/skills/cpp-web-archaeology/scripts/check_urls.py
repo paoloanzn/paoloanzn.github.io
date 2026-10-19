@@ -28,15 +28,20 @@ def twin(url):
 
 
 def check(url):
-    code = cl.http_status(url)
-    if code == 200:
-        return url, code, None
-    t = twin(url)
-    if t and cl.http_status(t) == 200:
-        return url, code, t
+    """Return (url, code, twin_or_None, note)."""
+    code, final = cl.http_fetch(url)
     if code in (0, 429, 500, 502, 503, 504):  # flaky old servers: one retry
-        code = cl.http_status(url, timeout=60)
-    return url, code, None
+        code, final = cl.http_fetch(url, timeout=60)
+    if code == 200:
+        if cl.soft_404(url, final):
+            return url, "REDIRECT", None, final
+        return url, 200, None, None
+    t = twin(url)
+    if t:
+        c2, f2 = cl.http_fetch(t)
+        if c2 == 200 and not cl.soft_404(t, f2):
+            return url, code, t, None
+    return url, code, None, None
 
 
 def main():
@@ -55,8 +60,12 @@ def main():
 
     bad, fixes = [], {}
     with cf.ThreadPoolExecutor(a.workers) as ex:
-        for url, code, alt in ex.map(check, urls):
+        for url, code, alt, note in ex.map(check, urls):
             if code == 200:
+                continue
+            if code == "REDIRECT":
+                bad.append((url, code))
+                print(f"REDIRECT {url} -> {note} (left the original page: likely moved or soft 404)")
                 continue
             if alt:
                 fixes[url] = alt

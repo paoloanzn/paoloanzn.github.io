@@ -80,6 +80,8 @@ def main():
                 why = f"duplicate of record from {seen[c]}"
             else:
                 probs = cl.validate_record(r, strict=True)
+                if not probs and not any(('"' in e or "\u201c" in e) for e in r["evidence"]):
+                    probs = ['evidence needs at least one verbatim quote of the date proof, in double quotes']
                 if probs:
                     why = "; ".join(probs)
             if why:

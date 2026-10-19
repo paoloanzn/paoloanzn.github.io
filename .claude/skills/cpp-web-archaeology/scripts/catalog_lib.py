@@ -37,6 +37,7 @@ def canon(url):
     u = (url if isinstance(url, str) else "").strip().split("#")[0]
     u = re.sub(r"^[a-z]+://", "", u, flags=re.I)
     u = re.sub(r"^www\.", "", u, flags=re.I)
+    u = re.sub(r"/(index|default)\.(html?|php|shtml|asp)$", "/", u, flags=re.I)
     return u.rstrip("/").lower()
 
 
@@ -137,13 +138,44 @@ def intent_haystack(r):
                     list(r.get("tags") or [])).lower()
 
 
-def http_status(url, timeout=40):
-    """Return final HTTP status for url via curl (honours the sandbox proxy)."""
+def http_fetch(url, timeout=40):
+    """Return (final HTTP status, final URL after redirects) via curl
+    (honours the sandbox proxy). (0, url) on network failure."""
     try:
         out = subprocess.run(
             ["curl", "-sSL", "-A", "Mozilla/5.0 (compatible; cpp-web-archaeology-check)",
-             "-o", "/dev/null", "-m", str(timeout), "-w", "%{http_code}", url],
+             "-o", "/dev/null", "-m", str(timeout), "-w", "%{http_code} %{url_effective}", url],
             capture_output=True, text=True, timeout=timeout + 10)
-        return int(out.stdout.strip() or 0)
+        code, _, final = out.stdout.strip().partition(" ")
+        return int(code or 0), final or url
     except Exception:
-        return 0
+        return 0, url
+
+
+def http_status(url, timeout=40):
+    return http_fetch(url, timeout)[0]
+
+
+def _site(h):
+    """Registrable-ish domain: last 2 labels (last 3 for ccTLD second levels like ac.uk)."""
+    parts = h.removeprefix("www.").split(".")
+    n = 3 if len(parts) >= 3 and len(parts[-1]) == 2 and parts[-2] in ("ac", "co", "edu", "com", "org", "gov") else 2
+    return ".".join(parts[-n:])
+
+
+LOGIN_RE = re.compile(r"shibboleth|/login|signin|weblogin|/cas/|/idp/|sso|auth", re.I)
+
+
+def soft_404(url, final):
+    """True when a redirect left the original page: a different organisation's
+    domain, a login wall, or a page that collapsed to a site's front page.
+    Moves inside the same organisation (www.cs.x.edu -> users.cs.x.edu) are fine."""
+    if canon(url) == canon(final):
+        return False
+    if _site(host(url)) != _site(host(final)):
+        return True
+    fpath = re.sub(r"^[a-z]+://[^/]+", "", final, flags=re.I)
+    if LOGIN_RE.search(fpath) and not LOGIN_RE.search(url):
+        return True
+    upath = re.sub(r"^[a-z]+://[^/]+", "", url, flags=re.I).strip("/")
+    return fpath.split("?")[0].strip("/") == "" and upath != ""

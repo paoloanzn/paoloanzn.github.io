@@ -14,6 +14,16 @@ period-authentic page is worth more than ten weak search hits.
 - Site: `cpp-web-archaeology/index.html` → https://paoloanzn.github.io/cpp-web-archaeology/
 - Repo: `paoloanzn/paoloanzn.github.io`, branch `main` (pushing deploys the site)
 
+## Outside agents (agents.txt)
+
+`cpp-web-archaeology/agents.txt` (live at https://paoloanzn.github.io/cpp-web-archaeology/agents.txt)
+is the public briefing for any other AI agent (ChatGPT, other Claude sessions...). It is
+self-contained and differs from this skill on purpose: outside agents work on a branch and open a
+pull request, and may change only `projects.json` and `references/leads.md`.
+When rules, scripts, categories or kinds change here, update agents.txt in the same commit.
+When asked to review an outside agent's PR, check it against agents.txt section 9 and spot-check
+5+ records before merging.
+
 ## Files in this skill
 
 | File | Use it for |
