@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>C/C++ Web Archaeology</title>
-<meta name="description" content="Dig up period-authentic C and C++ projects, course assignments and tutorials from 2000–2010 that are still live on the web.">
+<meta name="description" content="Dig up period-authentic C, C++ and Lisp projects, course assignments and tutorials from 2000–2010 that are still live on the web.">
 <meta property="og:title" content="C/C++ Web Archaeology">
-<meta property="og:description" content="Kernels, compilers, databases and network stacks from the 2000s web, still live today.">
+<meta property="og:description" content="Kernels, compilers, databases, network stacks and Lisp evaluators from the 2000s web, still live today.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Martian+Mono:wght@400;600;800&display=swap" rel="stylesheet">
@@ -219,9 +219,9 @@ footer kbd{border:1px solid currentColor;border-radius:4px;padding:1px 5px;font:
 
 <header class="hero">
   <div>
-    <div class="topline"><span class="hot">Live web only</span><span>2000 → 2010</span><span>C / C++</span><span>No Wayback</span></div>
+    <div class="topline"><span class="hot">Live web only</span><span>2000 → 2010</span><span>C / C++ / Lisp</span><span>No Wayback</span></div>
     <h1>Dig up the <span class="under">2000s</span> web<span class="c">;</span></h1>
-    <p class="lede">Real projects from the <b>Visual C++ 6, gcc 3, CVS and Bochs</b> days. University assignments, tutorials and hobby sites. They are <b>still online</b>, on their original sites. Pick what you want to build and start digging.</p>
+    <p class="lede">Real projects from the <b>Visual C++ 6, gcc 3, CVS and Bochs</b> days. University assignments, tutorials and hobby sites. They are <b>still online</b>, on their original sites. Now with a <b>Lisp wing</b>: SICP, Scheme and Common Lisp projects. Pick what you want to build and start digging.</p>
     <div class="counter" aria-live="polite">
       <div><b id="statFinds">—</b>finds</div>
       <div><b id="statSites">—</b>live sites</div>
@@ -253,9 +253,10 @@ footer kbd{border:1px solid currentColor;border-radius:4px;padding:1px 5px;font:
     <div class="status" aria-live="polite" id="status"></div>
     <div class="controls">
       <div class="seg" role="group" aria-label="Language">
-        <button type="button" data-lang="" aria-pressed="true">C + C++</button>
+        <button type="button" data-lang="" aria-pressed="true">All</button>
         <button type="button" data-lang="C" aria-pressed="false">C</button>
         <button type="button" data-lang="C++" aria-pressed="false">C++</button>
+        <button type="button" data-lang="Lisp" aria-pressed="false">Lisp</button>
       </div>
       <div class="sel"><label class="sr" for="sort">Sort</label>
         <select id="sort">
@@ -326,9 +327,11 @@ var INTENTS=[
   {id:"gfx",label:"Graphics, games & audio",tok:"glBegin",re:/graphic|opengl|\bgame|ray ?trac|\bsdl\b|directx|render|image|allegro|glut|audio|sound|\bdsp\b|mpeg|jpeg|synth/},
   {id:"unix",label:"Unix tools & shells",tok:"$ ./a.out",re:/\bshell\b|systems \/ unix|utilit|editor|compression|huffman|lzw|ncurses|terminal|burrows|regex/},
   {id:"crypto",label:"Crypto & security",tok:"RSA_",re:/crypto|\brsa\b|\baes\b|\bdes\b|rijndael|\bssl\b|openssl|cipher|encrypt/},
+  {id:"lisp",label:"Lisp & Scheme",tok:"(lambda (x) x)",re:/\blisp\b|scheme|sicp|racket|clojure|drscheme|autolisp/},
   {id:"win",label:"Windows apps",tok:"WinMain",re:/win32|\bmfc\b|windows \/|\.net|vc6|visual c\+\+/}
 ];
 
+var LISP_LANGS=["Scheme","Common Lisp","Emacs Lisp","Clojure","AutoLISP","Racket","Lisp"];
 var $=function(id){return document.getElementById(id)};
 var data=[], state={q:"",intent:"",year:"",lang:"",sort:"layers",cat:""};
 var q=$("q"), sortEl=$("sort"), catEl=$("cat"), results=$("results"), statusEl=$("status");
@@ -347,7 +350,7 @@ function matches(x,skip){
   skip=skip||{};
   if(!skip.intent&&state.intent){var it=INTENTS.find(function(i){return i.id===state.intent}); if(it&&!it.re.test(x._hay)) return false}
   if(!skip.year&&state.year&&String(x.year)!==state.year) return false;
-  if(!skip.lang&&state.lang&&x.language.indexOf(state.lang)<0) return false;
+  if(!skip.lang&&state.lang&&!(state.lang==="Lisp"?x._lisp:x.language.indexOf(state.lang)>=0)) return false;
   if(!skip.cat&&state.cat&&x.category!==state.cat) return false;
   var t=terms(); for(var i=0;i<t.length;i++){ if(x._all.indexOf(t[i])<0) return false }
   return true;
@@ -519,6 +522,7 @@ setInterval(function(){if(document.activeElement!==q&&!q.value){pi=(pi+1)%ph.len
 fetch("./data/projects.json",{cache:"no-store"}).then(function(r){return r.json()}).then(function(d){
   data=d.map(function(x){
     x.language=x.language||[];
+    x._lisp=x.language.some(function(l){return LISP_LANGS.indexOf(l)>=0});
     x._hay=[x.title,x.category,x.notes].concat(x.tags||[]).join(" ").toLowerCase();
     x._all=[x.title,x.site,x.category,x.kind,x.notes,x.year,x.year_label].concat(x.tags||[],x.evidence||[],x.language).join(" ").toLowerCase();
     return x;

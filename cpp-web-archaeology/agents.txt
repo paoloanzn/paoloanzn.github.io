@@ -38,6 +38,14 @@ engines, rasterizers, ray tracers, audio/DSP.
 Graphics, OpenGL and Win32 GUI material is already well covered. Add more only
 when it is unusually strong.
 
+THE LISP WING (since October 2026). Besides C/C++, the catalog accepts
+projects where the reader WRITES LISP: Scheme (PLT/DrScheme/MzScheme, MIT
+Scheme, Chez, Racket from 2010), Common Lisp, Emacs Lisp, Clojure
+(2007–2010), AutoLISP and other dialects. Same rules: 2000–2010 date proof on
+the page, live today, real projects (evaluators, interpreters, compilers in
+Scheme, SICP/HtDP/EOPL/PLAI course projects, AI programs, games, editor
+extensions, web apps). Tiny exercise sheets are out. No other languages.
+
 
 2. YOUR LIMITS (READ CAREFULLY)
 -------------------------------
@@ -85,7 +93,8 @@ RULE B — The page loads live today, at its original or long-running address.
   - A modern page design is fine if the original period text is intact.
 
 Also required:
-  - The reader WRITES C or C++. A course where students write the compiler in
+  - The reader WRITES C or C++ (or, for the Lisp wing, a Lisp: see section 1).
+    A course where students write the compiler in
     Java, ML, OCaml, Haskell or Python is out, even if the target is C. If a
     course says "C++ or Java", accept it only if C/C++ starter code or C/C++
     as the default is on the page.
@@ -110,7 +119,7 @@ When in doubt, reject. Put borderline pages in leads.md instead.
 The score is how sure you are that the entry fits the archive. It is not a
 grade of how good the course was.
 
-  98–100  Museum grade: original dated archive, real project, clear C/C++.
+  98–100  Museum grade: original dated archive, real project, clear C/C++/Lisp.
   95–97   Prime: very strong period evidence, clearly relevant.
   90–94   Solid: good material, slightly weaker proof or smaller scope.
   85–89   Borderline: add only with a clear reason, and say why in the PR.
@@ -156,7 +165,9 @@ Field rules:
   year        Integer, 2000–2010.
   year_label  The most precise date the page shows ("Due 4 Nov 2003", "Spring 2005").
   language    List that includes "C" and/or "C++" (other entries like
-              "x86 assembly" are allowed).
+              "x86 assembly" are allowed). Lisp wing: one or more of "Scheme",
+              "Common Lisp", "Emacs Lisp", "Clojure", "AutoLISP", "Racket",
+              "Lisp" (generic only if the dialect is unclear).
   category    Reuse an existing category when it fits (see the list from the
               stats script). Common ones: Operating Systems, Operating Systems /
               Concurrency, Filesystems, Systems / Unix, Systems / Memory,
@@ -171,6 +182,13 @@ Field rules:
               Cryptography, Text Editors, Graphics / Algorithms, Ray Tracing,
               Games / Engines, Audio / DSP. Create a new one only if it will
               hold several records.
+              Lisp wing records MUST use a "Lisp / ..." category:
+              Lisp / Interpreters & Evaluators, Lisp / Compilers, Lisp / Intro
+              Courses, Lisp / Programming Languages, Lisp / AI, Lisp / Games &
+              Graphics, Lisp / Web & Applications, Lisp / Emacs & Editors,
+              Lisp / Tutorials & Books. A Lisp interpreter written IN C stays a
+              C record (Interpreters / Virtual Machines), not Lisp wing.
+              Lisp-wing tags always include "lisp" and the dialect.
   kind        Exactly one of: project assignment, project sequence, course
               project sequence, lab assignment, lab sequence, tutorial,
               tutorial series, project tutorial, source-code project, source
@@ -252,7 +270,7 @@ Step 2 — Research.
       users.ece.utexas.edu, cs.usfca.edu/~cruse. Many are already well
       represented: prefer NEW institutions and NEW sites.
     - Check every candidate yourself: load it, find the date evidence, confirm
-      C/C++, and grep $WORK/existing_urls.txt for its host.
+      C/C++ (or Lisp), and grep $WORK/existing_urls.txt for its host.
     - Web search budgets are limited. When yours runs low, switch to following
       directories with curl.
   Write results to $WORK/batch/<name>.json in this shape:
@@ -343,7 +361,8 @@ in a few minutes.
 9. FINAL CHECKLIST
 ------------------
 
-  [ ] Every new record: live URL, on-page 2000–2010 evidence, reader writes C/C++.
+  [ ] Every new record: live URL, on-page 2000–2010 evidence, reader writes
+      C/C++ (or Lisp, with a "Lisp / ..." category).
   [ ] Each record has a verbatim quote of its date proof; 5+ spot-checked.
   [ ] No web.archive.org, no GitHub/Medium/Dev.to-only sources, no exploit labs.
   [ ] No duplicates; at most 2 semesters per course.

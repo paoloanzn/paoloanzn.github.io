@@ -19,6 +19,11 @@ FIELD_ORDER = REQUIRED  # order used when writing new records
 YEAR_MIN, YEAR_MAX = 2000, 2010
 SCORE_MIN = 85
 
+# The catalog started as C/C++ only. Since October 2026 it also has a Lisp wing:
+# projects where the reader writes Scheme or another Lisp.
+LISP_LANGS = {"Scheme", "Common Lisp", "Emacs Lisp", "Clojure", "AutoLISP", "Racket", "Lisp"}
+ALLOWED_LANGS = {"C", "C++"} | LISP_LANGS
+
 KINDS = {"project assignment", "project sequence", "course project sequence", "lab assignment",
          "lab sequence", "tutorial", "tutorial series", "project tutorial", "source-code project",
          "source project", "course archive", "tutorial archive", "technical article"}
@@ -95,8 +100,10 @@ def validate_record(r, strict=True):
         p.append(f"score {r['score']} outside {SCORE_MIN}-100")
     if not isinstance(r["language"], list) or not r["language"]:
         p.append("language must be a non-empty list")
-    elif strict and not any(l in ("C", "C++") for l in r["language"]):
-        p.append("language must include 'C' or 'C++'")
+    elif strict and not any(l in ALLOWED_LANGS for l in r["language"]):
+        p.append("language must include one of: " + ", ".join(sorted(ALLOWED_LANGS)))
+    elif strict and any(l in LISP_LANGS for l in r["language"]) and not r["category"].startswith("Lisp"):
+        p.append("records written in a Lisp must use a 'Lisp / ...' category")
     for k in ("evidence", "tags"):
         if not isinstance(r[k], list) or not all(isinstance(x, str) and x.strip() for x in r[k]):
             p.append(f"{k} must be a list of strings")

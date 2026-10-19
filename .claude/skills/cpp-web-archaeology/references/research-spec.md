@@ -1,3 +1,7 @@
+> NOTE (October 2026): since batch 4 the catalog also has a LISP WING — projects where the reader
+> writes Scheme / Common Lisp / Emacs Lisp / Clojure / AutoLISP, with "Lisp / ..." categories.
+> All other rules in this spec apply to it unchanged. For outside agents, agents.txt is authoritative.
+
 You are contributing to the **C/C++ Web Archaeology** project.
 
 The goal is to discover and catalog period-authentic C and C++ programming projects, tutorials, university assignments, lab sequences, technical articles, and source-code projects from roughly **2000–2010** that are **still available on the live web today**.

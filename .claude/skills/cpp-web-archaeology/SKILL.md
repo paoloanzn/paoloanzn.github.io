@@ -171,11 +171,19 @@ Make a task list with these steps. The user is often away; keep going without as
 
 Score: 98–100 museum grade · 95–97 prime · 90–94 solid · 85–89 borderline (add sparingly) · below 85 never.
 
+## Lisp wing (since batch 4, October 2026)
+
+The catalog also accepts projects where the reader writes Lisp (Scheme, Common Lisp, Emacs Lisp,
+Clojure, AutoLISP, Racket). Rules are the same as for C/C++, plus: `language` uses the dialect
+names in `catalog_lib.LISP_LANGS`, and `category` must start with `Lisp / `
+(validated by `catalog_lib.validate_record`). A Lisp interpreter written IN C stays a C record.
+The site has a "Lisp" language button and a "Lisp & Scheme" intent tile.
+
 ## Hard rules
 
 - The catalog URL must load live **now**, on the original or long-running domain. Never web.archive.org.
 - The material itself must be from 2000–2010, proven by evidence **on the page** (dates, semester paths, period toolchains).
-- C or C++ must be what the reader writes. Courses where students use Java/ML/Python are out.
+- C or C++ (or, for the Lisp wing, a Lisp) must be what the reader writes. Courses where students use Java/ML/Python are out.
 - No GitHub/GitLab-only sources, Medium, Dev.to, modern reposts or retrospectives.
 - Never rewrite or reorder existing records. Append only. De-duplicate by canonical URL.
 - Do not modify unrelated files in the repo (it is also Paolo's personal Jekyll blog).
