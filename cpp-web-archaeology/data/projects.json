@@ -9538,5 +9538,2029 @@
       "algorithms"
     ],
     "notes": "Useful collection page; individual entries should be separately harvested and dated."
+  },
+  {
+    "title": "UVa CS200 Spring 2002 — PS7: Mini-Scheme metacircular evaluator extended for quantum computing",
+    "url": "https://www.cs.virginia.edu/~evans/cs200-spring2002/problem-sets/ps7/",
+    "year": 2002,
+    "year_label": "Out 27 March 2002, due 5 April 2002",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "project assignment",
+    "site": "cs.virginia.edu",
+    "score": 96,
+    "evidence": [
+      "\"Out: 27 March 2002\"",
+      "\"Due: 5 April 2002, before class\"",
+      "Provided meval.ss: \"metacircular evaluator for Mini-Scheme\" with a BNF grammar",
+      "Goals: \"Extend an evaluator to define a new language\"",
+      "David Evans' SICP-style CS200 at the University of Virginia"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "metacircular evaluator",
+      "interpreter",
+      "quantum computing",
+      "SICP"
+    ],
+    "notes": "Study a Mini-Scheme metacircular evaluator (meval) and extend it with new special forms, then into a language for simulating quantum computation."
+  },
+  {
+    "title": "UVa CS200 Spring 2002 — PS6: Adventures in Charlottansville (object-oriented adventure game)",
+    "url": "https://www.cs.virginia.edu/~evans/cs200-spring2002/problem-sets/ps6/",
+    "year": 2002,
+    "year_label": "Out 8 March 2002, due 25 March 2002",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "cs.virginia.edu",
+    "score": 95,
+    "evidence": [
+      "\"Out: 8 March 2002\"",
+      "\"Due: 25 March 2002\"",
+      "Provided objects.ss (classes for people, places and things) and adventure.ss",
+      "Goals include \"Understand and use inheritance\"",
+      "\"For this problem set, you will create your own adventure game.\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "adventure game",
+      "object-oriented",
+      "inheritance",
+      "SICP"
+    ],
+    "notes": "Build on a message-passing object system in Scheme to extend a text adventure game with new classes, inheritance and your own game world."
+  },
+  {
+    "title": "UVa CS150 Spring 2007 — PS3: L-System Fractals",
+    "url": "https://www.cs.virginia.edu/~evans/cs150/ps/ps3/",
+    "year": 2007,
+    "year_label": "Out 5 February 2007, due 12 February 2007",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "cs.virginia.edu",
+    "score": 94,
+    "evidence": [
+      "\"Out: 5 February 2007\"",
+      "\"Due: Monday, 12 February 2007\"",
+      "Download ps3.zip with ps3.scm, graphics.scm and lsystem.scm",
+      "Defines L-system commands as tagged lists, e.g. (define (make-forward-command) (cons 'f #f))",
+      "Page banner: \"cs150: Computer Science — Spring 2007\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "L-system",
+      "fractals",
+      "rewrite rules",
+      "graphics"
+    ],
+    "notes": "Represent L-system grammars as Scheme lists, write the rewriting procedures, and draw the resulting fractal plants with a turtle-style graphics library."
+  },
+  {
+    "title": "MIT 6.001 Spring 2005 — SICP project sequence (Basebot, Prisoner's Dilemma, web search, adventure game, metacircular evaluator)",
+    "url": "https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/pages/projects/",
+    "year": 2005,
+    "year_label": "Spring 2005",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "course project sequence",
+    "site": "ocw.mit.edu",
+    "score": 95,
+    "evidence": [
+      "Page header: \"6.001 | Spring 2005 | Undergraduate\"",
+      "Project 0 to Project 5 PDFs with code to load: basebot.scm, prisoner.scm, search.scm, generate.scm, objsys.scm, objtypes.scm, setup.scm, meval.scm",
+      "Project 4 PDF: \"Spring Semester, 2005 ... Project 4 - The Object-Oriented Adventure Game\"",
+      "Project 5 PDF: \"Project 5 - The Meta-Circular Evaluator\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "SICP",
+      "6.001",
+      "adventure game",
+      "metacircular evaluator",
+      "MIT Scheme"
+    ],
+    "notes": "The six MIT 6.001 projects of Spring 2005: simulating a baseball robot, Prisoner's Dilemma strategies, a web indexer and search, an object-oriented adventure game, and extending the metacircular evaluator."
+  },
+  {
+    "title": "MIT 6.001 Spring 2005 — Project 5: The Meta-Circular Evaluator",
+    "url": "https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/resources/project5_eval/",
+    "year": 2005,
+    "year_label": "Issued 25 April 2005, due 6 May 2005",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "project assignment",
+    "site": "ocw.mit.edu",
+    "score": 93,
+    "evidence": [
+      "\"Spring Semester, 2005\"",
+      "\"Project 5 - The Meta-Circular Evaluator ... Issued Monday, April 25th\"",
+      "Code to load: meval.scm, syntax.scm, environment.scm",
+      "Computer Exercises: \"Exploring Meval\", \"Adding a special form\", \"The let* special form\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "metacircular evaluator",
+      "interpreter",
+      "special forms",
+      "SICP"
+    ],
+    "notes": "Explore and extend the 6.001 metacircular evaluator (meval) with new special forms such as let* and changes to evaluation style."
+  },
+  {
+    "title": "MIT 6.844 Spring 2005 — An Explicit Continuation Evaluator for Scheme (c-eval project)",
+    "url": "https://courses.csail.mit.edu/6.844/spring05-6844/handouts/project3.pdf",
+    "year": 2005,
+    "year_label": "February 17, revised March 3, 2005",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "project assignment",
+    "site": "courses.csail.mit.edu",
+    "score": 96,
+    "evidence": [
+      "\"6.844, Spring ’05: Computability Theory of and with Scheme\"",
+      "\"revised March 3, 2005\"",
+      "\"An Explicit Continuation Evaluator for Scheme (revised from Fall 2002, 6.001 Project 3)\"",
+      "Interpreter c-eval written in continuation style; students install error and call/cc",
+      "Course directory listing shows c-eval-solns/ and 2005 file dates"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "continuations",
+      "call/cc",
+      "evaluator"
+    ],
+    "notes": "Work with a continuation-passing Scheme interpreter (c-eval), extending it with error handling, restarts and call/cc."
+  },
+  {
+    "title": "MIT 6.945 Spring 2009 — Adventures in Advanced Symbolic Programming problem sets (Sussman)",
+    "url": "https://ocw.mit.edu/courses/6-945-adventures-in-advanced-symbolic-programming-spring-2009/pages/assignments/",
+    "year": 2009,
+    "year_label": "Spring 2009",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "ocw.mit.edu",
+    "score": 94,
+    "evidence": [
+      "Course header: \"Spring 2009\"",
+      "Problem Set 3 text: \"6.945 Spring 2009 ... Issued: Wed. 18 Feb. 2009  Due: Wed. 25 Feb. 2009\"",
+      "8 problem sets with .scm support files: regular expressions, generic operations, eval/apply interpreters, compiling to combinators and AMB, pattern matching, rule systems",
+      "PS3 code: syntax.scm, rtdata.scm, interp.scm, repl.scm; \"Evaluators for Extended Scheme\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "MIT Scheme",
+      "generic operations",
+      "pattern matching",
+      "amb",
+      "interpreter"
+    ],
+    "notes": "Weekly MIT Scheme problem sets building a regexp combinator language, generic operations, extended eval/apply interpreters, AMB backtracking, pattern matchers and rule systems."
+  },
+  {
+    "title": "Brown CS173 Fall 2003 — Interpreters, garbage collectors, type checker and type inference in Scheme",
+    "url": "https://cs.brown.edu/courses/cs173/2003/Assignments/",
+    "year": 2003,
+    "year_label": "Fall 2003 (2003-09-08 to 2003-12-05)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "cs.brown.edu",
+    "score": 98,
+    "evidence": [
+      "\"Rudimentary Interpreter 2003-09-08 2003-09-15\"",
+      "Assignment table: Extended Interpreters, Garbage Collection, Type Checker, Type Inference, Scripting",
+      "GC project: implement mark & sweep and stop & copy collectors, language level \"CS173 Advanced\" in DrScheme",
+      "Type inference project derives constraints for a {with}/{rec}/{fun} language with polymorphic lists",
+      "Codewalks used to evaluate programs"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "type inference",
+      "garbage collector",
+      "PLAI",
+      "DrScheme"
+    ],
+    "notes": "Krishnamurthi's PL course: build a sequence of Scheme interpreters, then mark-sweep and copying garbage collectors, a type checker and a constraint-based type inferencer."
+  },
+  {
+    "title": "Brown CSCI 1730 (CS173) Fall 2008 — Interpreters, laziness, continuations, GC and type inference in PLT Scheme",
+    "url": "https://cs.brown.edu/courses/cs173/2008/Assignments/",
+    "year": 2008,
+    "year_label": "Fall 2008",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "cs.brown.edu",
+    "score": 96,
+    "evidence": [
+      "\"Rudimentary Interpreter Friday, 9/5 Thursday, 9/11 rinterp\"",
+      "Sixteen assignments: xinterp, laziness, web programming in Scheme, continuations, GC, typecheck, type inference, Flapjax, Prolog",
+      "Continuations assignment: CPS a Scheme filter into filter/k and implement stack inspection {bless}/{check}",
+      "Solutions shipped as .ss files (PLT Scheme era); links PLAI 2007-04-26 edition"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "continuations",
+      "CPS",
+      "garbage collector",
+      "type inference"
+    ],
+    "notes": "Full PLAI course sequence: write interpreters in PLT Scheme, add laziness, CPS and continuations, garbage collectors, a type checker and type inference."
+  },
+  {
+    "title": "Utah CS 3520 Fall 2002 — EOPL interpreters, type inference, objects and continuations (Flatt)",
+    "url": "https://users.cs.utah.edu/~mflatt/past-courses/cs3520/public_html/f02/schedule.html",
+    "year": 2002,
+    "year_label": "Fall 2002",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "users.cs.utah.edu",
+    "score": 97,
+    "evidence": [
+      "Course page: \"CS 3520: Programming Languages Fall 2002\" (Matthew Flatt, TA Scott Owens)",
+      "Schedule from \"August 22\" with HW 1-12 and .scm solutions",
+      "Topics: environment-passing interpreters, lexical addresses, call-by-need, type checking and inference, objects and classes, continuations, GC",
+      "HW10 \"Due November 21\": extend an interpreter/compiler for a typed class-based language (lexvar translation, object creation)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "EOPL",
+      "interpreter",
+      "type checker",
+      "objects",
+      "continuations"
+    ],
+    "notes": "Twelve Scheme homeworks following EOPL: build environment-passing interpreters, add assignment and parameter-passing modes, type checking/inference, classes and objects, compilation and continuations."
+  },
+  {
+    "title": "Utah CS 5510 Fall 2009 — PLAI interpreters through continuations and types (Flatt)",
+    "url": "https://my.eng.utah.edu/~cs5510/f09/schedule.html",
+    "year": 2009,
+    "year_label": "Fall 2009",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "my.eng.utah.edu",
+    "score": 95,
+    "evidence": [
+      "Course page: \"CS 5510: Programming Languages Fall 2009\"",
+      "HW8 \"Due: Monday, November 16th, 2009 9:40am\": extend kcfae.ss with withcc continuations",
+      "Lecture code: ae.ss, f1wae.ss, fae.ss, rcfae.ss, cfal.ss (lazy), bmcfae.ss (boxes), kcfae.ss, tfae-t.ss",
+      "plai-lazy.plt and plai-typed.plt for DrScheme; course handin plugin"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "PLAI",
+      "interpreter",
+      "laziness",
+      "continuations",
+      "types"
+    ],
+    "notes": "Ten homeworks extending PLAI-style interpreters in PLT Scheme: substitution, first-class functions, recursion, laziness, mutation, continuations, garbage collection and type checking."
+  },
+  {
+    "title": "Cal Poly CSC 430 Spring 2008 — PLAI interpreters in DrScheme (Clements)",
+    "url": "https://www.brinckerhoff.org/clements/csc430-sp08/schedule.html",
+    "year": 2008,
+    "year_label": "Spring 2008",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "brinckerhoff.org",
+    "score": 93,
+    "evidence": [
+      "\"Schedule for CSC 430, Programming Languages I, Spring 2008\"",
+      "Eight assignments from \"W Apr 2\": rudimentary interpreter, environments, laziness, recursion, state, web/CPS, let/cc, types",
+      "Assignment pages generated by Scribble \"Version: 4.0.0.1\"",
+      "Course page links download.plt-scheme.org/drscheme and PLAI"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "PLAI",
+      "interpreter",
+      "laziness",
+      "let/cc",
+      "DrScheme"
+    ],
+    "notes": "John Clements's Cal Poly PL course: grow a DrScheme interpreter through environments, first-class functions, laziness, recursion, state, continuations and types."
+  },
+  {
+    "title": "Adelphi CSC 272 Spring 2010 — PLAI interpreter with lazy evaluation and boxes (Bloch)",
+    "url": "https://home.adelphi.edu/sbloch/class/archive/272/spring2010/assignments/",
+    "year": 2010,
+    "year_label": "Spring 2010",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "home.adelphi.edu",
+    "score": 92,
+    "evidence": [
+      "\"CSC 272 Homework Assignments Spring 2010\"",
+      "\"Homework 1 , assigned Feb 1, due Feb 12\": \"This assignment is to be done in PLT Scheme\"",
+      "HW3 adds first-class functions to the interpreter; HW5 implements lazy evaluation with cached values (PLAI ch. 8)",
+      "HW7 adds mutable boxes {newbox}/{openbox} (PLAI ch. 13)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "PLAI",
+      "interpreter",
+      "lazy evaluation",
+      "PLT Scheme"
+    ],
+    "notes": "Build and extend a PLAI-style interpreter in PLT Scheme: first-class functions, lazy evaluation with caching, and mutable boxes."
+  },
+  {
+    "title": "Adelphi CSC 270 Fall 2009 — A rudimentary C++ interpreter written in Scheme (Bloch)",
+    "url": "https://home.adelphi.edu/sbloch/class/archive/270/fall2009/assignments/proj2.shtml",
+    "year": 2009,
+    "year_label": "Fall 2009 (assigned 6 Oct, due 10 Nov)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "project assignment",
+    "site": "home.adelphi.edu",
+    "score": 90,
+    "evidence": [
+      "\"Project 2: a Rudimentary C++ Interpreter Assigned 6 Oct, due 10 Nov\" under /archive/270/fall2009/",
+      "Starter files syntax.ss (AST type, analogous to WAE) and reader.ss (tokens to nested lists)",
+      "Interpreter must handle variables, type declarations, assignment, I/O and sequence",
+      "Every function needs a contract and test cases (HtDP design recipe)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "C++ subset",
+      "PLT Scheme"
+    ],
+    "notes": "Write, in Scheme, an interpreter for a tiny subset of C++ with declarations, assignment, I/O and sequencing, using supplied AST and reader modules."
+  },
+  {
+    "title": "WPI CS 536 Fall 2003 — Interpreters, CPS compilation, GC and type inference in Scheme (Fisler)",
+    "url": "https://web.cs.wpi.edu/~kfisler/Courses/536/F03/Assignments/",
+    "year": 2003,
+    "year_label": "Fall 2003",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "web.cs.wpi.edu",
+    "score": 95,
+    "evidence": [
+      "\"Assignment 1: due Monday, September 15\" on the CS 536-F03 page",
+      "HWK3 extends the FWAE interpreter with if0 and environments",
+      "HWK7 \"Compiling Programs via CPS\": CPS, stack records and vectors for a family-tree program",
+      "Mark/sweep and stop/copy solution files ftree-mark-sweep.scm, ftree-stop-copy.scm; HWK9 type checker or type inference",
+      "Work done in MzScheme language levels under PLT"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "CPS",
+      "garbage collector",
+      "type inference"
+    ],
+    "notes": "Graduate PL design course: extend Scheme interpreters, hand-compile via CPS, write mark-sweep and copying collectors, and implement a type checker or type inferencer."
+  },
+  {
+    "title": "Northwestern EECS 395 Winter 2010 — PLAI interpreters, garbage collectors and typed PLAI (Findler)",
+    "url": "https://users.cs.northwestern.edu/~robby/courses/395-2010-winter/",
+    "year": 2010,
+    "year_label": "Winter 2010",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "users.cs.northwestern.edu",
+    "score": 94,
+    "evidence": [
+      "\"PLT Scheme (be sure you get version 4.2.3\"; installed at /opt/plt-4.2.3/bin/drscheme",
+      "HW1 \"Due: Friday, January 8th, 2010, 5pm\": set up (planet plai/plai:1:6)",
+      "HW2-6: free identifiers, F1WAE multi-arg functions, deferred substitution, FAE, records with set",
+      "HW7 two-space copying collector run by #lang planet plai/plai:1:20/mutator; HW9 PLAI Typed"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "PLAI",
+      "interpreter",
+      "garbage collector",
+      "DrScheme"
+    ],
+    "notes": "Nine weekly PLT Scheme homeworks: grow WAE/F1WAE/FAE interpreters, add records and mutation, write a two-space copying garbage collector, then typed programs."
+  },
+  {
+    "title": "Iowa State Com S 342 Fall 2006 — EOPL environment-passing interpreters (Leavens)",
+    "url": "https://www.cs.ucf.edu/~leavens/ComS342/syllabus.shtml",
+    "year": 2006,
+    "year_label": "Fall 2006",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "cs.ucf.edu",
+    "score": 90,
+    "evidence": [
+      "\"Com S 342, Syllabus for Fall 2006\" using EOPL 2nd edition",
+      "HW7 \"Due: problems 2-5,7-8,11-12 at beginning of class, October 24, 2006\" (Environment Passing Interpreters I)",
+      "HW9 recursion, variable assignment and call by reference; HW10 call by name, call by need, statements",
+      "Starter interpreters run in DrScheme; homework dir dated 2006 with lib342 Scheme library"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "EOPL",
+      "interpreter",
+      "call-by-need",
+      "DrScheme"
+    ],
+    "notes": "Gary Leavens's Iowa State course, kept on his UCF site: Scheme homeworks culminating in four EOPL environment-passing interpreter assignments (scoping, assignment, parameter passing)."
+  },
+  {
+    "title": "Felleisen, Findler, Flatt, Krishnamurthi — How to Design Programs (1st edition, online)",
+    "url": "https://htdp.org/2003-09-26/Book/",
+    "year": 2003,
+    "year_label": "September 2003 web edition (book © 2001)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Tutorials & Books",
+    "kind": "tutorial series",
+    "site": "htdp.org",
+    "score": 96,
+    "evidence": [
+      "\"Copyright © 2001\" MIT Press edition, web version under /2003-09-26/",
+      "Page source: \"Generated from curriculum.tex by tex2page, v 2003-09-19 (running on MzScheme 205.2, unix)\"",
+      "Full online book: design recipe, structures, lists, trees, generative recursion, accumulators, state",
+      "Written for DrScheme and its HtDP teaching languages and teachpacks (draw.ss etc.)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "htdp",
+      "drscheme",
+      "design recipe",
+      "textbook"
+    ],
+    "notes": "The complete first-edition online text of How to Design Programs, teaching systematic program design in Scheme with DrScheme's student languages; the book behind most of the intro courses in this wing."
+  },
+  {
+    "title": "WPI CS1102 A08 — Implementing an animation language (DSL + interpreter)",
+    "url": "https://web.cs.wpi.edu/~cs1102/a08/Assignments/Project/",
+    "year": 2008,
+    "year_label": "A-term 2008 (due Sept 29 / Oct 12)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "web.cs.wpi.edu",
+    "score": 95,
+    "evidence": [
+      "\"Phase 1 (design) due Monday, September 29 (11:59pm)\"; Phase 2 due Sunday, October 12",
+      "Course software page: \"You must use the PLT variant of Scheme, version 4.0.1\"",
+      "Design a language for animating circles/rectangles on a canvas with move, jump, delete, add and repeat-until-collision commands",
+      "Students write an interpreter that runs animation programs and displays them on screen"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "dsl",
+      "interpreter",
+      "animation",
+      "plt scheme"
+    ],
+    "notes": "Two-phase individual project: design data definitions for a domain-specific animation language, then implement an interpreter in PLT Scheme that runs animations with collision-triggered commands on a canvas."
+  },
+  {
+    "title": "WPI CS1102 A07 — Tax-preparation language (1040 forms DSL)",
+    "url": "https://web.cs.wpi.edu/~cs1102/a07/Assignments/Project/",
+    "year": 2007,
+    "year_label": "A-term 2007 (due Sept 24 / Oct 7)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "web.cs.wpi.edu",
+    "score": 93,
+    "evidence": [
+      "\"CS 1102 (A07) Individual Project Implementing a Tax-Preparation Package\"",
+      "\"Phase 1 (Design) Due Monday, September 24, 11:59pm\"",
+      "Language must support a portion of \"the 2006 US 1040 tax form (with the A and B schedules)\"",
+      "Hand in design.scm or design.ss; implement prepare-taxes that runs tax-form programs"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "dsl",
+      "interpreter",
+      "tax forms"
+    ],
+    "notes": "Design a Scheme data-definition language for specifying tax forms, then write an interpreter (prepare-taxes) that prompts for inputs and computes the amount owed or refunded for a subset of the 2006 Form 1040."
+  },
+  {
+    "title": "Utah CS 2010 F03 — A mini DrScheme: GUI evaluator with definitions and assignment (HW 10–11)",
+    "url": "https://users.cs.utah.edu/~mflatt/past-courses/cs2010/public_html/f03/hw10.html",
+    "year": 2003,
+    "year_label": "Due October 28, 2003",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project sequence",
+    "site": "users.cs.utah.edu",
+    "score": 93,
+    "evidence": [
+      "\"Last update: Monday, October 27th, 2003\"",
+      "Matthew Flatt's CS 2010 with a custom hw10-teachpack.ss providing create-window, make-text, make-button",
+      "Parse s-expressions with define and set!, keep a definition table, and wire an Execute/Reset GUI: \"you should have a roughly functioning DrScheme\"",
+      "HW 11 builds on it with an expression evaluator for +, -, *, function application and an optional cond0"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "drscheme",
+      "evaluator",
+      "gui",
+      "interpreter"
+    ],
+    "notes": "Two-week homework sequence building a toy DrScheme: a parser and definition table for a small Scheme subset behind a teachpack GUI, then a full expression evaluator with function definitions and assignment."
+  },
+  {
+    "title": "Utah CS 1410 F10 — Miniature DrRacket evaluator (HW 8)",
+    "url": "https://my.eng.utah.edu/~cs1410-20/f10/hw8.html",
+    "year": 2010,
+    "year_label": "Due Friday, October 29th, 2010",
+    "language": [
+      "Racket",
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "project assignment",
+    "site": "my.eng.utah.edu",
+    "score": 91,
+    "evidence": [
+      "\"Due: Friday, October 29th, 2010 9:40am\"",
+      "\"you will implement an miniature version of DrRacket — or, at least, the part that evaluates expressions\"",
+      "Builds from HtDP 14.4 arithmetic evaluation to definitions, lambdas and application (make-def, make-lam, make-app)",
+      "Final test encodes cons/first/rest with closures and evaluates sum over a list via evaluate-with-defs"
+    ],
+    "tags": [
+      "lisp",
+      "racket",
+      "evaluator",
+      "interpreter",
+      "htdp",
+      "lambda"
+    ],
+    "notes": "Write an evaluator for a small functional language with definitions and first-class lambdas in DrRacket's student languages, culminating in Church-style list encodings run through the evaluator."
+  },
+  {
+    "title": "Northeastern CSU 211 F07 — Bin-packing Tetris game with world.ss (Sets 8–10)",
+    "url": "https://www.ccs.neu.edu/home/dvanhorn/csu211.2007.fa/Assignments/8.html",
+    "year": 2007,
+    "year_label": "Fall 2007 (due 11/5)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "project sequence",
+    "site": "ccs.neu.edu",
+    "score": 94,
+    "evidence": [
+      "\"Due date: 11/5 @ 6pm\"; footer \"last updated on Mon Nov 19 01:21:50 EST 2007 generated with PLT Scheme\"",
+      "Develop the Bin-Packing game: seven kinds of tetras falling onto a 10x20 block grid with left/right shifts and rotations",
+      "Provided data definitions (block, tetra, world) and block-rotate-ccw code",
+      "Sets 9 and 10 continue: \"Edit your Tetris project\" after grader mark-ups and refactor with loops"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "tetris",
+      "world.ss",
+      "game",
+      "htdp"
+    ],
+    "notes": "A three-week Tetris-style game project in the HtDP Beginning Student language using the world.ss teachpack, then revised and abstracted with higher-order functions in later sets."
+  },
+  {
+    "title": "Northeastern CSU 211 Sp07 — Fighting UFOs: War-of-the-Worlds game (final project)",
+    "url": "https://www.ccs.neu.edu/home/vkp/211-sp07/Assignments/assignment12.html",
+    "year": 2007,
+    "year_label": "Spring 2007 (due 4/18)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "project assignment",
+    "site": "ccs.neu.edu",
+    "score": 92,
+    "evidence": [
+      "\"Due date: 4/18 @ 9:50 pm\"; \"Last modified: Fri Apr 6 16:42:34 EDT 2007\"",
+      "Final 211 homework reviewing structural/generative recursion, local, abstraction and accumulators",
+      "UFO descends on a random zig-zag walk dropping bombs; player's anti-UFO platform moves with arrow keys and fires missiles",
+      "Staged design hints: platform movement, shooting, UFO descent, bombs, integration"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "game",
+      "ufo",
+      "htdp",
+      "animation"
+    ],
+    "notes": "Final-project arcade game in DrScheme: design a keyboard-controlled anti-UFO platform, missiles, a randomly zig-zagging UFO and its bombs, following the HtDP design recipe."
+  },
+  {
+    "title": "Brown CS019 2009 — Cowabunga! UFO cow-abduction game with universe.ss",
+    "url": "https://cs.brown.edu/courses/cs019/2009/assignments/cowabunga",
+    "year": 2009,
+    "year_label": "Fall 2009 (out 9/21, due 9/29)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "project assignment",
+    "site": "cs.brown.edu",
+    "score": 93,
+    "evidence": [
+      "Year-coded path /cs019/2009/; assignment list: \"Cowabunga! * Monday, 9/21 Tuesday, 9/29\"",
+      "\"you will need the universe.ss teachpack. This teachpack is preinstalled in DrScheme\"",
+      "Course software page links DrScheme v4.2.1 and requires the Advanced Student language",
+      "UFO steered with arrow keys, multiple colliding cows, win/lose states; hand in cowabunga.ss"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "universe.ss",
+      "game",
+      "drscheme",
+      "collision"
+    ],
+    "notes": "Pair project in DrScheme's universe teachpack: pilot a UFO down the screen to abduct cows that bounce off walls and each other, with collision detection and heavy testing of non-graphical functions."
+  },
+  {
+    "title": "Brown CS019 2009 — Tour Guide: location-aware phone app in Moby Scheme",
+    "url": "https://cs.brown.edu/courses/cs019/2009/assignments/tour_guide",
+    "year": 2009,
+    "year_label": "Fall 2009 (out 11/6, due 11/22)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "project assignment",
+    "site": "cs.brown.edu",
+    "score": 94,
+    "evidence": [
+      "Year-coded path /cs019/2009/; assignment list: \"Tour guide * Friday, 11/6 Sunday, 11/22\"",
+      "\"you'll need to use Moby, a specialized Scheme compiler\" via \"planet dyoo/moby:2:20\" in DrScheme",
+      "Uses Moby's universe with js-big-bang and on-location-change",
+      "Leads the user to the nearest unvisited stop across selectable campus tours, from a supplied map"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "moby",
+      "mobile",
+      "gps",
+      "universe"
+    ],
+    "notes": "Pair project writing a virtual campus tour guide in Scheme that compiles with Moby to run on a cell phone, using location-change events and shortest-route guidance between tour stops."
+  },
+  {
+    "title": "UChicago CMSC 15100 Fall 2007 (Findler) — Lab projects: Snake, Sudoku, Mazes",
+    "url": "https://users.cs.northwestern.edu/~robby/uc-courses/15100-2007-fall/",
+    "year": 2007,
+    "year_label": "Fall 2007 (projects due 11/6–11/30)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "course project sequence",
+    "site": "users.cs.northwestern.edu",
+    "score": 90,
+    "evidence": [
+      "\"CS 15100 Fall 2007\"; \"Project 1 due 11/6 Project 2 due 11/13 Project 3 due 11/20 Project 4 due 11/30\"",
+      "DrScheme \"installed in /opt/cs-plt/cs-plt-371 on cs machines\"",
+      "proj1.pdf Snake, proj2.pdf Sudoku solver, proj3.pdf Snake Revisited with testing.ss, proj4.pdf maze generation/solving with a world.ss GUI",
+      "Robby Findler's own archive of his UChicago course pages (original host cs.uchicago.edu)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "snake",
+      "sudoku",
+      "maze",
+      "world.ss"
+    ],
+    "notes": "HtDP-based intro course whose four lab projects build a Snake game, a Sudoku solver, a revised Snake, and a maze generator/solver with an interactive world.ss interface. Score capped: the course author re-hosted it from cs.uchicago.edu."
+  },
+  {
+    "title": "UChicago CMSC 15100 Fall 2008 (Findler) — Chat Noir distributed game with universe2.ss",
+    "url": "https://users.cs.northwestern.edu/~robby/uc-courses/15100-2008-fall/proj3.pdf",
+    "year": 2008,
+    "year_label": "Fall 2008 (due December 8th)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "project assignment",
+    "site": "users.cs.northwestern.edu",
+    "score": 90,
+    "evidence": [
+      "\"Project 3: CHAT NOIR Due: December 8th\" (course page \"CS 15100 Fall 2008\")",
+      "Two-player game on a hexagonal grid of 119 spaces; the cat seeks escape while the keeper blocks cells",
+      "\"Download and install the universe2.ss teachpack. (It replaces the world.ss teachpack...)\" to build a distributed two-world version",
+      "Written for ISL+ (Intermediate Student with lambda)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "chat noir",
+      "universe",
+      "game",
+      "shortest path"
+    ],
+    "notes": "Build the Chat Noir hex-grid game in Scheme, with the cat's shortest-path escape logic, then turn it into a distributed two-player program using the universe2.ss teachpack. Score capped: author's re-hosted archive."
+  },
+  {
+    "title": "Maryland CMSC 421 — Racetrack optimal path search (Project 2, Spring 2010)",
+    "url": "https://www.cs.umd.edu/~nau/cmsc421/project2.pdf",
+    "year": 2010,
+    "year_label": "Spring 2010 (due April 15)",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "cs.umd.edu",
+    "score": 96,
+    "evidence": [
+      "\"CMSC 421, Spring 2010: Project 2\"",
+      "\"Last updated on March 30, 2010\"",
+      "Racetrack game on graph paper: compute optimal one-player move sequence",
+      "Lisp data formats for edges, points and racetrack boundary; Norvig Lisp style required",
+      "Course page links instructor's A* solution code (project2.lisp) and gnuplot racetrack plotter"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "A*",
+      "heuristic search",
+      "racetrack",
+      "Dana Nau"
+    ],
+    "notes": "Implement A*-style search in Common Lisp to find the minimum-move path for a car with velocity vectors around a polygonal racetrack."
+  },
+  {
+    "title": "UMBC CMSC 471 — Battleship 471 intelligent agent tournament (Fall 2004)",
+    "url": "https://courses.cs.umbc.edu/undergraduate/471/fall04/hw/project.html",
+    "year": 2004,
+    "year_label": "September 28, 2004",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "courses.cs.umbc.edu",
+    "score": 96,
+    "evidence": [
+      "\"September 28, 2004\" / \"Prof. Marie desJardins\"",
+      "Deadlines from \"Tue. Sept. 28: Project description out\" to \"Tue. Dec. 14: Tournament\"",
+      "Teams write an intelligent agent for a Battleship variant with variable boards and boats",
+      "\"The Lisp code itself counts for a portion of the grade\"; required Lisp interface; compiled .fas board generators in hw/ directory"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "game playing",
+      "agent",
+      "tournament",
+      "battleship",
+      "CLISP"
+    ],
+    "notes": "Team project: build a Lisp game-playing agent for Battleship 471, reasoning under uncertainty about ship placement, and compete in a class tournament."
+  },
+  {
+    "title": "UT Austin CS 381K — Resolution and backchaining theorem provers in Lisp (Fall 2007)",
+    "url": "https://www.cs.utexas.edu/~novak/asg-reso.html",
+    "year": 2007,
+    "year_label": "Due November 7, 2007",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "cs.utexas.edu",
+    "score": 97,
+    "evidence": [
+      "\"Due: November 7, 2007.\"",
+      "\"write several variations of resolution theorem provers in Lisp, and a backchaining theorem prover\"",
+      "Clause set held in an array; literals as (predicate term ... term)",
+      "Course uses Gnu Common Lisp (xgcl) or Allegro CL under Emacs; Fall 2007 syllabus"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "theorem prover",
+      "resolution",
+      "unification",
+      "backchaining",
+      "Novak"
+    ],
+    "notes": "Write resolution theorem provers with different search strategies, plus a backward-chaining prover, over first-order clauses in Lisp."
+  },
+  {
+    "title": "UT Austin CS 381K — Natural language database interface with a semantic grammar (Fall 2007)",
+    "url": "https://www.cs.utexas.edu/~novak/asg-nldb.html",
+    "year": 2007,
+    "year_label": "Due November 21, 2007",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "cs.utexas.edu",
+    "score": 95,
+    "evidence": [
+      "\"Due: November 21, 2007.\"",
+      "\"you are to construct a natural language interface using the semantic grammar technique\"",
+      "Domain-limited English questions translated to database queries",
+      "Part of Novak's Lisp assignment series (8-puzzle, theorem provers, expert systems)"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "natural language",
+      "parser",
+      "semantic grammar",
+      "database"
+    ],
+    "notes": "Build an English question-answering front end for a database in Lisp, parsing with a semantic grammar whose phrases carry domain meaning."
+  },
+  {
+    "title": "Norvig and Russell — AIMA Common Lisp code: user's guide and version history",
+    "url": "https://aima.cs.berkeley.edu/lisp/doc/user.html",
+    "year": 2002,
+    "year_label": "Version 0.99, 09-Apr-2002",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "source-code project",
+    "site": "aima.cs.berkeley.edu",
+    "score": 93,
+    "evidence": [
+      "\"0.99 AIMA Code, Appomattox Version, 09-Apr-2002\"",
+      "Version history 0.91 (1995) through 0.96-0.98 (2001)",
+      "(load \"aima.lisp\") then (aima-load 'name) for agents, search, logic, planning, uncertainty, learning, language",
+      "Overview page notes updated code for Allegro 7.0 and 8.0"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "AIMA",
+      "Norvig",
+      "agents",
+      "search",
+      "wumpus"
+    ],
+    "notes": "The original Lisp code base for Artificial Intelligence: A Modern Approach: agents and environments (Wumpus world), search, logic, planning, learning and language subsystems."
+  },
+  {
+    "title": "UT Austin CS 351 — Extending Norvig's GPS planner in Lisp (Spring 2000)",
+    "url": "https://www.cs.utexas.edu/~mooney/cs351/hw2.html",
+    "year": 2000,
+    "year_label": "Due February 29, 2000",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "cs.utexas.edu",
+    "score": 96,
+    "evidence": [
+      "\"Due: February 29, 2000, 3:15PM\"",
+      "GPS code from Norvig's PAIP (gps.lisp, gps1.lisp, auxfns.lisp) in /u/mooney/cs351-code",
+      "Solve the taxi problem and the Sussman Anomaly; add protected goals and goal reordering",
+      "Sibling homeworks: heuristic web search (Robosurfer), Prolog in Lisp, NL parsing; Allegro CL traces"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "GPS",
+      "planner",
+      "PAIP",
+      "Sussman anomaly",
+      "Mooney"
+    ],
+    "notes": "Modify Norvig's General Problem Solver in Common Lisp to avoid clobbering achieved goals, handle protected goals and solve the Sussman Anomaly."
+  },
+  {
+    "title": "Texas A&M CPSC 420 — Resolution theorem prover for first-order logic in Lisp (Fall 2007)",
+    "url": "https://people.engr.tamu.edu/choe/choe/courses/07fall/420/lectures/prog3-option1.pdf",
+    "year": 2007,
+    "year_label": "Due 11/30/07",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "people.engr.tamu.edu",
+    "score": 96,
+    "evidence": [
+      "\"Resolution Theorem Prover Due 11/30/07 Friday Midnight\"",
+      "\"November 2, 2007\" / Yoonsuck Choe",
+      "\"you will write a resolution theorem prover for first-order logic in Lisp\"",
+      "Clause format (clause-num pos-lit-list neg-lit-list); constants as (A), functions in prefix",
+      "Submit using csnet turnin"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "theorem prover",
+      "resolution",
+      "unification",
+      "first-order logic"
+    ],
+    "notes": "Implement unification and a full resolution refutation prover for first-order clauses in Lisp, with a defined list-based clause representation."
+  },
+  {
+    "title": "Georgia Tech CS 8803 Computational Logic — ACL2 flat-set library proofs (Spring 2007)",
+    "url": "https://www.ccs.neu.edu/home/pete/courses/Computational-Logic/2007-Spring/homework5/index.html",
+    "year": 2007,
+    "year_label": "Due 4/16/2007",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "ccs.neu.edu",
+    "score": 92,
+    "evidence": [
+      "\"Homework 5, Due 4/16/2007 before class\"",
+      "\"Last modified: Mon Apr 9 14:41:15 EDT 2007\"",
+      "Define in, subset, ==, set-union, set-intersection over flat sets and prove reflexivity, symmetry, transitivity in ACL2",
+      "\"all the proofs should use 'Pure ACL2' mode\"; ACL2s and Computer-Aided Reasoning text"
+    ],
+    "tags": [
+      "lisp",
+      "acl2",
+      "theorem prover",
+      "formal verification",
+      "sets",
+      "Manolios"
+    ],
+    "notes": "Write an applicative Common Lisp library for flat sets in ACL2 and get the theorem prover to verify its algebraic properties."
+  },
+  {
+    "title": "UMN Duluth CS 5541 — Wumpus World in propositional logic with aima-lisp (Fall 2010)",
+    "url": "https://www.d.umn.edu/~rmaclin/cs5541/Programs/03.html",
+    "year": 2010,
+    "year_label": "Due December 7, 2010",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "d.umn.edu",
+    "score": 95,
+    "evidence": [
+      "\"Program 3 - Propositional Logic (Wumpus World)\"",
+      "\"Due December 7, 2010\"",
+      "\"We will make use of a set of lisp routines defined for the textbook called the aima-lisp package\" (zip prepared for clisp)",
+      "tell/ask propositional interface; sibling programs: minimax tic-tac-toe, Sudoku CSP, RL maze in Lisp"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "wumpus",
+      "AIMA",
+      "propositional logic",
+      "knowledge base",
+      "CLISP"
+    ],
+    "notes": "Encode the Wumpus World rules as a propositional knowledge base using the AIMA Lisp logic code and query it with tell/ask to reason about safe squares."
+  },
+  {
+    "title": "WPI CS 4341 — Rule interpreter, frame system and ATN natural-language interpreter (D-term 2003)",
+    "url": "https://web.cs.wpi.edu/~cs4341/D03/projects/",
+    "year": 2003,
+    "year_label": "D term 2003 (Project 1 due March 31, Project 3 due April 28)",
+    "language": [
+      "Common Lisp",
+      "Scheme"
+    ],
+    "category": "Lisp / AI",
+    "kind": "course project sequence",
+    "site": "web.cs.wpi.edu",
+    "score": 95,
+    "evidence": [
+      "\"©2003 Michael A. Gennert\"; year-coded path /D03/",
+      "Project 1: A Rule-Based Expert System; Project 2: A Frame System; Project 3: ATN natural language interpreter",
+      "\"We recommend that you use Gnu Common Lisp (gcl), CMU Common Lisp (cmucl), Scheme (scheme), or DrScheme (/usr/local/plt/drscheme)\"",
+      "Project 1 example: (defvar database '((thing-1 is-a dog) ...))"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "scheme",
+      "expert system",
+      "frames",
+      "ATN",
+      "natural language"
+    ],
+    "notes": "Three cumulative team projects: a forward-chaining rule interpreter, a frame knowledge-representation system that works with it, and an augmented transition network parser for restricted English."
+  },
+  {
+    "title": "RPI CSCI 4150 — Connect 4 evaluation function and tournament in Scheme (Fall 2004)",
+    "url": "https://cs.rpi.edu/academics/courses/fall04/ai/assign/assign4/index.html",
+    "year": 2004,
+    "year_label": "Fall 2004",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project assignment",
+    "site": "cs.rpi.edu",
+    "score": 95,
+    "evidence": [
+      "\"CSCI 4150: Introduction to Artificial Intelligence, Fall 2004\"",
+      "Stubs file assign4.scm and support code connect4.scm",
+      "\"play-myc4.com (UPDATED 11/1 --- note: play-myc4 arguments changed!)\"",
+      "Online pre-tournament: upload an evaluation function, challenge players, depth test; final round-robin tournament"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "game playing",
+      "minimax",
+      "connect 4",
+      "evaluation function",
+      "tournament"
+    ],
+    "notes": "Write a Scheme evaluation function for depth-limited minimax Connect 4 play, test it in an online pre-tournament and enter the class round robin."
+  },
+  {
+    "title": "Peter Seibel — Practical Common Lisp, ch. 23: A Spam Filter",
+    "url": "https://gigamonkeys.com/book/practical-a-spam-filter.html",
+    "year": 2005,
+    "year_label": "2003-2005 (book published 2005)",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Tutorials & Books",
+    "kind": "project tutorial",
+    "site": "gigamonkeys.com",
+    "score": 97,
+    "evidence": [
+      "\"Copyright © 2003-2005, Peter Seibel\"",
+      "Chapter 23 of the original online edition of Practical Common Lisp",
+      "Implements Paul Graham-style Bayesian filtering with Robinson's chi-square / Fisher combining",
+      "Builds a test corpus with add-file-to-corpus and an adjustable vector of ham/spam messages"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "spam filter",
+      "bayesian",
+      "classifier",
+      "practical common lisp"
+    ],
+    "notes": "Build a statistical spam filter in Common Lisp: tokenize messages, train feature counts, combine probabilities with the Fisher/Robinson chi-square method and test it against a corpus."
+  },
+  {
+    "title": "Peter Seibel — Practical Common Lisp, ch. 28: A Shoutcast Server",
+    "url": "https://gigamonkeys.com/book/practical-a-shoutcast-server.html",
+    "year": 2005,
+    "year_label": "2003-2005 (book published 2005)",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "project tutorial",
+    "site": "gigamonkeys.com",
+    "score": 96,
+    "evidence": [
+      "\"Copyright © 2003-2005, Peter Seibel\"",
+      "Streams MP3s to clients \"such as iTunes, XMMS, or Winamp\"",
+      "Implements the ICY response and in-stream title metadata of the Nullsoft Shoutcast protocol",
+      "Built on AllegroServe and the ID3v2 library from Chapter 25"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "shoutcast",
+      "mp3 streaming",
+      "AllegroServe",
+      "server"
+    ],
+    "notes": "Write the streaming half of a Shoutcast server in Common Lisp on AllegroServe, sending ICY headers, MP3 data and embedded song-title metadata to players like iTunes and Winamp."
+  },
+  {
+    "title": "Conrad Barski — Casting SPELs in Lisp (text adventure comic tutorial)",
+    "url": "https://www.lisperati.com/casting.html",
+    "year": 2010,
+    "year_label": "News item dated 3/31/10 (tutorial from c. 2006)",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Tutorials & Books",
+    "kind": "tutorial series",
+    "site": "lisperati.com",
+    "score": 95,
+    "evidence": [
+      "\"3/31/10 Breaking News- Watch out for my new Super Fantastic Expanded Lisp Comic Book/Text Book from No Starch Press this Summer!\"",
+      "\"by the time the tutorial is done you will have your own text adventure game!\"",
+      "Recommends Franz Allegro Common Lisp via telnet, or CLISP",
+      "Multi-page comic with NEXT >> navigation, PDF download, GFDL 1.2 license"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "text adventure",
+      "macros",
+      "game",
+      "comic"
+    ],
+    "notes": "Build a small text adventure game in Common Lisp step by step, ending with SPEL macros that extend the game's command language."
+  },
+  {
+    "title": "Frank Buss — Implicit Surface Polygonizer in Common Lisp",
+    "url": "https://frank-buss.de/lisp/polygonizer.html",
+    "year": 2006,
+    "year_label": "17 April 2006",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "source project",
+    "site": "frank-buss.de",
+    "score": 94,
+    "evidence": [
+      "\"17. April 2006\"",
+      "Port of Jules Bloomenthal's C implicit surface polygonizer to Lisp",
+      "Requires lispbuilder-sdl, cl-opengl and optionally the Infix package",
+      "Shows a torus defined as (defun torus (x y z) ...) and a triangle callback; source in one file"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "opengl",
+      "polygonizer",
+      "implicit surfaces",
+      "3d graphics"
+    ],
+    "notes": "Polygonize implicit surfaces such as a torus in Common Lisp and render the triangles with cl-opengl and lispbuilder-sdl."
+  },
+  {
+    "title": "Frank Buss — Installing TBNL and creating a web application",
+    "url": "https://frank-buss.de/lisp/tbnl.html",
+    "year": 2006,
+    "year_label": "1 May 2006",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "tutorial",
+    "site": "frank-buss.de",
+    "score": 93,
+    "evidence": [
+      "\"1. Mai 2006\"",
+      "Downloads and installs sbcl-0.9.12-x86-linux-binary on Debian Sarge",
+      "Compiles mod_lisp2.c with apxs2 for Apache 2",
+      "Loads cl-who and tbnl with asdf:oos and defines a :name-list package using :tbnl and :cl-who"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "TBNL",
+      "mod_lisp",
+      "web application",
+      "SBCL"
+    ],
+    "notes": "Set up Edi Weitz's TBNL web toolkit (the predecessor of Hunchentoot) with SBCL and Apache mod_lisp, then write a small name-list web application."
+  },
+  {
+    "title": "John Wiegley — Running Common Lisp behind Apache (Hunchentoot + CL-WHO)",
+    "url": "https://www.newartisans.com/2007/11/running-common-lisp-behind-apache/",
+    "year": 2007,
+    "year_label": "November 5, 2007",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "technical article",
+    "site": "newartisans.com",
+    "score": 90,
+    "evidence": [
+      "\"November  5, 2007\"",
+      "\"64-bit version of SBCL (version 1.0.11) running on CentOS 5\"",
+      "Sections \"Install SBCL\" and \"Install Hunchentoot and CL-WHO\" using asdf-install",
+      "Follow-up post A quick Hunchentoot primer (Nov 6, 2007) with define-easy-handler examples"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "hunchentoot",
+      "apache",
+      "SBCL",
+      "web server"
+    ],
+    "notes": "Deploy a Hunchentoot web server on SBCL 1.0.11 behind Apache and serve dynamic pages generated with CL-WHO."
+  },
+  {
+    "title": "LISPBUILDER-SDL — Game development in Common Lisp (manual and tutorial)",
+    "url": "https://lispbuilder.sourceforge.net/lispbuilder-sdl.html",
+    "year": 2008,
+    "year_label": "Project moved 2008-12-05",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "tutorial",
+    "site": "lispbuilder.sourceforge.net",
+    "score": 91,
+    "evidence": [
+      "\"As of 2008-12-05 00:00, this project has moved to http://code.google.com/p/lispbuilder/.\"",
+      "\"The goal for the LISPBUILDER-SDL project is to become a useful resource for the development of games in Lisp.\"",
+      "Tested on CLISP v2.38, Lispworks v4.4.6 Personal, Allegro Express 8.0 and SBCL",
+      "Sections on Creation of the SDL Window, Events and the Game Loop, and Primitives, with sdl:with-init examples"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "SDL",
+      "game loop",
+      "2d graphics",
+      "lispbuilder"
+    ],
+    "notes": "Learn to write games in Common Lisp with lispbuilder-sdl: windows, the event-driven game loop, drawing primitives, images, fonts and sound."
+  },
+  {
+    "title": "Patrick Stein — NeHe OpenGL Tutorials for CL-OpenGL",
+    "url": "https://nklein.com/2010/06/nehe-tutorials-for-cl-opengl/",
+    "year": 2010,
+    "year_label": "June 1st, 2010",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "tutorial series",
+    "site": "nklein.com",
+    "score": 92,
+    "evidence": [
+      "\"June 1st, 2010\"",
+      "Ports the NeHe (nehe.gamedev.net) OpenGL lessons to CL-OpenGL and cl-glut",
+      "Downloadable intro.lisp template; later parts 02-06 cover triangles, color, rotation, solids and textured solids",
+      "Setup via asdf:*central-registry* in ~/.sbclrc"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "opengl",
+      "nehe",
+      "cl-glut",
+      "3d graphics"
+    ],
+    "notes": "Work through the classic NeHe OpenGL lessons in Common Lisp with CL-OpenGL and GLUT, from an empty window up to textured 3D solids."
+  },
+  {
+    "title": "Patrick Stein — Roto-Mortar: a 7-day Lisp game (2010 Lisp Game Design Challenge)",
+    "url": "https://nklein.com/software/roto-mortar/",
+    "year": 2010,
+    "year_label": "March 26th, 2010",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "source-code project",
+    "site": "nklein.com",
+    "score": 93,
+    "evidence": [
+      "\"March 26th, 2010\"",
+      "\"Roto Mortar was written for the 2010 LISP Game Design Challenge.\"",
+      "Source tarball roto-mortar.tar.gz and a Mac OS X executable",
+      "Depends on cl-opengl, cl-png, cl-xml and zpb-ttf"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "game",
+      "opengl",
+      "game jam",
+      "source code"
+    ],
+    "notes": "A complete small 3D arcade game written in Common Lisp in seven days with cl-opengl, with full source to study."
+  },
+  {
+    "title": "Stig E. Sandø — Langband, a roguelike written in Common Lisp",
+    "url": "https://langband.sourceforge.net/",
+    "year": 2003,
+    "year_label": "v0.1.6 released 8 May 2003",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Games & Graphics",
+    "kind": "source project",
+    "site": "langband.sourceforge.net",
+    "score": 97,
+    "evidence": [
+      "\"Current version is v0.1.6 and was released the 8th of May 2003.\"",
+      "\"Langband is a roguelike written in Common Lisp.\"",
+      "Engine for user variants built on multi-methods and generic functions",
+      "FAQ lists CMUCL 18d, SBCL 0.7.x, LispWorks 4.2.x and CLISP 2.30; SDL front end"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "roguelike",
+      "angband",
+      "game engine",
+      "CLOS"
+    ],
+    "notes": "An Angband-style roguelike and game engine in Common Lisp that uses CLOS generic functions so players can write their own variants."
+  },
+  {
+    "title": "Closure — a web browser written in Common Lisp (McCLIM)",
+    "url": "https://closure.common-lisp.dev/",
+    "year": 2006,
+    "year_label": "News 2005-03-13 to 2007-01-02",
+    "language": [
+      "Common Lisp"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "source project",
+    "site": "closure.common-lisp.dev",
+    "score": 92,
+    "evidence": [
+      "\"2006-12-29 David Lichteblau has updated Closure to use the external CXML libary\"",
+      "\"2005-08-25 OpenMCL support has been added to Closure.\"",
+      "Supports HTML-4, CSS-1, HTTP 1.0/1.1, FTP, and PNG/JPEG/GIF images, built on McCLIM",
+      "Source checkout via CVS pserver anonymous@common-lisp.net"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "web browser",
+      "McCLIM",
+      "HTML",
+      "CSS"
+    ],
+    "notes": "A full web browser implemented in Common Lisp on McCLIM, with its own HTML/CSS parsers, layout, HTTP client and image decoders, extensible in Lisp."
+  },
+  {
+    "title": "Abdulaziz Ghuloum — An Incremental Approach to Compiler Construction (Scheme to x86)",
+    "url": "http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf",
+    "year": 2006,
+    "year_label": "September 2006 (Scheme Workshop 2006)",
+    "language": [
+      "Scheme",
+      "x86 assembly"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "technical article",
+    "site": "scheme2006.cs.uchicago.edu",
+    "score": 95,
+    "evidence": [
+      "\"Proceedings of the 2006 Scheme and Functional Programming Workshop\"",
+      "\"University of Chicago Technical Report TR-2006-06\"",
+      "Compiler for a large subset of Scheme emitting Intel-x86 assembly, built in many small working steps",
+      "Scheme code with (emit \"movl $~a, %eax\" ...) forms; uses gcc -O3 --omit-frame-pointer -S to study output",
+      "Hosted on the original 2006 workshop site, Indiana University author"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "compiler",
+      "x86",
+      "code generation",
+      "incremental"
+    ],
+    "notes": "Build a Scheme compiler in Scheme step by step, starting from integers and growing to primitives, conditionals, heap allocation, procedures and closures, each step emitting real x86 assembly."
+  },
+  {
+    "title": "Université de Montréal IFT3060 — Compilation with Gambit Scheme (Hiver 2007)",
+    "url": "https://www.iro.umontreal.ca/~feeley/cours/ift3060/",
+    "year": 2007,
+    "year_label": "Hiver 2007",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "course project sequence",
+    "site": "iro.umontreal.ca",
+    "score": 93,
+    "evidence": [
+      "\"Cours IFT3060, Hiver 2007\"",
+      "Weekly exercices1.txt to exercices10.txt (in French), lecture notes ift3060-sem2..sem11.pdf",
+      "Students build Gambit-C from gambc-4.0b20.tar.gz and install gsi/gsc",
+      "Exercises: define-type and match macros, a full special-form expander, CPS conversion of call/cc examples, a CPS interpreter-compiler \"ev\" with threads",
+      "Project: a Scheme-to-JavaScript environment (ajax.tar.gz); Marc Feeley"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "compiler",
+      "macros",
+      "cps",
+      "gambit"
+    ],
+    "notes": "Marc Feeley's compilation course: write Scheme macro expanders, a CPS-converting interpreter-compiler and a Scheme-to-JavaScript system in Gambit Scheme, as weekly exercises."
+  },
+  {
+    "title": "Christian Queinnec — Lisp in Small Pieces: book and code (11 interpreters, 2 compilers)",
+    "url": "https://christian.queinnec.org/WWW/LiSP.html",
+    "year": 2007,
+    "year_label": "January 2007 (RCS $Id 2007/01/15)",
+    "language": [
+      "Scheme",
+      "Lisp"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "source-code project",
+    "site": "christian.queinnec.org",
+    "score": 92,
+    "evidence": [
+      "\"$Id: LiSP.html,v 1.36 2007/01/15 15:17:40 queinnec Exp queinnec $\"",
+      "\"A new (slightly revised) edition will be issued by February 2007\"",
+      "Downloadable code LiSP-2ndEdition-2006Dec11.tgz (loads, 365 KB)",
+      "Chapter list: bytecode compilation (chapter 7), \"Compilation towards C\" with a C runtime (chapter 10), Meroonet object system",
+      "Old lip6.fr address redirects to this page"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "compiler",
+      "interpreter",
+      "bytecode",
+      "scheme to c"
+    ],
+    "notes": "Companion page and source code for Lisp in Small Pieces: a series of Scheme interpreters, a bytecode compiler and a complete Scheme-to-C compiler with its runtime, all written in Scheme."
+  },
+  {
+    "title": "Kragen Javier Sitaker — Ur-Scheme: a self-hosting compiler from Scheme to x86 asm",
+    "url": "http://canonical.org/~kragen/sw/urscheme/",
+    "year": 2008,
+    "year_label": "February 2008",
+    "language": [
+      "Scheme",
+      "x86 assembly"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "source-code project",
+    "site": "canonical.org",
+    "score": 95,
+    "evidence": [
+      "\"In February 2008, I wanted to write a metacompiler for\"",
+      "\"about 1600 lines of Scheme, plus 700 lines of comments\"; annotated compiler.scm.html source listing",
+      "Compiles itself; tested under Guile, MzScheme (PLT Scheme), SCM, Elk, Gambit-C and Chicken",
+      "Source tarballs versions 0 to 3 and a darcs repository",
+      "Cites Ghuloum's 2006 paper and Feeley's 2004 90-minute Scheme to C talk"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "compiler",
+      "self-hosting",
+      "x86",
+      "assembly"
+    ],
+    "notes": "A small self-hosting compiler written in a subset of R5RS Scheme that emits Linux x86 assembly, with run-time type checks and a unit-test suite, documented on the author's hobby page."
+  },
+  {
+    "title": "Jonathan Kraut — Sassy: a portable x86 assembler written in Scheme",
+    "url": "https://sassy.sourceforge.net/",
+    "year": 2009,
+    "year_label": "November 23, 2009",
+    "language": [
+      "Scheme",
+      "x86 assembly"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "source project",
+    "site": "sassy.sourceforge.net",
+    "score": 90,
+    "evidence": [
+      "\"Jonathan Kraut November 23, 2009\"",
+      "\"Sassy is a portable assembler for x86 processors written in R5RS Scheme\"",
+      "Full manual generated by tex2page \"running on MzScheme 4.0.1\"",
+      "Used as the x86 assembler inside Larceny Scheme"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "assembler",
+      "x86",
+      "compiler backend"
+    ],
+    "notes": "Manual and source for an x86 assembler written in R5RS Scheme, where instructions are written as s-expressions and assembled to machine code."
+  },
+  {
+    "title": "Jonathan Bachrach — GOO: a Lisp-family language with a self-hosting compiler to C",
+    "url": "https://people.csail.mit.edu/jrb/goo/goo.htm",
+    "year": 2005,
+    "year_label": "01JUN05 (releases 2002–2003)",
+    "language": [
+      "Lisp",
+      "C"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "source-code project",
+    "site": "people.csail.mit.edu",
+    "score": 91,
+    "evidence": [
+      "\"01JUN05\" on the page footer",
+      "Directory listing of goo-0_131 to goo-0_155 source tarballs dated 2002-04-11 to 2003-11-19",
+      "Slides goo-imp.pdf: compilation to C via AST transforms, C runtime, bootstrapping; \"Based on LiSP chaps 6, 9 and 10\"",
+      "MIT AI Lab project; manual in HTML and PDF"
+    ],
+    "tags": [
+      "lisp",
+      "compiler",
+      "self-hosting",
+      "compile to c",
+      "object system"
+    ],
+    "notes": "A prefix-syntax, object-oriented Lisp dialect from MIT AI Lab whose compiler, written in GOO itself, turns programs into C; the page has source releases, the manual and slides on its implementation and bootstrapping."
+  },
+  {
+    "title": "Movitz — a Common Lisp x86 development platform on the bare metal",
+    "url": "https://movitz.common-lisp.dev/",
+    "year": 2008,
+    "year_label": "News dated 2008-02-25",
+    "language": [
+      "Common Lisp",
+      "x86 assembly"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "source project",
+    "site": "movitz.common-lisp.dev",
+    "score": 90,
+    "evidence": [
+      "\"2008-02-25 Frode V. Fjeld\" news entry",
+      "movitz/asm.lisp, movitz/asm-x86.lisp: \"Created new assembler and disassembler\"",
+      "\"an implementation of ANSI Common Lisp that targets the ubiquitous x86 PC architecture 'on the metal'\"",
+      "CVS and mailing lists on common-lisp.net (the old common-lisp.net/project/movitz URL redirects here)"
+    ],
+    "tags": [
+      "lisp",
+      "common lisp",
+      "compiler",
+      "x86",
+      "kernel",
+      "bare metal"
+    ],
+    "notes": "Project page for a Common Lisp compiler and runtime written in Lisp that produces x86 code running with no operating system, for building kernels and embedded systems."
+  },
+  {
+    "title": "Oleg Kiselyov — A Scheme-to-syntax-rules compiler and CPS macro programming",
+    "url": "https://okmij.org/ftp/Scheme/macros.html",
+    "year": 2002,
+    "year_label": "Version 2.2, Jul 15, 2002",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Compilers",
+    "kind": "technical article",
+    "site": "okmij.org",
+    "score": 90,
+    "evidence": [
+      "\"The current version is 2.2, Jul 15, 2002.\"",
+      "\"mechanically converts (desugared) pure-functional Scheme procedures to the corresponding CPS syntax-rule macros\"",
+      "Source cps-macro-conv.scm [25K], uses Bigloo match-case",
+      "Same page: lambda-calculator as an R5RS macro, CPS transform via syntax-rules"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "compiler",
+      "macros",
+      "cps",
+      "syntax-rules"
+    ],
+    "notes": "Article and source for a compiler, written in Scheme, that turns ordinary Scheme functions into CPS-style syntax-rules macros, with related macro-level evaluators."
+  },
+  {
+    "title": "Steve Yegge — js2-mode: a new JavaScript mode for Emacs",
+    "url": "http://steve-yegge.blogspot.com/2008/03/js2-mode-new-javascript-mode-for-emacs.html",
+    "year": 2008,
+    "year_label": "30 March 2008",
+    "language": [
+      "Emacs Lisp"
+    ],
+    "category": "Lisp / Emacs & Editors",
+    "kind": "technical article",
+    "site": "steve-yegge.blogspot.com",
+    "score": 94,
+    "evidence": [
+      "\"Sunday, March 30, 2008\"",
+      "\"It's almost ten thousand lines of elisp (just for the editing mode)\"",
+      "Recursive-descent JavaScript parser ported from Mozilla Rhino into elisp for exact syntax highlighting",
+      "Released on code.google.com; configurable via M-x customize-group js2-mode",
+      "Supports JavaScript up through 1.7"
+    ],
+    "tags": [
+      "lisp",
+      "emacs lisp",
+      "major mode",
+      "parser",
+      "javascript",
+      "syntax highlighting"
+    ],
+    "notes": "Yegge's design write-up of js2-mode, a GNU Emacs major mode written in elisp that embeds a full recursive-descent JavaScript parser for highlighting, error reporting and indentation."
+  },
+  {
+    "title": "Steve Yegge — Emergency Elisp",
+    "url": "http://steve-yegge.blogspot.com/2008/01/emergency-elisp.html",
+    "year": 2008,
+    "year_label": "24 January 2008",
+    "language": [
+      "Emacs Lisp"
+    ],
+    "category": "Lisp / Tutorials & Books",
+    "kind": "tutorial",
+    "site": "steve-yegge.blogspot.com",
+    "score": 92,
+    "evidence": [
+      "\"Thursday, January 24, 2008\"",
+      "\"Welcome to my first Emacs Lisp primer!\"",
+      "Cookbook mapping C++/Java constructs (statements, loops, data structures, classes) to elisp",
+      "Focuses on the language itself rather than Emacs APIs"
+    ],
+    "tags": [
+      "lisp",
+      "emacs lisp",
+      "primer",
+      "elisp cookbook",
+      "emacs"
+    ],
+    "notes": "A long Emacs Lisp primer for C++/Java programmers covering variables, control flow, data structures, functions and macros so the reader can start writing their own Emacs extensions."
+  },
+  {
+    "title": "AfraLISP — Working With Areas (M2 area-label program)",
+    "url": "https://www.afralisp.net/autolisp/tutorials/working-with-areas-part-1.php",
+    "year": 2001,
+    "year_label": "2 August 2001",
+    "language": [
+      "AutoLISP"
+    ],
+    "category": "Lisp / Tutorials & Books",
+    "kind": "project tutorial",
+    "site": "afralisp.net",
+    "score": 91,
+    "evidence": [
+      "\";;;M2 Lisp - Version 1.0 - 2nd August 2001\"",
+      "\";;;Written by Kenny Ramage August 2001\"",
+      "Full (defun C:M2 ...) program with *error* handler, system-variable save/restore and undo marks",
+      "Picks points with a PLINE, runs AREA, converts mm² to m² and places a formatted text label"
+    ],
+    "tags": [
+      "lisp",
+      "autolisp",
+      "autocad",
+      "area calculation",
+      "cad"
+    ],
+    "notes": "Write an AutoCAD command in AutoLISP that lets the user pick a boundary, computes its area in square metres and inserts a formatted label into the drawing."
+  },
+  {
+    "title": "Data Sorcery — Building a Clojure Web application with Incanter, Compojure, and Leiningen",
+    "url": "https://data-sorcery.org/2009/11/29/incanter-webapp/",
+    "year": 2009,
+    "year_label": "29 November 2009",
+    "language": [
+      "Clojure"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "project tutorial",
+    "site": "data-sorcery.org",
+    "score": 93,
+    "evidence": [
+      "\"Posted on November 29, 2009 by liebke\"",
+      "project.clj depends on [incanter \"1.2.1-SNAPSHOT\"] and [compojure \"0.3.2\"]",
+      "defroutes webservice mapping \"/\" and \"/sample-normal\"",
+      "gen-samp-hist-png returns an Incanter histogram as a PNG to the browser; packaged as a jar with Leiningen"
+    ],
+    "tags": [
+      "lisp",
+      "clojure",
+      "web app",
+      "compojure",
+      "incanter",
+      "leiningen"
+    ],
+    "notes": "Build a small Clojure web service with Compojure that samples a normal distribution from user parameters and streams an Incanter histogram back as a PNG."
+  },
+  {
+    "title": "Fogus — On Lisp -> Clojure: Prolog, part 1",
+    "url": "http://blog.fogus.me/2009/01/15/on-lisp-clojure-prolog-pt-1.html",
+    "year": 2009,
+    "year_label": "15 January 2009 (URL)",
+    "language": [
+      "Clojure"
+    ],
+    "category": "Lisp / AI",
+    "kind": "project tutorial",
+    "site": "blog.fogus.me",
+    "score": 90,
+    "evidence": [
+      "Date in URL path \"/2009/01/15/on-lisp-clojure-prolog-pt-1.html\"",
+      "\"Posts in this series: ch. 2 , ch. 2 redux , ch. 3 , ch. 4 , ch. 5 , ProloG pt. 1\"",
+      "Ports Paul Graham's On Lisp embedded Prolog to Clojure, starting with a fact database",
+      "Pre-1.0 Clojure idioms: (def *default-db* (ref (make-db))) with dosync/commute"
+    ],
+    "tags": [
+      "lisp",
+      "clojure",
+      "prolog",
+      "on lisp",
+      "inference",
+      "macros"
+    ],
+    "notes": "Begin porting On Lisp's embedded Prolog interpreter to Clojure, building the fact database on refs and a fact macro as the base for the inference engine."
+  },
+  {
+    "title": "Stuart Sierra — First Steps With Clojure & Swing (series)",
+    "url": "https://stuartsierra.com/2010/01/02/first-steps-with-clojure-swing/",
+    "year": 2010,
+    "year_label": "2 January 2010",
+    "language": [
+      "Clojure"
+    ],
+    "category": "Lisp / Web & Applications",
+    "kind": "tutorial series",
+    "site": "stuartsierra.com",
+    "score": 92,
+    "evidence": [
+      "\"Posted on January 2, 2010 by Stuart Sierra\"",
+      "Builds a Swing GUI interactively from the REPL: JFrame, JPanel content pane, JButton, revalidate",
+      "Series continues on the blog: Swing into Actions, doto Swing, Taming the GridBagLayout, Heating Up Clojure & Swing, Agents of Swing (January 2010)",
+      "Later parts cover the event dispatch thread, SwingUtilities/invokeLater and Clojure agents"
+    ],
+    "tags": [
+      "lisp",
+      "clojure",
+      "swing",
+      "gui",
+      "java interop",
+      "agents"
+    ],
+    "notes": "A January 2010 series that builds desktop Swing applications in Clojure, from a first window at the REPL to listeners, GridBagLayout and multithreaded GUIs with agents."
+  },
+  {
+    "title": "Swarthmore CS37 — Interpreter Project: a metacircular Scheme interpreter in six parts (Spring 2006)",
+    "url": "https://www.cs.swarthmore.edu/~meeden/cs37/s06/interpreter/part1.html",
+    "year": 2006,
+    "year_label": "Spring 2006 (final due May 8)",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Interpreters & Evaluators",
+    "kind": "course project sequence",
+    "site": "cs.swarthmore.edu",
+    "score": 97,
+    "evidence": [
+      "\"CS37 (Spring 2006): Interpreter Project (Part 1)\"",
+      "\"Part 1 should be completed before class on Thursday, April 13\" / \"Final project due Monday, May 8 at noon\"",
+      "Six graded components (environments, primitives, ... Part 6: Meta-Circularity) plus three extensions incl. quasiquote and define-macro",
+      "i-tests.ss test files merged forward each week with an update37/merge script",
+      "Course page links DrScheme and SICP; project is 20% of the grade"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "metacircular evaluator",
+      "SICP",
+      "environments",
+      "macros"
+    ],
+    "notes": "Build an interpreter for a large subset of Scheme in six weekly stages, from environments and primitive procedures up to making it meta-circular, with optional quasiquote and define-macro extensions."
+  },
+  {
+    "title": "Pomona CS 131 — Ploy interpreter sequence: unification, CPS, exceptions, nondeterminism, register machine (Spring 2006)",
+    "url": "https://science.slc.edu/jmarshall/courses/2006/spring/cs131/Assignments.html",
+    "year": 2006,
+    "year_label": "Spring 2006",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course project sequence",
+    "site": "science.slc.edu",
+    "score": 95,
+    "evidence": [
+      "Year-coded archive path /courses/2006/spring/cs131/; homework pages titled \"CS 131 Homework 9 - Spring 2006\"",
+      "\"Homework 12 - due 2:00pm Thursday, May 11\"",
+      "Starter code parser.ss, interpreter.ss, cps-interpreter.ss, unifier.ss for the course's Ploy language",
+      "Final assignment: \"Transform your Ploy interpreter into a trampolined register machine\"",
+      "Syllabus: EOPL 2nd edition, \"we will use Scheme as our meta-language\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "continuations",
+      "CPS",
+      "unification",
+      "EOPL"
+    ],
+    "notes": "Twelve EOPL-style homeworks extending a Scheme-implemented interpreter for the Ploy language: unification, CPS with escaping functions, exceptions and call/cc, a nondeterministic interpreter, and finally a trampolined register machine. Jim Marshall's Pomona course, archived on his long-running personal site."
+  },
+  {
+    "title": "Wellesley CS251 — Scheme interpreters for BINDEX, IBEX, HOFL and FOFL (Spring 2002)",
+    "url": "https://cs.wellesley.edu/~cs251/s02/",
+    "year": 2002,
+    "year_label": "Spring 2002",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Programming Languages",
+    "kind": "course archive",
+    "site": "cs.wellesley.edu",
+    "score": 94,
+    "evidence": [
+      "\"CS251, Wellesley College, Spring 2002\"",
+      "PS3 \"Due: February 22, 2002\": extend the BINDEX interpreter (env-eval.scm, subst-eval.scm, rename.scm)",
+      "PS4 extends the IBEX interpreter (primops.scm, desugar.scm); PS5 works on the FOFL/FOBS/HOFL interpreters",
+      "MIT Scheme handout (mit-scheme.pdf), with code distributed via cvs update -d",
+      "Second half of the term switches to SML (type checking, reconstruction)"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "interpreter",
+      "MIT Scheme",
+      "scoping",
+      "desugaring"
+    ],
+    "notes": "Lyn Turbak's programming-languages course: the Scheme problem sets build and extend interpreters for small languages (BINDEX, IBEX, HOFL), covering substitution versus environment evaluation, desugaring and static versus dynamic scope."
+  },
+  {
+    "title": "Grinnell CSC151 — Media Computing Project: a Scheme procedure generating a 1000-image series (Fall 2007)",
+    "url": "https://rebelsky.cs.grinnell.edu/Courses/CS151/2007F/Projects/",
+    "year": 2007,
+    "year_label": "Due 30 November 2007",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "rebelsky.cs.grinnell.edu",
+    "score": 94,
+    "evidence": [
+      "\"Due: 4 p.m., Friday, 30 November 2007\"",
+      "Write (image-series n width height) producing at least 1000 deterministic, scale-independent images",
+      "Must combine at least three course techniques (image.map, region.compute-pixels!, spot lists, GIMP painting, recursion)",
+      "Deliverables: code plus design and technique statements, with PNGs copied to a dropbox",
+      "Course header \"CS151.02 2007F\": Scheme in DrScheme with the GIMP"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "media computing",
+      "GIMP",
+      "image generation",
+      "DrScheme"
+    ],
+    "notes": "A group project in Grinnell's media-computing CS1: write a Scheme procedure that draws the nth image of a series of at least 1000 images, scaling cleanly and combining several image-making techniques from the semester."
+  },
+  {
+    "title": "Grinnell CSC151 — Final project: a substantial Script-Fu or Scheme web service (Spring 2001)",
+    "url": "https://rebelsky.cs.grinnell.edu/Courses/CS151/2001S/Homework/hw.06.html",
+    "year": 2001,
+    "year_label": "Due Friday, May 4, 2001",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "rebelsky.cs.grinnell.edu",
+    "score": 92,
+    "evidence": [
+      "\"Assigned: Thursday, April 19, 2001\" / \"Due: Friday, May 4, 2001\"",
+      "Source last modified \"Fri Apr 20 08:20:11 2001\"",
+      "Choice of GIMP Script-Fu work (custom blur/pixelate/sharpen filters; built-ins not allowed) or a file-backed Scheme web service",
+      "Described as a very large, three-week project with a five-minute in-class demo"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "Script-Fu",
+      "GIMP",
+      "web service",
+      "final project"
+    ],
+    "notes": "A three-week open-ended Scheme project in Sam Rebelsky's CS1: either write your own GIMP Script-Fu image filters or build a file-backed web service such as a dating service or discussion board."
+  },
+  {
+    "title": "Harvey Mudd CS 60 — Unicalc: a units calculator API and REPL in Scheme (Spring 2010)",
+    "url": "https://www.cs.hmc.edu/courses/2010/spring/cs60/assignments/60s10a03.pdf",
+    "year": 2010,
+    "year_label": "Due 10 February 2010",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "project assignment",
+    "site": "cs.hmc.edu",
+    "score": 92,
+    "evidence": [
+      "\"Spring 2010 Assignment 3 Unicalc CLI Due. 11:59 p.m., Wed., 10 February 2010\"",
+      "Builds on Assignment 2 \"Unicalc API\" (due 3 February 2010), which normalises quantities against unicalc-db.scm",
+      "REPL reads S-expressions with (/ N D), (* E1 E2 ...) and (= $x E) variable assignment",
+      "Sample session: \"> (/ mile hour)\" gives \"(0.447031923888 (meter) (second))\""
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "REPL",
+      "interpreter",
+      "unit conversion",
+      "calculator"
+    ],
+    "notes": "A two-part Scheme project: build an API that normalises unit-bearing quantities against a units database, then a read-eval-print loop that evaluates arithmetic S-expressions with units and variables."
+  },
+  {
+    "title": "UPMC Paris 6 LI101 — \"Programmation récursive\" Scheme course CD-ROM (2006–2007)",
+    "url": "https://www-ppti.ufr-info-p6.jussieu.fr/cederoms/VideoScm2006/informatique/index.html",
+    "year": 2006,
+    "year_label": "First semester 2006–2007",
+    "language": [
+      "Scheme"
+    ],
+    "category": "Lisp / Intro Courses",
+    "kind": "course archive",
+    "site": "www-ppti.ufr-info-p6.jussieu.fr",
+    "score": 92,
+    "evidence": [
+      "\"Ce cédérom accompagne l'enseignement d'informatique du premier semestre 2006-2007\" (UPMC, MIME first year)",
+      "\"Le portage vers DrScheme 299 a été réalisé par Grégoire Henry en juillet-août 2005\"",
+      "CVS stamp \"$Id: index.html,v 1.50 2006/01/09 18:22:18 queinnec Exp $\"",
+      "Course texts (saison 1 and 2), exercise books (binary trees, symbolic differentiation, quadtrees), past exams and self-assessment quizzes that run in DrScheme",
+      "Authors Brygoo, Durand, Manoury, Pelletier, Queinnec and Soria; GPL/GFDL licensed"
+    ],
+    "tags": [
+      "lisp",
+      "scheme",
+      "DrScheme",
+      "recursion",
+      "binary trees",
+      "French"
+    ],
+    "notes": "The complete course CD-ROM, published online, for Paris 6's first-year Scheme course (pages in French): lecture texts, two exercise books on lists and trees (symbolic differentiation, binary search trees, quadtree images), past exams and DrScheme-based self-assessment."
   }
 ]

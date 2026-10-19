@@ -145,6 +145,72 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - https://www.cc65.org/doc/ — Frozen cc65 doc set (index 2005-8-6): internal.txt describes cc65's Small-C-derived code generation (undated), coding.html efficiency hints.
 - https://www.boost.org/doc/libs/1_34_0/libs/spirit/index.html — Boost 1.34 (2007) Spirit 1.8 docs with calculator and parser examples in C++; library docs rather than a project.
 
+## Lisp wing (batch 4, October 2026)
+
+- Review drops that could return: Freiburg Informatik I 2008 exercise sheets; TKK Scheme course 2009; Let Over Lambda source file; Brown CS019 2009 seam carving; UT CS381K TMYCIN; UVa CS150 PS5; Sacha Chua BBDB posts; Northwestern EECS 322 Spring 2010 (any language allowed).
+- https://websanity.objectcomputing.com — Mark Volkmann "Clojure - Functional Programming for the JVM" (March 2009) lives on this odd subdomain only; decide if acceptable.
+- https://www.math.tau.ac.il/~haimk/mavo/ — Tel Aviv Univ 0368.1105 Extended Intro to CS Fall 2000/2001, SICP in Scheme; 10 homework PS files (dvips CreationDate Jan 2001) incl. streams and metacircular evaluator code, but each homework is a 2-page exercise sheet
+- https://ocw.mit.edu/courses/6-090-building-programming-experience-a-lead-in-to-6-001-january-iap-2005/pages/assignments/ — MIT 6.090 IAP 2005 Scheme homework (nimrod.scm, advgame.scm); homework-sized
+- https://science.slc.edu/jmarshall/courses/2006/spring/cs131/ — Pomona CS131 Spring 2006 Programming Languages via Scheme interpreters (EOPL style); now hosted at slc.edu, frames, Assignments.html not yet checked
+- https://people.csail.mit.edu/meyer/6001/ — Albert Meyer 6.001 Spring 2000 directory: m-eval.scm, call-cc.scm, mycompile.ps dated 2000; directory listing only
+- https://www.cs.brandeis.edu/~mairson/Courses/cs21b/ — Brandeis COSI 21b SICP course directory: mceval-required.scm (2004), marry.tex (2005), meta-compiler.tex (2005); mixed with 2014-2019 files, no dated project page
+- https://www.cs.virginia.edu/~evans/cs200-spring2003/ — Sibling UVa semesters (cs200 Spring 2003/2004, cs150 Fall 2005) have the same SICP-style problem sets; skipped because of the 2-semester cap
+- https://courses.cs.washington.edu/courses/cse341/10wi/assignments/scheme-interpreter.pdf — UW CSE341 Winter 2010 Scheme interpreter assignment; PL-course domain
+- https://khoury.northeastern.edu/home/lieber/courses/csg111/f07/machprobs/ — Northeastern CSG 111 Fall 2007 (Lieberherr), EOPL3 machine problems with SLLGEN and Scheme interps, but roughly half the MPs are Java/DemeterF; maybe 88
+- https://users.cs.utah.edu/~mflatt/past-courses/cs3520/public_html/schedule.html — Utah CS 3520 Fall 2005 PLAI schedule, strong; skipped only to limit Utah/Flatt to two entries. Also CS 6520 S00-S04 archives
+- https://cs.brown.edu/courses/cs173/2005/Assignments/index.shtml — Brown CS173 Fall 2005 also live (Laziness, Prolog added); skipped due to 2-semester cap (2003, 2008 taken). 2004, 2007, 2010 also live
+- https://www.cse.iitm.ac.in/~krishna/cs3100/a2.html — IIT Madras minischeme interpreter, lazy interpreter and type inference in Scheme; no on-page date
+- https://webhome.cs.uvic.ca/~gtzan/csc330/Summer2004/assigns/Assignment3.pdf — UVic CSC330 Summer 2004 interpreters assignment mixing C, Scheme and ML
+- https://users.cs.northwestern.edu/~robby/courses/395-495-2009-winter/ — Semantics Engineering with PLT Redex, Winter 2009, model papers in Redex; seminar style
+- https://classes.cs.uchicago.edu/archive/2008/autumn/15100-1/ — UChicago classes archive currently serves an expired TLS certificate (and robots-blocks WebFetch); recheck 15100 2006–2010 later
+- https://www.ccs.neu.edu/home/dvanhorn/csu211.2007.fa/Assignments/X1.html — Optional Set X1: extend meta-circular evaluator with cond and lazy evaluation (thunks), Fall 2007; same semester as accepted Tetris set
+- https://www.ccs.neu.edu/home/dvanhorn/csu211.2007.fa/Assignments/7.html — Snake game with world.ss, Fall 2007, same semester as accepted Tetris set
+- https://users.cs.utah.edu/~mflatt/past-courses/cs2010/public_html/f03/hw6.html — UFO shooting game with draw.ss teachpack, due Sept 30 2003; spec lives on an external HtDP page
+- https://my.eng.utah.edu/~cs1410-20/f10/hw6.html — Simple Tetris from HtDP/2e with 2htdp/image, Oct 2010; very short page
+- https://cs.brown.edu/courses/cs019/2009/assignments/circuits — Circuit-board connectivity analysis on images (circuit-teach.ss), Fall 2009; fourth CS019 2009 project
+- https://cs.brown.edu/courses/cs019/2010/assignments — CS019 Fall 2010 (DrRacket) has same project set plus Oracle/Parallelism; a second semester if needed
+- https://users.cs.northwestern.edu/~jesse/course/cs2500-sp10/ — Jesse Tov NEU CS 2500 Spring 2010 (PLT Scheme 4.2.3), moved from ccs.neu.edu to Northwestern; 12 assignments, not checked in depth
+- https://www.ccs.neu.edu/home/jpalm/211-s05/ — CSU 211 Spring 2005 with Assignments/13.html and a DrScheme gallery project; third CSU 211 semester so held back
+- https://users.cs.northwestern.edu/~robby/uc-courses/15100-2005-fall/ — Further Findler 15100 semesters 2003–2006 in the same archive
+- https://courses.cs.umbc.edu/undergraduate/471/fall09/hw/hw4.html — UMBC 471 Fall 2009 WalkSAT in Lisp (stubs provided), out 10/15/09. Good, held back for 2-semester cap (Fall 2004 accepted).
+- https://courses.cs.umbc.edu/undergraduate/471/fall02/hw/hw3.html — UMBC 471 Fall 2002 BFS/greedy/A* Romania search in CLISP. Third UMBC semester; cap.
+- https://www.cs.utexas.edu/~mooney/cs351/hw4.html — Mooney CS 351 Spring 2000 HW4: extending Norvig's Prolog interpreter in Lisp (due April 25, 2000). Also hw3 Robosurfer heuristic web search, hw5 NL grammar.
+- https://www.d.umn.edu/~rmaclin/cs5541/Programs/04.html — UMN Duluth CS 5541 Fall 2010 Program 4: reinforcement learning maze in Lisp (prog4.lisp); 01 minimax tic-tac-toe.
+- https://www.cs.hmc.edu/courses/2000/spring/cs151/assignment3.html — HMC CS 151 Spring 2000 (Fleck) resolution theorem prover in Scheme; page title says 'Fall 1998' but index is Spring 2000; due 'Thursday, 2 March'. Score ~92.
+- https://people.cs.georgetown.edu/~maloof/cosc387.f04/p2.html — Georgetown COSC 387 Fall 2004 Project 2: BFS/informed/A* on French city graph in Lisp (gcl/clisp/cmucl); p3 propositional resolution. Score ~92.
+- https://www2.cs.sfu.ca/CourseCentral/310/pwfong/Assignments/ — SFU CMPT 310 (Fong) four cumulative Common Lisp assignments ending in a mechanical planner, Allegro CL 4.3/6.0; date only via outline URL 2001-1. Score ~90-91.
+- https://userpages.cs.umbc.edu/ypeng/AICourseOld/project3.PDF — UMBC 471/671 Fall 2000 (Peng) resolution step with unification; 'Lisp is strongly recommended' but not required.
+- https://people.eecs.berkeley.edu/~russell/classes/cs289/f04/assignments/a2.html — Berkeley CS 289 Fall 2004 SAT-based STRIPS planning; 'I recommend using LISP' with Lisp DPLL code; Lisp optional.
+- https://www.eecis.udel.edu/~decker/courses/681s07/prog3-2007.pdf — Delaware CISC 481/681 Spring 2007 decision-tree learner; Lisp suggested but not required.
+- http://landoflisp.com/source.html — Land of Lisp (2010) source listing: Wumpus, Orc Battle, Dice of Doom v1-v4, a web server, SVG DSL. No on-page date (only HTTP Last-Modified Nov 2010; the homepage links a /10/11/03/ Slashdot review). HTTPS cert is self-signed, so HTTP only. Would be about 89.
+- https://nklein.com/2009/10/dsl-for-drawing-floor-plans/ — October 28th, 2009, Common Lisp floor-plan DSL on Vecto with code. Good, but the nklein.com cap of 2 was used up.
+- https://www.newartisans.com/2007/11/a-quick-hunchentoot-primer/ — November 6, 2007, short Hunchentoot/CL-WHO define-easy-handler primer. Small companion to the accepted Apache post.
+- https://paulgraham.com/rootsoflisp.html — "May 2001": McCarthy eval in Common Lisp. The HTML page is only an intro; the paper (PS) and jmc.lisp are now on a turbifycdn.com CDN.
+- https://gsharp.common-lisp.dev/ — Gsharp score editor in CL/McCLIM, release 0.2 dated 2003-09-06, page signed 2010-03-27. Would be the 2nd common-lisp.dev record; note common-lisp.net now redirects to common-lisp.dev.
+- https://frank-buss.de/lisp/aqueduct.html — Aqueduct puzzle game in LispWorks CAPI, news dated February-May 2005. Frank Buss cap reached; Sudoku solver (Feb 2006) and Functional Texture (Mar 2005) are also on that site.
+- https://defmacro.org/ramblings/lisp.html — The Nature of Lisp, Monday, May 8, 2006. Conceptual essay (Ant/XML to Lisp), not a project.
+- https://cliki.net/LispGameDesignChallenge-spring-2010 — Dated CLiki list of 2010 Lisp game jam entries. A directory to mine for more game projects.
+- http://www.larcenists.org/twobit.html — Twobit compiler design notes (pass1..pass6, MacScheme machine page 'Last updated 27 October 2002'); index updated 2015, descriptive rather than a build project
+- http://www-sop.inria.fr/indes/scheme2js/ — Scheme2Js Scheme-to-JavaScript compiler in Bigloo; ICFP 2006 / TFP 2007 / Scheme Workshop 2007 papers, but page last updated 2011
+- https://www.iro.umontreal.ca/~feeley/cours/ift2030-old/ — Feeley IFT2030 Hiver 2006 PL course: TP1 functional drawing library in Scheme (02/02/06); TP2 is Prolog. For PL/intro domain
+- https://users.cs.northwestern.edu/~robby/uc-courses/ — Robby Findler UChicago CMSC 15100 2003-2008 (HtDP intro) archives; 22001 Software Construction game projects
+- https://www.cs.utah.edu/~mflatt/courses.html — Flatt CS 6510 S08 / CS 7963 S05 Practical Functional Programming (PLT Scheme games); CS 6520 S00-S04
+- https://www.iro.umontreal.ca/~feeley/ — Feeley papers on PICOBIT (IFL 2009) and BIT (HOSC 2005) Scheme compilers for microcontrollers, PDFs only
+- https://www.scheme.com/tspl4/ — The Scheme Programming Language 4th ed. (2009) online, for Tutorials & Books
+- https://websanity.objectcomputing.com/resources/publications/sett/march-2009-clojure-functional-programming-for-the-jvm/ — Volkmann's 'Clojure - Functional Programming for the JVM' (March 2009) is live, but only on an odd 'websanity' subdomain; main objectcomputing.com path 404s. Strong content if the host is acceptable (~92).
+- http://www.jefferypsanders.com/autolisptut.html — Jeffery P. Sanders AutoLisp tutorial and AutoLISP games (autolisp_games.html); behind a bot-verification loader for curl. Programs say 'tested in Release 14 thru 2004', footer 'Copyright 2002-2016'. Check in a browser.
+- https://www.afralisp.net/visual-lisp/tutorials/reactors-part-1.php — AfraLISP Visual LISP reactors series, substantial but no on-page date; afralisp.net already used twice
+- http://blog.fogus.me/2010/05/25/trammel-contracts-programming-for-clojure.html — Trammel design-by-contract library for Clojure, May 2010 (URL date); fogus has only one record so a second is allowed
+- https://stuartsierra.com/2009/10/08/generating-clojure-from-an-ontology/ — Oct 2009 Clojure code generation post, not checked in depth
+- https://data-sorcery.org/2009/08/30/processing-intro/ — Incanter.processing visualizations in Clojure, 30 Aug 2009; site cap reached
+- https://rebelsky.cs.grinnell.edu/Courses/CS151/2007S/Projects/report.01.html — Grinnell CSC151 Spring 2007 Project One: random rhyming or story text generation in Scheme ("Assigned: Monday, March 5, 2007", "Due: Friday, March 16, 2007"). Solid at about 91 but left out to respect the two-semesters-per-course limit (2001S and 2007F accepted).
+- https://www.cs.swarthmore.edu/~richardw/classes/cs37/s08/ — Swarthmore CS37 Spring 2008 SICP (Wicentowski), DrScheme. Probably has a similar interpreter project; not checked, and the course is already covered by S06.
+- https://people.cs.aau.dk/~normark/prog3-03/html/notes/theme-index.html — Aalborg, Kurt Nørmark, 'Functional Programming in Scheme, With Web Programming Examples': a substantial online book (prog3-03 = 2003) but the page says 'Generated: Friday January 3, 2014'. Needs a check for an original 2003 date.
+- https://proglang.informatik.uni-freiburg.de/teaching/info1/2009/uebungen.html — Freiburg Informatik I WS 2009/10: DrScheme sheets with world/turtle and priority-queue ADT tasks. Second semester of the same course as the accepted 2008 entry.
+- https://www-ppti.ufr-info-p6.jussieu.fr/cederoms/VideoScm2005/ — UPMC LI101 2005–2006 CD-ROM, a near-duplicate of the accepted 2006 one. Also VideoScm2002/2001 (DEUG MIAS) on the same index.
+- https://www.cs.hmc.edu/courses/2003/spring/cs131/assignments/5.pdf — HMC CS131 Spring 2003 PL assignment, seen in search results; language not checked.
+- https://faculty.hampshire.edu/lspector/courses/cs263s01.html — Hampshire CS263 Spring 2001 Common Lisp AI ('last updated on January 29, 2001'): resource page with live Lisp code (genetic-salesman.lisp, grid2d.lisp) and a portfolio requirement but no concrete assignment handouts. Also rejected by the d4 agent, so not accepted.
+
 ## Known dead ends (as of October 2026)
 
 Do not spend searches here unless something has changed:
@@ -174,3 +240,7 @@ Do not spend searches here unless something has changed:
 - Compilers: Rutgers 415, Rice COMP412/512, FSU, Alberta Pro64, Edinburgh 2000s archives dead; lcc site redirects to a Google login; pcc site 503; CodeProject articles now redirect to a placeholder.
 - gnu.org / ftp.gnu.org (flex, bison, lightning, libjit manuals) and lip6.fr did not respond through the proxy in batch 3. Retry later.
 - Appel "Modern Compiler Implementation in C" site is dated 1997 (out of range).
+- Lisp: Berkeley CS61A Scheme-era pages need CalNet; Brian Harvey ~bh/61a-pages have no on-page dates (uploaded 2020); sicp.csail.mit.edu gone; web.mit.edu/6.001 stub.
+- Lisp: Indiana C311/B521/P423 and Ghuloum pages redirect to the IU front page; Northeastern Wand/Felleisen course pages 404; Rice COMP 210 gone; Waterloo CS135 2008–2010 gone.
+- Lisp: weitz.de library pages now redirect to edicl.github.io (fails original-site rule); Matt Might articles show no period date; Feeley 90-minute Scheme->C 404; Ikarus domain parked.
+- Lisp: UChicago classes archive had an expired TLS certificate (Oct 2026); Grinnell and some hosts reset curl through the proxy but load in WebFetch.
