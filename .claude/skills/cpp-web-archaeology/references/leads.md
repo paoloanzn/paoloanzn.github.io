@@ -244,3 +244,10 @@ Do not spend searches here unless something has changed:
 - Lisp: Indiana C311/B521/P423 and Ghuloum pages redirect to the IU front page; Northeastern Wand/Felleisen course pages 404; Rice COMP 210 gone; Waterloo CS135 2008–2010 gone.
 - Lisp: weitz.de library pages now redirect to edicl.github.io (fails original-site rule); Matt Might articles show no period date; Feeley 90-minute Scheme->C 404; Ikarus domain parked.
 - Lisp: UChicago classes archive had an expired TLS certificate (Oct 2026); Grinnell and some hosts reset curl through the proxy but load in WebFetch.
+
+## Dynamic binary translation / JIT follow-ups (October 2026)
+
+- https://hacks.mozilla.org/2009/07/tracemonkey-overview/ — David Mandelin's original July 17, 2009 explanation of recording hot traces, guard exits, type specialization and Nanojit. Excellent conceptual reading, but examples are JavaScript rather than reader-written C/C++; excluded from catalog.
+- https://www.cs.uaf.edu/2006/fall/cs301/lecture/11_20_dynamic_binary.html — UAF Dr. Lawlor's 2005/2006 C++ machine-code emission lecture, ModR/M encoding and an SSE dynarec performance comparison. Possible near-duplicate of already accepted 2010 Lawlor lecture; hold for manual comparison.
+- https://releases.llvm.org/2.6/docs/tutorial/ — LLVM 2.6 tutorial pages 1–2 have detailed original 2009 C++ IR generation examples; advertised later JIT steps 3–5 did not resolve. Hold until tutorial completeness is confirmed.
+- https://www.schemeworkshop.org/2006/11-ghuloum.pdf — Original 2006 Scheme Workshop-hosted copy of the already-catalogued Ghuloum compiler paper; the existing scheme2006.cs.uchicago.edu URL timed out in this research session. Existing record is unchanged pending owner review.
