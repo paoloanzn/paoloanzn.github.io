@@ -24,9 +24,11 @@ SCORE_MIN = 85
 LISP_LANGS = {"Scheme", "Common Lisp", "Emacs Lisp", "Clojure", "AutoLISP", "Racket", "Lisp"}
 ALLOWED_LANGS = {"C", "C++"} | LISP_LANGS
 
-KINDS = {"project assignment", "project sequence", "course project sequence", "lab assignment",
-         "lab sequence", "tutorial", "tutorial series", "project tutorial", "source-code project",
-         "source project", "course archive", "tutorial archive", "technical article"}
+# Educational kinds only (see agents.txt section 1 and 5). Older entries may carry other
+# kinds; validate_catalog.py does not flag those.
+KINDS = {"project assignment", "lab assignment", "project sequence", "course project sequence",
+         "lab sequence", "tutorial", "tutorial series", "project tutorial", "build-along article",
+         "book chapter"}
 
 # Hosts that must never be the primary catalog URL.
 BANNED_HOST_PATTERNS = [

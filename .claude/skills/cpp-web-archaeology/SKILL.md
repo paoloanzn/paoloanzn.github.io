@@ -1,210 +1,109 @@
 ---
 name: cpp-web-archaeology
-description: Expand and maintain the C/C++ Web Archaeology catalog (paoloanzn.github.io/cpp-web-archaeology) — find period-authentic 2000–2010 C/C++ projects, course assignments and tutorials still live on the web, verify them, append them to projects.json, keep the website working, and commit to main. Use for "expand the catalog", "run a research batch", "add more entries", "update the archaeology site", or any change to cpp-web-archaeology/.
+description: Expands and maintains the C/C++ Web Archaeology catalog (paoloanzn.github.io/cpp-web-archaeology), a list of 2000–2010 C, C++ and Lisp material that teaches the reader to build something and is still live. Runs multi-agent research batches, reviews outside agents' catalog pull requests, audits existing entries, and changes the catalog website. Use when asked to expand the catalog, run a research batch, add or remove entries, review a catalog PR, or update the archaeology site.
 ---
 
 # C/C++ Web Archaeology
 
-A curated, link-first catalog of C and C++ programming material from about **2000–2010**
-that is **still live on its original site today**: OS kernels, compilers, databases,
-network stacks, emulators, drivers and more. Quality beats quantity: one genuinely
-period-authentic page is worth more than ten weak search hits.
+## Owner rules (always)
 
-- Data: `cpp-web-archaeology/data/projects.json` (a JSON list; the site reads it directly)
-- Site: `cpp-web-archaeology/index.html` → https://paoloanzn.github.io/cpp-web-archaeology/
-- Repo: `paoloanzn/paoloanzn.github.io`, branch `main` (pushing deploys the site)
+- **Never merge a PR and never push catalog changes to `main` without the owner's explicit
+  OK in this conversation.** Open a PR, report, and wait.
+- **The bar is the inclusion test** in `cpp-web-archaeology/agents.txt` section 1: the page
+  must teach the reader to build something (an assignment, lab or step-by-step build-along).
+  Manuals, project pages, own-project blog posts, benchmarks, papers and slides fail it,
+  however good they are. The owner rejected 16 of 25 entries in batch 5 for this reason.
+- Report to the owner in plain, short English. For every accepted entry, give one line:
+  title, what the reader builds, URL. The owner judges from that list.
 
-## Outside agents (agents.txt)
+## Where the rules live
 
-`cpp-web-archaeology/agents.txt` (live at https://paoloanzn.github.io/cpp-web-archaeology/agents.txt)
-is the public briefing for any other AI agent (ChatGPT, other Claude sessions...). It is
-self-contained and differs from this skill on purpose: outside agents work on a branch and open a
-pull request, and may change only `projects.json` and `references/leads.md`.
-When rules, scripts, categories or kinds change here, update agents.txt in the same commit.
-When asked to review an outside agent's PR, check it against agents.txt section 9 and spot-check
-5+ records before merging.
+`cpp-web-archaeology/agents.txt` is the single source of truth for the inclusion test,
+hard requirements, entry format, scores, scripts and PR description. It is the file the
+owner points outside agents (ChatGPT, other sessions) to. Read its sections 1, 2, 5 and 6
+before any batch. Do not restate those rules elsewhere; change them there.
 
-## Files in this skill
+## Files
 
-| File | Use it for |
+| File | Use |
 |---|---|
-| `references/research-spec.md` | **The rules.** Period evidence, live-web rule, search methods, scoring, schema. Read it before any research. |
-| `references/agent-brief.md` | Template brief for research subagents. Fill it in and copy to the scratchpad. |
-| `references/leads.md` | Unfinished leads and known dead ends from earlier batches. Start here. |
-| `references/website.md` | How the page works, where things live in `index.html`, how to test it. |
-| `scripts/catalog_stats.py` | Gaps by area/year, over-used sites, intent-tile coverage; writes the existing-URL list. |
-| `scripts/merge_batch.py` | Merge agent outputs: schema check, de-dupe vs catalog and within batch, collect leads. |
-| `scripts/check_urls.py` | Confirm every URL returns 200 now; `--fix` swaps http/https when only the twin works. |
-| `scripts/append_catalog.py` | Append new records to the end of `projects.json` without touching existing ones. |
-| `scripts/validate_catalog.py` | Final gate on the whole catalog before committing. |
-| `scripts/ui_smoke.js` | Playwright smoke test of the website with screenshots. |
+| `cpp-web-archaeology/agents.txt` | Rules and the step-by-step workflow for any agent. |
+| `references/agent-brief.md` | Template brief for research sub-agents. |
+| `references/leads.md` | Open leads by domain, and known dead ends. Check before researching. |
+| `references/website.md` | How `index.html` works and how to test it. Read before changing the site. |
+| `scripts/*.py` | Run them; do not read them unless one fails. Each has `--help`. Usage is in agents.txt section 4. |
+| `scripts/ui_smoke.js` | Browser test of the site (setup in `references/website.md`). |
 
-All Python scripts are standard library only and find the repo from their own location,
-so they work from any directory. Every script has `--help`.
+## Workflow A — multi-agent research batch
 
-## Set these first (every workflow)
+Copy and tick:
 
-```bash
-REPO=$(git -C /path/to/clone rev-parse --show-toplevel)     # the paoloanzn.github.io clone
-SKILL=$REPO/.claude/skills/cpp-web-archaeology
-SCRATCH=<the scratchpad directory from your system prompt>   # never inside the repo
-mkdir -p "$SCRATCH/batch"
-git -C "$REPO" pull --ff-only origin main
+```
+- [ ] 1. Sync main, branch, read gaps and leads
+- [ ] 2. Plan 6–8 non-overlapping domains
+- [ ] 3. Fill the brief, launch all research agents in one message (background)
+- [ ] 4. Merge, then review every entry as the owner would
+- [ ] 5. Verify live, append, validate (loop until 0 errors), smoke test
+- [ ] 6. Update leads.md, commit, push branch, open PR
+- [ ] 7. Report the link list and wait for the owner's OK before merging
 ```
 
-Shell variables do not persist between Bash calls in most harnesses. Repeat these lines at the top of
-each command, or write absolute paths. Paths you give to subagents must be **absolute**.
+1. **Sync and branch.** `git pull --ff-only origin main`, then
+   `git checkout -b catalog/YYYY-MM-DD-<topic>`. Run `catalog_stats.py --urls-out
+   $SCRATCH/existing_urls.txt` and `--categories`. Read `leads.md` for the focus area.
+2. **Plan domains.** Split the focus into 6–8 domains with no overlap. Always include one
+   agent for "leads in `leads.md` for this focus". Name, per domain, which kinds of pages to
+   look for (assignments, labs, build-along tutorials) and which entries already exist
+   (`grep` the catalog for the topic) so agents look at new schools and sites.
+3. **Launch.** Copy `references/agent-brief.md` to the scratchpad, fill every `{{...}}` from
+   Python or a quoted heredoc (unquoted heredocs run the backticks), and check
+   `grep -c '{{' brief` prints 0. The session's web-search budget (~200 calls) is shared:
+   give each agent `200 / number of agents` searches. Launch all agents in one message with
+   `run_in_background: true`, `subagent_type: general-purpose`.
+4. **Merge and review.** Run `merge_batch.py`. Then list every entry
+   (`score | year | title | url`) and decide each one with the three questions of the
+   inclusion test. Be stricter than the agents: they over-accept project pages, blog posts
+   and manuals. Re-run with `--drop` until only real assignments and build-alongs remain.
+   Re-open 5+ pages to confirm the quoted date proof.
+5. **Verify and append.** Run `check_urls.py --fix`; check curl failures with WebFetch;
+   drop pages that are really gone. Run `append_catalog.py`, then `validate_catalog.py`;
+   fix and repeat until it prints 0 errors. Read the "matching NO intent tile" list. Run
+   `ui_smoke.js` and look at one screenshot.
+6. **Commit and PR.** Commit `projects.json` and `leads.md` (plus site files only if
+   Workflow D was needed). Push the branch. Open the PR with the agents.txt section 8
+   description through the GitHub REST API (`gh api repos/OWNER/REPO/pulls -f ...`;
+   GraphQL is blocked in this environment).
+7. **Report and wait.** Send the owner the PR link and the one-line-per-entry list. Merge
+   only after the owner says so (`gh api -X PUT repos/OWNER/REPO/pulls/N/merge`).
 
-## Workflow A — research batch (expand the catalog)
+## Workflow B — review an outside agent's PR
 
-Make a task list with these steps. The user is often away; keep going without asking unless something is irreversible.
+1. Read it: `gh api repos/OWNER/REPO/pulls/N` (body) and `.../pulls/N/files` (diff).
+2. Check it touches only `projects.json` and `leads.md`.
+3. For each added entry, open the page and apply the inclusion test and agents.txt
+   section 2. Spot-check every date quote.
+4. Tell the owner which entries pass and which fail, with one reason each. Do not merge or
+   push to the PR branch unless the owner asks you to take it over.
 
-1. **Sync and snapshot.**
-   ```bash
-   git -C "$REPO" pull --ff-only origin main
-   python3 "$SKILL/scripts/catalog_stats.py" --urls-out "$SCRATCH/existing_urls.txt"
-   python3 "$SKILL/scripts/catalog_stats.py" --categories     # for {{CATEGORY_LIST}}
-   ```
-   A weekly GitHub Action (`tools/cpp-web-archaeology/collector.py`) can also rewrite and re-sort
-   `projects.json` (records with `"provenance": "automated-harvest"`). Always pull first.
+## Workflow C — audit existing entries
 
-2. **Pick domains from the gaps.** Read the stats (smallest areas first) and `references/leads.md`.
-   Underrepresented areas get priority; graphics/Win32 only when unusually strong (see spec).
-   Split the work into 4–8 non-overlapping domains. Good splits used before:
-   OS kernels · filesystems/concurrency/memory · compilers · interpreters/VMs/assemblers/simulators/emulators ·
-   networking/distributed · database internals · Unix tools/compression/drivers/embedded · hobbyist & community sites.
-   Rotate in fresh angles too: garbage collectors, linkers/loaders, audio/DSP, text editors, version control internals,
-   regex engines, game-engine internals, security/crypto course projects, parallel/MPI/OpenMP, GPU-era (2007–2010) CUDA.
+Split the catalog into chunks of ~70, give each chunk to a sub-agent with the inclusion
+test and the owner's calibration examples (agents.txt section 1), and ask for one verdict
+per entry: keep / remove / unsure, type, confidence, one-line reason. Merge the verdicts
+into a list for the owner. Remove nothing until the owner approves the list.
 
-3. **Fan out research subagents in parallel** (one Agent call per domain, all in the same message,
-   `subagent_type: general-purpose`). Before that:
-   - Copy `references/agent-brief.md` to `$SCRATCH/AGENT_BRIEF.md` and fill in every `{{...}}`:
-     `{{SKILL_DIR}}` = absolute `$SKILL`, `{{EXISTING_URLS_FILE}}` = absolute `$SCRATCH/existing_urls.txt`,
-     `{{TARGET}}` = 8–15, `{{CATEGORY_LIST}}` = output of `catalog_stats.py --categories`.
-     Then `grep -n '{{' "$SCRATCH/AGENT_BRIEF.md"` must print nothing.
-   - Each prompt: "Read and follow $SCRATCH/AGENT_BRIEF.md. Assigned domain: … Already covered (skip): …
-     courses/sites from the catalog in that domain. Output file: $SCRATCH/batch/<nn>_<domain>.json".
-   - Name the already-covered course offerings in each prompt so agents look at **other schools and semesters**.
-   - Agents must not touch the repo. Only you commit.
+## Workflow D — website changes
 
-4. **Merge and review.**
-   ```bash
-   python3 "$SKILL/scripts/merge_batch.py" --batch-dir "$SCRATCH/batch" --out "$SCRATCH/merged.json" --report "$SCRATCH/report.json"
-   python3 -c "import json;[print(r['score'],r['year'],r['site'],'|',r['title'][:70]) for r in sorted(json.load(open('$SCRATCH/merged.json')),key=lambda r:r['site'])]"
-   ```
-   Then read the merged list yourself (title, year, score, site, URL per line). Drop with `--drop URL ...` and re-run when:
-   - the evidence is weak (copyright footer only, "rebuilt" sites, no date on page),
-   - it is a near-duplicate (third sibling semester of the same course, same article on two hosts),
-   - the score is 85–88 and the scope is small.
-   Spot-check 4–6 records for their key evidence string, e.g.
-   `curl -sSL URL | grep -o -i -m3 -E 'due[^<]{0,30}|(fall|spring|winter) 20[01][0-9]|\.dsw|gcc[ -]?[23]\.[0-9]'`.
-   Finish **all** `--drop` re-runs before step 5: re-running the merge regenerates `merged.json` and
-   loses the URL fixes from step 5.
+Read `references/website.md` first. Keep the dig-site design, the "What do you want to
+build?" tiles, the sticky search and visible filters. The page must stay one
+self-contained file that fetches `./data/projects.json`. Run `ui_smoke.js`, look at the
+screenshots, and update `website.md` in the same commit.
 
-5. **Verify live.**
-   ```bash
-   python3 "$SKILL/scripts/check_urls.py" "$SCRATCH/merged.json" --fix
-   ```
-   Any URL still failing: retry once later; if still failing, drop it and list it in leads.
+## Environment notes
 
-6. **Append, validate, test.**
-   ```bash
-   python3 "$SKILL/scripts/append_catalog.py" "$SCRATCH/merged.json"
-   python3 "$SKILL/scripts/validate_catalog.py"     # must exit 0
-   python3 "$SKILL/scripts/catalog_stats.py"        # check "Records matching NO intent tile"
-   ```
-   If new records match no intent tile, improve their tags/notes, or extend the site (Workflow B).
-   Run the UI smoke test (see `references/website.md`).
-
-7. **Update leads.** Remove leads that were added or proved dead. Add the new leads from `report.json`
-   (`leads`; already filtered against the catalog and the current `leads.md`) and notable dead ends to
-   `references/leads.md`, grouped by domain. Optionally check them first:
-   `python3 -c "import json;print('\n'.join(l['url'] for l in json.load(open('$SCRATCH/report.json'))['leads']))" > "$SCRATCH/leads.txt" && python3 "$SKILL/scripts/check_urls.py" "$SCRATCH/leads.txt"`.
-
-8. **Commit and push to `main`.** Only `projects.json`, `references/leads.md` and (if step 6 needed it)
-   `cpp-web-archaeology/index.html` should change. Check with `git -C "$REPO" status --short`.
-   ```bash
-   cd "$REPO"
-   git add cpp-web-archaeology/data/projects.json .claude/skills/cpp-web-archaeology/references/leads.md
-   git commit -m "Add N manually curated <areas> archive entries"   # plus the session's attribution lines
-   git fetch origin main && git rebase origin/main && git push origin HEAD:main
-   ```
-   If the rebase stops on a `projects.json` conflict (the weekly collector pushed meanwhile), keep the
-   remote file and re-append your records. During a rebase **"ours" is origin/main**:
-   ```bash
-   git checkout --ours cpp-web-archaeology/data/projects.json
-   python3 "$SKILL/scripts/append_catalog.py" "$SCRATCH/merged.json"
-   python3 "$SKILL/scripts/validate_catalog.py"
-   git add cpp-web-archaeology/data/projects.json && GIT_EDITOR=true git rebase --continue
-   git push origin HEAD:main
-   ```
-
-9. **Report** (the spec requires it): entries investigated, accepted, rejected; domains covered;
-   strongest finds; new catalog size; commit SHA; interesting rejected/borderline sources for next time.
-
-## Workflow B — website changes
-
-1. Read `references/website.md` and the relevant part of `index.html`.
-2. Keep the concept: dig-site metaphor, intent tiles first, sticky search, visible removable filters,
-   shareable URL state, dark mode, phone layout, reduced motion. Bold and playful, never generic.
-3. The page must stay one self-contained file that fetches `./data/projects.json`. No build step, no framework.
-4. Run `scripts/ui_smoke.js` (setup in `references/website.md`), then **look at the screenshots**
-   with the Read tool. Fix anything that looks off and re-run.
-5. Commit only `cpp-web-archaeology/index.html` (and docs if you changed behavior), push to `main`,
-   wait ~2 minutes, confirm the live page with the curl checks in `references/website.md`.
-6. If the change alters how the page works, update `references/website.md` in the same commit.
-
-## Record schema (summary — full rules in the spec)
-
-```json
-{
-  "title": "Cornell CS414 — User-level threads and semaphores",
-  "url": "https://www.cs.cornell.edu/courses/cs414/2003su/projects/project1/project1.html",
-  "year": 2003, "year_label": "June 2003",
-  "language": ["C"], "category": "Operating Systems / Concurrency",
-  "kind": "project assignment", "site": "cs.cornell.edu", "score": 99,
-  "evidence": ["Original 2003 assignment", "C source skeleton", "Windows NT Minithreads environment"],
-  "tags": ["threads", "semaphores", "scheduler", "Minithreads"],
-  "notes": "Build a non-preemptive user-level thread package with queues, TCBs, a scheduler and semaphores."
-}
-```
-
-Score: 98–100 museum grade · 95–97 prime · 90–94 solid · 85–89 borderline (add sparingly) · below 85 never.
-
-## Lisp wing (since batch 4, October 2026)
-
-The catalog also accepts projects where the reader writes Lisp (Scheme, Common Lisp, Emacs Lisp,
-Clojure, AutoLISP, Racket). Rules are the same as for C/C++, plus: `language` uses the dialect
-names in `catalog_lib.LISP_LANGS`, and `category` must start with `Lisp / `
-(validated by `catalog_lib.validate_record`). A Lisp interpreter written IN C stays a C record.
-The site has a "Lisp" language button and a "Lisp & Scheme" intent tile.
-
-## Hard rules
-
-- The catalog URL must load live **now**, on the original or long-running domain. Never web.archive.org.
-- The material itself must be from 2000–2010, proven by evidence **on the page** (dates, semester paths, period toolchains).
-- C or C++ (or, for the Lisp wing, a Lisp) must be what the reader writes. Courses where students use Java/ML/Python are out.
-- No GitHub/GitLab-only sources, Medium, Dev.to, modern reposts or retrospectives.
-- Never rewrite or reorder existing records. Append only. De-duplicate by canonical URL.
-- Do not modify unrelated files in the repo (it is also Paolo's personal Jekyll blog).
-- When in doubt, reject. A borderline page goes to `leads.md`, not the catalog.
-
-## Lessons from earlier batches
-
-- Following directories beats searching. CMU, Princeton, Cornell, Wisconsin, UChicago, UT Austin, MIT PDOS,
-  Stanford SCS and USF (Cruse) keep whole year-coded trees live.
-- The web-search budget (about 200 calls) is shared by the WHOLE session, not per agent. In batch 2 the
-  first agents used it up and later agents could not search. Give each agent a search allowance
-  (about 200 ÷ number of agents) in its prompt, and give the leads agent none (it only needs curl).
-- One agent dedicated to `leads.md` is high-yield: in batch 2 it resolved all 71 leads and added 20 records.
-- When filling the brief, drop the template's header (everything above the first `---`) and write the
-  file from Python or a quoted heredoc (`<<'EOF'`): an unquoted heredoc runs the backticks in the brief.
-- WebFetch may need permission and time out in subagents; `curl` from Bash works for most hosts.
-- Some old servers reset connections or return 503 on http but 200 on https (`check_urls.py --fix` handles it).
-- Some hosts (e.g. web.eecs.umich.edu) omit an intermediate TLS certificate, so curl reports 0 while
-  browsers load the page. Do not disable verification: fetch the issuer from the certificate's
-  "CA Issuers" (AIA) URL, add it to a CA bundle and retry with `curl --cacert`. Keep such records.
-- A topic-focused batch (batch 3: compilers only) yields fewer records per agent (~5) than a broad one,
-  because many 2000s compiler courses are behind logins or used Java/ML. Plan 8 agents for ~40 records.
-- Hosts often blocked: UMD `/class/`, UNSW, UW and Berkeley inst (logins). See `leads.md`.
-- Agents tend to over-deliver near-duplicates (many sibling semesters). Cap at two per course unless content differs.
+- Outbound traffic goes through a proxy. Some hosts reset curl but load in WebFetch
+  (gnu.org, people.cs.vt.edu, intel.com, grinnell.edu); some send incomplete TLS chains
+  (web.eecs.umich.edu). Never disable TLS verification.
+- `gh` GraphQL commands (`gh pr list`, `gh pr view`) fail here; use `gh api` REST routes.
+  Draft/ready: `POST /repos/OWNER/REPO/pulls/N/ccr/ready_for_review`.
+- Sub-agents cannot see this conversation. Everything they need goes in the brief.

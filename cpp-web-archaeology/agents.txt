@@ -1,372 +1,352 @@
-C/C++ WEB ARCHAEOLOGY — INSTRUCTIONS FOR AI AGENTS
-====================================================
+# C/C++ Web Archaeology — instructions for AI agents
 
-You were pointed here to expand the C/C++ Web Archaeology catalog.
-Read this whole file before you start. It is the only briefing you get.
-Follow it exactly. Quality matters far more than the number of entries.
+You are adding entries to the C/C++ Web Archaeology catalog: a hand-picked list of
+**2000–2010 programming material that teaches the reader to build something**, still
+live on its original website. Your job is to find new entries, prove each one, and
+propose them in a pull request (PR) that the owner reviews.
 
-THIS FILE WINS. The repository also contains SKILL.md, research-spec.md and
-agent-brief.md, written for the owner's own Claude workflow. Where they differ
-from this file (pushing to main, editing index.html, score bands, reporting a
-commit SHA), follow THIS file. If you use sub-agents, give them this file.
+Read this whole file before you start. It is complete: you need nothing else from the
+owner. If anything in the repository disagrees with this file, this file wins.
 
-Live site:   https://paoloanzn.github.io/cpp-web-archaeology/
-This file:   https://paoloanzn.github.io/cpp-web-archaeology/agents.txt
-Repository:  https://github.com/paoloanzn/paoloanzn.github.io   (branch: main)
+- Live site: https://paoloanzn.github.io/cpp-web-archaeology/
+- Repository: https://github.com/paoloanzn/paoloanzn.github.io (branch `main`)
+- Catalog data: `cpp-web-archaeology/data/projects.json` (a JSON list of entries)
 
-
-1. WHAT THIS PROJECT IS
------------------------
-
-A hand-curated, link-only catalog of C and C++ programming material from about
-2000 to 2010 that is STILL LIVE on its original website today.
-
-Think: a university OS course from Fall 2004 whose project pages still load,
-with Bochs, gcc 3.x, CVS and tar.gz submission instructions. Or a 2006 hobby
-page that walks you through writing a Lisp interpreter in C. The reader should
-open the link today and see what a student or hobbyist saw back then.
-
-Good topics: operating system kernels, schedulers, thread libraries, file
-systems, shells, memory allocators, garbage collectors, network servers and
-protocols, routers, distributed systems, compilers, interpreters, virtual
-machines, JITs, assemblers, linkers, emulators, simulators, database internals
-(buffer managers, B+ trees, query engines, recovery), compression, Unix tools,
-text editors, device drivers, embedded/microcontroller labs, parallel
-computing (MPI, OpenMP, pthreads, early CUDA), crypto implementation, game
-engines, rasterizers, ray tracers, audio/DSP.
-
-Graphics, OpenGL and Win32 GUI material is already well covered. Add more only
-when it is unusually strong.
-
-THE LISP WING (since October 2026). Besides C/C++, the catalog accepts
-projects where the reader WRITES LISP: Scheme (PLT/DrScheme/MzScheme, MIT
-Scheme, Chez, Racket from 2010), Common Lisp, Emacs Lisp, Clojure
-(2007–2010), AutoLISP and other dialects. Same rules: 2000–2010 date proof on
-the page, live today, real projects (evaluators, interpreters, compilers in
-Scheme, SICP/HtDP/EOPL/PLAI course projects, AI programs, games, editor
-extensions, web apps). Tiny exercise sheets are out. No other languages.
+**Done means:** a PR against `main` that adds new entries which all pass the
+inclusion test (section 1) and the hard requirements (section 2), with a filled-in
+PR description (section 8). You never merge it. The owner does.
 
 
-2. YOUR LIMITS (READ CAREFULLY)
--------------------------------
+## 1. The inclusion test — read this twice
 
-- You may change ONLY these two files:
-    cpp-web-archaeology/data/projects.json
-    .claude/skills/cpp-web-archaeology/references/leads.md
-- Never edit the website (index.html), the scripts, workflows, or any other
-  file. This repository is also the owner's personal blog.
-- Never push to main. Work on a new branch and open a pull request.
-- Never rewrite, reorder, or delete existing catalog records. Only append.
-  If you notice an existing record whose page is now dead, list it in the PR
-  under "Existing records that look dead". The owner decides.
-- Do not commit scratch files, batch files or downloads. Keep them outside the
-  repository (for example in /tmp).
-- No push access to the repository (a fork you can push to counts as
-  access, then open the PR from the fork): run steps 1–5 with
-  append_catalog.py --dry-run, then put the full merged.json and your leads.md
-  additions in your final answer instead.
-- Your environment must reach the live web (to load pages and run
-  check_urls.py). If it cannot, say so plainly at the start. Never claim a
-  check passed when it did not run.
+An entry belongs in the catalog only if **the page teaches the reader to build
+something themselves**. That is the whole point of the catalog: someone opens the link
+today and can follow it to build a shell, a kernel, a compiler pass, an emulator, as a
+student or hobbyist did back then.
 
+Apply these three questions to every candidate. All three must be "yes":
 
-3. THE TWO RULES EVERY ENTRY MUST PASS
---------------------------------------
+1. **What does the reader build?** You can name it in one short phrase
+   ("a user-level thread library", "an x86 code generator for expressions").
+   If the honest answer is "nothing, they read about it", reject.
+2. **Does this page guide the building?** It is either
+   - an **assignment, lab or project spec** (requirements, starter code, steps,
+     deliverables, due dates), or a course page that indexes such projects; or
+   - a **tutorial or build-along** that goes step by step from little or nothing to a
+     working result, explains *why* each step is done, and gives code to write, run and
+     change.
+3. **Is the reader the one writing the code?** In C or C++ (or, for the Lisp wing,
+   a Lisp dialect — see section 2).
 
-RULE A — The material itself is from 2000–2010 (inclusive; the validator
-rejects other years).
-  The proof must be visible ON THE PAGE (or in its URL), for example:
-    - an explicit date: "Due: May 2, 2002", "Last modified March 2004"
-    - a semester: "Fall 2004", or a year-coded path: /fa04/, /2003/, /spring2002/
-    - period tools: Visual C++ 6.0, .dsp/.dsw files, Visual Studio .NET 2003,
-      Dev-C++, Borland C++, DJGPP, gcc 2.95/3.x/early 4.x, CVS, Fedora Core,
-      Red Hat 9, Solaris lab machines, Bochs, Simics, Nachos, Pintos, GeekOS,
-      SDL 1.2, Allegro 4, DirectX 7/8/9, SPIM, Linux 2.4/2.6, LLVM 1.x/2.x
-  NOT proof: a modern copyright footer, a modern article saying "from 2004",
-  a search-engine snippet, a GitHub README.
+Reject these even when they are old, live, technical and well written:
 
-RULE B — The page loads live today, at its original or long-running address.
-  - Never use web.archive.org (or any archive mirror) as the catalog URL.
-    You may use the Wayback Machine only to investigate history.
-  - Reject GitHub/GitLab-only sources, Medium, Dev.to, modern reposts,
-    retrospectives and modern rewrites.
-  - A modern page design is fine if the original period text is intact.
+- **Reference docs and manuals of existing software** (API manuals, user guides,
+  programmer's guides). They describe a tool; they do not teach building.
+- **Project pages, source releases and design docs of a finished system.**
+- **A developer's blog posts about their own project** (progress reports, "how my
+  code works", bug hunts, opinions).
+- **Benchmarks and comparisons.**
+- **Research papers, slide decks, talk videos.**
+- **Course pages with no buildable projects** (syllabus only, reading list, slides).
 
-Also required:
-  - The reader WRITES C or C++ (or, for the Lisp wing, a Lisp: see section 1).
-    A course where students write the compiler in
-    Java, ML, OCaml, Haskell or Python is out, even if the target is C. If a
-    course says "C++ or Java", accept it only if C/C++ starter code or C/C++
-    as the default is on the page.
-  - It is a real project, lab, assignment, tutorial or substantial technical
-    article. Not a syllabus with no projects, not a slide deck alone, not a
-    one-page snippet.
-  - Do not catalog exploit or attack labs (buffer-overflow exploitation,
-    shellcode, malware). Defensive and crypto-implementation work is fine.
-  - Not already in the catalog, and not a near-duplicate of something in it.
-    At most 2 semesters of the same course in total, unless the content
-    is clearly different.
+These are real verdicts from the owner. Calibrate on them.
 
-Check existing semesters before you accept a course, for example:
-  grep -i "cs414" cpp-web-archaeology/data/projects.json
+<examples>
+<example verdict="ACCEPT" why="assignment: build it from scratch">
+Utah CS 5460 Fall 2009 HW1 — generate x86 machine code at run time
+https://users.cs.utah.edu/~mflatt/past-courses/cs5460/hw1.html
+</example>
+<example verdict="ACCEPT" why="well-crafted walkthrough that builds a code generator and explains the whys">
+Peter Kankowski — Code generator: an x86 expression compiler in C++
+https://strchr.com/code_generator
+</example>
+<example verdict="ACCEPT" why="step-by-step tutorials: mul_add, gcd, on-demand compilation">
+DotGNU libjit tutorials — https://www.gnu.org/software/dotgnu/libjit-doc/libjit_3.html
+</example>
+<example verdict="ACCEPT" why="long build-along: turn a switch-based emulator into a translator">
+Graham Toal — Emulator Writer's HOWTO for Static Binary Translation — http://www.gtoal.com/sbt/
+</example>
+<example verdict="ACCEPT" why="teaches a technique with code and experiments to run">
+Darek Mihocka — NO EXECUTE! Part 25: Predicting Interpreters — http://www.emulators.com/docs/nx25_nostradamus.htm
+</example>
+<example verdict="REJECT" why="manual for existing software, not teaching">
+DynamoRIO 0.9.4 API manual; Intel Pin 2.0 User Guide; Dyninst Programmer's Guide
+</example>
+<example verdict="REJECT" why="source release / design doc of a finished system">
+Strongtalk downloads page; YARV homepage; Parrot JIT subsystem doc
+</example>
+<example verdict="REJECT" why="developer blog about their own project">
+Factor "polymorphic inline caching" post; Daedalus "Dynarec Improvements" post
+</example>
+<example verdict="REJECT" why="benchmark, nothing to build">
+"Simple test: libjit vs LLVM" (Habr, 2010)
+</example>
+</examples>
 
-When in doubt, reject. Put borderline pages in leads.md instead.
-
-
-4. SCORE
---------
-
-The score is how sure you are that the entry fits the archive. It is not a
-grade of how good the course was.
-
-  98–100  Museum grade: original dated archive, real project, clear C/C++/Lisp.
-  95–97   Prime: very strong period evidence, clearly relevant.
-  90–94   Solid: good material, slightly weaker proof or smaller scope.
-  85–89   Borderline: add only with a clear reason, and say why in the PR.
-  < 85    Never add.
-
-Aim for 90 and above, but score honestly. Never raise a score to 90 just to
-avoid explaining it. Caps:
-  - Proof is only a period toolchain (no date, no semester): at most 94.
-  - Undated page whose date comes only from a linked file or directory
-    listing: at most 92.
-  - Article or documentation (no build project): at most 95.
+Borderline cases, decided:
+- A book chapter or tutorial series that builds a program (Practical Common Lisp,
+  Bran's kernel tutorial, NeHe lessons, Lex & YACC HOWTO) → accept.
+- A HOWTO that walks you through writing code (GCC Frontend HOWTO, Linux Kernel
+  Module Programming Guide) → accept. One that is mainly reference → reject.
+- A library or project homepage → reject, unless the page itself walks through how
+  the code is built (Picol's "550 lines explained" article style).
+- A short teaching note on one technique with code to try → accept only if you can
+  answer question 1 with something real the reader writes.
 
 
-5. RECORD FORMAT
-----------------
+## 2. Hard requirements
 
-projects.json is one JSON list. Each new record has exactly these 12 fields:
+Each one has a reason. Use the reason to decide edge cases.
 
+| Requirement | Rule | Why |
+|---|---|---|
+| Period | The material is from 2000–2010, proven **on the page** (a date, a semester, a year in the URL path, a period toolchain: VC6 `.dsw`, gcc 2.95/3.x, CVS, Fedora Core, Bochs, Nachos, Pintos, SDL 1.2, DrScheme...). A modern copyright footer or a search snippet is not proof. | The catalog is archaeology: the reader should see what was there then. |
+| Live | The URL loads today on its original or long-running site. Never `web.archive.org` or other mirrors. No GitHub/GitLab-only sources, Medium, Dev.to, modern reposts. | The catalog is about what survived on the live web. |
+| Language | The reader writes C or C++. Lisp wing: Scheme, Common Lisp, Emacs Lisp, Clojure, AutoLISP or Racket, with a `Lisp / ...` category. A course where students write Java/ML/Python is out, even if the target is C. | Scope of the catalog. |
+| New | Not already in the catalog; at most 2 semesters of one course; at most 2 entries per site in one PR. | Breadth beats ten copies of one course. |
+| Safe | No exploit or attack labs (shellcode, buffer-overflow exploitation, malware). Defensive and crypto-implementation work is fine. | Owner's policy. |
+
+When the inclusion test or a requirement is uncertain after you have looked at the
+page, reject the candidate and add it to `leads.md` with a one-line note. A missed
+entry costs nothing; a bad entry costs the owner a review.
+
+
+## 3. Your limits
+
+- Change **only** `cpp-web-archaeology/data/projects.json` and
+  `.claude/skills/cpp-web-archaeology/references/leads.md`. Never edit the website,
+  scripts, workflows, or anything else: the repository is also the owner's blog.
+- **Never push to `main` and never merge.** Work on a branch, open a PR, stop.
+- Only append entries. Never edit, reorder or delete existing entries. If an existing
+  entry looks dead or fails the inclusion test, list it in the PR instead.
+- Keep scratch files outside the repository (for example `/tmp/cwa`).
+- If your environment cannot reach the live web, say so at the start and stop: you
+  cannot verify anything. Never claim a check passed when it did not run.
+- If you cannot push to the repository (a fork you can push to counts as access):
+  finish steps 1–6 with `append_catalog.py --dry-run`, then put `merged.json` and your
+  `leads.md` additions in your final answer.
+
+
+## 4. Workflow
+
+Copy this checklist into your notes and tick each step. Do not skip the review step:
+it is where most bad entries are caught.
+
+```
+- [ ] 1. Set up and read the gaps
+- [ ] 2. Research candidates (apply section 1 to each, write batch files)
+- [ ] 3. Merge, then review every entry with the inclusion test
+- [ ] 4. Verify every URL is live
+- [ ] 5. Append and validate (repeat until validation passes)
+- [ ] 6. Update leads.md
+- [ ] 7. Commit, push the branch, open the PR
+```
+
+### Step 1 — Set up
+
+```bash
+git clone https://github.com/paoloanzn/paoloanzn.github.io && cd paoloanzn.github.io
+git checkout -b catalog/$(date +%Y-%m-%d)-<topic>
+REPO=$(pwd); SKILL=$REPO/.claude/skills/cpp-web-archaeology; WORK=/tmp/cwa; mkdir -p $WORK/batch
+python3 $SKILL/scripts/catalog_stats.py --urls-out $WORK/existing_urls.txt
+python3 $SKILL/scripts/catalog_stats.py --categories
+```
+
+Shell variables are often lost between commands in agent sandboxes: repeat the
+`REPO/SKILL/WORK` line at the top of each command. The scripts are Python 3, standard
+library only; each has `--help`. Read `$SKILL/references/leads.md` now: it lists open
+leads (check them first) and dead ends (do not spend time on them).
+
+If the owner gave you a focus (for example "compilers"), stay on it. Otherwise pick
+the smallest areas and thinnest years from the stats.
+
+### Step 2 — Research
+
+- If you can run parallel sub-agents, give each one a separate domain, this file, and
+  its own output file in `$WORK/batch/`. Otherwise work domain by domain.
+- Search with period fingerprints, not generic phrases:
+  `site:edu "project 3" "Fall 2004" "Makefile"`, `site:edu inurl:fa05 "you will implement"`,
+  `"Visual C++ 6.0" ".dsw" assignment`, `"starter code" "due" filesystem C 2003`.
+- **Follow directories.** When a page is strong, open its course index, sibling
+  projects, sibling semesters and the instructor's other course archives. This finds
+  more than searching. Hosts with live year-coded archives include
+  `cs.princeton.edu/courses/archive`, `cs.cornell.edu/courses`, `pages.cs.wisc.edu`,
+  `classes.cs.uchicago.edu/archive`, `cseweb.ucsd.edu/classes`, `cs.cmu.edu`. Many
+  are already well covered: prefer new institutions and new sites
+  (`grep -i HOST $WORK/existing_urls.txt`).
+- Open every candidate yourself. Read enough of it to answer the three questions of
+  section 1 and to find the date proof. Never accept from a search snippet.
+- Web search budgets are limited. When yours runs low, follow directories with curl.
+- Write one batch file per domain:
+
+```json
+{"accepted": [ <entries in the section 5 format> ],
+ "rejected": [ {"url": "...", "reason": "short reason"} ],
+ "borderline_leads": [ {"url": "...", "note": "why it is worth a later look"} ],
+ "investigated_count": 0}
+```
+
+### Step 3 — Merge and review
+
+```bash
+python3 $SKILL/scripts/merge_batch.py --batch-dir $WORK/batch --out $WORK/merged.json --report $WORK/report.json
+```
+
+The script checks format, duplicates and the date quote. It cannot judge teaching
+value: you must. Read every merged entry and ask the three questions again, as if
+you were the owner. Remove failures by re-running the command with
+`--drop URL [URL ...]`. Also drop near-duplicates and any entry whose date proof is
+weak. Then re-open at least 5 pages and confirm the quoted date proof is there:
+`curl -sSL URL | grep -i -o -m3 -E "due[^<]{0,30}|(fall|spring|winter) 20[01][0-9]"`.
+Finish all `--drop` runs before step 4 (re-merging overwrites the step 4 fixes).
+
+### Step 4 — Verify live
+
+```bash
+python3 $SKILL/scripts/check_urls.py $WORK/merged.json --fix
+```
+
+`--fix` swaps http/https when only the other works. `REDIRECT` means the page now
+lands on a login wall, a front page or another site: drop it. Drop anything that
+still fails, with one exception: some servers send an incomplete TLS chain or block
+scripts, so curl fails while a browser works. Never disable TLS verification. Check
+those pages with a browser tool or WebFetch, keep them only if they load with their
+date proof, and list them in the PR.
+
+### Step 5 — Append and validate
+
+```bash
+python3 $SKILL/scripts/append_catalog.py $WORK/merged.json
+python3 $SKILL/scripts/validate_catalog.py      # must print 0 errors
+python3 $SKILL/scripts/catalog_stats.py         # read "Records matching NO intent tile"
+```
+
+If validation reports errors, fix the entries in `merged.json`, reset the catalog with
+`git checkout cpp-web-archaeology/data/projects.json`, and append again. **Only go on
+when validation passes.** If a new entry matches no website tile, improve its tags and
+notes with the words a reader would search for; do not edit the website.
+
+### Step 6 — Update leads.md
+
+Remove leads you added or proved dead. Add new leads from `report.json` (`leads`)
+under the matching domain heading, and new dead ends under "Known dead ends".
+Format: `- URL — one-line note`.
+
+### Step 7 — Commit, push, open the PR
+
+```bash
+git add cpp-web-archaeology/data/projects.json .claude/skills/cpp-web-archaeology/references/leads.md
+git status --short       # only these two files may be listed
+git commit -m "Add N curated <topic> entries"
+git fetch origin main && git rebase origin/main && git push -u origin HEAD
+```
+
+Open a PR against `main` with the description from section 8, then stop.
+
+If the rebase conflicts on `projects.json` (a weekly bot re-sorts it), keep `main`'s
+version and append again. During a rebase, "ours" is `origin/main`:
+
+```bash
+git checkout --ours cpp-web-archaeology/data/projects.json
+python3 $SKILL/scripts/append_catalog.py $WORK/merged.json && python3 $SKILL/scripts/validate_catalog.py
+git add cpp-web-archaeology/data/projects.json && GIT_EDITOR=true git rebase --continue
+```
+
+
+## 5. Entry format
+
+Each new entry has exactly these 12 fields. No others.
+
+```json
 {
-  "title": "Cornell CS414 — User-level threads and semaphores",
-  "url": "https://www.cs.cornell.edu/courses/cs414/2003su/projects/project1/project1.html",
-  "year": 2003,
-  "year_label": "June 2003",
+  "title": "Utah CS 5460 (Fall 2009) HW1 — Generating x86 machine code at run time",
+  "url": "https://users.cs.utah.edu/~mflatt/past-courses/cs5460/hw1.html",
+  "year": 2009,
+  "year_label": "Fall 2009",
   "language": ["C"],
-  "category": "Operating Systems / Concurrency",
+  "category": "Compilers / JIT",
   "kind": "project assignment",
-  "site": "cs.cornell.edu",
-  "score": 99,
+  "site": "users.cs.utah.edu",
+  "score": 94,
   "evidence": [
-    "Original 2003 assignment",
-    "C source skeleton",
-    "Windows NT Minithreads environment"
+    "\"Due: Tuesday, September 8th, 2009\"",
+    "Students write C that emits x86 machine code into an mprotect-ed buffer",
+    "Starter code and test harness provided"
   ],
-  "tags": ["threads", "semaphores", "scheduler", "Minithreads"],
-  "notes": "Build a non-preemptive user-level thread package with queues, thread control blocks, a scheduler and semaphores."
+  "tags": ["jit", "x86", "code generation", "mprotect", "assignment"],
+  "notes": "Write a C function that generates x86 machine code at run time, makes the buffer executable and calls it."
 }
+```
 
-Field rules:
-  title       "Institution COURSE — What you build", or "Author — Article title".
-              Add the term when it helps tell semesters apart.
-  url         The exact live URL you loaded. https if https works. No tracking
-              parameters, no #fragment.
-  year        Integer, 2000–2010.
-  year_label  The most precise date the page shows ("Due 4 Nov 2003", "Spring 2005").
-  language    List that includes "C" and/or "C++" (other entries like
-              "x86 assembly" are allowed). Lisp wing: one or more of "Scheme",
-              "Common Lisp", "Emacs Lisp", "Clojure", "AutoLISP", "Racket",
-              "Lisp" (generic only if the dialect is unclear).
-  category    Reuse an existing category when it fits (see the list from the
-              stats script). Common ones: Operating Systems, Operating Systems /
-              Concurrency, Filesystems, Systems / Unix, Systems / Memory,
-              Networking, Networking / Protocols, Networking / Routing,
-              Distributed Systems, Parallel Computing, Compilers, Compilers /
-              Lexing, Compilers / Parsing, Compilers / Semantic Analysis,
-              Compilers / Code Generation, Compilers / Optimization,
-              Compilers / JIT, Interpreters / Virtual Machines, Assemblers /
-              Linkers, Emulators, Architecture Simulators, Database Internals
-              (/ Buffer Manager, / Indexing, / Query Processing, / Recovery),
-              Device Drivers / Linux Kernel, Embedded Systems, Compression,
-              Cryptography, Text Editors, Graphics / Algorithms, Ray Tracing,
-              Games / Engines, Audio / DSP. Create a new one only if it will
-              hold several records.
-              Lisp wing records MUST use a "Lisp / ..." category:
-              Lisp / Interpreters & Evaluators, Lisp / Compilers, Lisp / Intro
-              Courses, Lisp / Programming Languages, Lisp / AI, Lisp / Games &
-              Graphics, Lisp / Web & Applications, Lisp / Emacs & Editors,
-              Lisp / Tutorials & Books. A Lisp interpreter written IN C stays a
-              C record (Interpreters / Virtual Machines), not Lisp wing.
-              Lisp-wing tags always include "lisp" and the dialect.
-  kind        Exactly one of: project assignment, project sequence, course
-              project sequence, lab assignment, lab sequence, tutorial,
-              tutorial series, project tutorial, source-code project, source
-              project, course archive, tutorial archive, technical article.
-  site        The URL's host without "www." (must match the URL).
-  score       See section 4.
-  evidence    3 to 6 short strings. Each one a concrete fact you saw on the page.
-              At least one must be a short VERBATIM quote of the date proof,
-              in double quotes, e.g. "Due: Thursday, October 7, 2004".
-  tags        3 to 7 search words. Include the words a reader would use for the
-              project type ("kernel", "compiler", "filesystem", "sockets",
-              "B+ tree", "MPI"...). The site's "What do you want to build?"
-              tiles match on title, category, notes and tags.
-  notes       One or two plain sentences: what the reader builds.
-
-Do not add any other fields.
+| Field | Rule |
+|---|---|
+| `title` | "Institution COURSE (Term) — What you build" or "Author — Article title". |
+| `url` | The exact live URL you loaded. https if it works. No tracking parameters, no `#fragment`. |
+| `year`, `year_label` | Integer 2000–2010; the most precise date the page shows. |
+| `language` | List with `"C"` and/or `"C++"`, or a Lisp dialect (`"Scheme"`, `"Common Lisp"`, `"Emacs Lisp"`, `"Clojure"`, `"AutoLISP"`, `"Racket"`). |
+| `category` | Reuse one from `catalog_stats.py --categories`. Lisp-only entries must start with `Lisp / `. Create a new category only if it will hold several entries. |
+| `kind` | Exactly one of: `project assignment`, `lab assignment`, `project sequence`, `course project sequence`, `lab sequence`, `tutorial`, `tutorial series`, `project tutorial`, `build-along article`, `book chapter`. |
+| `site` | The URL's host without `www.`. Must match the URL. |
+| `score` | Section 6. |
+| `evidence` | 3–6 facts you saw on the page. The first is a **verbatim quote of the date proof in double quotes**. One should say what the reader builds or is given (starter code, steps). |
+| `tags` | 3–7 words a reader would search for, including the project type ("kernel", "compiler", "filesystem", "B+ tree", "jit"). The site's "What do you want to build?" tiles match on title, category, notes and tags. |
+| `notes` | One or two plain sentences starting with a verb: what the reader builds. |
 
 
-6. SETUP
---------
+## 6. Score
 
-  git clone https://github.com/paoloanzn/paoloanzn.github.io
-  cd paoloanzn.github.io
-  git checkout -b catalog/YYYY-MM-DD-short-topic
+The score is your confidence that the entry fits the catalog: period proof and
+teaching value together.
 
-  REPO=$(pwd)
-  SKILL=$REPO/.claude/skills/cpp-web-archaeology
-  WORK=/tmp/cwa-work            # scratch space OUTSIDE the repo
-  mkdir -p $WORK/batch
+| Score | Meaning |
+|---|---|
+| 98–100 | Original dated assignment or build-along with a complete path from start to working result. |
+| 95–97 | Very strong date proof and a clearly buildable project. |
+| 90–94 | Good, with slightly weaker date proof or a smaller project. |
+| 85–89 | Add only with a reason you state in the PR. |
+| below 85 | Never add. |
 
-Many sandboxes reset the directory or forget variables between commands.
-Repeat the REPO/SKILL/WORK lines at the top of every command, or use
-absolute paths. Commands below assume you are in $REPO.
-
-The repository has helper scripts (Python 3, standard library only). Use them.
-They encode the rules above; every script has --help.
-
-  $SKILL/scripts/catalog_stats.py    gaps by area/year, busy sites, tile coverage,
-                                     writes the list of existing URLs
-  $SKILL/scripts/merge_batch.py      validates and de-duplicates your batch files
-  $SKILL/scripts/check_urls.py       confirms every URL loads now (HTTP 200)
-  $SKILL/scripts/append_catalog.py   appends new records safely
-  $SKILL/scripts/validate_catalog.py final check of the whole catalog
-
-Also read these before researching:
-  $SKILL/references/leads.md          open leads from earlier batches + known
-                                      dead ends (do not waste time on those)
-  $SKILL/references/research-spec.md  more search methods and examples (useful),
-                                      but where its rules differ, this file wins
+Caps: proof is only a period toolchain (no date or semester) → at most 94. Date comes
+only from a linked file or directory listing → at most 92. Score honestly; never raise
+a score to avoid explaining it.
 
 
-7. WORKFLOW
------------
+## 7. When things go wrong
 
-Step 1 — Look at the gaps.
-  python3 $SKILL/scripts/catalog_stats.py --urls-out $WORK/existing_urls.txt
-  python3 $SKILL/scripts/catalog_stats.py --categories
-  Pick areas that are small, years that are thin, and leads that are open.
-  If the owner gave you a focus (for example "compilers"), stay on it.
-  Size: a good batch is about 10–40 new records. Fewer is fine if the area
-  is thin. Do not pad.
-
-Step 2 — Research.
-  If you can run parallel sub-agents, give each one a separate domain and its
-  own output file in $WORK/batch/. Otherwise work through domains one by one.
-  Methods that work:
-    - Search with period fingerprints, not generic phrases:
-        site:edu "operating systems" "project 3" "Fall 2004"
-        site:edu inurl:fall05 filesystem "Makefile"
-        "Visual C++ 6.0" ".dsw" assignment
-        site:edu "you will implement" "buffer manager" C++
-    - FOLLOW DIRECTORIES. When a page is strong, open its course index,
-      sibling projects, sibling semesters and the instructor's other course
-      archives. One good page often leads to ten. This beats searching.
-    - Hosts that keep year-coded archives live include cs.cmu.edu,
-      cs.princeton.edu/courses/archive, cs.cornell.edu/courses,
-      pages.cs.wisc.edu, classes.cs.uchicago.edu/archive, cs.columbia.edu,
-      cseweb.ucsd.edu/classes, scs.stanford.edu, pdos.csail.mit.edu,
-      users.ece.utexas.edu, cs.usfca.edu/~cruse. Many are already well
-      represented: prefer NEW institutions and NEW sites.
-    - Check every candidate yourself: load it, find the date evidence, confirm
-      C/C++ (or Lisp), and grep $WORK/existing_urls.txt for its host.
-    - Web search budgets are limited. When yours runs low, switch to following
-      directories with curl.
-  Write results to $WORK/batch/<name>.json in this shape:
-    {
-      "accepted": [ <records in the format of section 5> ],
-      "rejected": [ {"url": "...", "reason": "short reason"} ],
-      "borderline_leads": [ {"url": "...", "note": "why worth a later look"} ],
-      "investigated_count": 0
-    }
-
-Step 3 — Merge and review.
-  python3 $SKILL/scripts/merge_batch.py --batch-dir $WORK/batch \
-      --out $WORK/merged.json --report $WORK/report.json
-  Read every merged record again with fresh eyes. Remove weak ones by
-  re-running the command with  --drop URL [URL ...]  when:
-    - the date proof is weak (only a footer, no date on the page),
-    - it is a near-duplicate (third semester of a course, same text on two hosts),
-    - the score is 85–89 and the scope is small.
-  Spot-check at least 5 records yourself: re-load the page and confirm the
-  quoted date proof is really there, e.g.
-    curl -sSL URL | grep -i -o -m3 -E "due[^<]{0,30}|(fall|spring|winter) 20[01][0-9]"
-  Do all --drop runs BEFORE step 4.
-
-Step 4 — Verify live.
-  python3 $SKILL/scripts/check_urls.py $WORK/merged.json --fix
-  --fix switches http/https when only the other one works. It also flags
-  REDIRECT when a page now lands on another host or on a site's front page
-  (a "soft 404"): drop those. Drop anything that still fails. Exception: some servers (e.g. web.eecs.umich.edu) send an
-  incomplete TLS certificate chain, so curl fails while browsers work. Never
-  disable TLS verification. Fetch the missing intermediate certificate from
-  the certificate's "CA Issuers" URL, add it to a CA bundle, retry with
-  curl --cacert, and keep the record if it loads. check_urls.py will still
-  print FAIL for such hosts; that is expected. List them in the PR.
-
-Step 5 — Append and validate.
-  python3 $SKILL/scripts/append_catalog.py $WORK/merged.json
-  python3 $SKILL/scripts/validate_catalog.py        # must exit 0
-  python3 $SKILL/scripts/catalog_stats.py           # see "matching NO intent tile"
-  If a new record matches no tile, improve its tags/notes wording. Do not
-  edit the website; mention it in the PR instead.
-
-Step 6 — Update leads.md.
-  Remove leads you added or proved dead. Add new leads from report.json
-  ("leads") under the matching domain heading (create one if none fits), and
-  new dead ends under "Known dead ends". Keep the format: "- URL — short note".
-
-Step 7 — Commit, push the branch, open a pull request.
-  git add cpp-web-archaeology/data/projects.json \
-          .claude/skills/cpp-web-archaeology/references/leads.md
-  git status --short          # only those two files may appear
-  git commit -m "Add N curated <areas> archive entries"
-  git fetch origin main && git rebase origin/main
-  git push -u origin HEAD
-  Then open a PR against main (gh pr create, or the GitHub web UI).
-
-  If the rebase conflicts on projects.json: a weekly bot re-sorts that file.
-  Keep main's version and re-append your records:
-    git checkout --ours cpp-web-archaeology/data/projects.json
-    python3 $SKILL/scripts/append_catalog.py $WORK/merged.json
-    python3 $SKILL/scripts/validate_catalog.py
-    git add cpp-web-archaeology/data/projects.json
-    GIT_EDITOR=true git rebase --continue
-  (During a rebase, "ours" means origin/main.)
+- **A host resets curl or returns 403/503 but loads in a browser:** use a browser tool
+  or WebFetch, and write "checked with WebFetch" in the evidence.
+- **The page is a course index whose project pages are dead:** reject; the reader
+  cannot build from it.
+- **Two candidates have the same text on two hosts:** keep the original host only.
+- **You find good material from 2011 or later:** out of range. Do not add it.
+- **You are unsure whether something teaches building:** it goes to `leads.md`.
 
 
-8. PULL REQUEST DESCRIPTION
----------------------------
+## 8. PR description
 
-Title:  Add N curated <areas> archive entries
+Title: `Add N curated <topic> entries`
 
-Body (fill in every line):
-  Domains researched:
-  Pages investigated:            Accepted:            Rejected:
-  Records scored 85–89 and why they are in:
-  TLS-exception hosts (check_urls FAIL but verified by hand):
-  Strongest finds (3–5, one line each):
-  New categories created (if any):
-  Records matching no website tile (if any):
-  Leads added / removed in leads.md:
-  Notable dead ends:
-  Existing records that look dead (if any):
-  Agent / model used:
-
-The owner reviews and merges. Pushing the merge to main publishes the site
-in a few minutes.
+```
+Focus / domains researched:
+Pages investigated:        Accepted:        Rejected:
+For each accepted entry, one line: title — what the reader builds — URL
+Entries scored 85–89 and why:
+Pages checked with WebFetch/browser instead of curl:
+New categories (if any):
+Entries matching no website tile (if any):
+Leads added / removed:
+Notable dead ends:
+Existing entries that look dead or fail the inclusion test:
+Agent / model:
+```
 
 
-9. FINAL CHECKLIST
-------------------
+## 9. Final check before opening the PR
 
-  [ ] Every new record: live URL, on-page 2000–2010 evidence, reader writes
-      C/C++ (or Lisp, with a "Lisp / ..." category).
-  [ ] Each record has a verbatim quote of its date proof; 5+ spot-checked.
-  [ ] No web.archive.org, no GitHub/Medium/Dev.to-only sources, no exploit labs.
-  [ ] No duplicates; at most 2 semesters per course.
-  [ ] Scores honest; 85–89 explained in the PR.
-  [ ] validate_catalog.py exits 0.
-  [ ] Only projects.json and leads.md changed.
-  [ ] Work is on a branch with an open PR. Nothing pushed to main.
+- [ ] Every new entry passes the three questions of section 1. You could tell the owner, for each one, what the reader builds.
+- [ ] Every entry has a verbatim date quote; you re-opened at least 5 pages.
+- [ ] No reference manuals, project pages, own-project blog posts, benchmarks, papers or slides.
+- [ ] No `web.archive.org`, no GitHub-only sources, no exploit labs, no duplicates.
+- [ ] `validate_catalog.py` prints 0 errors.
+- [ ] Only `projects.json` and `leads.md` changed.
+- [ ] The work is on a branch with an open PR. You did not push to `main` or merge.
