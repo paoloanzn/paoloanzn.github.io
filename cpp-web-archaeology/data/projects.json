@@ -11906,5 +11906,61 @@
       "text processing"
     ],
     "notes": "Write an interactive Emacs command that sorts the lines of a region numerically by a fixed-column field, built on sort-subr and debugged step by step."
+  },
+  {
+    "title": "Chris Wellons — Lisp Fantasy Name Generator in Emacs Lisp",
+    "url": "https://nullprogram.com/blog/2009/07/03/",
+    "year": 2009,
+    "year_label": "July 3, 2009",
+    "language": [
+      "Emacs Lisp"
+    ],
+    "category": "Lisp / Emacs & Editors",
+    "kind": "build-along article",
+    "site": "nullprogram.com",
+    "score": 88,
+    "evidence": [
+      "\"July 03, 2009\"",
+      "Shows how to write the RinkWorks pattern s(ith|<'C>)V as the S-expression (s (\"ith\" (\"'\" C)) V)",
+      "Builds the generator in order: a namegen-subs alist, a randth helper, namegen-select (with throw on bad symbols), then the recursive namegen",
+      "Ends with a runnable call (namegen '(s (\"ith\" (\"'\" C)) V)) -> \"rynithi\"; the author says parsing the original pattern string is left undone"
+    ],
+    "tags": [
+      "emacs lisp",
+      "name generator",
+      "game",
+      "recursion",
+      "s-expressions"
+    ],
+    "notes": "Write a recursive Emacs Lisp fantasy-name generator that expands an S-expression pattern of symbols, literals and alternatives into a random name."
+  },
+  {
+    "title": "A Curious Programmer — Emacs as a Terminal Emulator: a shell-wrappers package on ansi-term",
+    "url": "https://curiousprogrammer.wordpress.com/2009/03/19/emacs-terminal-emulator/",
+    "year": 2009,
+    "year_label": "March 19, 2009",
+    "language": [
+      "Emacs Lisp"
+    ],
+    "category": "Lisp / Emacs & Editors",
+    "kind": "build-along article",
+    "site": "curiousprogrammer.wordpress.com",
+    "score": 90,
+    "evidence": [
+      "\"March 19, 2009 by Jared\"",
+      "Starts from a feature shortlist (fix key bindings, mouse cut and paste, a frame just for shells, alias mapping, multiple shells) and says \"Let's get started.\"",
+      "Builds the package in layers, explaining each: process helpers (get-buffer-process, process-status), sw-basic-shell over ansi-term, sw-shell/commands that sends commands with term-simple-send",
+      "Adds a term-raw-map keymap, mouse copy/paste commands, an ido buffer chooser and a dedicated frame, ending with interactive sw-open-shell / sw-open-remote-shell and (provide 'shell-wrappers)",
+      "Checked with curl; page loads on the original wordpress.com blog"
+    ],
+    "tags": [
+      "emacs lisp",
+      "ansi-term",
+      "terminal emulator",
+      "process",
+      "keymap",
+      "interactive commands"
+    ],
+    "notes": "Write a small Emacs Lisp package that wraps ansi-term into named local and ssh shell buffers, with its own keymap, mouse bindings, buffer chooser and frame."
   }
 ]
