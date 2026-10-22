@@ -32,7 +32,6 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - https://www.cs.virginia.edu/~skadron/cs654/assignments/pipe2.pdf — UVA CS654 pipeline exercise #2 (Oct 2003): adds bimodal predictor, caches and forwarding to sim-pipe.c; sibling of accepted pipe1
 - https://courses.grainger.illinois.edu/ece511/Fa2006/homework/hw2.html — UIUC ECE 511 Fall 2006: gshare in ifetch.h of the same C++ simulator lineage (RedHat 9/Cygwin); hw1–hw5 listed
 - https://pages.cs.wisc.edu/~david/courses/cs752/Fall2008/handouts/hw3.html — Wisconsin CS752 Fall 2008 hw3: modify SimpleScalar sim-fast.c to count load/store address conflicts; modest coding
-- https://gavare.se/gxemul/gxemul-stable/doc/technical.html — GXemul C full-system emulator, 'mostly written in 2003-2005'; technical doc has 2004 dates, but the page is the current 0.7.0 release
 - https://www.muppetlabs.com/~breadbox/software/elfkickers.html — ELF Kickers C object-file tools (elfls, elftoc, rebind, sstrip), changelog 1999-2001, but the current tarball is 2021
 - https://piumarta.com/software/lib6502/ — lib6502/run6502 C 6502 emulator library; earliest dated changelog entry on the page is 2010-07-23 (v1.1)
 - https://www.joachim-bauch.de/tutorials/loading-a-dll-from-memory/ — C PE loader tutorial (relocations, imports) for MemoryModule, originally c. 2004, but the page has no date beyond a '2003-2026' footer
@@ -126,9 +125,6 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - https://www.usna.edu/Users/cs/wcbrown/courses/F09SI413/labs/L08/Lab.html — USNA SI413 Fall 2009 Lab 8: AST interpreter for SPL with flex/bison in C++; labs 3, 6 and 7 cover flex and LR conflicts
 - https://www.gnu.org/s/dotgnu/libjit-doc/libjit_3.html — Original DotGNU libjit texinfo manual with tutorials (mul_add, gcd, Fibonacci) in C. gnu.org kept resetting through the proxy, so it was not verified. Check for texi2html dates (c. 2004–2008).
 - https://pages.lip6.fr/vvm/projects_realizations/ccg/ccg-1.php — Ian Piumarta's ccg runtime-assembler docs (C preprocessor plus runtime assemblers), early 2000s; connection reset, so it could not be read.
-- https://www.st.cs.uni-saarland.de/edu/interpreters08/ivm08.html — Saarland 'Interpreters and Virtual Machines' 2008 course; host blocked by the proxy. It may have C VM or JIT projects.
-- https://bluishcoder.co.nz/2007/02/18/dynamic-code-generation-and-image/ — Chris Double, 18 Feb 2007: a C loader that mmaps and relocates generated x86/ARM machine-code images (cegcc, Windows Mobile 5). The assembler half is in JavaScript (Rhino), so around 86.
-- https://psyco.sourceforge.net/ — Psyco specializing JIT for Python, written in C; SourceForge-era site with news from 2006–2012 and PEPM'04/ACCU 2004 docs. The reader writes Python, so around 85–86.
 - https://harmony.apache.org/subcomponents/drlvm/gc-howto.html — 'How to Write DRL GC': a hands-on C++ tutorial for writing a garbage collector for DRLVM (c. 2006–2007). Belongs to the GC/runtime domain.
 - https://harmony.apache.org/subcomponents/drlvm/encoder_library.html — DRLVM IA-32/Intel64 encoder library doc dated January 30, 2007 (C++). Sibling of the accepted Jitrino page.
 - https://www.cs.utexas.edu/users/mckinley/380C/labs/labs.html — UT CS 380C Fall 2009 (McKinley): 3-address-to-C translator, dataflow, SSA and register allocation labs. Optimization domain; check the implementation language.
@@ -211,6 +207,43 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - https://www.cs.hmc.edu/courses/2003/spring/cs131/assignments/5.pdf — HMC CS131 Spring 2003 PL assignment, seen in search results; language not checked.
 - https://faculty.hampshire.edu/lspector/courses/cs263s01.html — Hampshire CS263 Spring 2001 Common Lisp AI ('last updated on January 29, 2001'): resource page with live Lisp code (genetic-salesman.lisp, grid2d.lisp) and a portfolio requirement but no concrete assignment handouts. Also rejected by the d4 agent, so not accepted.
 
+## JIT and binary translation (batch 5, October 2026)
+
+- Review drops that could return: Parrot 0.4.0 jit.pod on metacpan (same doc as the Parrot 1.0.0 record); emulators.com NO EXECUTE! Part 8 (site cap); Daedalus "SSB dynarec bug part 2" (site cap).
+- https://people.cs.vt.edu/~gback/cs6304.spring07/ — Virginia Tech CS 6304 Spring 2007 (Godmar Back) hosts a Pin 2.0 User Guide copy under /pin2/, so it probably had Pin-based projects. The whole people.cs.vt.edu / courses.cs.vt.edu host returned 503 during this run (the cataloged VT Pintos entry did too), and WebFetch is blocked by robots. Re-check later.
+- https://sites.cc.gatech.edu/fac/hyesoon/fall09/ — Georgia Tech CS 6290 Fall 2009 directory (prog2 already cataloged). Look for a Pin-based prog1/prog3. curl TLS failed and the WebFetch permission timed out.
+- https://cseweb.ucsd.edu/classes/fa07/cse240a/ — UCSD CSE 240A Fall 2007 index: check whether project 2 involves writing a pintool. The WebFetch permission timed out.
+- https://web.mit.edu/iap/www/iap07/searchiap/iap-7948.html — MIT IAP 2007 'Using Pin for Computer Architecture and Compiler Research' is a listing only, with no assignment page.
+- https://www.csc2.ncsu.edu/faculty/efg/wcae/ISCA2004/submissions/connors.pdf — WCAE 2004 paper (Connors) on teaching architecture with Pin/dynamic instrumentation. It may name course pages with pintool labs. Paper itself = lead only.
+- https://arxiv.org/pdf/0810.0372 — 2008 project report from a 'Virtual Execution Environments' course (AVExe) on optimizing Valgrind-generated code. arXiv paper, so a lead only. The course page may have assignments.
+- https://courses.cs.vt.edu/~cs3214/fall2011/projects/valgrind/valgrind-3.4.0/docs/html/writing-tools.html — Valgrind 3.3/3.4 'Writing a New Valgrind Tool' (strings 'valgrind-3.3.0', 'Tue Nov 27 12:40:49 EST 2007') but mirrored in a fall2011 course tree, step-by-step prose with no C listing; host 503s curl (WebFetch OK). ~88.
+- https://valgrind.org/docs/phd2004.pdf — Nethercote PhD thesis ("11th November 2004"), ch.2 'A Framework for Building Tools'; research thesis, valgrind.org old releases only as tarballs on sourceware — lead only.
+- https://www.intel.com/content/dam/develop/external/us/en/documents/pldi2007-pintutorial-256675.pdf — PLDI 2007 Pin tutorial ("Sunday, June 10, 2007"), ~175 slides with full pintool code; slide deck so lead. ISCA 2008, Academia Sinica 2009, CGO 2010 decks also listed on Intel's Pin page (PPT).
+- https://intranet.cs.pitt.edu/coco/strata/Micro2005-tutorial.pdf — Strata MICRO 2005 tutorial slides (Childers/Davidson, November 13, 2005); slides only.
+- https://bitblaze.cs.berkeley.edu/release/temu-1.0/howto.html — TEMU 1.0 (QEMU-based) install & user manual "Nov 5th, 2009" with live temu-1.0.tar.gz; usage quick-start (tracecap plugin), not a tool-writing guide; security/taint focus. ~87.
+- https://groups.csail.mit.edu/cag/rio/ — MIT RIO project page with Bruening 2004 thesis and CGO03/CGO05 papers; papers only (the 0.9.4 API manual is accepted).
+- https://static.usenix.org/event/usenix05/tech/freenix/full_papers/bellard/bellard_html/index.html — Bellard, QEMU USENIX 2005 paper (html); paper; qemu-tech.texi only via googlesource tag release_0_7_0.
+- https://srl.cs.jhu.edu/pubs/SRL2004-02.pdf — HDTrans tech report 2004; paper, source host dead.
+- https://releases.llvm.org/2.6/docs/tutorial/LangImpl4.html — Kaleidoscope ch. 4 'Adding JIT', LLVM 2.6. Live, but nearly the same as the LLVM 2.2 tutorial already in the catalog, and llvm.org already has 4 records
+- https://releases.llvm.org/2.3/docs/tutorial/JITTutorial1.html — LLVM 2.3 'JIT tutorial 1' (building a function with IRBuilder). Live. llvm.org is over the per-site cap
+- https://llvm.org/devmtg/2008-08-23/llvmjittut.pdf — 2008 dev meeting LLVM JIT tutorial; slides only
+- https://static.usenix.org/events/vm04/tech/piumarta.html — Piumarta VM'04 paper on the 'virtual processor' / ccg successor; paper only
+- https://www.drdobbs.com/high-performance-computing/184404919 — Dr. Dobb's host loads only through WebFetch. The original Abrash 'Optimizing Pixomatic' 2004 articles may exist there under other IDs
+- http://www.mirandabanda.org/cogblog/2008/12/12/simulate-out-of-the-bochs/ — Eliot Miranda, Cog JIT, 12 Dec 2008: wraps the Bochs C++ x86 CPU as a Squeak plugin to simulate JIT output; includes a real printcpu.c (g++), but most code is Smalltalk/Slang. Could go in at 88-89 if Slang-to-C VM work counts as C.
+- http://www.mirandabanda.org/cogblog/2009/01/14/under-cover-contexts-and-the-big-frame-up/ — Cog stack-VM frame design, Jan 2009, long and excellent, but the code is Slang/Smalltalk (some sqInt). Same language concern.
+- https://blog.mozilla.org/dmandelin/2008/05/23/tamarin-tracing-internals-iii-lir/ — David Mandelin's 5-part Tamarin Tracing Internals series (May 2008, C++ tracing JIT internals). curl gets 403, and WebFetch was blocked waiting for permission, so it could not be verified. Worth a manual check: parts I-V at blog.mozilla.org/dmandelin/2008/05/{16,21,23,28}/...
+- https://psyco.sourceforge.net/theory_psyco.pdf — Armin Rigo's 'Representation-based Just-in-time Specialization and the Psyco prototype' is a research paper (C source in SVN/snapshot). Leads only.
+- https://luajit.org/dynasm_examples.html — DynASM examples taken from LuaJIT 1.1's ljit_x86.dasc (C + DynASM); no date on the page. May belong to the toolkit agent's domain.
+- https://factor-language.blogspot.com/2009/10/improved-write-barriers-in-factors.html — Thursday, October 15, 2009: Factor VM GC rewrite in C++ templates (collector.hpp, card marking, code-heap remembered set). Strong, but the per-site cap of 2 was used on the PIC and C++-port posts.
+- https://factor-language.blogspot.com/2007/09/two-tier-compilation-comes-to-factor.html — Two-tier (non-optimizing + optimizing) compiler post, Sept 2007; not checked in detail; per-site cap.
+- http://pandorawiki.org/Mupen64plus_dynamic_recompiler — Ari64's excellent design doc for the Mupen64Plus new_dynarec (8-pass recompiler, register allocation, linker, SMC detection, ARM/x86 back-ends). History shows creation 28 June 2010 and most content in 2010, but the page itself only shows 'last edited on 19 April 2011' and the main date proof is in the history page. https does not connect; http works. Accept only if owner allows history-page dating (score <=90).
+- http://www.emulators.com/docs/nx33_qemu_0125.htm — NO EXECUTE! Part 33 (July 25, 2010): building QEMU 0.12.5 on Fedora 12/13 and analysing TCG IL; no code listings. Site already has 2 records in this batch.
+- http://strmnnrmn.blogspot.com/2007/08/interesting-dynarec-hack.html — Aug 15, 2007 Daedalus dynarec stack-pointer load/store hack with generated MIPS code; site cap reached.
+- https://www.gnu.org/software/lightning/manual/ — gnu.org unreachable as above. The current manual is lightning 2.x (2012+). Period 1.x docs live only inside tarballs on https://ftp.gnu.org/gnu/lightning/ (listing loads), which is not a page. Likely drop.
+- https://www.complang.tuwien.ac.at/forth/gforth/Docs-html-history/0.6.2/Threading.html — Gforth 0.6.2 manual node on threading (2003-era versioned path). Language-VM domain, small node; not evaluated.
+- http://www.emulators.com/docs/VirtNoJit_Paper.pdf — Mihocka/Shwartsman 2008 'Virtualization without direct execution or jitting' (Bochs) paper. Research paper, leads only.
+- http://www.emulators.com/nx_toc.htm — NO EXECUTE! index. Other dated 2007–2010 parts with C/C++ code could make further records if the site cap allows: Part 8 Software TLB (Oct 22 2007), Part 12 Hashing and VS2008 PGO (Dec 1 2007), Part 33 A Closer Look at QEMU (July 25 2010).
+
 ## Known dead ends (as of October 2026)
 
 Do not spend searches here unless something has changed:
@@ -245,21 +278,12 @@ Do not spend searches here unless something has changed:
 - Lisp: weitz.de library pages now redirect to edicl.github.io (fails original-site rule); Matt Might articles show no period date; Feeley 90-minute Scheme->C 404; Ikarus domain parked.
 - Lisp: UChicago classes archive had an expired TLS certificate (Oct 2026); Grinnell and some hosts reset curl through the proxy but load in WebFetch.
 
-## Dynamic binary translation / JIT follow-ups (October 2026)
+## Dynamic binary translation / JIT (draft PR notes, re-checked in batch 5)
 
-- https://hacks.mozilla.org/2009/07/tracemonkey-overview/ — David Mandelin's original July 17, 2009 explanation of recording hot traces, guard exits, type specialization and Nanojit. Excellent conceptual reading, but examples are JavaScript rather than reader-written C/C++; excluded from catalog.
-- https://www.cs.uaf.edu/2006/fall/cs301/lecture/11_20_dynamic_binary.html — UAF Dr. Lawlor's 2005/2006 C++ machine-code emission lecture, ModR/M encoding and an SSE dynarec performance comparison. Possible near-duplicate of already accepted 2010 Lawlor lecture; hold for manual comparison.
-- https://releases.llvm.org/2.6/docs/tutorial/ — LLVM 2.6 tutorial pages 1–2 have detailed original 2009 C++ IR generation examples; advertised later JIT steps 3–5 did not resolve. Hold until tutorial completeness is confirmed.
 - https://www.schemeworkshop.org/2006/11-ghuloum.pdf — Original 2006 Scheme Workshop-hosted copy of the already-catalogued Ghuloum compiler paper; the existing scheme2006.cs.uchicago.edu URL timed out in this research session. Existing record is unchanged pending owner review.
 
 ## Dynamic binary translation / JIT — didactic curation filter (October 2026)
 
 For new catalog submissions favor original period resources that *teach implementation*: staged from a minimal working program or clear starter code, explain mechanisms and trade-offs, and include buildable C/C++ (or Lisp) examples, detailed assignments, or source. Research papers whose primary contribution is reporting a system should remain leads unless they support reproducing or constructing the mechanism with similarly complete instruction. The Ghuloum 2006 incremental Scheme-to-x86 compiler article is the quality benchmark. Avoid padding this topic with systems research lacking practical teaching structure.
-
-- https://usenix.org/legacy/events/usenix05/tech/freenix/full_papers/bellard/bellard_html/index.html — Bellard's 2005 QEMU dynamic translator is a deep and authentic paper (dyngen, micro-ops, block chaining, caching). Moved from draft catalog to leads: mainly describes implemented system; lacks a staged reader-build tutorial.
-- https://www.usenix.org/legacy/events/vee06/full_papers/p175-sridhar.pdf — Sridhar et al., VEE 2006 HDTrans (IA-32 translation tables, blocks, exit stubs, branch handling). Moved from draft catalog: useful internal detail, no hands-on progressive project.
-- https://www.usenix.org/legacy/events/usenix01/full_papers/hsieh/hsieh_html/ — Hsieh, Engler and Back 2001 DERIVE instruction-encoding/JIT emitter paper. Moved from draft catalog: useful code-generation technique, but mostly a research system report.
-- https://static.usenix.org/events/jvm02/full_papers/chen_m/chen_m_html/index.html — Chen and Olukotun 2002 microJIT in C (IR generation, regalloc and optimizations). Moved from draft catalog: designs a JIT pipeline without build-from-scratch reader exercise.
-- https://llvm.org/devmtg/2008-08/ — LLVM Developers' Meeting 1 August 2008: Nate Begeman "Building an Efficient JIT" has a period slide deck with C++ API snippets, an instructional walkthrough for constructing and then optimizing a Clang-based JIT, plus a recorded talk. Stronger didactic lead. Still largely assembles existing LLVM/Clang APIs; review complete talk and whether it clears the project's no-slide-deck-alone requirement before acceptance.
-- https://llvm.org/devmtg/2008-08/Lopes_PHP-JIT-InTwoDays.pdf — Nuno Lopes 2008 talk on turning the PHP Zend interpreter into a function-at-a-time LLVM JIT, with design stages and LLVM IR. Slide deck and video on conference index; largely reports a proof of concept, not yet a build assignment.
-- https://www.gnu.org/software/dotgnu/libjit-doc/libjit_3.html — Legacy DotGNU libjit tutorial likely dated in surrounding 2008 documentation; step-by-step C examples (mul_add, gcd, dynamic compilation). Original tutorial URL did not load reliably in research; verify on-page date, live response, and tutorial text before admission.
+- JIT/DBT: QEMU qemu-tech internals doc gone from bellard.org and nongnu.org; Moya del Barrio emulation PDF 404 at UPC; HDTrans site dead; Strata (Pitt) has papers/slides only; GNU lightning 1.x manual gone (gnu.org serves 2.x); SoftWire only a SourceForge file list; Nanojit MDN docs 404; vcode/tick-C are 1996–97.
+- JIT/DBT: www.gnu.org resets https and returns 403 on http through the sandbox proxy (Oct 2026); people.cs.vt.edu returns 503 to curl (WebFetch works); intel.com PDFs return 403 to curl (WebFetch works).

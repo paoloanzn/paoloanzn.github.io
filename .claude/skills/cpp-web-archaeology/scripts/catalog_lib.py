@@ -102,8 +102,11 @@ def validate_record(r, strict=True):
         p.append("language must be a non-empty list")
     elif strict and not any(l in ALLOWED_LANGS for l in r["language"]):
         p.append("language must include one of: " + ", ".join(sorted(ALLOWED_LANGS)))
-    elif strict and any(l in LISP_LANGS for l in r["language"]) and not r["category"].startswith("Lisp"):
-        p.append("records written in a Lisp must use a 'Lisp / ...' category")
+    elif (strict and any(l in LISP_LANGS for l in r["language"])
+          and not any(l in ("C", "C++") for l in r["language"])
+          and not r["category"].startswith("Lisp")):
+        # Pure Lisp records belong in the Lisp wing; mixed C/C++ + Lisp records stay where they fit.
+        p.append("records written only in a Lisp must use a 'Lisp / ...' category")
     for k in ("evidence", "tags"):
         if not isinstance(r[k], list) or not all(isinstance(x, str) and x.strip() for x in r[k]):
             p.append(f"{k} must be a list of strings")
