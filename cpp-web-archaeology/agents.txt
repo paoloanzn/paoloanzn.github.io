@@ -122,6 +122,7 @@ Each one has a reason. Use the reason to decide edge cases.
 | Live | The URL loads today on its original or long-running site. Never `web.archive.org` or other mirrors. No GitHub/GitLab-only sources, Medium, Dev.to, modern reposts. | The catalog is about what survived on the live web. |
 | Language | The reader writes C or C++. Lisp wing: Scheme, Common Lisp, Emacs Lisp, Clojure, AutoLISP or Racket, with a `Lisp / ...` category. A course where students write Java/ML/Python is out, even if the target is C. | Scope of the catalog. |
 | New | Not already in the catalog; at most 2 semesters of one course; at most 2 entries per site in one PR. | Breadth beats ten copies of one course. |
+| English | The page is in English. Non-English material is out, even when it is excellent. | The owner wants an English-only catalog. |
 | Safe | No exploit or attack labs (shellcode, buffer-overflow exploitation, malware). Defensive and crypto-implementation work is fine. | Owner's policy. |
 
 When the inclusion test or a requirement is uncertain after you have looked at the
