@@ -94,6 +94,12 @@ Borderline cases, decided:
   "write a tool *for* framework X" (instrumentation plug-ins, analysis callbacks, mutator
   scripts) teach the framework, not the mechanism: reject. Contrast: using a code-generation
   library to build your own compiler or JIT (the reader designs the translation) → accept.
+- **Blog posts:** ask *who builds*. If the post walks the reader through writing the code
+  step by step (they could follow along and end with a working result), it is a
+  build-along → accept. If it reports what the author built or changed in their own
+  project, it is a project blog → reject.
+- **Side tools are fine.** An assignment that uses a framework only as a helper (e.g. a
+  tracer that produces input files) while the reader writes the main mechanism → accept.
 - **Mixed pages** are judged by their main body. A tutorial with a short benchmark at the
   end still counts; a benchmark with a little code does not.
 - A book chapter or tutorial series that builds a program (Practical Common Lisp,
