@@ -35,8 +35,10 @@ Apply these three questions to every candidate. All three must be "yes":
    - a **tutorial or build-along** that goes step by step from little or nothing to a
      working result, explains *why* each step is done, and gives code to write, run and
      change.
-3. **Is the reader the one writing the code?** In C or C++ (or, for the Lisp wing,
-   a Lisp dialect — see section 2).
+3. **Is the reader the one writing the code — and does that code implement the
+   mechanism the page is about?** In C or C++ (or, for the Lisp wing, a Lisp dialect —
+   see section 2). Writing plug-ins, callbacks or scripts for an existing framework whose
+   core mechanism stays hidden from the reader does not count (see "Tool exercises" below).
 
 Reject these even when they are old, live, technical and well written:
 
@@ -84,6 +86,16 @@ Factor "polymorphic inline caching" post; Daedalus "Dynarec Improvements" post
 </examples>
 
 Borderline cases, decided:
+- **Hands-on technique articles count.** A page where the reader writes and runs small
+  programs to see a mechanism work (run generated machine code from a buffer, watch how
+  the stack or the NX bit behaves, measure a cache) teaches building, even if no big
+  program results. Size does not matter; the reader must write and run the code.
+- **Tool exercises do not count.** Workbooks, labs or hand-outs whose exercises are
+  "write a tool *for* framework X" (instrumentation plug-ins, analysis callbacks, mutator
+  scripts) teach the framework, not the mechanism: reject. Contrast: using a code-generation
+  library to build your own compiler or JIT (the reader designs the translation) → accept.
+- **Mixed pages** are judged by their main body. A tutorial with a short benchmark at the
+  end still counts; a benchmark with a little code does not.
 - A book chapter or tutorial series that builds a program (Practical Common Lisp,
   Bran's kernel tutorial, NeHe lessons, Lex & YACC HOWTO) → accept.
 - A HOWTO that walks you through writing code (GCC Frontend HOWTO, Linux Kernel
@@ -100,7 +112,7 @@ Each one has a reason. Use the reason to decide edge cases.
 
 | Requirement | Rule | Why |
 |---|---|---|
-| Period | The material is from 2000–2010, proven **on the page** (a date, a semester, a year in the URL path, a period toolchain: VC6 `.dsw`, gcc 2.95/3.x, CVS, Fedora Core, Bochs, Nachos, Pintos, SDL 1.2, DrScheme...). A modern copyright footer or a search snippet is not proof. | The catalog is archaeology: the reader should see what was there then. |
+| Period | The material is from 2000–2010, proven **on the page** (a date, a semester, a year in the URL path — short codes like `fa07`, `s04`, `2003sp` count — or a period toolchain: VC6 `.dsw`, gcc 2.95/3.x, CVS, Fedora Core, Bochs, Nachos, Pintos, SDL 1.2, DrScheme...). Quote the strongest proof verbatim; a URL code may be the quote. A modern copyright footer or a search snippet is not proof. | The catalog is archaeology: the reader should see what was there then. |
 | Live | The URL loads today on its original or long-running site. Never `web.archive.org` or other mirrors. No GitHub/GitLab-only sources, Medium, Dev.to, modern reposts. | The catalog is about what survived on the live web. |
 | Language | The reader writes C or C++. Lisp wing: Scheme, Common Lisp, Emacs Lisp, Clojure, AutoLISP or Racket, with a `Lisp / ...` category. A course where students write Java/ML/Python is out, even if the target is C. | Scope of the catalog. |
 | New | Not already in the catalog; at most 2 semesters of one course; at most 2 entries per site in one PR. | Breadth beats ten copies of one course. |
