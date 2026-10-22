@@ -320,7 +320,7 @@ var INTENTS=[
   {id:"database",label:"A database",tok:"B+tree",re:/database|minibase|minirel|b\+ ?-?tree|buffer manager|query|sql|postgres|aries|recovery|join/},
   {id:"network",label:"A network stack",tok:"SYN/ACK",re:/network|tcp|udp|socket|rout|\birc\b|proxy|http|paxos|\brpc\b|distributed|bittorrent|winsock|transport/},
   {id:"fs",label:"A filesystem",tok:"inode",re:/file ?system|\bfuse\b|ext2|inode/},
-  {id:"vm",label:"A VM, JIT or emulator",tok:"fetch();",re:/interpret|virtual machine|bytecode|emulat|simulat|assembler|\bjvm\b|scheme|lc-3|lc-2|\bmips\b|microcode|pipeline|\bjit\b|just-in-time|binary translat|dynarec|recompil|instrumentation|dynamorio|pintool|dyninst/},
+  {id:"vm",label:"A VM or emulator",tok:"fetch();",re:/interpret|virtual machine|bytecode|emulat|simulat|assembler|\bjvm\b|scheme|lc-3|lc-2|\bmips\b|microcode|pipeline/},
   {id:"mem",label:"Threads & memory",tok:"malloc()",re:/thread|concurren|malloc|allocat|garbage|semaphore|memory|mutex|coroutine|pthread/},
   {id:"hw",label:"Drivers & embedded",tok:"/dev/",re:/driver|kernel module|embedded|\bavr\b|pic18|microcontroller|hc12|uart|rtos|linux 2\.[46]/},
   {id:"par",label:"Parallel & GPU",tok:"#pragma omp",re:/parallel|\bmpi\b|openmp|\bcuda\b|cilk|multicore|cluster|\bgpu\b|\bcell\b/},

@@ -244,6 +244,16 @@ Status words: **candidate** = likely acceptable; **sibling** = another semester 
 - http://www.emulators.com/docs/VirtNoJit_Paper.pdf — Mihocka/Shwartsman 2008 'Virtualization without direct execution or jitting' (Bochs) paper. Research paper, leads only.
 - http://www.emulators.com/nx_toc.htm — NO EXECUTE! index. Other dated 2007–2010 parts with C/C++ code could make further records if the site cap allows: Part 8 Software TLB (Oct 22 2007), Part 12 Hashing and VS2008 PGO (Dec 1 2007), Part 33 A Closer Look at QEMU (July 25 2010).
 
+## Rejected by the owner (not educational) — do not re-propose
+
+The owner removed these batch-5 entries: they are manuals, project pages, design docs, own-project
+blog posts or benchmarks. Listed so agents do not find and propose them again.
+
+- DynamoRIO 0.9.4 API manual; Intel Pin 2.0 User Guide; ASPLOS 2008 Pin workbook; Dyninst 4.1 and 6.0 guides
+- bintrans project page; Strongtalk downloads; YARV homepage; Parrot JIT subsystem doc; LIP6 ccg page
+- Factor blog posts (inline caching, VM ported to C++); Tamarin native methods post; Daedalus "Dynarec Improvements"
+- Habr "Simple test" libjit vs LLVM, and part II with GNU lightning
+
 ## Known dead ends (as of October 2026)
 
 Do not spend searches here unless something has changed:
